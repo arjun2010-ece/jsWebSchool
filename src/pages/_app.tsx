@@ -1,17 +1,15 @@
-import type { AppType } from 'next/dist/shared/lib/utils';
-import type { AppProps } from 'next/app';
+import type { AppProps, AppType } from 'next/app';
 import Head from 'next/head';
 import { Roboto } from 'next/font/google';
+// style
+import '@/styles/globals.css';
+import GlobalStyles from '@/styles/Global.style';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
   weight: ['100', '300', '400', '500', '700', '900'],
   variable: "--font-roboto"
 });
-
-// style
-import 'tailwindcss/tailwind.css';
-import GlobalStyles from '@/styles/Global.style';
 
 const _App: AppType = ({ Component, pageProps }: AppProps) => {
   return (

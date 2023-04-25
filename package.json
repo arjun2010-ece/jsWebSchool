@@ -1,13 +1,7 @@
 {
-  "name": "nextjs-tailwind-styled-components-typescript",
+  "name": "jswebschool",
   "version": "0.0.0",
   "private": false,
-  "license": "MIT",
-  "author": {
-    "name": "Mohammad Abu Mattar",
-    "email": "mohammad.khaled@outlook.com",
-    "url": "https://mkabumattar.github.io/"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

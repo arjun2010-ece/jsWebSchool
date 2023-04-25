@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { FC } from "react";
+import { type FC } from "react";
 import Link from "next/link";
-import { useRouter, NextRouter } from "next/router";
+import { useRouter, type NextRouter } from "next/router";
 import { MENU_ITEMS } from "../utils";
 
 const Header: FC = () => {
@@ -22,7 +22,7 @@ const Header: FC = () => {
   ));
 
   return (
-    <nav
+    <nav 
       className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
