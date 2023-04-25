@@ -1,0 +1,57 @@
+{
+  "name": "nextjs-tailwind-styled-components-typescript",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Mohammad Abu Mattar",
+    "email": "mohammad.khaled@outlook.com",
+    "url": "https://mkabumattar.github.io/"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.6",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "5.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "7.21.4",
+    "@babel/plugin-syntax-typescript": "7.21.4",
+    "@types/babel-plugin-macros": "3.1.0",
+    "@types/eslint": "8.37.0",
+    "@types/node": "18.15.13",
+    "@types/prettier": "2.7.2",
+    "@types/react": "18.0.37",
+    "@types/react-dom": "18.0.11",
+    "@types/styled-components": "5.1.26",
+    "@typescript-eslint/eslint-plugin": "5.59.0",
+    "@typescript-eslint/parser": "5.59.0",
+    "autoprefixer": "10.4.14",
+    "babel-loader": "9.1.2",
+    "babel-plugin-macros": "3.1.0",
+    "babel-plugin-styled-components": "2.1.1",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "postcss": "8.4.23",
+    "prettier": "2.8.7",
+    "prettier-plugin-tailwindcss": "0.2.7",
+    "tailwindcss": "3.3.1",
+    "twin.macro": "3.3.1",
+    "typescript": "5.0.4"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "resolutions": {
+    "webpack": "^5"
+  }
+}
