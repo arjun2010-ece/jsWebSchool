@@ -7,12 +7,12 @@ const HeadingComponent = styled.h1``;
 type HeadingType = {
   headingType: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   content: string;
-  style?: string | number | CSSObject | undefined;
+  customStyle?: string | number | CSSObject | undefined;
 };
 
-const Heading: FC<HeadingType> = ({ headingType, content, style }) => {
+const Heading: FC<HeadingType> = ({ headingType, content, customStyle }) => {
   return (
-    <HeadingComponent as={headingType} css={[style]}>
+    <HeadingComponent as={headingType} css={[customStyle]}>
       {content}
     </HeadingComponent>
   );

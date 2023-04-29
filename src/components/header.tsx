@@ -23,7 +23,7 @@ const Header: FC = () => {
 
   return (
     <nav 
-      className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      className="sticky top-0 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">

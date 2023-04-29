@@ -16,7 +16,7 @@ const Layout: FC<any> = ({ children }) => {
       />
 
       <Header />
-      <div className="flex-auto transition-opacity duration-300 bg-white">
+      <div className="flex-auto transition-opacity duration-300 bg-white pt-16" style={{border: "3px solid black"}}>
         {children}
       </div>
 

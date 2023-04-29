@@ -65,19 +65,19 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     ${fluid(remToPx(theme`fontSize.mobile-4xl`), remToPx(theme`fontSize.5xl`))}
   }
   h3 {
-    ${tw`font-light tracking-h3 leading-mobile-h3 lg:leading-h3`}
+    ${tw`font-bold tracking-h3 leading-mobile-h3 lg:leading-h3`}
     ${fluid(remToPx(theme`fontSize.mobile-3xl`), remToPx(theme`fontSize.4xl`))}
   }
   h4 {
-    ${tw`font-light tracking-h4 leading-mobile-h4 lg:leading-h4`}
+    ${tw`font-bold tracking-h4 leading-mobile-h4 lg:leading-h4`}
     ${fluid(remToPx(theme`fontSize.mobile-2xl`), remToPx(theme`fontSize.3xl`))}
   }
   h5 {
-    ${tw`font-light tracking-h5 leading-mobile-h5 lg:leading-h5`}
+    ${tw`font-bold tracking-h5 leading-mobile-h5 lg:leading-h5`}
     ${fluid(remToPx(theme`fontSize.mobile-xl`), remToPx(theme`fontSize.2xl`))}
   }
   h6 {
-    ${tw`font-light tracking-h6 leading-mobile-h6 lg:leading-h6`}
+    ${tw`font-bold tracking-h6 leading-mobile-h6 lg:leading-h6`}
     ${fluid(remToPx(theme`fontSize.mobile-lg`), remToPx(theme`fontSize.xl`))}
   }
 `;

@@ -25,47 +25,9 @@ export const ButtonGroup = tw.div`
   justify-center
   p-1
 `;
+export const ImageContainer = styled.div`
+ max-width: 600px;
+ max-height: 600px;
+ margin: 1rem auto;
 
-export const Button = styled.button<ButtonProps>(
-  ({ danger = false, outline = false, disabled = false }) => [
-    danger
-      ? tw`
-        bg-red-500 
-        hover:bg-red-700 
-        text-white
-      `
-      : tw`
-        bg-blue-500 
-        hover:bg-blue-700 
-        text-white
-      `,
-    outline
-      ? danger
-        ? tw`
-          bg-transparent
-          border
-          border-red-500
-          hover:border-transparent
-          hover:bg-red-500
-          text-red-700
-          hover:text-white
-        `
-        : tw`
-          bg-transparent
-          border
-          border-blue-500
-          hover:border-transparent
-          hover:bg-blue-500
-          text-blue-700
-          hover:text-white
-        `
-      : tw``,
-    disabled ? tw`opacity-50 cursor-not-allowed` : tw`cursor-pointer`,
-    tw`
-      font-bold
-      py-2
-      px-4
-      rounded
-    `,
-  ],
-);
+`
