@@ -23,7 +23,7 @@ const Home = () => {
         i am going to <b>add those challenges as sample app</b> for your learning.
         "
         parentEl="p"
-        customStyle={tw`mt-4 text-3xl mx-4`}
+        customStyle={tw`mt-4 mx-4`}
       />
 
       <Heading
@@ -44,7 +44,7 @@ const Home = () => {
          </li>
         </ul>"
         parentEl="div"
-        customStyle={tw`mt-4 text-3xl  mx-4`}
+        customStyle={tw`mt-4 mx-4`}
       />
 
       <Heading
@@ -56,12 +56,12 @@ const Home = () => {
         content="Not satisfied enough. Lets check some stats of some job sites such as indeed or linkedin or naukri.
         These stats are for different region : India, USA and worldwide openings in frontend."
         parentEl="p"
-        customStyle={tw`text-3xl mx-4`}
+        customStyle={tw`mx-4`}
       />
       <ImageContainer>
         <Image
           src="/images/linkedin_worldwide.jpg"
-          alt="Picture of the author"
+          alt="Linkedin worldwide frontend stats"
           width={600}
           height={600}
         />
@@ -69,12 +69,12 @@ const Home = () => {
       <Text
         content="Look more in indeed job site"
         parentEl="p"
-        customStyle={tw`text-3xl text-center`}
+        customStyle={tw`text-center`}
       />
       <ImageContainer>
         <Image
           src="/images/indeed_usa.jpg"
-          alt="Picture of the author"
+          alt="Indeed usa frontend stats"
           width={600}
           height={600}
         />
@@ -83,12 +83,12 @@ const Home = () => {
       <Text
         content="And more in Naukri.com"
         parentEl="p"
-        customStyle={tw`text-3xl text-center`}
+        customStyle={tw`text-center`}
       />
       <ImageContainer>
         <Image
           src="/images/naukri_stats.jpg"
-          alt="Picture of the author"
+          alt="Naukri india frontend stats"
           width={600}
           height={600}
         />
@@ -105,7 +105,7 @@ const Home = () => {
         <b>more structured way and in a sequential way.</b>. I promise there will be no garbage or exaggerated content.
         In future i might bring videos but for the time being its all contents only."
         parentEl="p"
-        customStyle={tw`text-3xl mx-4 mt-6`}
+        customStyle={tw`mx-4 mt-6`}
       />
     </Layout>
   );

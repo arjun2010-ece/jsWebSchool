@@ -80,6 +80,12 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     ${tw`font-bold tracking-h6 leading-mobile-h6 lg:leading-h6`}
     ${fluid(remToPx(theme`fontSize.mobile-lg`), remToPx(theme`fontSize.xl`))}
   }
+  p{
+    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.3xl`))}
+  }
+  div{
+    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.3xl`))}
+  }
 `;
 
 export const Container = tw.div`
