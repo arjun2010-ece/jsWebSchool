@@ -86,6 +86,9 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
   div{
     ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.3xl`))}
   }
+  nav ul li {
+    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.2xl`))}
+  }
 `;
 
 export const Container = tw.div`

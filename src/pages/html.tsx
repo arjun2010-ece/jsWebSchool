@@ -1,7 +1,8 @@
-import Layout from "../components/layout";
+import Layout from '../components/layout';
+import { type NextPage } from 'next';
 
-const HTMLPage = () => {
-  return <Layout>HTML PAGE</Layout>;
+const HTMLPage: NextPage = () => {
+  return <Layout sidebar={true}>HTML PAGE vnvnnvmvmvm</Layout>;
 };
 
 export default HTMLPage;

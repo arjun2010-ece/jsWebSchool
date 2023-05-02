@@ -1,11 +1,20 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { type FC } from "react";
-import Header from "../components/header";
-import SEO from "./seo";
+import { type FC } from 'react';
+import Header from '../components/header';
+import Sidebar from '../components/sidebar';
+import SEO from './seo';
+import styled from 'styled-components';
 
-const Layout: FC<any> = ({ children }) => {
+const MainContent = styled('div')<any>({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '1rem',
+});
+
+const Layout: FC<any> = ({ children, sidebar = false }) => {
   return (
-    <div className="relative z-0 flex flex-col min-h-screen">
+    <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
         title=""
         metaDescription=""
@@ -16,9 +25,13 @@ const Layout: FC<any> = ({ children }) => {
       />
 
       <Header />
-      <div className="flex-auto transition-opacity duration-300 bg-white pt-16" style={{border: "3px solid black"}}>
-        {children}
-      </div>
+
+      <MainContent>
+        {sidebar && <Sidebar />}
+        <div className="bg-white pt-16 basis-full" style={{ border: '3px solid black' }}>
+          {children}
+        </div>
+      </MainContent>
 
       {/* <Footer /> */}
     </div>

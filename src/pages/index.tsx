@@ -4,8 +4,9 @@ import Text from '@/components/Text';
 import tw from 'twin.macro';
 import Image from 'next/image';
 import { ImageContainer } from '@/styles/Extra.style';
+import { type NextPage } from 'next';
 
-const Home = () => {
+const HomePage: NextPage = () => {
   return (
     <Layout>
       <Heading
@@ -111,4 +112,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
