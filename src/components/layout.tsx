@@ -2,15 +2,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { type FC } from 'react';
 import Header from '../components/header';
-import Sidebar from '../components/sidebar';
 import SEO from './seo';
-import styled from 'styled-components';
-
-const MainContent = styled('div')<any>({
-  display: 'flex',
-  alignItems: 'center',
-  gap: '1rem',
-});
+import SidebarContent from './sidebarContent';
+import Sidebar from './sidebar';
 
 const Layout: FC<any> = ({ children, sidebar = false }) => {
   return (
@@ -23,17 +17,12 @@ const Layout: FC<any> = ({ children, sidebar = false }) => {
         metaOgUrl=""
         metaOgImage=""
       />
-
       <Header />
-
-      <MainContent>
-        {sidebar && <Sidebar />}
-        <div className="bg-white pt-16 basis-full" style={{ border: '3px solid black' }}>
-          {children}
-        </div>
-      </MainContent>
-
-      {/* <Footer /> */}
+      {sidebar ? (
+        <Sidebar sidebarContent={<SidebarContent />}>{children}</Sidebar>
+      ) : (
+        <>{children}</>
+      )}
     </div>
   );
 };

@@ -10,9 +10,8 @@ const StyledSidebarContainer = styled.div`
   }
 `;
 
-const Sidebar: FC = () => {
+const SidebarContent: FC = () => {
   return <StyledSidebarContainer>Sidebar component</StyledSidebarContainer>;
 };
 
-export default Sidebar;
-
+export default SidebarContent;
