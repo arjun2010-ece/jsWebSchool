@@ -3,6 +3,7 @@
 import { type FC } from 'react';
 import Header from '../components/header';
 import Sidebar from '../components/sidebar';
+import AdSidebar from '../components/adSideBar';
 import SEO from './seo';
 import styled from 'styled-components';
 
@@ -12,7 +13,7 @@ const MainContent = styled('div')<any>({
   gap: '1rem',
 });
 
-const Layout: FC<any> = ({ children, sidebar = false }) => {
+const Layout: FC<any> = ({ children, sidebar = false, hideAd=false, hideSidebar=false }) => {
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
@@ -27,10 +28,11 @@ const Layout: FC<any> = ({ children, sidebar = false }) => {
       <Header />
 
       <MainContent>
-        {sidebar && <Sidebar />}
+        {sidebar && <Sidebar hideSidebar={hideSidebar}/>}
         <div className="bg-white pt-16 basis-full" style={{ border: '3px solid black' }}>
           {children}
         </div>
+        {sidebar && <AdSidebar hideAd={hideAd}/>}
       </MainContent>
 
       {/* <Footer /> */}
