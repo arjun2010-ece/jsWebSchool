@@ -9,11 +9,17 @@ import styled from 'styled-components';
 
 const MainContent = styled('div')<any>({
   display: 'flex',
-  alignItems: 'center',
+  alignItems: 'stretch',
   gap: '1rem',
 });
 
-const Layout: FC<any> = ({ children, sidebar = false, hideAd=false, hideSidebar=false }) => {
+const Layout: FC<any> = ({
+  children,
+  sidebar = false,
+  hideAd = false,
+  hideSidebar = false,
+  currentPage = '',
+}) => {
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
@@ -28,11 +34,16 @@ const Layout: FC<any> = ({ children, sidebar = false, hideAd=false, hideSidebar=
       <Header />
 
       <MainContent>
-        {sidebar && <Sidebar hideSidebar={hideSidebar}/>}
-        <div className="bg-white pt-16 basis-full" style={{ border: '3px solid black' }}>
+        {sidebar && (
+          <Sidebar hideSidebar={hideSidebar} currentPage={currentPage} />
+        )}
+        <div
+          className="basis-full bg-white pt-16"
+          style={{ border: '3px solid black' }}
+        >
           {children}
         </div>
-        {sidebar && <AdSidebar hideAd={hideAd}/>}
+        {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
 
       {/* <Footer /> */}

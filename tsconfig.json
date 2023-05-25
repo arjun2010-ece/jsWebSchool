@@ -32,6 +32,7 @@
     "environment.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
   ],
