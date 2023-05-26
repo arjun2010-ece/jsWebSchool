@@ -103,7 +103,7 @@ const HomePage: NextPage = () => {
       <Text
         content="Even though there are huge number of jobs but the resource to learn in a single place you will never find.
         Thats why i am creating this website to give back to society all my knowledge in a 
-        <b>more structured way and in a sequential way.</b>. I promise there will be no garbage or exaggerated content.
+        <b>more structured way and in a sequential way</b>. I promise there will be no garbage or exaggerated content.
         In future i might bring videos but for the time being its all contents only."
         parentEl="p"
         customStyle={tw`mx-4 mt-6`}

@@ -243,6 +243,7 @@ module.exports = {
         17: '17',
       },
       spacing: {
+        main: '5px',
         7: '1.75rem',
         9: '2.25rem',
         11: '2.75rem',
@@ -297,15 +298,24 @@ module.exports = {
         'slider-sm': 'calc(34rem + (1) * ((100vw - 25.875rem) / 22.06))',
         'slider-md': 'calc(17rem + (4) * ((100vw - 48rem) / 15.9375))',
         'container-mobile': 'calc(((var(--vw, 1vw) * 100) - 48px) / 19.2)',
-        'container-lg': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 2)',
-        'container-xl': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 2)',
-        'container-xxl': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 2)',
-        'container-lg-1/2': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 4)',
-        'container-xl-1/2': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 4)',
-        'container-xxl-1/2': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 4)',
-        'container-lg-1/4': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 8)',
-        'container-xl-1/4': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 8)',
-        'container-xxl-1/4': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 8)',
+        'container-lg':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 2)',
+        'container-xl':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 2)',
+        'container-xxl':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 2)',
+        'container-lg-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 4)',
+        'container-xl-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 4)',
+        'container-xxl-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 4)',
+        'container-lg-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / 8)',
+        'container-xl-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / 8)',
+        'container-xxl-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / 8)',
         'ratio-16/9': '56.25%',
         'ratio-16/10': '62.5%',
         'ratio-10/16': '160%',
@@ -481,15 +491,24 @@ module.exports = {
         sticky: '10rem',
         unset: 'unset',
         'container-mobile': 'calc(((var(--vw, 1vw) * 100) - 48px) / -19.2)',
-        'container-lg': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -2)',
-        'container-xl': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -2)',
-        'container-xxl': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -2)',
-        'container-lg-1/2': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -4)',
-        'container-xl-1/2': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -4)',
-        'container-xxl-1/2': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -4)',
-        'container-lg-1/4': 'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -8)',
-        'container-xl-1/4': 'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -8)',
-        'container-xxl-1/4': 'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -8)',
+        'container-lg':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -2)',
+        'container-xl':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -2)',
+        'container-xxl':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -2)',
+        'container-lg-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -4)',
+        'container-xl-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -4)',
+        'container-xxl-1/2':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -4)',
+        'container-lg-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (12 * 64px) - (11 * 1rem)) / -8)',
+        'container-xl-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 64px) - (15 * 1rem)) / -8)',
+        'container-xxl-1/4':
+          'calc(((var(--vw, 1vw) * 100) - (16 * 80px) - (15 * 1rem)) / -8)',
       },
       zIndex: {
         '-10': '-10',

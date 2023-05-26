@@ -38,7 +38,7 @@ const Layout: FC<any> = ({
           <Sidebar hideSidebar={hideSidebar} currentPage={currentPage} />
         )}
         <div
-          className="basis-full bg-white pt-16"
+          className="basis-full bg-white pt-6 px-main"
           style={{ border: '3px solid black' }}
         >
           {children}
