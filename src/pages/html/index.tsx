@@ -1,23 +1,23 @@
-import Layout from '../../components/layout';
+import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import { PAGES } from '@/utils';
-import Text from '@/components/Text';
 import tw, { theme as globalTheme, css } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import Heading from '@/components/heading';
+import Text from '@/components/Text';
 
 const HTMLPage: NextPage = () => {
   const basicHtmlcodeSnippet = `  <!DOCTYPE html> 
   <html> 
-  <head> 
-    <title>My First Web Page</title> 
-    <meta charset="UTF-8"> 
-    <!-- Add more meta tags or link CSS stylesheets here --> 
-  </head>
-  <body> 
-    <!-- Your page content goes here --> 
-  </body>
+    <head> 
+      <title>My First Web Page</title> 
+      <meta charset="UTF-8"> 
+      <!-- Add more meta tags or link CSS stylesheets here --> 
+    </head>
+    <body> 
+      <!-- Your page content goes here --> 
+    </body>
   </html>`;
 
   return (
@@ -88,25 +88,27 @@ const HTMLPage: NextPage = () => {
         customStyle={tw`mt-8`}
       />
       <Text
-        parentEl="p"
+        parentEl="div"
         content="We all know that in science, matters are made up of atoms or group of atoms, 
         a term we use is building block or the smallest block. Same is the case here, html tags are the 
         smallest blocks which make up the html pages. Normally more than one tags in combinations make up 
         the whole page.<br/>
         Some examples are: div, p, span, header, nav, footer, main, aside, section, article. <br/><br/>
-        Now hold your breathe, we need to understand 4 things at this phase::
+        Now hold your breathe, we need to understand 6 things at this phase::
         <ul>
-         <li>Semantic vs Non-semantic tags</li>
+         <li>HTML Tags vs elements vs attributes.</li>
          <li>Block vs Inline block vs inline elements.</li>
+         <li>Semantic vs Non-semantic tags</li>
          <li>How a particular tag is used in html ?</li>
+         <li> Why a particular tag is used in html ?</li>
          <li>How to create a structure of a webpage in html ?</li>
         </ul>
         <br/> <br/>
-        Now these 4 things we will cover in next sections and trust me if you understand all these 4 things you 
+        Now these 6 things we will cover in next sections and trust me if you understand all these 6 things you 
         basically know HTML well and in a good shape to go to css tutorials with solid foundations. <br/> <br/>
         <b><u>Note::</u></b><br/>
-        To give you an idea, this third and fourth item is the information you hardly find anywhere on 
-        web and if found, it will be on some random blogs and when some senior dev shares their experience. Mostly
+        To give you an idea, this fifth and sixth item, mentioned above is the information you hardly find anywhere on 
+        web and if found, it will be on some random blogs, where some senior dev shares their experience. Mostly
         it is expected that without reading or knowing about it you have to master it at workplace and it is one of
         the most complex thing if you do not know about it and directly get into coding.
         "

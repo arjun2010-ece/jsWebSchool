@@ -4,15 +4,17 @@ import Link from "next/link";
 import { useRouter, type NextRouter } from "next/router";
 import { MENU_ITEMS } from "../utils";
 
+// menuItem?.path == router?.route
+// router?.route.includes(menuItem?.path)
 const Header: FC = () => {
   const router: NextRouter = useRouter();
-
+  
   const menus = MENU_ITEMS.map((menuItem) => (
     <li key={menuItem?.title}>
       <Link
         href={menuItem.path}
         className={`block py-2 pl-3 pr-4 ${
-          menuItem?.path == router?.route ? "border-b-4 text-blue-700" : "text-gray-900"
+          router?.route?.includes(menuItem?.path) ? "border-b-4 text-blue-700" : "text-gray-900"
         } bg-transparent rounded md:(p-0 dark:(text-gray-900 bg-transparent))`}
         aria-current="page"
       >
