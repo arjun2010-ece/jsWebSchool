@@ -14,8 +14,9 @@ const Parent = styled.div`
   }
   ul{
     list-style-type: disc;
-    width: 70%;
+    width: 88%;
     margin: 0 auto;
+    color: black;
   }
   a{
     color: black;

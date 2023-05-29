@@ -5,8 +5,10 @@ import { type FC } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';
+import Text from '@/components/Text';
+import { fluid, remToPx } from '@/styles/Global.style';
+import { theme as globalTheme } from 'twin.macro';
 
-// import { PAGES } from '@/utils';
 
 const StyledListItem = styled.li<any>`
   font-size: 15px;
@@ -19,10 +21,11 @@ const StyledListItem = styled.li<any>`
   border-bottom-color: rgb(187, 187, 187);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
-  background: ${(props) => (props.active ? 'lightblue' : '')};
+  background: ${(props) =>
+    props.active ? 'lightblue' : props.path ? '' : '#808080'};
   &:hover {
-    background-color: lightblue;
-    cursor: pointer;
+    background-color: ${(props) => (props.active ? 'lightblue' : '')};
+    cursor: ${(props) => (props.active ? 'pointer' : '')};
   }
 `;
 
@@ -40,16 +43,35 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Tags vs Elements vs attributes', path: '/html/tags-elements' },
   { topic: 'Block vs Inline block vs Inline', path: '/html/block-inline' },
   { topic: 'Semantic tags', path: '/html/semantic-tags' },
+  { topic: 'Common html tags', path: '' },
 ];
 
 const HtmlSidebar: FC = () => {
   const router: NextRouter = useRouter();
 
-  const htmlContent = HTML_TOPICS.map((course, i) => (
-    <StyledListItem key={i} active={course?.path == router?.route}>
+  const htmlContent = HTML_TOPICS.map((course, i) => {
+    const link = course?.path ? (
       <Link href={course?.path}>{course?.topic}</Link>
-    </StyledListItem>
-  ));
+    ) : (
+      <Text
+        content={course?.topic}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+    );
+    return (
+      <StyledListItem
+        key={i}
+        active={course?.path == router?.route}
+        path={course?.path}
+      >
+        {link}
+      </StyledListItem>
+    );
+  });
 
   return (
     <aside>

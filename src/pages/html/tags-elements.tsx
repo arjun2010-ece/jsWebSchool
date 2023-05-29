@@ -239,7 +239,7 @@ const BlockInlinePage: NextPage = () => {
         content="<br/><b>Note::</b><br/>
         Now html attributes are not at all limited to only these 4 defined above. Its huge and you can study
         more about this in this below link::"
-        parentEl="div"
+        parentEl="p"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),

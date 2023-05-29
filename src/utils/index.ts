@@ -24,6 +24,8 @@ export const PAGES = {
 export const moreAttributesLink =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes';
 
+export const semanticTagsLink = 'https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements';
+
 export const htmlTagcodeSnippet = `<h1>.....</h1>
 <p>.....</p>
 <div>.....</div>`;
