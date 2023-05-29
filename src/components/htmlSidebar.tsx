@@ -16,6 +16,7 @@ const StyledListItem = styled.li<any>`
   text-align: left;
   line-height: 20px;
   margin: 0px;
+  margin-top: ${(props) => (props.path === '' ? '1rem' : 0)};
   padding: 10px 0px;
   border-bottom-color: rgb(187, 187, 187);
   border-bottom-style: dotted;
@@ -43,6 +44,7 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Block vs Inline block vs Inline', path: '/html/block-inline' },
   { topic: 'Semantic tags', path: '/html/semantic-tags' },
   { topic: 'Common html tags', path: '' },
+  { topic: 'Heading', path: '/html/heading' },
 ];
 
 const HtmlSidebar: FC = () => {
