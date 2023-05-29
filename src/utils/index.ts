@@ -24,7 +24,8 @@ export const PAGES = {
 export const moreAttributesLink =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes';
 
-export const semanticTagsLink = 'https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements';
+export const semanticTagsLink =
+  'https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements';
 
 export const htmlTagcodeSnippet = `<h1>.....</h1>
 <p>.....</p>
@@ -32,7 +33,7 @@ export const htmlTagcodeSnippet = `<h1>.....</h1>
 
 export const htmlElementcodeSnippet = `<h1>Learn HTML.</h1>
 <p> A new day.</p>
-<div>Wrap this element.</div>`
+<div>Wrap this element.</div>`;
 
 export const idCodeSnippet = `<h1 id="heading">Learn HTML.</h1>
 <p id="content"> A new day.</p>
@@ -71,4 +72,115 @@ export const htmlDivTagSnippet = `<div> A new day.</div>
   <p> Life is amazing.</p>
   <p> Life is funny.</p>
 </div>
+`;
+
+export const htmlSpanTagSnippet = `<span> A new day.</span>
+
+<header>
+  <div> A div wrapping content <span>inside semantic</span> header tag.</div>
+</header>
+
+<div>
+  <p> Life is a <span>learning</span>.</p>
+  <p> Life is <span>amazing</span>.</p>
+  <p> Life is <span>funny</span>.</p>
+</div>
+
+  <span>Independent house</span>
+  <span>Independent Swimming pool</span>
+
+`;
+
+export const htmlOrderedListSnippet = `One way:
+1. This is amazing.
+2. This is lifechanging.
+3. This is refreshing.
+4. This is exotic.
+5. This is beauty.
+
+second way:
+a. This is amazing.
+b. This is lifechanging.
+c. This is refreshing.
+d. This is exotic.
+e. This is beauty.
+
+third way:
+A. This is amazing.
+B. This is lifechanging.
+C. This is refreshing.
+D. This is exotic.
+E. This is beauty.
+
+fourth way:
+I. This is amazing.
+II. This is lifechanging.
+III. This is refreshing.
+IV. This is exotic.
+V. This is beauty.
+`;
+
+export const htmlOrderedListSyntaxSnippet = `One way:
+<ol type="1">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ol>
+
+second way:
+<ol type="a">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ol>
+
+third way:
+<ol type="A">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ol>
+
+fourth way:
+<ol type="I">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ol>
+
+fifth way:
+<ol type="i">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ol>
+`;
+
+export const htmlUnorderedListSyntaxSnippet = `One way:
+<ul style="list-style-type:disc;">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ul>
+
+second way:
+<ul style="list-style-type:circle;">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ul>
+
+third way:
+<ul style="list-style-type:square;">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ul>
+
+fourth way:
+<ul style="list-style-type:none;">
+  <li>This is amazing.</li>
+  <li>This is refreshing.</li>
+  <li>This is beauty.</li>
+</ul>
 `;

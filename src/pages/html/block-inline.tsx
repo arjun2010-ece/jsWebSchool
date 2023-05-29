@@ -129,7 +129,8 @@ const BlockInlinePage: NextPage = () => {
         More than that its most important other features are:
         <ul>
             <li>we can never set its width and height property in css. If we change it to block by
-            <b>display:block</b> css property then we can set its width and height. But then again it will no 
+            <b>display:block</b> css property then we can set its width and height. But then again it will
+             no 
             longer be an inline element and will be changed to block with that css property.</li>
             <li>We can always set its right and left margins and paddings properties in css but never its 
             top and bottom margins and paddings.</li>

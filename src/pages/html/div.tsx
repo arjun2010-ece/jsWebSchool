@@ -50,7 +50,7 @@ const HTMLDiv: NextPage = () => {
         Note::</b> <br/>
         Please do not forget that div tags are block level element. And if you
         remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margings and paddings we need to remove from all block elements and
+        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
         then only UI will be consistent and follow css box model, obviously when we go to css.
         `}
         parentEl="p"
