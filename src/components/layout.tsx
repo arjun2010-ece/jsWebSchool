@@ -39,7 +39,7 @@ const Layout: FC<any> = ({
         )}
         <div
           className="basis-full bg-white pt-6 px-main"
-          style={{ border: '3px solid black' }}
+          // style={{ border: '3px solid black' }}
         >
           {children}
         </div>

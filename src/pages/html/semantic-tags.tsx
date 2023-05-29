@@ -6,8 +6,8 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Link from 'next/link';
+import ResponsiveImage from '@/components/responsive-image';
 import styled from 'styled-components';
-// import Image from 'next/image';
 
 const StyledLink = styled(Link)`
   color: black;
@@ -74,6 +74,13 @@ const SemanticTagsPage: NextPage = () => {
       <StyledLink href={semanticTagsLink} target="_blank">
         More semantic tags
       </StyledLink>
+
+      {/* Responsive image */}
+      <ResponsiveImage
+        boxHeight="300px"
+        srcUrl="/images/semantic_generic.jpg"
+        altText="Semantic tags"
+      />
 
       <Text
         content="<br/><b>Note::</b><br/>

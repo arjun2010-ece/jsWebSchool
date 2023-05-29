@@ -9,7 +9,6 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import { theme as globalTheme } from 'twin.macro';
 
-
 const StyledListItem = styled.li<any>`
   font-size: 15px;
   color: #000;
@@ -22,7 +21,7 @@ const StyledListItem = styled.li<any>`
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   background: ${(props) =>
-    props.active ? 'lightblue' : props.path ? '' : '#808080'};
+    props.active ? 'lightblue' : props.path ? '' : 'rgba(128, 128, 128, 0.5)'};
   &:hover {
     background-color: ${(props) => (props.active ? 'lightblue' : '')};
     cursor: ${(props) => (props.active ? 'pointer' : '')};

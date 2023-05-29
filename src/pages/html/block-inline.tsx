@@ -5,19 +5,7 @@ import { PAGES } from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
-import Image from 'next/image';
-import styled from 'styled-components';
-
-type StyledBoxProps = {
-  boxHeight?: string;
-};
-
-const StyledBox = styled.div<StyledBoxProps>`
-  display: flex;
-  height: ${(props) => props?.boxHeight || '200px'};
-  border: 0.4px solid black;
-  margin-top: 30px;
-`;
+import ResponsiveImage from '@/components/responsive-image';
 
 const BlockInlinePage: NextPage = () => {
   return (
@@ -68,16 +56,10 @@ const BlockInlinePage: NextPage = () => {
       />
 
       {/* Responsive image */}
-      <StyledBox>
-        <Image
-          src="/images/block_elements.jpg"
-          alt="Block elements"
-          width={0}
-          height={300}
-          sizes="100vw"
-          style={{ width: '100%' }} // optional
-        />
-      </StyledBox>
+      <ResponsiveImage
+        srcUrl="/images/block_elements.jpg"
+        altText="Block elements"
+      />
 
       <Text
         content="<br/>
@@ -131,16 +113,11 @@ const BlockInlinePage: NextPage = () => {
       />
 
       {/* Responsive image */}
-      <StyledBox boxHeight="400px">
-        <Image
-          src="/images/inline_elements.jpg"
-          alt="Inline elements"
-          width={0}
-          height={300}
-          sizes="100vw"
-          style={{ width: '100%' }} // optional
-        />
-      </StyledBox>
+      <ResponsiveImage
+        srcUrl="/images/inline_elements.jpg"
+        altText="Inline elements"
+        boxHeight="400px"
+      />
 
       <Text
         content="<br/>
@@ -163,7 +140,7 @@ const BlockInlinePage: NextPage = () => {
         <br/><br/>
         <b>Examples::</b> span, anchor tag, strong tag, em tag, b tag etc.
         "
-        parentEl="p"
+        parentEl="div"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
