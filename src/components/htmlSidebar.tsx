@@ -46,6 +46,7 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Common html tags', path: '' },
   { topic: 'Heading', path: '/html/heading' },
   { topic: 'paragraph', path: '/html/paragraph' },
+  { topic: 'div', path: '/html/div' },
 ];
 
 const HtmlSidebar: FC = () => {

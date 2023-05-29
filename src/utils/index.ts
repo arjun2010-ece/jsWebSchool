@@ -59,3 +59,16 @@ export const htmlHeadingsTagSnippet = `<h1> Heading 1.</h1>
 
 export const htmlParaTagSnippet = `<p> A new day.</p>
 <p> Life is beautiful.</p>`;
+
+export const htmlDivTagSnippet = `<div> A new day.</div>
+
+<header>
+  <div> A div wrapping content inside semantic header tag.</div>
+</header>
+
+<div>
+  <p> Life is a learning.</p>
+  <p> Life is amazing.</p>
+  <p> Life is funny.</p>
+</div>
+`;

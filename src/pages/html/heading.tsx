@@ -60,7 +60,7 @@ const HTMLHeading: NextPage = () => {
         then only UI will be consistent and follow css box model, obviously when we go to css.
         
         `}
-        parentEl="div"
+        parentEl="p"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
