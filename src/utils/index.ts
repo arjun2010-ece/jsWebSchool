@@ -49,3 +49,13 @@ export const hrefSnippet = `<a href="/about"> A new day.</a>
 
 export const titleSnippet = `<p title="cards"> A new day.</p>
 <div title="price">Wrap this element.</div>`;
+
+export const htmlHeadingsTagSnippet = `<h1> Heading 1.</h1>
+<h2> Heading 2.</h2>
+<h3> Heading 3.</h3>
+<h4> Heading 4.</h4>
+<h5> Heading 5.</h5>
+<h6> Heading 6.</h6>`;
+
+export const htmlParaTagSnippet = `<p> A new day.</p>
+<p> Life is beautiful.</p>`;

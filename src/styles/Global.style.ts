@@ -58,11 +58,11 @@ const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
     ${tw`font-bold`}
   }
   h1 {
-    ${tw`font-light tracking-h1 leading-mobile-h1 lg:leading-h1`}
+    ${tw`font-bold tracking-h1 leading-mobile-h1 lg:leading-h1`}
     ${fluid(remToPx(theme`fontSize.mobile-5xl`), remToPx(theme`fontSize.6xl`))}
   }
   h2 {
-    ${tw`font-light tracking-h2 leading-mobile-h2 lg:leading-h2`}
+    ${tw`font-bold tracking-h2 leading-mobile-h2 lg:leading-h2`}
     ${fluid(remToPx(theme`fontSize.mobile-4xl`), remToPx(theme`fontSize.5xl`))}
   }
   h3 {

@@ -45,6 +45,7 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Semantic tags', path: '/html/semantic-tags' },
   { topic: 'Common html tags', path: '' },
   { topic: 'Heading', path: '/html/heading' },
+  { topic: 'paragraph', path: '/html/paragraph' },
 ];
 
 const HtmlSidebar: FC = () => {
