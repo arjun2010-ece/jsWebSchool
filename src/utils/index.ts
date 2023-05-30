@@ -220,3 +220,136 @@ export const pictureTagSnippet = `
   <img src="test.png" alt="test image">
 </picture>
 `;
+
+export const htmlTableBasicSnippet = `
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+    </tr>
+
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <th>345</th>
+    </tr>
+  </tfoot>
+</table>
+`;
+
+export const htmlTableUsageSnippet = `
+<table>
+  <thead>
+    ......
+  </thead>
+
+  <tbody>
+   ......
+  </tbody>
+
+</table>
+`;
+
+export const htmlTableHeadSnippet = `
+<table>
+
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+
+</table>
+`;
+
+export const htmlTableBodySnippet = `
+<table>
+
+  <tbody>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+    </tr>
+
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+    </tr>
+  </tbody>
+
+</table>
+`;
+
+export const htmlTableBorderSnippet = `
+<table border="1" style="border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Row 1 Cell 1</td>
+      <td>Row 1 Cell 2</td>
+      <td>Row 1 Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2 Cell 1</td>
+      <td>Row 2 Cell 2</td>
+      <td>Row 2 Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 3 Cell 1</td>
+      <td>Row 3 Cell 2</td>
+      <td>Row 3 Cell 3</td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+export const htmlTableColRowSpanSnippet = `
+<table border="1" style="border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>col 1</th>
+      <th>col 2</th>
+      <th>col 3</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td rowspan = "2">Row 1 Cell 1</td>
+      <td>row 1 Cell 2</td>
+      <td>row 1 Cell 3</td>
+    </tr>
+
+    <tr>
+      <td>row 2 Cell 2</td>
+      <td>row 2 Cell 3</td>
+    </tr>
+
+    <tr>
+      <td colspan = "3">row 3 Cell 1</td>
+    </tr>
+  </tbody>
+</table>
+`;
