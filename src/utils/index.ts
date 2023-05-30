@@ -184,3 +184,39 @@ fourth way:
   <li>This is beauty.</li>
 </ul>
 `;
+
+export const responsiveImageSnippet = `// Basic img tag usage
+
+// relative url path, stored locally
+<img src="/profile.jpg" 
+  alt="Profile Picture 
+> 
+
+//remote url
+<img src="https://cdn.pixabay.com/photo/2023/05/14/19/42/sky-7993656_1280.jpg" alt="Profile Picture > 
+
+css::
+img{
+  width: 100%;
+}
+`;
+
+export const imageResolutionSwitchingSnippet = `
+<img srcset="small-fruit-image.jpg 500w,
+             medium-fruit-image.jpg 800w,
+             large-fruit-image.jpg 1250w"
+    
+     sizes="(min-width: 1200px) 850px,
+            (min-width: 768px) 400px,
+            100vw"
+     
+     src="medium-fruit-image.jpg" alt="Fruit">
+`;
+
+export const pictureTagSnippet = `
+<picture>
+  <source srcset="test.avif" media="(max-width: 767px)" type="image/avif">
+  <source srcset="test.webp" type="image/webp" media="(min-width: 768px)">
+  <img src="test.png" alt="test image">
+</picture>
+`;

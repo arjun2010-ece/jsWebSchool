@@ -49,6 +49,8 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'div', path: '/html/div' },
   { topic: 'span', path: '/html/span' },
   { topic: 'Unordered / Ordered list', path: '/html/unordered-ordered' },
+  { topic: 'Image vs Pictures', path: '/html/image-pictures' },
+  { topic: 'Tables', path: '/html/tables' },
 ];
 
 const HtmlSidebar: FC = () => {
