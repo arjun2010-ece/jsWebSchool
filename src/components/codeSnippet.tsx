@@ -11,6 +11,10 @@ const StyledCodeContainer = styled.pre`
   padding: 20px;
   font-size: 16px;
   white-space: pre-wrap; 
+  overflow-x: auto;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 type CodeSnippetProps = {

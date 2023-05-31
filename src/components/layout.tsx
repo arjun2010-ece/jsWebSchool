@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { type FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import Header from '../components/header';
 import Sidebar from '../components/sidebar';
 import AdSidebar from '../components/adSideBar';
@@ -13,7 +13,27 @@ const MainContent = styled('div')<any>({
   gap: '1rem',
 });
 
-const Layout: FC<any> = ({
+const Content = styled.div<any>`
+  flex: 1;
+  background: white;
+  padding-top: 24px;
+  padding-left: 5px;
+  padding-right:  5px;
+  margin-left: 250px;
+  @media only screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+`;
+
+type LayoutProps = {
+  children: ReactNode;
+  sidebar: boolean;
+  hideAd: boolean;
+  hideSidebar: boolean;
+  currentPage: string;
+};
+
+const Layout: FC<LayoutProps> = ({
   children,
   sidebar = false,
   hideAd = false,
@@ -37,12 +57,7 @@ const Layout: FC<any> = ({
         {sidebar && (
           <Sidebar hideSidebar={hideSidebar} currentPage={currentPage} />
         )}
-        <div
-          className="basis-full bg-white pt-6 px-main"
-          // style={{ border: '3px solid black' }}
-        >
-          {children}
-        </div>
+        <Content>{children}</Content>
         {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
 

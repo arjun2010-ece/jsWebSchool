@@ -5,7 +5,8 @@ import { type FC } from 'react';
 import styled from 'styled-components';
 
 const StyledSidebarContainer = styled.div<any>`
-  width: 600px;
+  flex: 0 0 350px;
+  min-width: 350px;
   padding-top: 24px;
   border: 3px solid red;
   @media only screen and (max-width: 1023px) {

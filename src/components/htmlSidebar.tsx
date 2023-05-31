@@ -31,6 +31,7 @@ const StyledListItem = styled.li<any>`
 
 const StyledListContainer = styled.ul`
   padding: 5px 5px;
+  padding-right: 0;
 `;
 
 type HTML_TOPICS_PROPS = {
@@ -51,6 +52,18 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Unordered / Ordered list', path: '/html/unordered-ordered' },
   { topic: 'Image vs Pictures', path: '/html/image-pictures' },
   { topic: 'Tables', path: '/html/tables' },
+  { topic: 'iframe', path: '/html/iframe' },
+
+  { topic: 'Semantic tags', path: '/html/semantic-tags' },
+  { topic: 'Common html tags', path: '' },
+  { topic: 'Heading', path: '/html/heading' },
+  { topic: 'paragraph', path: '/html/paragraph' },
+  { topic: 'div', path: '/html/div' },
+  { topic: 'span', path: '/html/span' },
+  { topic: 'Unordered / Ordered list', path: '/html/unordered-ordered' },
+  { topic: 'Image vs Pictures', path: '/html/image-pictures' },
+  { topic: 'Tables', path: '/html/tables' },
+  { topic: 'iframe', path: '/html/iframe' },
 ];
 
 const HtmlSidebar: FC = () => {
