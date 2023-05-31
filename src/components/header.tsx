@@ -3,38 +3,18 @@ import { type FC } from 'react';
 import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';
 import { MENU_ITEMS } from '../utils';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // menuItem?.path == router?.route
 // router?.route.includes(menuItem?.path)
 const Header: FC = () => {
-  const [windowSize, setWindowSize] = useState(() =>
-    typeof window !== 'undefined' ? window?.innerWidth : 0,
-  );
-
   const [subMenuVisible, setSubMenuVisible] = useState(false);
 
   const toggleSubMenu = () => {
     setSubMenuVisible(!subMenuVisible);
   };
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      if (typeof window !== 'undefined') {
-        setWindowSize(window?.innerWidth);
-      }
-    };
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, []);
-
   const router: NextRouter = useRouter();
-
-  // const moreBtnDropdwn = <></>;
 
   const menus = MENU_ITEMS.map((menuItem) => {
     return !menuItem.subItems ? (
@@ -87,7 +67,7 @@ const Header: FC = () => {
               <li key={subItem.title}>
                 <Link
                   href={subItem.path}
-                  className="text-sm text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 block px-3 py-2 dark:text-white"
+                  className="text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 block px-3 py-2 text-sm dark:text-white"
                 >
                   {subItem.title}
                 </Link>
@@ -99,8 +79,6 @@ const Header: FC = () => {
     );
   });
 
-  console.log('windowSize', windowSize);
-
   return (
     <nav className="border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-white">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
@@ -110,11 +88,7 @@ const Header: FC = () => {
           </span>
         </Link>
 
-        <div
-          className={`w-full ${windowSize > 900 ? 'block' : 'block'} md:w-auto`}
-          id="navbar-dropdown"
-        >
-          {/* <div className="hidden  w-full md:block md:w-auto" id="navbar-dropdown"> */}
+        <div className={`hidden w-full md:w-auto lg:block`}>
           <ul className="border-gray-100 bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0">
             {menus}
           </ul>

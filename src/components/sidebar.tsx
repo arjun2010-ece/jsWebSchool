@@ -20,7 +20,7 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
 
   border-right: 1px solid #ccc;
   position: fixed;
-  top: 64px;
+  top: 78px;
   width: 250px;
 
   @media only screen and (max-width: 767px) {
