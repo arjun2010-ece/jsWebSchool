@@ -88,8 +88,36 @@ const Header: FC = () => {
           </span>
         </Link>
 
+        {/* Hamburger menu */}
+        <div className={`w-auto md:w-auto lg:hidden`}>
+          <button
+            type="button"
+            className="text-gray-900 block focus:outline-none dark:text-white"
+            // onClick={toggleMenus}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
         <div className={`hidden w-full md:w-auto lg:block`}>
-          <ul className="border-gray-100 bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0">
+          <ul
+            className="border-gray-100 bg-gray-50 dark:bg-gray-800 md:dark:bg-gray-900 
+          dark:border-gray-700 mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row 
+          md:space-x-8 md:border-0 md:bg-white md:p-0"
+          >
             {menus}
           </ul>
         </div>

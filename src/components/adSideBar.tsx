@@ -9,6 +9,7 @@ const StyledSidebarContainer = styled.div<any>`
   min-width: 350px;
   padding-top: 24px;
   border: 3px solid red;
+  background: white;
   @media only screen and (max-width: 1023px) {
     display: block;
     display: ${(props: any) => (props?.hideAd ? 'none' : 'block')};

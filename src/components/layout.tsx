@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const MainContent = styled('div')<any>({
   display: 'flex',
   alignItems: 'stretch',
-  gap: '1rem',
+  gap: '10px',
 });
 
 const Content = styled.div<any>`

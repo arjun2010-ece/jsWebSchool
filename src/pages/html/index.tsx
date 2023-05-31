@@ -27,6 +27,12 @@ const HTMLPage: NextPage = () => {
       hideSidebar={true}
       currentPage={PAGES.HTML}
     >
+      <Heading
+        content="What is HTML ?"
+        headingType="h5"
+        customStyle={tw`mb-4`}
+      />
+
       <Text
         content="HTML stands for <b>Hyper Text Markup Language</b>.
         In short with this language you write the <b><u>skeleton</u></b> or <b><u>structure</u></b> of a webpage.
