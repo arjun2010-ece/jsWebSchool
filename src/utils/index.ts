@@ -1,6 +1,10 @@
-type menuItemsType = {
+type menuItemType = {
   title: string;
   path: string;
+};
+
+type menuItemsType = menuItemType & {
+  subItems?: menuItemType[];
 };
 
 export const MENU_ITEMS: menuItemsType[] = [
@@ -10,6 +14,16 @@ export const MENU_ITEMS: menuItemsType[] = [
   { title: 'ReactJs', path: '/reactjs' },
   { title: 'Node.js', path: '/nodejs' },
   { title: 'GIT', path: '/git' },
+  // { title: 'More', path: '' },
+  {
+    title: 'More',
+    path: '',
+    subItems: [
+      { title: 'Angular', path: '/subitem1' },
+      { title: 'Vue.js', path: '/subitem2' },
+      { title: 'Data Modelling', path: '/subitem3' },
+    ],
+  },
 ];
 
 export const PAGES = {
