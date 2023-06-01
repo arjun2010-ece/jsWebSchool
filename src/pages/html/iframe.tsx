@@ -34,10 +34,8 @@ const HTMLIframe: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-
-      {/* <CodeSnippet content={iframeTagSnipper} /> */}
-
-      <Text
+      <CodeSnippet content={iframeTagSnipper} />
+      {/* <Text
         content={`
         <b> <br/> <br/>
         Note::</b> <br/>
@@ -51,103 +49,7 @@ const HTMLIframe: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
-
-      <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that paragraph or para or p tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      />
+      /> */}
     </Layout>
   );
 };
