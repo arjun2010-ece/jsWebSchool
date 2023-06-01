@@ -1,25 +1,29 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { FC, ReactNode } from 'react';
-import Header from '../components/header';
-import Sidebar from '../components/sidebar';
-import AdSidebar from '../components/adSideBar';
-import SEO from './seo';
+import { useRouter, type NextRouter } from 'next/router';
+import Header from '@/components/header';
+import Sidebar from '@/components/sidebar';
+import AdSidebar from '@/components/adSideBar';
+import SEO from '@/components/seo';
 import styled from 'styled-components';
 
-const MainContent = styled('div')<any>({
+const MainContent = styled('div')({
   display: 'flex',
   alignItems: 'stretch',
   gap: '10px',
 });
 
-const Content = styled.div<any>`
+type ContentProps = {
+  path: string;
+};
+
+const Content = styled.div<ContentProps>`
   flex: 1;
   background: white;
   padding-top: 24px;
   padding-left: 5px;
-  padding-right:  5px;
-  margin-left: 250px;
+  padding-right: 5px;
+  // margin-left: 250px;
+  margin-left: ${(props) => (props.path === '/' ? 0 : '250px')};
   @media only screen and (max-width: 767px) {
     margin-left: 0;
   }
@@ -40,6 +44,9 @@ const Layout: FC<LayoutProps> = ({
   hideSidebar = false,
   currentPage = '',
 }) => {
+  const router: NextRouter = useRouter();
+
+  console.log('router?.route', router?.route);
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
@@ -57,7 +64,7 @@ const Layout: FC<LayoutProps> = ({
         {sidebar && (
           <Sidebar hideSidebar={hideSidebar} currentPage={currentPage} />
         )}
-        <Content>{children}</Content>
+        <Content path={router?.route}>{children}</Content>
         {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
 
