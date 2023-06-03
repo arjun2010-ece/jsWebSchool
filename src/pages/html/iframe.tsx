@@ -1,7 +1,7 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import tw, { theme as globalTheme } from 'twin.macro';
-import { PAGES, iframeTagSnipper } from '@/utils';
+import { PAGES, iframeTagSnippet } from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
@@ -34,7 +34,7 @@ const HTMLIframe: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-      <CodeSnippet content={iframeTagSnipper} />
+      <CodeSnippet content={iframeTagSnippet} />
       {/* <Text
         content={`
         <b> <br/> <br/>

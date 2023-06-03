@@ -53,6 +53,8 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Image vs Pictures', path: '/html/image-pictures' },
   { topic: 'Tables', path: '/html/tables' },
   { topic: 'iframe', path: '/html/iframe' },
+  { topic: 'HTML Forms', path: '' },
+  { topic: 'Forms Elements', path: '/html/form-elements' },
 
 ];
 

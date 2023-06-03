@@ -40,7 +40,7 @@ export default class _Document extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js" />
+          {/* <Script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js" /> */}
         </body>
       </Html>
     );
