@@ -1,28 +1,43 @@
-/* eslint-disable @typescript-eslint/ban-types */
-import { createGlobalStyle} from 'styled-components';
-import type { DefaultTheme, GlobalStyleComponent, ThemeProps, Interpolation } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+import type {
+  DefaultTheme,
+  GlobalStyleComponent,
+  ThemeProps,
+  Interpolation,
+} from 'styled-components';
 import tw, { theme } from 'twin.macro';
 
-
-export const fluid = (min: number, max: number ): Interpolation<ThemeProps<DefaultTheme>> => {
-  const minVw = parseInt(theme`screens.xs`.slice(0, -2), 10)
-  const maxVw = parseInt(theme`screens.xxl`.slice(0, -2), 10)
-  const minQuery = `@media screen and (min-width: ${minVw}px)`
-  const maxQuery = `@media screen and (min-width: ${maxVw}px)`
+export const fluid = (
+  min: number,
+  max: number,
+): Interpolation<ThemeProps<DefaultTheme>> => {
+  const minVw = parseInt(theme`screens.xs`.slice(0, -2), 10);
+  const maxVw = parseInt(theme`screens.xxl`.slice(0, -2), 10);
+  const minQuery = `@media screen and (min-width: ${minVw}px)`;
+  const maxQuery = `@media screen and (min-width: ${maxVw}px)`;
   return {
     fontSize: `${min}px`,
     [minQuery]: {
-      fontSize: `calc(${min}px + ${max - min} * ((100vw - ${minVw}px) / ${maxVw - minVw - 1}))`,
+      fontSize: `calc(${min}px + ${max - min} * ((100vw - ${minVw}px) / ${
+        maxVw - minVw - 1
+      }))`,
     },
     [maxQuery]: {
       fontSize: `${max}px`,
     },
-  }
-}
+  };
+};
 
-export const remToPx = (rem: string) => Number(rem.slice(0, -3)) * 16
+export const remToPx = (rem: string) => Number(rem.slice(0, -3)) * 16;
 
-const GlobalStyles: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
+type GlobalStyleProps = {
+  // Define your component's props here, if any
+};
+
+const GlobalStyles: GlobalStyleComponent<
+  ThemeProps<DefaultTheme>,
+  GlobalStyleProps
+> = createGlobalStyle`
   :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;

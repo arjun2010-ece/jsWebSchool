@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { theme } from 'twin.macro'
   
 
@@ -24,11 +23,11 @@ export const min: Record<ScreenSizes, string> = {
 };
 
 export const max: Record<ScreenSizes, string> = {
-    xs: generateMax(`${(parseInt(theme`screens.xs`.slice(0, -2)) - 1) as number}px`),
-    sm: generateMax(`${(parseInt(theme`screens.sm`.slice(0, -2)) - 1) as number}px`),
-    md: generateMax(`${(parseInt(theme`screens.md`.slice(0, -2)) - 1) as number}px`),
-    lg: generateMax(`${(parseInt(theme`screens.lg`.slice(0, -2)) - 1) as number}px`),
-    xl: generateMax(`${(parseInt(theme`screens.xl`.slice(0, -2)) - 1) as number}px`),
-    xxl: generateMax(`${(parseInt(theme`screens.xxl`.slice(0, -2)) - 1) as number}px`),
+    xs: generateMax(`${(parseInt(theme`screens.xs`.slice(0, -2)) - 1)}px`),
+    sm: generateMax(`${(parseInt(theme`screens.sm`.slice(0, -2)) - 1)}px`),
+    md: generateMax(`${(parseInt(theme`screens.md`.slice(0, -2)) - 1)}px`),
+    lg: generateMax(`${(parseInt(theme`screens.lg`.slice(0, -2)) - 1)}px`),
+    xl: generateMax(`${(parseInt(theme`screens.xl`.slice(0, -2)) - 1)}px`),
+    xxl: generateMax(`${(parseInt(theme`screens.xxl`.slice(0, -2)) - 1)}px`),
   };
   

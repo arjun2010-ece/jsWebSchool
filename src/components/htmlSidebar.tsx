@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { type FC } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
@@ -9,7 +6,12 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import { theme as globalTheme } from 'twin.macro';
 
-const StyledListItem = styled.li<any>`
+type StyledListItemProps = {
+  path: string;
+  active: boolean;
+};
+
+const StyledListItem = styled.li<StyledListItemProps>`
   font-size: 15px;
   color: #000;
   font-weight: 500;
@@ -18,6 +20,7 @@ const StyledListItem = styled.li<any>`
   margin: 0px;
   margin-top: ${(props) => (props.path === '' ? '1rem' : 0)};
   padding: 10px 0px;
+  padding-left: 5px;
   border-bottom-color: rgb(187, 187, 187);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
@@ -30,8 +33,7 @@ const StyledListItem = styled.li<any>`
 `;
 
 const StyledListContainer = styled.ul`
-  padding: 5px 5px;
-  padding-right: 0;
+  padding: 5px 0;
 `;
 
 type HTML_TOPICS_PROPS = {
@@ -55,7 +57,6 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'iframe', path: '/html/iframe' },
   { topic: 'HTML Forms', path: '' },
   { topic: 'Forms Elements', path: '/html/form-elements' },
-
 ];
 
 const HtmlSidebar: FC = () => {

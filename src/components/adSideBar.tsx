@@ -1,10 +1,11 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { type FC } from 'react';
 import styled from 'styled-components';
 
-const StyledSidebarContainer = styled.div<any>`
+type StyledSidebarContainerProps = {
+  hideAd: boolean;
+};
+
+const StyledSidebarContainer = styled.div<StyledSidebarContainerProps>`
   flex: 0 0 350px;
   min-width: 350px;
   padding-top: 24px;
@@ -12,11 +13,12 @@ const StyledSidebarContainer = styled.div<any>`
   background: white;
   @media only screen and (max-width: 1023px) {
     display: block;
-    display: ${(props: any) => (props?.hideAd ? 'none' : 'block')};
+    display: ${(props) => (props?.hideAd ? 'none' : 'block')};
   }
 `;
+type AdSidebarProps = StyledSidebarContainerProps;
 
-const AdSidebar: FC<any> = ({ hideAd }) => {
+const AdSidebar: FC<AdSidebarProps> = ({ hideAd }) => {
   return (
     <StyledSidebarContainer hideAd={hideAd}>
       AD Sidebar component

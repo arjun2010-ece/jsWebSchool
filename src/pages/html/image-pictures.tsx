@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import tw, { theme as globalTheme } from 'twin.macro';
@@ -6,7 +5,7 @@ import {
   PAGES,
   responsiveImageSnippet,
   imageResolutionSwitchingSnippet,
-  pictureTagSnippet
+  pictureTagSnippet,
 } from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';

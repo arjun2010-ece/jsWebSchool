@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { type FC } from 'react';
 import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';

@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { type FC } from 'react';
 import styled from 'styled-components';
 import { PAGES } from '@/utils';
@@ -25,13 +22,17 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
 
   @media only screen and (max-width: 767px) {
     display: block;
-    display: ${(props: any) => (props?.hideSidebar ? 'none' : 'block')};
+    display: ${(props) => (props?.hideSidebar ? 'none' : 'block')};
   }
 `;
 
-const Sidebar: FC<any> = ({ hideSidebar, currentPage }) => {
+type SidebarProps = StyledSidebarContainer & {
+  currentPage: string;
+};
+
+const Sidebar: FC<SidebarProps> = ({ hideSidebar, currentPage }) => {
   return (
-    <StyledSidebarContainer  hideSidebar={hideSidebar}>
+    <StyledSidebarContainer hideSidebar={hideSidebar}>
       {/* Sidebar component */}
       {currentPage == PAGES.HTML && <HtmlSidebar />}
       {currentPage == PAGES.CSS3 && <p>Css page</p>}
