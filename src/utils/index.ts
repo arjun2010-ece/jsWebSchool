@@ -390,3 +390,67 @@ or
 
 <input type="text" >
 `;
+
+export const fileUploadSnippet = `<form>
+  <input type = "file" name = "profilePic" accept = "image/*" />
+  <input type = "file" name = "profilePicOne" accept = "image/jpg" />
+  <input type = "file" name = "profilePicTwo" accept = "image/png" />
+</form>
+`;
+
+export const radioBoxSnippet = `<form>
+
+  // radiobox
+  <input type = "radio" name = "male" value = "male" checked> Male
+  <input type = "radio" name = "male" value = "male" checked={true}> Male
+  <input type = "radio" name = "male" value = "male" checked={false}> Male
+
+  // checkbox
+  <input type = "checkbox" name = "termsAndConditions" value = "terms" checked> I have read terms and conditions.
+  <input type = "checkbox" name = "termsAndConditions" value = "terms" checked={true}> I have read terms and conditions.
+  <input type = "checkbox" name = "termsAndConditions" value = "terms" checked={false}> I have read terms and conditions.
+</form>
+`;
+
+export const textInputSnippet = `<form>
+  <input type="text" name="firstName" value="Andy" maxLength="18">
+</form>
+`;
+export const textAreatSnippet = `<form>
+  <textarea name="bio" value="This is my bio" rows="4" cols="12">
+</form>
+`;
+
+export const selectTagSnippet = `// Default scenario, nothing is selected
+<form>
+  <select name = "country">
+    <option value = "norway">Norway</option>
+    <option value = "brazil">Brazil</option>
+    <option value = "india">India</option>
+  </select>
+</form>
+
+// A pre selected scenario
+<form>
+  <select name = "country">
+    <option value = "norway" selected>Norway</option> // this one is selected
+    <option value = "brazil">Brazil</option>
+    <option value = "india">India</option>
+  </select>
+</form>
+`;
+
+
+export const buttonTagSnippet = ` // These 3 are same, you can use anyone.
+<input type="button" value="submit" name="submit">
+<button>Click me</button>
+<button type="button">Click me</button>
+
+// These 2 are same, you can use anyone.
+<input type="submit" value="deploy" name="deploy">
+<button type="submit">Submit me</button>
+
+// These 2 are same, you can use anyone.
+<input type="reset" value="reset" name="clearAll">
+<button type="reset">Reset me</button>
+`
