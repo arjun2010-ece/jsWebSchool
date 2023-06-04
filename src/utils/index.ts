@@ -501,3 +501,28 @@ export const commentsSnippet = `
 // commented out html code, not visible on UI
 <!-- <p>This is good day </p> -->
 `;
+
+export const boxModelSnippet = `
++-------------------------------------------+
+|                  Margin                   |
++-------------------------------------------+
+|              Border                       |
+|    +---------------------------------+    |
+|    |           Padding             |    |
+|    |   +-----------------------+   |    |
+|    |   |       Content Box     |   |    |
+|    |   |                       |   |    |
+|    |   +-----------------------+   |    |
+|    |                               |    |
+|    +-------------------------------+    |
+|                                         |
++-----------------------------------------+
+
+`
+
+export const cssBoxSnippet = `*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+`;

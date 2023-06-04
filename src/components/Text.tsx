@@ -19,8 +19,15 @@ const Parent = styled.div`
     margin: 0 auto;
     color: black;
   }
-  a {
+  ol {
+    width: 78%;
+    margin: 0 auto;
     color: black;
+    list-style-type: decimal;
+  }
+  a {
+    color: blue;
+    border-bottom: 1px solid blue;
   }
 `;
 

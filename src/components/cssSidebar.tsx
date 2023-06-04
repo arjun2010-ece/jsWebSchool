@@ -36,39 +36,32 @@ const StyledListContainer = styled.ul`
   padding: 5px 0;
 `;
 
-type HTML_TOPICS_PROPS = {
+type CSS_TOPICS_PROPS = {
   topic: string;
   path: string;
 };
 
-const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
-  { topic: 'HTML ?', path: '/html' },
-  { topic: 'Tags vs Elements vs attributes', path: '/html/tags-elements' },
-  { topic: 'Block vs Inline block vs Inline', path: '/html/block-inline' },
-  { topic: 'Semantic tags', path: '/html/semantic-tags' },
-  { topic: 'Common html tags', path: '' },
-  { topic: 'Heading', path: '/html/heading' },
-  { topic: 'paragraph', path: '/html/paragraph' },
-  { topic: 'div', path: '/html/div' },
-  { topic: 'span', path: '/html/span' },
-  { topic: 'Unordered / Ordered list', path: '/html/unordered-ordered' },
-  { topic: 'Image vs Pictures', path: '/html/image-pictures' },
-  { topic: 'Tables', path: '/html/tables' },
-  { topic: 'iframe', path: '/html/iframe' },
-  { topic: 'HTML Forms', path: '' },
-  { topic: 'Forms Elements', path: '/html/form-elements' },
-  { topic: 'Audio & Video tags', path: '/html/audio-video' },
-  { topic: 'SEO', path: '/html/seo' },
-  { topic: 'Style attributes', path: '/html/style-attribute' },
-  { topic: 'Html Comments', path: '/html/html-comments' },
-  { topic: 'Very important', path: '' },
-  { topic: 'Structure html of an UI', path: '/html/structure-html-ui' },
+const CSS_TOPICS: CSS_TOPICS_PROPS[] = [
+  { topic: 'CSS ?', path: '/css' },
+  { topic: 'Way to think in css ?', path: '/css/way-to-think' },
+  { topic: 'Box model', path: '/css/box-model' },
+  { topic: 'Common css properties', path: '' },
+  { topic: 'Typography properties', path: '/css/typography-properties' },
+  { topic: 'Dimension properties', path: '/css/dimension-properties' },
+  { topic: 'Box model properties', path: '/css/box-model-properties' },
+  { topic: 'Positioning properties', path: '/css/positioning-properties' },
+  { topic: 'Display properties', path: '/css/display-properties' },
+  { topic: 'Background & border properties', path: '/css/background-border-properties' },
+  { topic: 'Layout properties', path: '/css/layout-properties' },
+  { topic: 'Flexbox properties', path: '/css/flexbox-properties' },
+  { topic: 'Grid properties', path: '/css/grid-properties' },
+  { topic: 'Miscellaneous properties', path: '/css/miscellaneous-properties' },
 ];
 
-const HtmlSidebar: FC = () => {
+const CssSidebar: FC = () => {
   const router: NextRouter = useRouter();
 
-  const htmlContent = HTML_TOPICS.map((course, i) => {
+  const cssContent = CSS_TOPICS.map((course, i) => {
     const link = course?.path ? (
       <Link href={course?.path}>{course?.topic}</Link>
     ) : (
@@ -94,9 +87,9 @@ const HtmlSidebar: FC = () => {
 
   return (
     <aside>
-      <StyledListContainer>{htmlContent}</StyledListContainer>
+      <StyledListContainer>{cssContent}</StyledListContainer>
     </aside>
   );
 };
 
-export default HtmlSidebar;
+export default CssSidebar;
