@@ -22,11 +22,7 @@ const Content = styled.div<ContentProps>`
   padding-top: 24px;
   padding-left: 5px;
   padding-right: 5px;
-<<<<<<< HEAD
   overflow-x: auto;
-=======
-  // margin-left: 250px;
->>>>>>> 56c8147e8049a015a40f0544828f43b2fb0495ed
   margin-left: ${(props) => (props.path === '/' ? 0 : '250px')};
   @media only screen and (max-width: 767px) {
     margin-left: 0;
