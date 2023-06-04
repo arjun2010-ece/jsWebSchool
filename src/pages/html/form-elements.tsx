@@ -348,11 +348,13 @@ const HTMLFormElements: NextPage = () => {
         content={`
         <b> <br/> <br/>
         Note::</b> <br/>
-        Please do not forget that <b>&lt;input&gt;, &lt;button&gt; , &lt;textarea&gt; or &lt;select&gt;</b> tags are block level 
+        Please do not forget that <b>&lt;input&gt;, &lt;button&gt; , &lt;textarea&gt; or &lt;select&gt;</b> tags are inline block level 
         elements. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
+        remember, these  are those html tags/elements which occupies only as much space as is 
+        its content (property coming from inline elements) plus we can set its width and height and all 
+        its margins and paddings (property coming from block level elements). <br/>
+         More than one inline-block elements normally sit side by side on the same line. 
+         (you can change this by applying css obviously).
         `}
         parentEl="p"
         customStyle={fluid(

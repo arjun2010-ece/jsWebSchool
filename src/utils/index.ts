@@ -440,7 +440,6 @@ export const selectTagSnippet = `// Default scenario, nothing is selected
 </form>
 `;
 
-
 export const buttonTagSnippet = ` // These 3 are same, you can use anyone.
 <input type="button" value="submit" name="submit">
 <button>Click me</button>
@@ -453,4 +452,52 @@ export const buttonTagSnippet = ` // These 3 are same, you can use anyone.
 // These 2 are same, you can use anyone.
 <input type="reset" value="reset" name="clearAll">
 <button type="reset">Reset me</button>
-`
+`;
+
+export const audioWithSrcTagSnippet = `// first way
+<audio controls>  
+  <source src="koyal.ogg" type="audio/ogg">  
+</audio>
+
+// Second way
+<audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+  <a href="/media/cc0-audio/t-rex-roar.mp3">
+      Download audio
+  </a>
+</audio>
+`;
+
+export const videoWithSrcTagSnippet = `<video controls width="250">
+  <source src="/media/cc0-videos/flower.webm" type="video/webm">
+  <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+
+  //additional content
+  Download the
+  <a href="/media/cc0-videos/flower.webm">WEBM</a>
+  or
+  <a href="/media/cc0-videos/flower.mp4">MP4</a>
+  video.
+</video>
+`;
+
+export const seoTagsSnippet = `<head>
+  <meta name="description" content="Put your description that google search engine bots reads" />
+  <meta name="keywords" content="Put your keywords that google search engine bots reads" />
+  <meta property="og:title" content="Put your title that appear on facebook when page is shared" />
+  <meta property="og:url" content="Put your url that appear on facebook when page is shared" />
+  <meta property="og:image" content="Put your image that appear on facebook when page is shared" />
+  <meta property="og:description" content="Put your description that appear on facebook when page is shared" />
+</head>
+`;
+
+export const styleAttributeSnippet = `<h1 style="color:green;text-align:left">Life of pie</h1>
+<p style="color:red">I am following you pie.</p>
+`;
+
+export const commentsSnippet = `
+<!--This is paragraph tag : info on usage of para tag -->
+<p>This is good day </p>
+
+// commented out html code, not visible on UI
+<!-- <p>This is good day </p> -->
+`;

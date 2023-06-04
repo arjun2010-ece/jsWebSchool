@@ -57,6 +57,10 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'iframe', path: '/html/iframe' },
   { topic: 'HTML Forms', path: '' },
   { topic: 'Forms Elements', path: '/html/form-elements' },
+  { topic: 'Audio & Video tags', path: '/html/audio-video' },
+  { topic: 'SEO', path: '/html/seo' },
+  { topic: 'Style attributes', path: '/html/style-attribute' },
+  { topic: 'Html Comments', path: '/html/html-comments' },
 ];
 
 const HtmlSidebar: FC = () => {
