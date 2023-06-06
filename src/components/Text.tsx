@@ -24,6 +24,7 @@ const Parent = styled.div`
     margin: 0 auto;
     color: black;
     list-style-type: decimal;
+    font-weight: 500;
   }
   a {
     color: blue;

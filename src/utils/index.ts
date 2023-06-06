@@ -526,3 +526,139 @@ export const cssBoxSnippet = `*{
   box-sizing: border-box;
 }
 `;
+
+
+export const fontFamilySnippets = `p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+`
+
+export const fontSizeSnippets = `p{
+  font-size: 18px;
+}
+
+p{
+  font-size: 28px;
+}
+`
+
+export const fontWeightSnippets = `// first way
+p{
+  font-weight: bold;
+}
+
+// second way
+div{
+  font-weight: 700;
+}
+`
+
+export const fontStyleSnippets = `// first way
+p{
+  font-style: normal;
+}
+
+// second way
+div{
+  font-style: italic;
+}
+
+// third way
+div{
+  font-style: oblique;
+}
+`
+
+export const colorSnippets = `// First way : Normal way
+p{
+  color: black;
+}
+
+// Second way : Hexadecimal way
+p{
+  color: #000000;
+}
+
+// Third way : RGB way
+p{
+  color: rgb(0, 0, 0);
+}
+
+// Fourth way : RGBA way
+p{
+  color: rgba(0, 0, 0, 0);
+}
+`
+
+export const textAlignSnippets = `p{
+  text-align: center;
+}
+
+div{
+  text-align: right;
+}
+
+nav{
+  text-align: left;
+}
+`
+
+export const textDecorationsSnippets = `p{
+  text-decoration: overline;
+}
+
+h1{
+  text-decoration: line-through;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+h6{
+  text-decoration: underline overline;
+}
+`
+
+export const textTransformSnippets = `p{
+  text-transform: uppercase;
+}
+
+h1{
+  text-transform: lowercase;
+}
+
+h3{
+  text-transform: capitalize;
+}
+`
+
+export const lineHeightSnippets = `p{
+  line-height: 20px;
+}
+`
+
+export const letterWordSpacingSnippets = `p{
+  letter-spacing: 3px;
+}
+
+h1{
+  word-spacing: 30px;
+}`
+
+export const opacitySnippets = `p{
+  opacity: 0;  // not visible at all
+}
+
+h1{
+  opacity: 1;  // visible like normal, default value.
+}
+
+h3{
+  opacity: 0.7;  // 70% visible
+}
+`
