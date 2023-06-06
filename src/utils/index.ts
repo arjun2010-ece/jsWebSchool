@@ -662,3 +662,104 @@ h3{
   opacity: 0.7;  // 70% visible
 }
 `
+
+// Dimension properties snippet
+
+export const widthSnippets = `p{
+  width: 90%; // 90% of its parents.
+}
+
+h1{
+  width: 1024px; 
+}
+
+h3{
+  opacity: 40rem ;
+}`
+
+export const minWidthSnippets = `p{
+  min-width: 40%; // 40% of its parents.
+}
+
+h1{
+  min-width: 320px; 
+}
+
+h3{
+  opacity: 20rem ;
+}`
+
+export const maxWidthSnippets = `p{
+  max-width: 90%; // 90% of its parents or body tag.
+}
+
+h1{
+  max-width: 1280px; 
+}
+
+h3{
+  opacity: 80rem ;
+}`
+
+export const heightSnippets = ` // First case
+<div class="divHeight"> Height will not work</div>
+
+.divHeight{
+  height: 100%; // will not work, and its height will be height of its content.
+ }
+
+ // second case
+<div class="parent"> 
+  <p>Height will work</p>
+</div>
+
+.parent{
+  height: 40px;
+}
+
+.parent p{
+  height: 100%; // it will work
+}
+
+
+// Third case
+<h1>Height will again work</h1>
+
+h1{
+  height: 80px; // or 10rem
+}`
+
+export const minHeightSnippets = `// First way
+<h1>Height will work</h1>
+
+h1{
+  min-height: 80px; // the height will be 80px on all screens 
+}
+
+// Second way
+<h1>Height will not work</h1>
+
+h1{
+  min-height: 20%; // the height will not work
+}
+
+// Third case
+<div class="parent"> 
+  <p>Height will work</p>
+</div>
+
+.parent{
+  height: 40px;
+}
+
+.parent p{
+  min-height: 30%; // it will work
+}
+`
+export const maxHeightSnippets = `// First way
+<h1>Height will work</h1>
+
+h1{
+  max-height: 80px; // the height will be 80px on all screens 
+  overflow: scroll;
+}`

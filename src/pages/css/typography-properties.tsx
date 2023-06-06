@@ -338,7 +338,7 @@ const CSSTypographyPropertiesPage: NextPage = () => {
         0.5 meaning 30% visible 
         or 50% visible only.  
         as shown in below snippet . Also look at some of the examples of opacity here,
-        <a href="/images/opacity-image.jpg" target="__blank">Look the examples</a>:
+        <a href="/images/opacity-image.jpg" target="__blank">Look the results</a>:
         :
         `}
         parentEl="p"
