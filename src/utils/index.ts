@@ -763,3 +763,97 @@ h1{
   max-height: 80px; // the height will be 80px on all screens 
   overflow: scroll;
 }`
+
+export const marginSnippets = `// First way
+h1{
+  margin: 23px; // margin top bottom right left all is 23px
+}
+
+// Second way
+h1{
+  margin: 23px 10px; // margin top and bottom is 23px and right and left margin is 10px
+}
+
+// Third way
+h1{
+  margin: 10px 16px 8px; // margin top is 10px, margin right and left is 16px and margin bottom is 8px
+}
+
+// Fourth way
+h1{
+  margin: 10px 16px 8px 12px; // margin top is 10px, margin right is 16px and margin bottom is 8px and margin left is 12px
+}
+
+// Fifth way
+h1{
+  margin-top: 10px;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  margin-left: 7px; 
+}
+`
+
+export const paddingSnippets = `// First way
+h1{
+  padding: 23px; // padding top bottom right left all is 23px
+}
+
+// Second way
+h1{
+  padding: 23px 10px; // padding top and bottom is 23px and right and left padding is 10px
+}
+
+// Third way
+h1{
+  padding: 10px 16px 8px; // padding top is 10px, padding right and left is 16px and padding bottom is 8px
+}
+
+// Fourth way
+h1{
+  padding: 10px 16px 8px 12px; // padding top is 10px, padding right is 16px and padding bottom is 8px and padding left is 12px
+}
+
+// Fifth way
+h1{
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-right: 8px;
+  padding-left: 7px; 
+}
+`
+
+export const borderSnippet = `h1{
+  border: 1px solid black;
+}
+` 
+
+export const borderRadiusSnippet = `h1{
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+h2{
+  border: 4px solid black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; // this will make the element a full circle.
+}
+`
+
+export const displaySnippet = `h1{
+  display: inline-block;
+}
+
+span{
+  display: block;
+}
+
+p{
+  display: inline;
+}
+
+// Special property
+div{
+  display: none;
+}
+`
