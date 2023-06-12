@@ -5,7 +5,6 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
-import CodeSnippet from '@/components/codeSnippet';
 
 const CSSPositioningPropertiesPage: NextPage = () => {
   return (

@@ -115,24 +115,34 @@ const SubMenuItem: FC<MenuItemProps> = ({
             />
           </svg>
         </button>
-        <ul
-          className={`${
-            subMenuVisible ? 'block' : 'hidden'
-          } dark:bg-gray-900 absolute left-0 mt-2 rounded-lg bg-black p-2 text-white shadow-md lg:bg-white lg:text-black`}
-        >
-          {menuItem?.subItems?.map((subItem) => (
-            <li key={subItem.title}>
-              <Link
-                href={subItem.path}
-                className="text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 block px-3 py-2 text-sm dark:text-white"
-              >
-                {subItem.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
       </div>
     </li>
+  );
+};
+
+type HorizontalSubMenuProps = {
+  subMenuVisible: boolean;
+};
+
+const HorizontalSubMenu: FC<HorizontalSubMenuProps> = ({ subMenuVisible }) => {
+  return (
+    <ul
+      className={`${
+        subMenuVisible ? 'block' : 'hidden'
+      } dark:bg-gray-900 rounded-lg bg-black p-2 absolute z-10 w-full text-white shadow-md lg:bg-white lg:text-black`}
+    >
+      {MENU_ITEMS &&
+        MENU_ITEMS[MENU_ITEMS.length - 1]?.subItems?.map((subItem) => (
+          <li key={subItem.title}>
+            <Link
+              href={subItem.path}
+              className="text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 block px-3 py-2 text-sm dark:text-white"
+            >
+              {subItem.title}
+            </Link>
+          </li>
+        ))}
+    </ul>
   );
 };
 
@@ -167,7 +177,7 @@ const Header: FC = () => {
     <nav className="border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-grey-dark">
       {/* Navbar bg color set */}
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-        
+
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
@@ -213,7 +223,10 @@ const Header: FC = () => {
         </div>
       </div>
 
-      {/* Mobile screen menu */}
+      {/* Large screen horizontal submenu on click on More btn */}
+      {subMenuVisible && <HorizontalSubMenu subMenuVisible={subMenuVisible} />}
+
+      {/* Mobile screen menu, 2-3 column layout */}
       <MobileMenuContent mobileMenu={mobileNav} />
     </nav>
   );

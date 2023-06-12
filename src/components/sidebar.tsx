@@ -18,6 +18,7 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
 
   border-right: 1px solid #ccc;
   position: fixed;
+  z-index: -1;
   top: 78px;
   width: 250px;
 
