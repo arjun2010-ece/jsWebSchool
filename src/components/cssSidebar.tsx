@@ -53,7 +53,7 @@ const CSS_TOPICS: CSS_TOPICS_PROPS[] = [
   { topic: 'Positioning properties', path: '/css/positioning-properties' },
   { topic: 'Display & Visibility properties', path: '/css/display-visibility-properties' },
   { topic: 'Background & border properties', path: '/css/background-border-properties' },
-  { topic: 'Layout properties', path: '/css/layout-properties' },
+  { topic: 'Layout properties', path: '' },
   { topic: 'Flexbox properties', path: '/css/flexbox-properties' },
   { topic: 'Grid properties', path: '/css/grid-properties' },
   { topic: 'Miscellaneous properties', path: '/css/miscellaneous-properties' },

@@ -857,3 +857,105 @@ div{
   display: none;
 }
 `
+
+export const bgColorSnippet = `// First way
+h1{
+  background: blue;
+}
+
+// Second way
+h1{
+  background-color: green;
+}`
+
+export const bgImageSnippet = `// First way
+h1{
+  background: url("/images/lighthouse-image.jpg");
+}
+
+// Second way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+}`
+
+export const bgRepeatSnippet = `// First way : combining multiple background properties
+h1{
+  background: url("/images/lighthouse-image.jpg") no-repeat; // set bg image & avoid repeating together
+}
+
+// Second way : combining multiple background properties
+h1{
+  background: url("/images/lighthouse-image.jpg") repeat-x; // set bg image & repeating horizontally together
+}
+
+// third way : combining multiple background properties
+h1{
+  background: url("/images/lighthouse-image.jpg") repeat-y; // set bg image & repeating vertically together
+}
+
+// Alternate way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+}`
+
+export const bgAttachmentSnippet = `// First way : combining multiple background properties together
+h1{
+  background: url("/images/lighthouse-image.jpg") no-repeat fixed; // set bg image & avoid repeating together
+}
+
+// Alternate way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}`
+
+export const bgPositionSnippet = `// First way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+// Second way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+// Third way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+// Fourth way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 20% 70%;
+}
+
+// Fifth way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom 48px right 95px;
+}
+
+// Sixth way
+h1{
+  background-image: url("/images/lighthouse-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 32% bottom 40%;
+}
+`
