@@ -959,3 +959,80 @@ h1{
   background-position: right 32% bottom 40%;
 }
 `
+
+export const negativeOrdersSnippet = `<div>
+  <p>One</p>
+  <p class="b">Two</p>
+  <p class="c">Three</p>
+  <p>Four</p>
+  <p class="e">Five</p>
+</div>
+
+// css
+div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.c{
+  order: 1;
+}
+
+.b{
+  order: 2;
+}
+
+.e{
+  order: 3;
+}
+
+`
+
+export const flexGrowSnippet = `// css
+.child{
+  flex-grow: 3;
+}`
+
+export const flexShrinkSnippet = `// css
+.child{
+  flex-shrink: 3;
+}`
+
+export const flexSnippet = `<div class="container">
+  <div class="sidebar">Left Sidebar</div>
+  <div class="content">Main content</div>
+  <div class="sidebar">Right Sidebar</div>
+</div>
+
+// css
+.container{
+  display: flex;
+}
+
+.sidebar{
+  flex: 0 0 400px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.sidebar{
+  flex: 1;
+  overflow-x: auto;
+}
+`
+export const flexGapSnippet = `// First way
+.child1{
+  gap: 20px;
+}
+
+// Second way
+.child1{
+  gap: 20px 10px; // row gap is 20px and column gap is 10px.
+}
+
+// Third way
+.child1{
+  row-gap: 20px;
+  column-gap: 10px;
+}
+`

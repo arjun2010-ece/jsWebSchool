@@ -5,19 +5,21 @@ import Image from 'next/image';
 type StyledBoxProps = {
   boxHeight?: string;
   hideBorders?: boolean;
+  removeTopSpace?: boolean;
 };
 
 const StyledBox = styled.div<StyledBoxProps>`
   display: flex;
-  height: ${(props) => props?.boxHeight || '200px'};
+  height: ${(props) => props?.boxHeight || 'auto'};
   border: ${(props) => (props?.hideBorders ? 0 : '0.4px solid black')};
-  margin-top: 30px;
+  margin-top: ${(props) => (props?.removeTopSpace ? 0 : '30px')};
 `;
 
 type ResponsiveImageProps = StyledBoxProps & {
   srcUrl: string;
   altText: string;
   hideBorders?: boolean;
+  // removeTopSpace?: boolean
 };
 
 const ResponsiveImage: FC<ResponsiveImageProps> = ({
@@ -25,9 +27,10 @@ const ResponsiveImage: FC<ResponsiveImageProps> = ({
   srcUrl,
   altText,
   hideBorders = false,
+  removeTopSpace = false,
 }) => {
   return (
-    <StyledBox boxHeight={boxHeight} hideBorders={hideBorders}>
+    <StyledBox boxHeight={boxHeight} hideBorders={hideBorders} removeTopSpace={removeTopSpace}>
       <Image
         src={srcUrl}
         alt={altText}

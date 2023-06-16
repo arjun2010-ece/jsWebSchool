@@ -30,6 +30,23 @@ const Parent = styled.div`
     color: blue;
     border-bottom: 1px solid blue;
   }
+  blockquote{
+    line-height: 1.8;
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+  }
+  blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+  }
 `;
 
 type TextProps = {
