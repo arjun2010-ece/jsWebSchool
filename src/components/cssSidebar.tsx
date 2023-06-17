@@ -56,6 +56,7 @@ const CSS_TOPICS: CSS_TOPICS_PROPS[] = [
   { topic: 'Layout properties', path: '' },
   { topic: 'Flexbox properties', path: '/css/flexbox-properties' },
   { topic: 'Grid properties', path: '/css/grid-properties' },
+  { topic: 'Grid child properties', path: '/css/grid-child-properties' },
   { topic: 'Miscellaneous properties', path: '/css/miscellaneous-properties' },
 ];
 
