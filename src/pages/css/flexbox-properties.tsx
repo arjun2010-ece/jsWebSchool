@@ -32,6 +32,7 @@ const CSSFlexboxPropertiesPage: NextPage = () => {
       <Text
         content={`
         Flexbox is a <b>layout system</b> very much like grid system (going to study next).<br/>
+        It is one directional at a time, either horizontal or vertical but not both together.
         Layout system means how will you lay various html elements on a webpage to make it look beautiful
         and look like your design.
         <br/>
@@ -531,7 +532,7 @@ const CSSFlexboxPropertiesPage: NextPage = () => {
           The below snippet is an example of a 3 column layout with sidebar, content and another sidebar forming
           the 3 columns and the usage of flex property too.
         `}
-        parentEl="p"
+        parentEl="div"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),

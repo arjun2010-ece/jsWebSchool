@@ -1030,9 +1030,152 @@ export const flexGapSnippet = `// First way
   gap: 20px 10px; // row gap is 20px and column gap is 10px.
 }
 
-// Third way
+// Third way, putting gaps separately
 .child1{
   row-gap: 20px;
   column-gap: 10px;
 }
 `
+
+export const gridColumnsSnippet = `// HTML
+<div class="container" >
+    <div class="item" ></div>
+    <div class="item" ></div>
+    <div class="item" ></div>
+	  <div class="item" ></div>
+    <div class="item" ></div>
+    <div class="item" ></div>
+</div>
+
+//css
+
+.container{
+  display: grid;
+  grid-template-columns: 400px 600px;
+}`
+
+
+export const gridColumnsUsageSnippet = `// HTML
+<div class="container" >
+    <div class="item" >1</div>
+    <div class="item" >2</div>
+    <div class="item" >3</div>
+	  <div class="item" >4</div>
+    <div class="item" >5</div>
+    <div class="item" >6</div>
+</div>
+
+//First way
+.container{
+  display: grid;
+  grid-template-columns: 400px 600px; // 2 columns of 400 and 600px widths 
+}
+
+//Second way
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 2 columns of equal widths 
+}
+
+//Third way
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+  // 2 columns of minimum widths 200px but max width can be decided by grid itself
+}
+
+//Fourth way
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 300px); 
+  // 2 columns of fixed widths 300px
+}
+
+//Fifth way
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 30%); 
+  // 2 columns of 30% widths
+}
+
+//Sixth way
+.container{
+  display: grid;
+  grid-template-columns: 20% 30% 50%; 
+  // 3 columns of 20% , 30% and 50% widths
+}
+
+//Seventh way
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr; 
+  // 3 columns of 1fr 2fr and 4fr widths
+}
+`
+
+export const gridRowsSnippet = `// HTML
+<div class="container" >
+    <div class="item" >1</div>
+    <div class="item" >2</div>
+    <div class="item" >3</div>
+	  <div class="item" >4</div>
+    <div class="item" >5</div>
+    <div class="item" >6</div>
+</div>
+
+//css
+
+.container{
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: 200px 220px 230px;
+}`
+
+
+export const gridLinesSnippet = `// HTML
+<div class="container" >
+  <div class="item" >ONE</div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+
+  <div class="item" ></div>
+  <div class="item b" >TWO</div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+  <div class="item" ></div>
+  <div class="item c" >SIX</div>
+</div>
+
+//css
+
+.container{
+  width: 400px;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+
+.item{
+  width: 1fr;
+  height: 80px;
+  background: grey;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+// manupulating grid child with content "TWO"
+.b{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+// manupulating grid child with content "SIX"
+.c{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}`
