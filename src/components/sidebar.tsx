@@ -11,14 +11,9 @@ type StyledSidebarContainer = {
 //  height: calc(100vh - 64px) is making indepenedent scollable in flex child.
 const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
   flex: 0 0 236px;
-  min-width: 218px;
   padding-top: 24px;
-  overflow-y: auto;
-  height: calc(100vh - 64px);
 
   border-right: 1px solid #ccc;
-  position: fixed;
-  top: 78px;
   width: 250px;
 
   @media only screen and (max-width: 767px) {

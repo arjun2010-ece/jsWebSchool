@@ -1179,3 +1179,13 @@ export const gridLinesSnippet = `// HTML
   grid-column: 3/4;
   grid-row: 1/2;
 }`
+
+export const remFontSizeSnippet = `// CSS
+html{
+  font-size: 10px; // Now 1 rem = 10px
+}
+
+p{
+  font-size: 1.8rem;
+}
+`
