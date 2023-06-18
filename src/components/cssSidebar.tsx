@@ -57,7 +57,10 @@ const CSS_TOPICS: CSS_TOPICS_PROPS[] = [
   { topic: 'Flexbox properties', path: '/css/flexbox-properties' },
   { topic: 'Grid properties', path: '/css/grid-properties' },
   { topic: 'Grid child properties', path: '/css/grid-child-properties' },
-  { topic: 'Miscellaneous properties', path: '/css/miscellaneous-properties' },
+  { topic: 'Miscellaneous properties', path: '' },
+  { topic: 'overflow properties', path: '/css/overflow-properties' },
+  { topic: 'outline properties', path: '/css/outline-properties' },
+  { topic: 'cursor properties', path: '/css/cursor-properties' },
 ];
 
 const CssSidebar: FC = () => {

@@ -1187,5 +1187,84 @@ html{
 
 p{
   font-size: 1.8rem;
+}`
+
+export const horizontalOverflowSnippet = `// HTML
+<div class="container">
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Curabitur non purus ac justo dapibus euismod. 
+    Phasellus tempor vehicula magna, ac ultrices risus congue vitae.
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Curabitur non purus ac justo dapibus euismod. 
+    Phasellus tempor vehicula magna, ac ultrices risus congue vitae.
+  </div>
+</div>
+
+//css
+.container{
+  width: 200px; /* Fixed width container */
+}
+
+.content {
+   white-space: nowrap; /* Prevent line breaks */  
+}`
+
+export const verticalOverflowSnippet = `// HTML
+<div class="container">
+  <div class="content">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Curabitur non purus ac justo dapibus euismod. 
+  Phasellus tempor vehicula magna, ac ultrices risus congue vitae.
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Curabitur non purus ac justo dapibus euismod. 
+  Phasellus tempor vehicula magna, ac ultrices risus congue vitae.
+  
+   Curabitur non purus ac justo dapibus euismod. 
+  Phasellus tempor vehicula magna, ac ultrices risus congue vitae.
+  </div>
+</div>
+
+//css
+.container{
+  height: 30px; /* Fixed height container */
+}`
+
+
+export const outlineSnippet = `//css
+button:focus{
+  outline: 1px solid green;
+}`
+
+export const outlineSyntaxSnippet = `outline: <outline-width> <outline-style> <outline-color>;`
+
+export const cursorSyntaxSnippet = `h1{
+  cursor: pointer;
+}
+
+p{
+  cursor: move;
+}
+
+img {
+  cursor: url('custom_cursor.jpg'), auto;
 }
 `
+
+export const cursorUseCaseSnippet = `button{
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+input[type="radio"]{
+  cursor: pointer;
+}`
