@@ -1,14 +1,14 @@
 import type { AppProps, AppType } from 'next/app';
 import Head from 'next/head';
-import { Roboto } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 // style
 import '@/styles/globals.css';
 import GlobalStyles from '@/styles/Global.style';
 
-const robotoFont = Roboto({
+const nunitoFont = Nunito({
   subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '700', '900'],
-  variable: "--font-roboto"
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: "--font-nunito"
 });
 
 const _App: AppType = ({ Component, pageProps }: AppProps) => {
@@ -24,7 +24,7 @@ const _App: AppType = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyles />
-      <main className={`${robotoFont.variable} font-sans`}>
+      <main className={`${nunitoFont.variable} font-sans`}>
         <Component {...pageProps} />
       </main>
     </>

@@ -11,7 +11,7 @@ module.exports = {
       xxl: '1601px',
     },
     fontFamily: {
-      sans: ['var(--font-roboto)', 'sans-serif'],
+      sans: ['var(--font-nunito)', 'sans-serif'],
     },
     transitionDuration: {
       100: '100ms',
