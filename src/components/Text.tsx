@@ -30,7 +30,7 @@ const Parent = styled.div`
     color: blue;
     border-bottom: 1px solid blue;
   }
-  blockquote{
+  blockquote {
     line-height: 1.8;
   }
   blockquote:before {
@@ -50,7 +50,7 @@ const Parent = styled.div`
 `;
 
 type TextProps = {
-  parentEl: 'p' | 'div' | 'span';
+  parentEl: 'p' | 'div' | 'span' | 'section';
   content: string;
   customStyle?: Interpolation<ThemeProps<DefaultTheme>> | CSSObject;
 };

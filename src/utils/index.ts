@@ -1373,3 +1373,15 @@ Wow, we are learning a new positioning
   position: sticky;
   top: -1px;
 }`
+
+// Javascript
+
+export const jsHomeSnippet = `<html>
+  <head>Head...</head>
+   <body>   
+      <script type = "text/javascript">
+          document.write("Going good bro...!")
+      </script>      
+   </body>
+</html>
+`
