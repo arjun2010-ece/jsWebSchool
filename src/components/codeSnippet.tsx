@@ -9,8 +9,9 @@ const StyledCodeContainer = styled.pre`
   color: white;
   margin-top: 20px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   overflow-x: auto;
+  border-radius: 10px;
 `;
 
 type CodeSnippetProps = {

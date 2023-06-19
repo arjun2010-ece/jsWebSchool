@@ -1,10 +1,19 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
-import { PAGES } from '@/utils';
+import {
+  PAGES,
+  defaultAbsoluteSnippet,
+  fixedsnippet,
+  relativeNotAppliedSnippet,
+  relativetAppliedSnippet,
+  specialRelAbsnippet,
+  stickySnippet,
+} from '@/utils';
 import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import CodeSnippet from '@/components/codeSnippet';
 
 const CSSPositioningPropertiesPage: NextPage = () => {
   return (
@@ -68,8 +77,8 @@ const CSSPositioningPropertiesPage: NextPage = () => {
         )}
       />
 
-       {/* Relative position */}
-       <Heading
+      {/* Relative position */}
+      <Heading
         content="Relative position:"
         headingType="h6"
         customStyle={tw`underline mt-8`}
@@ -77,42 +86,242 @@ const CSSPositioningPropertiesPage: NextPage = () => {
 
       <Text
         content={`
-         Relative position, when applied on an element moves the element from its current position.
+         Relative position, when applied on an element <b>moves the element from its current position</b> 
+         and makes it out of normal document flow (of stack like flow) and places the element on top of
+         other normal elements. And the element below it in normal flow does not get moved at all if
+         positioned element is moved but get possibly overlapped(or not depending on top/bottom/right/left
+          values).<br/><br/>
+          Possible attributes of <b>absolute position</b> are ::<br/>
+         <b>top</b> value moves the element from its current position by that much value pushing 
+        towards bottom (here 2 rem).<br/>
+
+         <b>bottom</b> value moves the element from its current position by that much value pushing
+         towards top.<br/>
+
+         <b>right</b> value moves the element from its current position by that much value pushing 
+        towards right.<br/>
+
+         <b>left</b> value moves the element from its current position by that much value pushing 
+        towards left.<br/>
+
+          A snippet of html css in normal flow looks like this and just 
+           have a look at this 
+           <a href="/images/normal-flow.jpg" target="__blank">resultant UI</a>
+          ::
         `}
-        parentEl="div"
+        parentEl="p"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
 
+      <CodeSnippet content={relativeNotAppliedSnippet} />
 
-      {/* Margin
+      <Text
+        content={`<br/>
+         Now, upon applying a position relative on <b>h1</b> element, it will be pushed below
+         from its position on <b>p</b> element.
+          A snippet of css in relative position looks like this and just 
+           have a look at this 
+           <a href="/images/relative-position.jpg" target="__blank">resultant UI</a>
+          ::
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={relativetAppliedSnippet} />
+
+      <Text
+        content={`<br/>
+          Hope you learned <i>relative</i> positioning well.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      {/* Absolute position */}
       <Heading
-        content="Margin:"
+        content="Absolute position:"
         headingType="h6"
         customStyle={tw`underline mt-8`}
       />
 
       <Text
         content={`
-        Margin is the space between an html element and its neighbours. As such it does not contribute much in box model, but we
-        study this in this category as this property is very similar to padding that we will study next.
+        Absolute position, when applied on an element <b>moves the element from normal document flow in such a 
+        way that by default it places it on top left of viewport. And the element below it changes its position
+        and also moves up to take the place of positioned element as if it was the first element.</b>
         <br/>
-        Margin is made up of 4 properties i.e  <b>margin-top, margin-bottom, margin-right, margin-left </b> representing top/bottom/
-        right/left space between the html element and its neightbour.
-        <br/> <br/> 
-        There are 4 ways of writing margin as shown in this snippet, also look at some of the diagram of margin for easy visualization
-         here,
-        <a href="/images/margin-image.jpg" target="__blank">Look the image  </a>::
+        Possible attributes of <b>absolute position</b> are ::<br/>
+         <b>top</b> value moves the element from its current position by that much value pushing 
+        towards bottom (here 2 rem).<br/>
+
+         <b>bottom</b> value moves the element from its current position by that much value pushing
+         towards top.<br/>
+
+         <b>right</b> value moves the element from its current position by that much value pushing 
+        towards right.<br/>
+
+         <b>left</b> value moves the element from its current position by that much value pushing 
+        towards left.<br/>
+        
+        A snippet of css in position absolute looks like this and just 
+        have a look at this 
+        <a href="/images/default-absolute.jpg" target="__blank">resultant UI</a>
+          ::
         `}
-        parentEl="div"
+        parentEl="p"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-      <CodeSnippet content={marginSnippets} /> */}
+
+      <CodeSnippet content={defaultAbsoluteSnippet} />
+
+      <Text
+        content={`<br/>
+          <b>Please note that with absolute position you can place any html element anywhere on
+          a webpage but always with respect to the browser and it is very special</b>.
+          Another <b>popular</b> usecase of absolute position is with respect to relative position
+          which we will discuss in below section.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      {/* special case of relative and absolute position */}
+
+      <Heading
+        content="Special case of relative and absolute position:"
+        headingType="h6"
+        customStyle={tw`underline mt-8 mb-4`}
+      />
+
+      <Text
+        content={`Whenever we want to position an element inside  another element not with respect to
+        viewport then we use a combination of relative and absolute position.<br/>
+        So the trick is : 
+        <i>relative position is applied to a parent and absolute position is applied to child
+        element.</i> and child element will always rotate inside the parent container.
+        Have a look at this
+        <a href="/images/special-case.jpg" target="__blank">resultant image</a>::
+        <br/>
+        <br/>
+        A very simple snippet looks like this:
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={specialRelAbsnippet} />
+
+      {/* Fixed Position */}
+      <Heading
+        content="Fixed Position:"
+        headingType="h6"
+        customStyle={tw`underline mt-8 mt-4`}
+      />
+
+      <Text
+        content={`Position fixed when applied will make the element fixed on the browser and even when we 
+        scroll the webpage, it will still be on the same place on the webpage always visible.
+        <br/>
+        <br/>
+
+        Possible attributes of <b>fixed position</b> are ::<br/>
+        <b>top</b> value moves the element from its current position by that much value pushing 
+       towards bottom (here 2 rem).<br/>
+
+        <b>bottom</b> value moves the element from its current position by that much value pushing
+        towards top.<br/>
+
+        <b>right</b> value moves the element from its current position by that much value pushing 
+       towards right.<br/>
+
+        <b>left</b> value moves the element from its current position by that much value pushing 
+       towards left.<br/>
+      
+        A very simple snippet looks like this:
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={fixedsnippet} />
+
+      <Text
+        content={`<br/>
+        <i>
+        Also remember that special case of relative and absolute work the same way if we replace
+        relative with fixed position and keep child as absolute. Then absolute will rotate inside
+        fixed parent element.
+        </i>
+        <br/>
+        <b>Please not that that when we want some element to be always fixed with respect
+        to viewport then we use this positioning.</b>
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      {/* Sticky Position */}
+      <Heading
+        content="Sticky Position:"
+        headingType="h6"
+        customStyle={tw`underline mt-8 mt-4`}
+      />
+
+      <Text
+        content={`Position sticky when applied will make the element scroll on the browser until the top/bottom
+        /right/left value and then stick on the browser. All the other element is scrollable except
+        this sticky positioned element.
+        <br/>
+        <br/>
+
+        Possible attributes of <b>sticky position</b> are ::<br/>
+        <b>top</b> value moves the element from its current position by that much value pushing 
+       towards bottom (here 2 rem).<br/>
+
+        <b>bottom</b> value moves the element from its current position by that much value pushing
+        towards top.<br/>
+
+        <b>right</b> value moves the element from its current position by that much value pushing 
+       towards right.<br/>
+
+        <b>left</b> value moves the element from its current position by that much value pushing 
+       towards left.<br/>
+      
+        A very good use case with a simple snippet looks like this:
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={stickySnippet} />
     </Layout>
   );
 };

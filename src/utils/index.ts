@@ -1268,3 +1268,108 @@ input[type="checkbox"]{
 input[type="radio"]{
   cursor: pointer;
 }`
+
+export const relativeNotAppliedSnippet = `//html
+<div>
+  <h1>
+    This is amazing.This is amazing.This is amazing.This is amazing.This is amazing.This is amazing.
+    This is amazing.This is amazing.This is amazing.This is amazing.
+  </h1>
+  
+  <p>
+  This is content.This is content.This is content.This is content.This is content.This is content.
+  This is content.This is content.This is content.This is content.This is content.This is content.
+  This is content.This is content.This is content.This is content.
+  </p>
+</div>
+
+//css
+div{
+  border: 1px solid black;
+}
+
+h1{
+  border: 1px solid black;
+}`
+
+export const relativetAppliedSnippet = `//css
+div{
+  border: 1px solid black;
+}
+
+h1{
+  border: 1px solid black;
+  position: relative;
+  top: 2rem;
+}`
+
+export const defaultAbsoluteSnippet = `//css
+div{
+  border: 1px solid black;
+}
+
+h1{
+  border: 1px solid black;
+  position: absolute;
+  top: 2rem;
+}`
+
+export const specialRelAbsnippet = `//html
+<div class="parent">
+  <p class="child">content</p>
+</div>
+
+// css
+.parent{
+  position: relative; // applied on parent
+}
+
+.child{
+  position: absolute; // applied on child
+  bottom: 2rem;
+}`
+
+export const fixedsnippet = `//html
+<div class="parent">
+  Some content
+</div>
+
+// css
+.parent{
+  position: fixed; 
+  top: 2rem;
+}`
+
+export const stickySnippet = `//html
+<p>
+Wow, we are learning a new positioning
+  which will stick somewhere.
+</p>
+
+<div>
+  <p class="first">A</p>
+  <p>Andrew W.K.</p>
+  <p>Apparat</p>
+  <p>Arcade Fire</p>
+  <p>At The Drive-In</p>
+  <p>Aziz Ansari</p>
+  
+  <p>
+  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+  </p>
+  
+  <p>piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+  <p>
+  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+  </p>
+  
+  <p>
+  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+  </p>  
+</div>
+
+//css
+.first {
+  position: sticky;
+  top: -1px;
+}`
