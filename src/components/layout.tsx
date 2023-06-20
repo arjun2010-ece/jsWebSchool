@@ -30,10 +30,10 @@ const Content = styled.div<ContentProps>`
 
 type LayoutProps = {
   children: ReactNode;
-  sidebar: boolean;
-  hideAd: boolean;
-  hideSidebar: boolean;
-  currentPage: string;
+  sidebar?: boolean;
+  hideAd?: boolean;
+  hideSidebar?: boolean;
+  currentPage?: string;
 };
 
 const Layout: FC<LayoutProps> = ({

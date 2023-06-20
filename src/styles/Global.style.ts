@@ -54,12 +54,6 @@ const GlobalStyles: GlobalStyleComponent<
 
   body {
     color: rgb(var(--foreground-rgb));
-    // background: linear-gradient(
-    //     to bottom,
-    //     transparent,
-    //     rgb(var(--background-end-rgb))
-    //   )
-    //   rgb(var(--background-start-rgb));
     background: #eee;
   }
   html {
@@ -97,10 +91,10 @@ const GlobalStyles: GlobalStyleComponent<
     ${fluid(remToPx(theme`fontSize.mobile-lg`), remToPx(theme`fontSize.xl`))}
   }
   p{
-    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.3xl`))}
+    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.2xl`))}
   }
   div{
-    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.3xl`))}
+    ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.xl`))}
   }
   nav ul li {
     ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.2xl`))}
