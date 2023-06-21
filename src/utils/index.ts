@@ -1385,3 +1385,101 @@ export const jsHomeSnippet = `<html>
    </body>
 </html>
 `
+
+
+export const basicJsSnippet = `<script>
+  // basic javaScript code
+  alert("Hello, World!");
+</script>
+`
+
+export const basicJsUsageSnippet = `<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript usage in separate files</h2>
+<p id="para">Hola amigo</p>
+
+<button type="button" onclick="handleSubmit()">submit</button>
+
+// other js file connected here with script tag
+<script type="text/javascript" src="./app.js"></script>
+
+</body>
+</html>
+
+//js file
+app.js
+-----
+
+function handleSubmit() {
+  document.getElementById("para").innerHTML = "Amigo changed.";
+}`
+
+export const varSnippet = `var num = 3;
+if (true) {
+  var num = 100;
+  console.log(num); // Output: 100
+}
+console.log(num); // Output: 100`
+
+export const letSnippet = `let x = 15;
+if (true) {
+  let x = 101;
+  console.log(x); // Output: 101
+}
+console.log(x); // Output: 15`
+
+export const constSnippet = `const PI = 3.14;
+console.log(PI); // Output: 3.14
+
+PI = 3.14159; // Error: Assignment to constant variable`
+
+
+export const varHoistedSnippet = `console.log(x); // Output: undefined
+var x = 5;
+`
+
+export const letconstSnippet = `console.log(x); // Error: ReferenceError: x is not defined
+let x = 5;`
+
+
+export const globalVarSnippets = `// Global variable
+myGlobalVariable = 10;`
+
+export const localVarSnippet = `// Function with local variables
+function newFunction() {
+  var localVar = 20; // Local variable
+  let anotherLocalVar = "Hello"; // Local variable
+  const PI = 3.14; // Local variable
+  // ...
+}`
+
+export const dataTypesSnippet = `let num = 10;
+console.log(typeof num); // Output: "number"
+
+let str = "Hello";
+console.log(typeof str); // Output: "string"
+
+let arr = [1, 2, 3];
+console.log(typeof arr); // Output: "object"`
+
+
+export const coercionSnippet = `console.log(5 + "10"); // Output: "510"`
+
+export const typeSnippet = `let num = 10;
+let str = String(num); // Explicitly converting a number to a string
+console.log(typeof str); // Output: "string"
+
+let bool = Boolean(0); // Explicitly converting 0 to a boolean
+console.log(bool); // Output: false`
+
+
+export const typeOfSnippet = `console.log(typeof 42); // Output: "number"
+console.log(typeof "Hello"); // Output: "string"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof undefined); // Output: "undefined"
+console.log(typeof null); // Output: "object"
+console.log(typeof []); // Output: "object"
+console.log(typeof {}); // Output: "object"
+console.log(typeof function() {}); // Output: "function"`
