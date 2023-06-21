@@ -1535,3 +1535,41 @@ function greetUser(name) {
 
 greetUser(); // Output: Hello, Guest
 greetUser("Alice"); // Output: Hello, Alice`
+
+
+export const basicSwitchSnippet = `switch (expression) {
+  case value1:
+    // Code block executed when expression matches value1
+    break;
+  case value2:
+    // Code block executed when expression matches value2
+    break;
+  // Additional cases...
+  default:
+    // Code block executed when no case matches the expression
+}`
+
+export const switchCaseExampleSnippet = `let day = 3;
+let dayName;
+
+switch (day) {
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thursday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  default:
+    dayName = "Weekend";
+}
+
+console.log(dayName); // Output: "Wednesday"`
