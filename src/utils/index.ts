@@ -1483,3 +1483,55 @@ console.log(typeof null); // Output: "object"
 console.log(typeof []); // Output: "object"
 console.log(typeof {}); // Output: "object"
 console.log(typeof function() {}); // Output: "function"`
+
+export const ifElseBasicSnippet = `if (condition) {
+  // If the condition is true, run this code block
+} else {
+  // If the condition is false, run this code block
+}`
+
+export const ifElseLogicSnippet = `let num = 7;
+
+if (num % 2 === 0) {
+  console.log("The number is even.");
+} else {
+  console.log("The number is odd.");
+}`
+
+
+export const multipleIfElseSnippet = `let age = 18;
+
+if (age < 13) {
+  console.log("Child");
+} else if (age >= 13 && age < 18) {
+  console.log("Teenager");
+} else {
+  console.log("Adult");
+}`
+
+export const equalitySnippet = `// with equality operator
+let num = 5;
+if (num == 5) {
+  // Code block executed if num is equal to 5
+}
+
+// with  strict equality operator
+let num = 5;
+if (num === 5) {
+  // Code block executed if num is equal to 5 and has the same type
+}`
+
+export const shortcircutSnippet = `// Using short-circuit evaluation to avoid potential errors
+let name = "John";
+if (name && name.length > 0) {
+  console.log("Name is present and not empty");
+}
+
+// Using short-circuit evaluation for default values
+function greetUser(name) {
+  name = name || "Guest";
+  console.log("Hello, " + name);
+}
+
+greetUser(); // Output: Hello, Guest
+greetUser("Alice"); // Output: Hello, Alice`

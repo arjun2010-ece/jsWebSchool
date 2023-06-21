@@ -45,12 +45,19 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'Introduction to JavaScript ?', path: '/javascript' },
   { topic: 'Setting Up', path: '/javascript/setting-up' },
   { topic: 'Variables', path: '/javascript/variables' },
-  { topic: 'Global vs local variables', path: '/javascript/global-local-variables' },
+  {
+    topic: 'Global vs local variables',
+    path: '/javascript/global-local-variables',
+  },
   { topic: 'Data Types', path: '/javascript/data-types' },
   { topic: 'Operators', path: '/javascript/operators' },
+  // {
+  //   topic: 'Conditional Flow',
+  //   path: '',
+  // },
   {
-    topic: 'Conditional Statements',
-    path: '/javascript/conditional-statements'
+    topic: 'IF...ELSE',
+    path: '/javascript/if-else',
   },
   { topic: 'Loops', path: '/javascript/loops' },
   { topic: 'Functions', path: '/javascript/functions' },
@@ -59,7 +66,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {
     topic: 'Asynchronous JavaScript',
-    path: '/javascript/asynchronous-javaScript'
+    path: '/javascript/asynchronous-javaScript',
   },
   { topic: 'Error Handling', path: '/javascript/error-handling' },
 ];
