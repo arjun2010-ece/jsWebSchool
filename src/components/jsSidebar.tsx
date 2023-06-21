@@ -51,13 +51,13 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   },
   { topic: 'Data Types', path: '/javascript/data-types' },
   { topic: 'Operators', path: '/javascript/operators' },
-  // {
-  //   topic: 'Conditional Flow',
-  //   path: '',
-  // },
   {
     topic: 'IF...ELSE',
     path: '/javascript/if-else',
+  },
+  {
+    topic: 'Switch Case',
+    path: '/javascript/switch-case',
   },
   { topic: 'Loops', path: '/javascript/loops' },
   { topic: 'Functions', path: '/javascript/functions' },
