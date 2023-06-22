@@ -1773,3 +1773,36 @@ counter(); // Output: Clicked: 3 times`
 export const btnClickdOutSnippet = `Clicked: 1 times
 Clicked: 2 times
 Clicked: 3 times`
+
+export const sqBrcktSnippet = `const numbers = [1, 2, 3, 4, 5];
+const fruits = ["apple", "banana", "orange"];`
+
+export const constrctrSnippet = `const numbers = new Array(1, 2, 3, 4, 5);
+const fruits = new Array("apple", "banana", "orange");`
+
+export const arrayFromSnippets = `const numbers = Array.from([1, 2, 3, 4, 5]);
+const fruits = Array.from("banana");`
+
+export const fillSnippets = `const numbers = new Array(5).fill(0);`
+
+export const emptyArrSnippets = `const emptyArray = [];
+const anotherEmptyArray = new Array();`
+
+export const sqrBrcktSnippet = `const numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers[0]); // Output: 10
+console.log(numbers[2]); // Output: 30`
+
+export const modifyingArrSnippets = `const fruits = ["apple", "banana", "orange"];
+
+fruits[1] = "grape";
+console.log(fruits); // Output: ["apple", "grape", "orange"]`
+
+export const accessArrSnippets = `const fruits = ["apple", "banana", "orange"];
+let index = 2;
+
+console.log(fruits[index]); // Output: "orange"
+
+index++;
+console.log(fruits[index]); // Output: undefined`
+
