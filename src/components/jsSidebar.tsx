@@ -60,6 +60,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
     path: '/javascript/switch-case',
   },
   { topic: 'for loop', path: '/javascript/for-loop' },
+  { topic: 'for...in loop', path: '/javascript/for-in-loop' },
   { topic: 'Functions', path: '/javascript/functions' },
   { topic: 'Arrays', path: '/javascript/arrays' },
   { topic: 'Objects', path: '/javascript/objects' },

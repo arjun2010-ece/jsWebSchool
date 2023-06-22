@@ -1632,3 +1632,39 @@ const result = calculateSum(inputNumber);
 console.log("The total sum of all the numbers from 1 to", inputNumber, "is:", result);`
 
 export const forLoopResultSnippet = `The total sum of all the numbers from 1 to 5 is: 15`
+
+export const basicForInSnytaxSnippet = `for (variable in object) {
+  // code to be executed
+}`
+
+export const forInExampleSnippet = `const person = {
+  name: "John",
+  age: 30,
+  profession: "Developer"
+};
+
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}`
+
+export const forInOutputSnippet = `name: John
+age: 30
+profession: Developer`
+
+export const forInExampleCodeSnippet = `const scores = {
+  math: 90,
+  science: 85,
+  history: 95,
+  english: 80
+};
+
+let totalScore = 0;
+
+for (let subject in scores) {
+  totalScore += scores[subject];
+}
+
+console.log("The total score is:", totalScore);`
+
+export const forInCodeOutputSnippet = `The total score is: 350`
+
