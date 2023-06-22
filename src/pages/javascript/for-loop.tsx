@@ -132,7 +132,7 @@ const JSSwitchCasePage: NextPage = () => {
         result using console.log().
         <br/>
         <br/>
-        When you run this code, the following output will be displayed in the console:
+        When you run this code, the console will show the following output:
         `}
         parentEl="p"
         customStyle={fluid(
@@ -142,6 +142,23 @@ const JSSwitchCasePage: NextPage = () => {
       />
 
       <CodeSnippet content={forLoopResultSnippet} />
+      <Text
+        content={`
+       <br/>
+       This is because the function calculates the sum of numbers from 1 to 5, which 
+       is 1 + 2 + 3 + 4 + 5 = 15.
+       <br/>
+       <br/>
+
+        Feel free to modify the inputNumber variable to test the function with different input values 
+        and observe the corresponding sums calculated using the for loop.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
     </Layout>
   );
 };

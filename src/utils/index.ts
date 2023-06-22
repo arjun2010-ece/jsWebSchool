@@ -1629,6 +1629,6 @@ export const forLoopFirstSolSnippet = `function calculateSum(number) {
 // Testing the function
 const inputNumber = 5;
 const result = calculateSum(inputNumber);
-console.log("The sum of numbers from 1 to", inputNumber, "is:", result);`
+console.log("The total sum of all the numbers from 1 to", inputNumber, "is:", result);`
 
-export const forLoopResultSnippet = `The sum of numbers from 1 to 5 is: 15`
+export const forLoopResultSnippet = `The total sum of all the numbers from 1 to 5 is: 15`
