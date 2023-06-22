@@ -7,6 +7,8 @@ import {
   functionDeclarationsSnippet,
   functionExpressionsCodeSnippet,
   functionExpressionsSnippet,
+  functionParamsCodeSnippet,
+  functionReturnCodeSnippet,
 } from '@/utils';
 import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
@@ -120,7 +122,7 @@ const JSFunctionsPage: NextPage = () => {
       <CodeSnippet content={functionCallCodeSnippet} />
 
       <Text
-        content={`
+        content={`<br/>
         In this example, the greet function is called with the argument "Alice", resulting in the greeting message being printed to the console. The square function is called with the argument 5, and the returned value (25) is stored in the result variable, which is then printed to the console.
         <br/>
         <br/>
@@ -128,6 +130,79 @@ const JSFunctionsPage: NextPage = () => {
         <br/>
         <br/>
         Functions play a crucial role in JavaScript programming as they enable code reuse, modularization, and the ability to organize complex logic into manageable units. They are fundamental to building applications in JavaScript.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <Heading
+        content="Function parameters vs arguments :"
+        headingType="h6"
+        customStyle={tw`mb-4 mt-8 underline`}
+      />
+
+      <Text
+        content={`
+        In JavaScript, function parameters and arguments are related concepts that refer to the values passed into a function during its invocation. <i>Parameters are the variables listed in the function declaration, while arguments are the actual values passed to the function when it is called.</i>
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={functionParamsCodeSnippet} />
+
+      <Text
+        content={`<br/>
+        In the above function defination code, <b>name</b> and <b>age</b> are the parameters.<br/>
+        <br/>
+        While in the function call code, <b>"Alice"</b> and <b>25</b> are the arguments (that is tha actual value we are passing in the function body).
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <Heading
+        content="Returning values from functions :"
+        headingType="h6"
+        customStyle={tw`mb-4 mt-8 underline`}
+      />
+
+      <Text
+        content={`
+        Returning values from functions in JavaScript allows the functions to produce a result or output that can be used in other parts of the program.
+        <br/><br/> 
+        The return statement is used to specify the value that should be returned from a function. 
+        <br/><br/> 
+        When a return statement is encountered in a function, it immediately terminates the function execution and sends the specified value back to the caller.
+        <br/>
+        <br/>
+        Here's an example that demonstrates returning a value from a function:
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={functionReturnCodeSnippet} />
+
+      <Text
+        content={`<br/>
+        Using the return statement, the add function in this example returns the sum of the two inputs, a and b. The return a + b; instruction is executed and the number 7 is returned when the function is called with inputs 3 and 4. The result variable then holds the returning value and prints it to the terminal.
+        <br/><br/>
+        <i>Functions can return any valid JavaScript value, including numbers, strings, booleans, objects, arrays, or even other functions. You can also return complex data structures or perform calculations or operations before returning a value.</i>
+        <br/><br/>
+        It's important to note that when a return statement is encountered, it immediately exits the function, skipping any code that follows it within the same block. This behavior allows you to control the flow of execution and determine when a function should stop and provide a result.
         `}
         parentEl="p"
         customStyle={fluid(

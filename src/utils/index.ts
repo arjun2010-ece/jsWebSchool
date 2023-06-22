@@ -1689,3 +1689,39 @@ export const functionCallCodeSnippet = `greet("Alice"); // Output: Hello, Alice!
 
 const result = square(5);
 console.log(result); // Output: 25`
+
+
+export const functionParamsCodeSnippet = `// function defination
+function sayHello(name, age) {
+  console.log("Hello, " + name + "! You are " + age + " years old.");
+}
+
+// function call
+sayHello("Alice", 25);`
+
+export const functionReturnCodeSnippet = `function add(a, b) {
+  return a + b;
+}
+
+const result = add(3, 4);
+console.log(result); // Output: 7`
+
+export const funcExpressionSnippet = `const functionName = function(parameters) {
+  // code to be executed
+};`
+
+export const namedFuncExpressionSnippet = `const printSomething = (name) => {
+  console.log("Hello, " + name + "!");
+};`
+
+export const arrowOutSnippets = `const square = num => num * num;`
+
+export const arrowExampleSnippets = `const calculateArea = (length, width) => length * width;
+
+const length = 5;
+const width = 3;
+const area = calculateArea(length, width);
+
+console.log("The area of the rectangle is:", area);`
+
+export const arrowOutputSnippets = `The area of the rectangle is: 15`
