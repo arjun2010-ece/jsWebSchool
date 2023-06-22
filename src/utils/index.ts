@@ -1668,3 +1668,24 @@ console.log("The total score is:", totalScore);`
 
 export const forInCodeOutputSnippet = `The total score is: 350`
 
+
+export const functionDeclarationsSnippet = `function functionName(parameters) {
+  // code to be executed
+}`
+
+export const functionDeclarationsCodeSnippet = `function greet(name) {
+  console.log("Hello, " + name + "!");
+}`
+
+export const functionExpressionsSnippet = `const functionName = function(parameters) {
+  // code to be executed
+};`
+
+export const functionExpressionsCodeSnippet = `const square = function(num) {
+  return num * num;
+};`
+
+export const functionCallCodeSnippet = `greet("Alice"); // Output: Hello, Alice!
+
+const result = square(5);
+console.log(result); // Output: 25`
