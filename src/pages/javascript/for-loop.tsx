@@ -13,7 +13,7 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 
-const JSSwitchCasePage: NextPage = () => {
+const JSForLoopPage: NextPage = () => {
   return (
     <Layout
       sidebar={true}
@@ -163,4 +163,4 @@ const JSSwitchCasePage: NextPage = () => {
   );
 };
 
-export default JSSwitchCasePage;
+export default JSForLoopPage;
