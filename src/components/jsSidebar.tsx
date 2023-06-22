@@ -63,6 +63,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'for...in loop', path: '/javascript/for-in-loop' },
   { topic: 'Functions', path: '/javascript/functions' },
   { topic: 'Functions expressions and arrow functions', path: '/javascript/expressions-arrow' },
+  { topic: 'Function scope and closures', path: '/javascript/function-scope-closure' },
   { topic: 'Arrays', path: '/javascript/arrays' },
   { topic: 'Objects', path: '/javascript/objects' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },

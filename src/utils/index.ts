@@ -1725,3 +1725,51 @@ const area = calculateArea(length, width);
 console.log("The area of the rectangle is:", area);`
 
 export const arrowOutputSnippets = `The area of the rectangle is: 15`
+
+
+export const fnScopeSnippet = `function outerFunction() {
+  const message = "Hello";
+
+  function innerFunction() {
+    console.log(message);
+  }
+
+  innerFunction();
+}
+
+outerFunction(); // Output: Hello`
+
+export const closureSnippet = `function outerFunction() {
+  const message = "Hello";
+
+  function innerFunction() {
+    console.log(message);
+  }
+
+  return innerFunction;
+}
+
+const closureFunction = outerFunction();
+closureFunction(); // Output: Hello`
+
+export const btnClickedClosureSnippet = `function createCounter() {
+  let count = 0;
+
+  function increment() {
+    count++;
+    console.log("Clicked:", count, "times");
+  }
+
+  return increment;
+}
+
+const counter = createCounter();
+
+// Simulating button clicks
+counter(); // Output: Clicked: 1 times
+counter(); // Output: Clicked: 2 times
+counter(); // Output: Clicked: 3 times`
+
+export const btnClickdOutSnippet = `Clicked: 1 times
+Clicked: 2 times
+Clicked: 3 times`
