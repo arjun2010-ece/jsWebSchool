@@ -1604,3 +1604,31 @@ export const anotherSwitchCaseSnippet = `function getAnimalName(animalCode) {
 const animalCode = 3;
 const animalName = getAnimalName(animalCode);
 document.write("The animal is: " + animalName);`
+
+
+export const basicforLoopSnippet = `for (let i = 0; i < 5; i++) {
+  console.log(i);
+}`
+
+export const basicForLoopOutputSnippet = `0
+1
+2
+3
+4`
+
+export const forLoopFirstSolSnippet = `function calculateSum(number) {
+  let sum = 0;
+
+  for (let i = 1; i <= number; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+// Testing the function
+const inputNumber = 5;
+const result = calculateSum(inputNumber);
+console.log("The sum of numbers from 1 to", inputNumber, "is:", result);`
+
+export const forLoopResultSnippet = `The sum of numbers from 1 to 5 is: 15`
