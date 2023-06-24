@@ -40,7 +40,10 @@ const JSArraysPage: NextPage = () => {
 
       <Text
         content={`
-        A number of built-in methods for manipulating arrays are available in JavaScript. Here is an explanation of a few such methods:
+        A number of built-in properties, operators and methods for manipulating arrays are available in JavaScript.
+        Some of them are : <br/> 
+        <b>Array.length, join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete </b> and <b>flat()</b>. 
+        Here is an explanation of a few such methods:
         `}
         parentEl="p"
         customStyle={css`
