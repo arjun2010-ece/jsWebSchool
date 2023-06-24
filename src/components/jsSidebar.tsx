@@ -65,6 +65,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'Functions expressions and arrow functions', path: '/javascript/expressions-arrow' },
   { topic: 'Function scope and closures', path: '/javascript/function-scope-closure' },
   { topic: 'Arrays', path: '/javascript/arrays' },
+  { topic: 'Array methods (push, pop, shift, unshift, etc.)', path: '/javascript/array-methods' },
   { topic: 'Objects', path: '/javascript/objects' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {

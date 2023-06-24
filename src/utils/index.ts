@@ -1806,3 +1806,96 @@ console.log(fruits[index]); // Output: "orange"
 index++;
 console.log(fruits[index]); // Output: undefined`
 
+
+export const lengthArrSnippets = `const fruits = ['apple', 'banana'];
+const leng = fruits.length;
+console.log(leng); // Output: 2`
+
+export const toStringSnippet = `// toString method usecase
+const array = [1, 2, 3, 4, 5];
+const arrayString = array.toString();
+console.log(arrayString); // Output: "1,2,3,4,5"
+
+// join method usecase
+const array = [1, 2, 3, 4, 5];
+const arrayString = array.join('-');
+console.log(arrayString); // Output: "1-2-3-4-5"
+`
+
+export const splitSnippet = `const arrayString = "1,2,3,4,5";
+const array = arrayString.split(','); // separate based on comma
+console.log(array); // Output: [ '1', '2', '3', '4', '5' ]
+
+const arrayString = "gooday";
+const array = arrayString.split(''); // separate character by character
+console.log(array); // Output: [ 'g', 'o', 'o', 'd', 'a', 'y' ]`
+
+export const pushArrSnippets = `const fruits = ['apple', 'banana'];
+const length = fruits.push('orange', 'kiwi');
+console.log(fruits); // Output: ['apple', 'banana', 'orange', 'kiwi']
+console.log(length); // Output: 4`
+
+
+export const popArrSnippets = `const fruits = ['apple', 'banana', 'orange'];
+const lastFruit = fruits.pop();
+console.log(fruits); // Output: ['apple', 'banana']
+console.log(lastFruit); // Output: 'orange'`
+
+
+export const shiftArrSnippets = `const fruits = ['apple', 'banana', 'orange'];
+const firstFruit = fruits.shift();
+console.log(fruits); // Output: ['banana', 'orange']
+console.log(firstFruit); // Output: 'apple'`
+
+
+export const unshiftArrSnippets = `const fruits = ['banana', 'orange'];
+const length = fruits.unshift('apple', 'kiwi');
+console.log(fruits); // Output: ['apple', 'kiwi', 'banana', 'orange']
+console.log(length); // Output: 4`
+
+export const concatArrSnippets = `const fruits = ['apple', 'banana'];
+const moreFruits = ['orange', 'kiwi'];
+const allFruits = fruits.concat(moreFruits);
+console.log(allFruits); // Output: ['apple', 'banana', 'orange', 'kiwi']`
+
+
+export const sliceArrSnippets = `const fruits = ['apple', 'banana', 'orange', 'kiwi'];
+const citrus = fruits.slice(1, 3);
+console.log(citrus); // Output: ['banana', 'orange']`
+
+export const spliceArrSnippets = `const array = [1, 2, 3, 4, 5];
+const removedElements = array.splice(2, 2, 'a', 'b'); // removes 2 elements starting from index 2 and adds 'a' and 'b' in their place
+console.log(array); // Output: [1, 2, 'a', 'b', 5]
+console.log(removedElements); // Output: [3, 4]`
+
+export const removedSpliceSnippet = `const array = [1, 2, 3, 4, 5];
+const removedElements = array.splice(2, 2);
+console.log(array); // Output: [1, 2, 5]
+console.log(removedElements); // Output: [3, 4]`
+
+export const addSpliceSnippet = `const array = [1, 2, 3, 4, 5];
+array.splice(2, 0, 'a', 'b');
+console.log(array); // Output: [1, 2, 'a', 'b', 3, 4, 5]`
+
+export const replaceSpliceSnippet = `const array = [1, 2, 3, 4, 5];
+const replacedElements = array.splice(2, 2, 'a', 'b', 'c');
+console.log(array); // Output: [1, 2, 'a', 'b', 'c', 5]
+console.log(replacedElements); // Output: [3, 4]`
+
+
+export const deleteSnippet = `const names = ["Andy", "Robert", "Murdocht", "jane"];
+delete names[0];
+console.log(names[0]); // Output: undefined`
+
+export const flatSyntaxSnippet = `array.flat([depth])`
+
+
+export const flatExampleSnippet = `const numericArr = [1, 2, [3, 4, [5, 6]]];
+const flattenedArray = numericArr.flat();
+console.log(flattenedArray);
+// Output: [1, 2, 3, 4, [5, 6]]
+
+const deeplyNestedArray = [1, [2, [3, [4, [5]]]]];
+const completelyFlattenedArray = deeplyNestedArray.flat(Infinity);
+console.log(completelyFlattenedArray);
+// Output: [1, 2, 3, 4, 5]`
