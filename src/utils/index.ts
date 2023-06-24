@@ -2008,3 +2008,30 @@ const countOccurrences = names.reduce((accumulator, currentValue) => {
 }, {});
 console.log(countOccurrences);
 // Output: { John: 2, Jane: 2, Mary: 1 }`
+
+
+export const filtrArrSnippet = `const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]`
+
+
+export const findArrSnippet = `const numbers = [1, 2, 3, 4, 5];
+const foundNumber = numbers.find((number) => number > 3);
+console.log(foundNumber); // Output: 4`
+
+export const findIndexArrSnippet = `const numbers = [1, 2, 3, 4, 5];
+const foundIndex = numbers.findIndex((number) => number > 3);
+console.log(foundIndex); // Output: 3`
+
+export const indexOfArrSnippet = `const fruits = ['apple', 'banana', 'orange'];
+const index = fruits.indexOf('banana');
+console.log(index); // Output: 1`
+
+
+export const lastIndexOfArrSnippet = `const fruits = ['apple', 'banana', 'orange', 'banana'];
+const lastIndex = fruits.lastIndexOf('banana');
+console.log(lastIndex); // Output: 3`
+
+export const includesArrSnippet = `const numbers = [1, 2, 3, 4, 5];
+const includesNumber = numbers.includes(3);
+console.log(includesNumber); // Output: true`

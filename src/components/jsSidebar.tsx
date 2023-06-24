@@ -68,6 +68,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'Array methods (push, pop, shift, unshift, etc.)', path: '/javascript/array-methods' },
   { topic: 'Array iteration using loops(for loops etc) & methods(map, filter)', path: '/javascript/array-iteration-loops-methods' },
   { topic: 'Js reduce()', path: '/javascript/reduce' },
+  { topic: 'searching and filtering methods', path: '/javascript/searching-and-filtering' },
   { topic: 'Objects', path: '/javascript/objects' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {
