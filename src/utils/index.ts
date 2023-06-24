@@ -1899,3 +1899,78 @@ const deeplyNestedArray = [1, [2, [3, [4, [5]]]]];
 const completelyFlattenedArray = deeplyNestedArray.flat(Infinity);
 console.log(completelyFlattenedArray);
 // Output: [1, 2, 3, 4, 5]`
+
+
+export const forLoopSnippet = `const arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}`
+
+export const forEachSnippet = `const arr = [1, 2, 3, 4, 5];
+
+arr.forEach((element) => {
+  console.log(element);
+});`
+
+export const forOfEachSnippet = `const arr = [1, 2, 3, 4, 5];
+
+for (const element of arr) {
+  console.log(element);
+}`
+
+export const mapAndFilterSnippet = `// map method
+array.map(callback(element, index, array), thisArg);
+
+//filter method
+array.filter(callback(element, index, array), thisArg);`
+
+export const mapAndFilterExampleSnippet = `//map example
+const array = [1, 2, 3, 4, 5];
+const mappedArray = array.map((element, index, array) => {
+  return element * 2;
+});
+console.log(mappedArray); // Output: [2, 4, 6, 8, 10]
+
+// filter example
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]`
+
+
+export const purposeOfMapSnippet = `// modifying array elements
+const numbers = [1, 2, 3, 4, 5];
+const squaredNumbers = numbers.map((num) => num * num);
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+//Converting Data Format:
+const persons = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 35 }
+];
+const names = persons.map((person) => person.name);
+console.log(names); // Output: ['Alice', 'Bob', 'Charlie']`
+
+
+export const purposeOfFilterSnippet = `// filtering numbers
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+
+
+// Filtering  Objects by Property
+const products = [
+  { name: 'Apple', price: 0.5 },
+  { name: 'Banana', price: 0.25 },
+  { name: 'Orange', price: 0.75 },
+  { name: 'Kiwi', price: 1.0 }
+];
+const expensiveProducts = products.filter((product) => product.price > 0.5);
+console.log(expensiveProducts);
+// Output: [{ name: 'Orange', price: 0.75 }, { name: 'Kiwi', price: 1.0 }]
+
+// Filtering  Strings by Condition
+const words = ['hello', 'world', 'javascript', 'filter'];
+const longWords = words.filter((word) => word.length > 5);
+console.log(longWords); // Output: ['javascript', 'filter']`
