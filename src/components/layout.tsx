@@ -20,8 +20,8 @@ const Content = styled.div<ContentProps>`
   flex: 1;
   background: white;
   padding-top: 24px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   overflow-x: auto;
   @media only screen and (max-width: 767px) {
     margin-left: 0;

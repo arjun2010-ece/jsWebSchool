@@ -1974,3 +1974,37 @@ console.log(expensiveProducts);
 const words = ['hello', 'world', 'javascript', 'filter'];
 const longWords = words.filter((word) => word.length > 5);
 console.log(longWords); // Output: ['javascript', 'filter']`
+
+
+export const reduceSyntaxSnippet = `array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);`
+
+export const reduceExampleSnippet = `// sum of all the elements in array
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sum); // Output: 15`
+
+export const maxReduceExampleSnippet = `const numbers = [1, 2, 3, 4, 5];
+const maxNumber = numbers.reduce((max, current) => Math.max(max, current));
+console.log(maxNumber); // Output: 5`
+
+export const minReduceExampleSnippet = `const numbers = [1, 2, 3, 4, 5];
+const minNumber = numbers.reduce((min, current) => Math.min(min, current));
+console.log(minNumber); // Output: 1`
+
+export const concatenateReduceExampleSnippet = `const words = ['Hello', 'World', 'JavaScript'];
+const concatenatedString = words.reduce((result, current) => result + ' ' + current);
+console.log(concatenatedString); // Output: 'Hello World JavaScript'`
+
+export const flatReduceExSnippet = `const nestedArr = [[1, 2], [3, 4], [5, 6]];
+
+const flattenedArray = nestedArr.reduce((accumulator, currentValue) => accumulator.concat(currentValue), []);
+console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]`
+
+export const countOccurenceReduceSnippets = `const names = ['John', 'Jane', 'John', 'Mary', 'Jane'];
+
+const countOccurrences = names.reduce((accumulator, currentValue) => {
+  accumulator[currentValue] = (accumulator[currentValue] || 0) + 1;
+  return accumulator;
+}, {});
+console.log(countOccurrences);
+// Output: { John: 2, Jane: 2, Mary: 1 }`
