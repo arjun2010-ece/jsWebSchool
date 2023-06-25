@@ -71,6 +71,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'searching and filtering methods', path: '/javascript/searching-and-filtering' },
   { topic: 'Sorting methods', path: '/javascript/sorting-methods' },
   { topic: 'Objects', path: '/javascript/objects' },
+  { topic: 'Spread and rest', path: '/javascript/spread-rest' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {
     topic: 'Asynchronous JavaScript',

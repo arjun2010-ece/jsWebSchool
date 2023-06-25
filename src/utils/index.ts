@@ -2224,3 +2224,27 @@ const person = {
 
 printPersonDetails(person);
 `
+
+export const spreadCpySnippet = `const originalArray = [1, 2, 3];
+const newArray = [...originalArray];
+
+console.log(newArray);  // Output: [1, 2, 3]`
+
+
+export const spreadCmbSnippet = `const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinedArray = [...array1, ...array2];
+
+console.log(combinedArray);  // Output: [1, 2, 3, 4, 5, 6]`
+
+
+export const spreadCpyExtndSnippet = `const originalObject = { name: 'John', age: 30 };
+const newObject = { ...originalObject };
+
+console.log(newObject);  // Output: { name: 'John', age: 30 }`
+
+export const restParamsSnippet = `function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4));  // Output: 10`
