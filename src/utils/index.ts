@@ -518,7 +518,7 @@ export const boxModelSnippet = `
 |                                         |
 +-----------------------------------------+
 
-`
+`;
 
 export const cssBoxSnippet = `*{
   margin: 0;
@@ -527,7 +527,6 @@ export const cssBoxSnippet = `*{
 }
 `;
 
-
 export const fontFamilySnippets = `p{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -535,7 +534,7 @@ export const fontFamilySnippets = `p{
 h1, h2, h3, h4, h5, h6{
   font-family: "Lucida Console", "Courier New", monospace;
 }
-`
+`;
 
 export const fontSizeSnippets = `p{
   font-size: 18px;
@@ -544,7 +543,7 @@ export const fontSizeSnippets = `p{
 p{
   font-size: 28px;
 }
-`
+`;
 
 export const fontWeightSnippets = `// first way
 p{
@@ -555,7 +554,7 @@ p{
 div{
   font-weight: 700;
 }
-`
+`;
 
 export const fontStyleSnippets = `// first way
 p{
@@ -571,7 +570,7 @@ div{
 div{
   font-style: oblique;
 }
-`
+`;
 
 export const colorSnippets = `// First way : Normal way
 p{
@@ -592,7 +591,7 @@ p{
 p{
   color: rgba(0, 0, 0, 0);
 }
-`
+`;
 
 export const textAlignSnippets = `p{
   text-align: center;
@@ -605,7 +604,7 @@ div{
 nav{
   text-align: left;
 }
-`
+`;
 
 export const textDecorationsSnippets = `p{
   text-decoration: overline;
@@ -622,7 +621,7 @@ h3{
 h6{
   text-decoration: underline overline;
 }
-`
+`;
 
 export const textTransformSnippets = `p{
   text-transform: uppercase;
@@ -635,12 +634,12 @@ h1{
 h3{
   text-transform: capitalize;
 }
-`
+`;
 
 export const lineHeightSnippets = `p{
   line-height: 20px;
 }
-`
+`;
 
 export const letterWordSpacingSnippets = `p{
   letter-spacing: 3px;
@@ -648,7 +647,7 @@ export const letterWordSpacingSnippets = `p{
 
 h1{
   word-spacing: 30px;
-}`
+}`;
 
 export const opacitySnippets = `p{
   opacity: 0;  // not visible at all
@@ -661,7 +660,7 @@ h1{
 h3{
   opacity: 0.7;  // 70% visible
 }
-`
+`;
 
 // Dimension properties snippet
 
@@ -675,7 +674,7 @@ h1{
 
 h3{
   opacity: 40rem ;
-}`
+}`;
 
 export const minWidthSnippets = `p{
   min-width: 40%; // 40% of its parents.
@@ -687,7 +686,7 @@ h1{
 
 h3{
   opacity: 20rem ;
-}`
+}`;
 
 export const maxWidthSnippets = `p{
   max-width: 90%; // 90% of its parents or body tag.
@@ -699,7 +698,7 @@ h1{
 
 h3{
   opacity: 80rem ;
-}`
+}`;
 
 export const heightSnippets = ` // First case
 <div class="divHeight"> Height will not work</div>
@@ -727,7 +726,7 @@ export const heightSnippets = ` // First case
 
 h1{
   height: 80px; // or 10rem
-}`
+}`;
 
 export const minHeightSnippets = `// First way
 <h1>Height will work</h1>
@@ -755,14 +754,14 @@ h1{
 .parent p{
   min-height: 30%; // it will work
 }
-`
+`;
 export const maxHeightSnippets = `// First way
 <h1>Height will work</h1>
 
 h1{
   max-height: 80px; // the height will be 80px on all screens 
   overflow: scroll;
-}`
+}`;
 
 export const marginSnippets = `// First way
 h1{
@@ -791,7 +790,7 @@ h1{
   margin-right: 8px;
   margin-left: 7px; 
 }
-`
+`;
 
 export const paddingSnippets = `// First way
 h1{
@@ -820,12 +819,12 @@ h1{
   padding-right: 8px;
   padding-left: 7px; 
 }
-`
+`;
 
 export const borderSnippet = `h1{
   border: 1px solid black;
 }
-` 
+`;
 
 export const borderRadiusSnippet = `h1{
   border-radius: 10px;
@@ -838,7 +837,7 @@ h2{
   height: 80px;
   border-radius: 50%; // this will make the element a full circle.
 }
-`
+`;
 
 export const displaySnippet = `h1{
   display: inline-block;
@@ -856,7 +855,7 @@ p{
 div{
   display: none;
 }
-`
+`;
 
 export const bgColorSnippet = `// First way
 h1{
@@ -866,7 +865,7 @@ h1{
 // Second way
 h1{
   background-color: green;
-}`
+}`;
 
 export const bgImageSnippet = `// First way
 h1{
@@ -876,7 +875,7 @@ h1{
 // Second way
 h1{
   background-image: url("/images/lighthouse-image.jpg");
-}`
+}`;
 
 export const bgRepeatSnippet = `// First way : combining multiple background properties
 h1{
@@ -897,7 +896,7 @@ h1{
 h1{
   background-image: url("/images/lighthouse-image.jpg");
   background-repeat: no-repeat;
-}`
+}`;
 
 export const bgAttachmentSnippet = `// First way : combining multiple background properties together
 h1{
@@ -909,7 +908,7 @@ h1{
   background-image: url("/images/lighthouse-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-}`
+}`;
 
 export const bgPositionSnippet = `// First way
 h1{
@@ -958,7 +957,7 @@ h1{
   background-attachment: fixed;
   background-position: right 32% bottom 40%;
 }
-`
+`;
 
 export const negativeOrdersSnippet = `<div>
   <p>One</p>
@@ -986,17 +985,17 @@ div{
   order: 3;
 }
 
-`
+`;
 
 export const flexGrowSnippet = `// css
 .child{
   flex-grow: 3;
-}`
+}`;
 
 export const flexShrinkSnippet = `// css
 .child{
   flex-shrink: 3;
-}`
+}`;
 
 export const flexSnippet = `<div class="container">
   <div class="sidebar">Left Sidebar</div>
@@ -1019,7 +1018,7 @@ export const flexSnippet = `<div class="container">
   flex: 1;
   overflow-x: auto;
 }
-`
+`;
 export const flexGapSnippet = `// First way
 .child1{
   gap: 20px;
@@ -1035,7 +1034,7 @@ export const flexGapSnippet = `// First way
   row-gap: 20px;
   column-gap: 10px;
 }
-`
+`;
 
 export const gridColumnsSnippet = `// HTML
 <div class="container" >
@@ -1052,8 +1051,7 @@ export const gridColumnsSnippet = `// HTML
 .container{
   display: grid;
   grid-template-columns: 400px 600px;
-}`
-
+}`;
 
 export const gridColumnsUsageSnippet = `// HTML
 <div class="container" >
@@ -1111,7 +1109,7 @@ export const gridColumnsUsageSnippet = `// HTML
   grid-template-columns: 1fr 2fr 4fr; 
   // 3 columns of 1fr 2fr and 4fr widths
 }
-`
+`;
 
 export const gridRowsSnippet = `// HTML
 <div class="container" >
@@ -1129,8 +1127,7 @@ export const gridRowsSnippet = `// HTML
   display: grid;
   grid-template-rows: repeat(2, 300px);
   grid-template-columns: 200px 220px 230px;
-}`
-
+}`;
 
 export const gridLinesSnippet = `// HTML
 <div class="container" >
@@ -1178,7 +1175,7 @@ export const gridLinesSnippet = `// HTML
 .c{
   grid-column: 3/4;
   grid-row: 1/2;
-}`
+}`;
 
 export const remFontSizeSnippet = `// CSS
 html{
@@ -1187,7 +1184,7 @@ html{
 
 p{
   font-size: 1.8rem;
-}`
+}`;
 
 export const horizontalOverflowSnippet = `// HTML
 <div class="container">
@@ -1209,7 +1206,7 @@ export const horizontalOverflowSnippet = `// HTML
 
 .content {
    white-space: nowrap; /* Prevent line breaks */  
-}`
+}`;
 
 export const verticalOverflowSnippet = `// HTML
 <div class="container">
@@ -1230,15 +1227,14 @@ export const verticalOverflowSnippet = `// HTML
 //css
 .container{
   height: 30px; /* Fixed height container */
-}`
-
+}`;
 
 export const outlineSnippet = `//css
 button:focus{
   outline: 1px solid green;
-}`
+}`;
 
-export const outlineSyntaxSnippet = `outline: <outline-width> <outline-style> <outline-color>;`
+export const outlineSyntaxSnippet = `outline: <outline-width> <outline-style> <outline-color>;`;
 
 export const cursorSyntaxSnippet = `h1{
   cursor: pointer;
@@ -1251,7 +1247,7 @@ p{
 img {
   cursor: url('custom_cursor.jpg'), auto;
 }
-`
+`;
 
 export const cursorUseCaseSnippet = `button{
   cursor: pointer;
@@ -1267,7 +1263,7 @@ input[type="checkbox"]{
 
 input[type="radio"]{
   cursor: pointer;
-}`
+}`;
 
 export const relativeNotAppliedSnippet = `//html
 <div>
@@ -1290,7 +1286,7 @@ div{
 
 h1{
   border: 1px solid black;
-}`
+}`;
 
 export const relativetAppliedSnippet = `//css
 div{
@@ -1301,7 +1297,7 @@ h1{
   border: 1px solid black;
   position: relative;
   top: 2rem;
-}`
+}`;
 
 export const defaultAbsoluteSnippet = `//css
 div{
@@ -1312,7 +1308,7 @@ h1{
   border: 1px solid black;
   position: absolute;
   top: 2rem;
-}`
+}`;
 
 export const specialRelAbsnippet = `//html
 <div class="parent">
@@ -1327,7 +1323,7 @@ export const specialRelAbsnippet = `//html
 .child{
   position: absolute; // applied on child
   bottom: 2rem;
-}`
+}`;
 
 export const fixedsnippet = `//html
 <div class="parent">
@@ -1338,7 +1334,7 @@ export const fixedsnippet = `//html
 .parent{
   position: fixed; 
   top: 2rem;
-}`
+}`;
 
 export const stickySnippet = `//html
 <p>
@@ -1372,7 +1368,7 @@ Wow, we are learning a new positioning
 .first {
   position: sticky;
   top: -1px;
-}`
+}`;
 
 // Javascript
 
@@ -1384,14 +1380,13 @@ export const jsHomeSnippet = `<html>
       </script>      
    </body>
 </html>
-`
-
+`;
 
 export const basicJsSnippet = `<script>
   // basic javaScript code
   alert("Hello, World!");
 </script>
-`
+`;
 
 export const basicJsUsageSnippet = `<!DOCTYPE html>
 <html>
@@ -1414,38 +1409,36 @@ app.js
 
 function handleSubmit() {
   document.getElementById("para").innerHTML = "Amigo changed.";
-}`
+}`;
 
 export const varSnippet = `var num = 3;
 if (true) {
   var num = 100;
   console.log(num); // Output: 100
 }
-console.log(num); // Output: 100`
+console.log(num); // Output: 100`;
 
 export const letSnippet = `let x = 15;
 if (true) {
   let x = 101;
   console.log(x); // Output: 101
 }
-console.log(x); // Output: 15`
+console.log(x); // Output: 15`;
 
 export const constSnippet = `const PI = 3.14;
 console.log(PI); // Output: 3.14
 
-PI = 3.14159; // Error: Assignment to constant variable`
-
+PI = 3.14159; // Error: Assignment to constant variable`;
 
 export const varHoistedSnippet = `console.log(x); // Output: undefined
 var x = 5;
-`
+`;
 
 export const letconstSnippet = `console.log(x); // Error: ReferenceError: x is not defined
-let x = 5;`
-
+let x = 5;`;
 
 export const globalVarSnippets = `// Global variable
-myGlobalVariable = 10;`
+myGlobalVariable = 10;`;
 
 export const localVarSnippet = `// Function with local variables
 function newFunction() {
@@ -1453,7 +1446,7 @@ function newFunction() {
   let anotherLocalVar = "Hello"; // Local variable
   const PI = 3.14; // Local variable
   // ...
-}`
+}`;
 
 export const dataTypesSnippet = `let num = 10;
 console.log(typeof num); // Output: "number"
@@ -1462,18 +1455,16 @@ let str = "Hello";
 console.log(typeof str); // Output: "string"
 
 let arr = [1, 2, 3];
-console.log(typeof arr); // Output: "object"`
+console.log(typeof arr); // Output: "object"`;
 
-
-export const coercionSnippet = `console.log(5 + "10"); // Output: "510"`
+export const coercionSnippet = `console.log(5 + "10"); // Output: "510"`;
 
 export const typeSnippet = `let num = 10;
 let str = String(num); // Explicitly converting a number to a string
 console.log(typeof str); // Output: "string"
 
 let bool = Boolean(0); // Explicitly converting 0 to a boolean
-console.log(bool); // Output: false`
-
+console.log(bool); // Output: false`;
 
 export const typeOfSnippet = `console.log(typeof 42); // Output: "number"
 console.log(typeof "Hello"); // Output: "string"
@@ -1482,13 +1473,13 @@ console.log(typeof undefined); // Output: "undefined"
 console.log(typeof null); // Output: "object"
 console.log(typeof []); // Output: "object"
 console.log(typeof {}); // Output: "object"
-console.log(typeof function() {}); // Output: "function"`
+console.log(typeof function() {}); // Output: "function"`;
 
 export const ifElseBasicSnippet = `if (condition) {
   // If the condition is true, run this code block
 } else {
   // If the condition is false, run this code block
-}`
+}`;
 
 export const ifElseLogicSnippet = `let num = 7;
 
@@ -1496,8 +1487,7 @@ if (num % 2 === 0) {
   console.log("The number is even.");
 } else {
   console.log("The number is odd.");
-}`
-
+}`;
 
 export const multipleIfElseSnippet = `let age = 18;
 
@@ -1507,7 +1497,7 @@ if (age < 13) {
   console.log("Teenager");
 } else {
   console.log("Adult");
-}`
+}`;
 
 export const equalitySnippet = `// with equality operator
 let num = 5;
@@ -1519,7 +1509,7 @@ if (num == 5) {
 let num = 5;
 if (num === 5) {
   // Code block executed if num is equal to 5 and has the same type
-}`
+}`;
 
 export const shortcircutSnippet = `// Using short-circuit evaluation to avoid potential errors
 let name = "John";
@@ -1534,8 +1524,7 @@ function greetUser(name) {
 }
 
 greetUser(); // Output: Hello, Guest
-greetUser("Alice"); // Output: Hello, Alice`
-
+greetUser("Alice"); // Output: Hello, Alice`;
 
 export const basicSwitchSnippet = `switch (expression) {
   case value1:
@@ -1547,7 +1536,7 @@ export const basicSwitchSnippet = `switch (expression) {
   // Additional cases...
   default:
     // Code block executed when no case matches the expression
-}`
+}`;
 
 export const switchCaseExampleSnippet = `let day = 3;
 let dayName;
@@ -1572,7 +1561,7 @@ switch (day) {
     dayName = "Weekend";
 }
 
-console.log(dayName); // Output: "Wednesday"`
+console.log(dayName); // Output: "Wednesday"`;
 
 export const anotherSwitchCaseSnippet = `function getAnimalName(animalCode) {
   let animalName;
@@ -1603,18 +1592,17 @@ export const anotherSwitchCaseSnippet = `function getAnimalName(animalCode) {
 // Using document.write to display the result
 const animalCode = 3;
 const animalName = getAnimalName(animalCode);
-document.write("The animal is: " + animalName);`
-
+document.write("The animal is: " + animalName);`;
 
 export const basicforLoopSnippet = `for (let i = 0; i < 5; i++) {
   console.log(i);
-}`
+}`;
 
 export const basicForLoopOutputSnippet = `0
 1
 2
 3
-4`
+4`;
 
 export const forLoopFirstSolSnippet = `function calculateSum(number) {
   let sum = 0;
@@ -1629,13 +1617,13 @@ export const forLoopFirstSolSnippet = `function calculateSum(number) {
 // Testing the function
 const inputNumber = 5;
 const result = calculateSum(inputNumber);
-console.log("The total sum of all the numbers from 1 to", inputNumber, "is:", result);`
+console.log("The total sum of all the numbers from 1 to", inputNumber, "is:", result);`;
 
-export const forLoopResultSnippet = `The total sum of all the numbers from 1 to 5 is: 15`
+export const forLoopResultSnippet = `The total sum of all the numbers from 1 to 5 is: 15`;
 
 export const basicForInSnytaxSnippet = `for (variable in object) {
   // code to be executed
-}`
+}`;
 
 export const forInExampleSnippet = `const person = {
   name: "John",
@@ -1645,11 +1633,11 @@ export const forInExampleSnippet = `const person = {
 
 for (let key in person) {
   console.log(key + ": " + person[key]);
-}`
+}`;
 
 export const forInOutputSnippet = `name: John
 age: 30
-profession: Developer`
+profession: Developer`;
 
 export const forInExampleCodeSnippet = `const scores = {
   math: 90,
@@ -1664,32 +1652,30 @@ for (let subject in scores) {
   totalScore += scores[subject];
 }
 
-console.log("The total score is:", totalScore);`
+console.log("The total score is:", totalScore);`;
 
-export const forInCodeOutputSnippet = `The total score is: 350`
-
+export const forInCodeOutputSnippet = `The total score is: 350`;
 
 export const functionDeclarationsSnippet = `function functionName(parameters) {
   // code to be executed
-}`
+}`;
 
 export const functionDeclarationsCodeSnippet = `function greet(name) {
   console.log("Hello, " + name + "!");
-}`
+}`;
 
 export const functionExpressionsSnippet = `const functionName = function(parameters) {
   // code to be executed
-};`
+};`;
 
 export const functionExpressionsCodeSnippet = `const square = function(num) {
   return num * num;
-};`
+};`;
 
 export const functionCallCodeSnippet = `greet("Alice"); // Output: Hello, Alice!
 
 const result = square(5);
-console.log(result); // Output: 25`
-
+console.log(result); // Output: 25`;
 
 export const functionParamsCodeSnippet = `// function defination
 function sayHello(name, age) {
@@ -1697,24 +1683,24 @@ function sayHello(name, age) {
 }
 
 // function call
-sayHello("Alice", 25);`
+sayHello("Alice", 25);`;
 
 export const functionReturnCodeSnippet = `function add(a, b) {
   return a + b;
 }
 
 const result = add(3, 4);
-console.log(result); // Output: 7`
+console.log(result); // Output: 7`;
 
 export const funcExpressionSnippet = `const functionName = function(parameters) {
   // code to be executed
-};`
+};`;
 
 export const namedFuncExpressionSnippet = `const printSomething = (name) => {
   console.log("Hello, " + name + "!");
-};`
+};`;
 
-export const arrowOutSnippets = `const square = num => num * num;`
+export const arrowOutSnippets = `const square = num => num * num;`;
 
 export const arrowExampleSnippets = `const calculateArea = (length, width) => length * width;
 
@@ -1722,10 +1708,9 @@ const length = 5;
 const width = 3;
 const area = calculateArea(length, width);
 
-console.log("The area of the rectangle is:", area);`
+console.log("The area of the rectangle is:", area);`;
 
-export const arrowOutputSnippets = `The area of the rectangle is: 15`
-
+export const arrowOutputSnippets = `The area of the rectangle is: 15`;
 
 export const fnScopeSnippet = `function outerFunction() {
   const message = "Hello";
@@ -1737,7 +1722,7 @@ export const fnScopeSnippet = `function outerFunction() {
   innerFunction();
 }
 
-outerFunction(); // Output: Hello`
+outerFunction(); // Output: Hello`;
 
 export const closureSnippet = `function outerFunction() {
   const message = "Hello";
@@ -1750,7 +1735,7 @@ export const closureSnippet = `function outerFunction() {
 }
 
 const closureFunction = outerFunction();
-closureFunction(); // Output: Hello`
+closureFunction(); // Output: Hello`;
 
 export const btnClickedClosureSnippet = `function createCounter() {
   let count = 0;
@@ -1768,35 +1753,35 @@ const counter = createCounter();
 // Simulating button clicks
 counter(); // Output: Clicked: 1 times
 counter(); // Output: Clicked: 2 times
-counter(); // Output: Clicked: 3 times`
+counter(); // Output: Clicked: 3 times`;
 
 export const btnClickdOutSnippet = `Clicked: 1 times
 Clicked: 2 times
-Clicked: 3 times`
+Clicked: 3 times`;
 
 export const sqBrcktSnippet = `const numbers = [1, 2, 3, 4, 5];
-const fruits = ["apple", "banana", "orange"];`
+const fruits = ["apple", "banana", "orange"];`;
 
 export const constrctrSnippet = `const numbers = new Array(1, 2, 3, 4, 5);
-const fruits = new Array("apple", "banana", "orange");`
+const fruits = new Array("apple", "banana", "orange");`;
 
 export const arrayFromSnippets = `const numbers = Array.from([1, 2, 3, 4, 5]);
-const fruits = Array.from("banana");`
+const fruits = Array.from("banana");`;
 
-export const fillSnippets = `const numbers = new Array(5).fill(0);`
+export const fillSnippets = `const numbers = new Array(5).fill(0);`;
 
 export const emptyArrSnippets = `const emptyArray = [];
-const anotherEmptyArray = new Array();`
+const anotherEmptyArray = new Array();`;
 
 export const sqrBrcktSnippet = `const numbers = [10, 20, 30, 40, 50];
 
 console.log(numbers[0]); // Output: 10
-console.log(numbers[2]); // Output: 30`
+console.log(numbers[2]); // Output: 30`;
 
 export const modifyingArrSnippets = `const fruits = ["apple", "banana", "orange"];
 
 fruits[1] = "grape";
-console.log(fruits); // Output: ["apple", "grape", "orange"]`
+console.log(fruits); // Output: ["apple", "grape", "orange"]`;
 
 export const accessArrSnippets = `const fruits = ["apple", "banana", "orange"];
 let index = 2;
@@ -1804,9 +1789,9 @@ let index = 2;
 console.log(fruits[index]); // Output: "orange"
 
 index++;
-console.log(fruits[index]); // Output: undefined`
+console.log(fruits[index]); // Output: undefined`;
 
-export const isArraySyntaxSnippet = `Array.isArray(value)`
+export const isArraySyntaxSnippet = `Array.isArray(value)`;
 
 export const isArrayExmpleSnippet = `Array.isArray([]);          // true
 Array.isArray([1, 2, 3]);   // true
@@ -1815,12 +1800,11 @@ Array.isArray(new Array()); // true
 Array.isArray('hello');     // false
 Array.isArray(42);          // false
 Array.isArray({});          // false
-Array.isArray(null);        // false`
-
+Array.isArray(null);        // false`;
 
 export const lengthArrSnippets = `const fruits = ['apple', 'banana'];
 const leng = fruits.length;
-console.log(leng); // Output: 2`
+console.log(leng); // Output: 2`;
 
 export const reverseArrSnippet = `// syntax
 array.reverse()
@@ -1829,8 +1813,7 @@ array.reverse()
 const fruitList = ['cherry', 'apple', 'banana', 'date'];
 fruitList.reverse();
 
-console.log(fruits); // Output: ['date', 'banana', 'apple', 'cherry']`
-
+console.log(fruits); // Output: ['date', 'banana', 'apple', 'cherry']`;
 
 export const toStringSnippet = `// toString method usecase
 const array = [1, 2, 3, 4, 5];
@@ -1841,7 +1824,7 @@ console.log(arrayString); // Output: "1,2,3,4,5"
 const array = [1, 2, 3, 4, 5];
 const arrayString = array.join('-');
 console.log(arrayString); // Output: "1-2-3-4-5"
-`
+`;
 
 export const splitSnippet = `const arrayString = "1,2,3,4,5";
 const array = arrayString.split(','); // separate based on comma
@@ -1849,67 +1832,61 @@ console.log(array); // Output: [ '1', '2', '3', '4', '5' ]
 
 const arrayString = "gooday";
 const array = arrayString.split(''); // separate character by character
-console.log(array); // Output: [ 'g', 'o', 'o', 'd', 'a', 'y' ]`
+console.log(array); // Output: [ 'g', 'o', 'o', 'd', 'a', 'y' ]`;
 
 export const pushArrSnippets = `const fruits = ['apple', 'banana'];
 const length = fruits.push('orange', 'kiwi');
 console.log(fruits); // Output: ['apple', 'banana', 'orange', 'kiwi']
-console.log(length); // Output: 4`
-
+console.log(length); // Output: 4`;
 
 export const popArrSnippets = `const fruits = ['apple', 'banana', 'orange'];
 const lastFruit = fruits.pop();
 console.log(fruits); // Output: ['apple', 'banana']
-console.log(lastFruit); // Output: 'orange'`
-
+console.log(lastFruit); // Output: 'orange'`;
 
 export const shiftArrSnippets = `const fruits = ['apple', 'banana', 'orange'];
 const firstFruit = fruits.shift();
 console.log(fruits); // Output: ['banana', 'orange']
-console.log(firstFruit); // Output: 'apple'`
-
+console.log(firstFruit); // Output: 'apple'`;
 
 export const unshiftArrSnippets = `const fruits = ['banana', 'orange'];
 const length = fruits.unshift('apple', 'kiwi');
 console.log(fruits); // Output: ['apple', 'kiwi', 'banana', 'orange']
-console.log(length); // Output: 4`
+console.log(length); // Output: 4`;
 
 export const concatArrSnippets = `const fruits = ['apple', 'banana'];
 const moreFruits = ['orange', 'kiwi'];
 const allFruits = fruits.concat(moreFruits);
-console.log(allFruits); // Output: ['apple', 'banana', 'orange', 'kiwi']`
-
+console.log(allFruits); // Output: ['apple', 'banana', 'orange', 'kiwi']`;
 
 export const sliceArrSnippets = `const fruits = ['apple', 'banana', 'orange', 'kiwi'];
 const citrus = fruits.slice(1, 3);
-console.log(citrus); // Output: ['banana', 'orange']`
+console.log(citrus); // Output: ['banana', 'orange']`;
 
 export const spliceArrSnippets = `const array = [1, 2, 3, 4, 5];
 const removedElements = array.splice(2, 2, 'a', 'b'); // removes 2 elements starting from index 2 and adds 'a' and 'b' in their place
 console.log(array); // Output: [1, 2, 'a', 'b', 5]
-console.log(removedElements); // Output: [3, 4]`
+console.log(removedElements); // Output: [3, 4]`;
 
 export const removedSpliceSnippet = `const array = [1, 2, 3, 4, 5];
 const removedElements = array.splice(2, 2);
 console.log(array); // Output: [1, 2, 5]
-console.log(removedElements); // Output: [3, 4]`
+console.log(removedElements); // Output: [3, 4]`;
 
 export const addSpliceSnippet = `const array = [1, 2, 3, 4, 5];
 array.splice(2, 0, 'a', 'b');
-console.log(array); // Output: [1, 2, 'a', 'b', 3, 4, 5]`
+console.log(array); // Output: [1, 2, 'a', 'b', 3, 4, 5]`;
 
 export const replaceSpliceSnippet = `const array = [1, 2, 3, 4, 5];
 const replacedElements = array.splice(2, 2, 'a', 'b', 'c');
 console.log(array); // Output: [1, 2, 'a', 'b', 'c', 5]
-console.log(replacedElements); // Output: [3, 4]`
-
+console.log(replacedElements); // Output: [3, 4]`;
 
 export const deleteSnippet = `const names = ["Andy", "Robert", "Murdocht", "jane"];
 delete names[0];
-console.log(names[0]); // Output: undefined`
+console.log(names[0]); // Output: undefined`;
 
-export const flatSyntaxSnippet = `array.flat([depth])`
-
+export const flatSyntaxSnippet = `array.flat([depth])`;
 
 export const flatExampleSnippet = `const numericArr = [1, 2, [3, 4, [5, 6]]];
 const flattenedArray = numericArr.flat();
@@ -1919,32 +1896,31 @@ console.log(flattenedArray);
 const deeplyNestedArray = [1, [2, [3, [4, [5]]]]];
 const completelyFlattenedArray = deeplyNestedArray.flat(Infinity);
 console.log(completelyFlattenedArray);
-// Output: [1, 2, 3, 4, 5]`
-
+// Output: [1, 2, 3, 4, 5]`;
 
 export const forLoopSnippet = `const arr = [1, 2, 3, 4, 5];
 
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
-}`
+}`;
 
 export const forEachSnippet = `const arr = [1, 2, 3, 4, 5];
 
 arr.forEach((element) => {
   console.log(element);
-});`
+});`;
 
 export const forOfEachSnippet = `const arr = [1, 2, 3, 4, 5];
 
 for (const element of arr) {
   console.log(element);
-}`
+}`;
 
 export const mapAndFilterSnippet = `// map method
 array.map(callback(element, index, array), thisArg);
 
 //filter method
-array.filter(callback(element, index, array), thisArg);`
+array.filter(callback(element, index, array), thisArg);`;
 
 export const mapAndFilterExampleSnippet = `//map example
 const array = [1, 2, 3, 4, 5];
@@ -1956,8 +1932,7 @@ console.log(mappedArray); // Output: [2, 4, 6, 8, 10]
 // filter example
 const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
-console.log(evenNumbers); // Output: [2, 4]`
-
+console.log(evenNumbers); // Output: [2, 4]`;
 
 export const purposeOfMapSnippet = `// modifying array elements
 const numbers = [1, 2, 3, 4, 5];
@@ -1971,8 +1946,7 @@ const persons = [
   { name: 'Charlie', age: 35 }
 ];
 const names = persons.map((person) => person.name);
-console.log(names); // Output: ['Alice', 'Bob', 'Charlie']`
-
+console.log(names); // Output: ['Alice', 'Bob', 'Charlie']`;
 
 export const purposeOfFilterSnippet = `// filtering numbers
 const numbers = [1, 2, 3, 4, 5];
@@ -1994,32 +1968,31 @@ console.log(expensiveProducts);
 // Filtering  Strings by Condition
 const words = ['hello', 'world', 'javascript', 'filter'];
 const longWords = words.filter((word) => word.length > 5);
-console.log(longWords); // Output: ['javascript', 'filter']`
+console.log(longWords); // Output: ['javascript', 'filter']`;
 
-
-export const reduceSyntaxSnippet = `array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);`
+export const reduceSyntaxSnippet = `array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);`;
 
 export const reduceExampleSnippet = `// sum of all the elements in array
 const numbers = [1, 2, 3, 4, 5];
 const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
-console.log(sum); // Output: 15`
+console.log(sum); // Output: 15`;
 
 export const maxReduceExampleSnippet = `const numbers = [1, 2, 3, 4, 5];
 const maxNumber = numbers.reduce((max, current) => Math.max(max, current));
-console.log(maxNumber); // Output: 5`
+console.log(maxNumber); // Output: 5`;
 
 export const minReduceExampleSnippet = `const numbers = [1, 2, 3, 4, 5];
 const minNumber = numbers.reduce((min, current) => Math.min(min, current));
-console.log(minNumber); // Output: 1`
+console.log(minNumber); // Output: 1`;
 
 export const concatenateReduceExampleSnippet = `const words = ['Hello', 'World', 'JavaScript'];
 const concatenatedString = words.reduce((result, current) => result + ' ' + current);
-console.log(concatenatedString); // Output: 'Hello World JavaScript'`
+console.log(concatenatedString); // Output: 'Hello World JavaScript'`;
 
 export const flatReduceExSnippet = `const nestedArr = [[1, 2], [3, 4], [5, 6]];
 
 const flattenedArray = nestedArr.reduce((accumulator, currentValue) => accumulator.concat(currentValue), []);
-console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]`
+console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]`;
 
 export const countOccurenceReduceSnippets = `const names = ['John', 'Jane', 'John', 'Mary', 'Jane'];
 
@@ -2028,12 +2001,11 @@ const countOccurrences = names.reduce((accumulator, currentValue) => {
   return accumulator;
 }, {});
 console.log(countOccurrences);
-// Output: { John: 2, Jane: 2, Mary: 1 }`
-
+// Output: { John: 2, Jane: 2, Mary: 1 }`;
 
 export const filtrArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
-console.log(evenNumbers); // Output: [2, 4]`
+console.log(evenNumbers); // Output: [2, 4]`;
 
 export const findLastArrSnippet = `// syntax
 findLast(callbackFn)
@@ -2045,30 +2017,27 @@ const numList = [5, 12, 50, 130, 44];
 const found = numList.findLast((element) => element > 48);
 
 console.log(found);
-// Expected output: 130`
-
+// Expected output: 130`;
 
 export const findArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const foundNumber = numbers.find((number) => number > 3);
-console.log(foundNumber); // Output: 4`
+console.log(foundNumber); // Output: 4`;
 
 export const findIndexArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const foundIndex = numbers.findIndex((number) => number > 3);
-console.log(foundIndex); // Output: 3`
+console.log(foundIndex); // Output: 3`;
 
 export const indexOfArrSnippet = `const fruits = ['apple', 'banana', 'orange'];
 const index = fruits.indexOf('banana');
-console.log(index); // Output: 1`
-
+console.log(index); // Output: 1`;
 
 export const lastIndexOfArrSnippet = `const fruits = ['apple', 'banana', 'orange', 'banana'];
 const lastIndex = fruits.lastIndexOf('banana');
-console.log(lastIndex); // Output: 3`
+console.log(lastIndex); // Output: 3`;
 
 export const includesArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const includesNumber = numbers.includes(3);
-console.log(includesNumber); // Output: true`
-
+console.log(includesNumber); // Output: true`;
 
 export const sortSimpleArrSnippet = `// sort fn working
 const numbersList = [3, 2, 1, 5, 4];
@@ -2077,7 +2046,7 @@ console.log(numbersList); // Output: [ 1, 2, 3, 4, 5 ]
 
 // sort fn not working as expected
 let numList = [2, 11, 5, 22, 6, 10, 3, 7, 6, 4, 6].sort();
-console.log(numList); // Output: [10, 11, 2, 22, 3,4,  5, 6,  6, 6,7]`
+console.log(numList); // Output: [10, 11, 2, 22, 3,4,  5, 6,  6, 6,7]`;
 
 export const sortComparatorArrSnippet = `// sorting in ascending order
 sort(function(a, b) {
@@ -2088,7 +2057,7 @@ sort(function(a, b) {
 sort(function(a, b) {
   return b - a;
 });
-`
+`;
 
 export const sortSimpleComparatorArrSnippet = `// sort an array of numbers
 const numbersList = [3, 2, 1, 5, 4];
@@ -2110,7 +2079,7 @@ wordsList.sort(function(a, b) {
   return a.localeCompare(b);
 });
 console.log(wordsList); // Output: ['apple', 'boy', 'cow', 'dog', 'elephant']
-`
+`;
 
 export const sortSimpleComparatorDescArrSnippet = `// sort an array of numbers
 const numbersList = [3, 2, 1, 5, 4];
@@ -2132,7 +2101,7 @@ wordsList.sort(function(a, b) {
   return b.localeCompare(a);
 });
 console.log(wordsList); // Output: [ 'elephant', 'dog', 'cow', 'boy', 'apple']
-`
+`;
 
 export const sortArrObjAscSnippet = `// sort an array of object by age property, age is number
 const peoples = [
@@ -2168,5 +2137,60 @@ output:
   { name: 'Alice', age: 19 },
   { name: 'Bob', age: 23 },
   { name: 'John', age: 21 }
-]
-`
+]`;
+
+export const objLiteralSnippet = `const personObj = {
+  name: 'Rui',
+  age: 33,
+  city: 'Washington',
+  country: 'USA'
+};`;
+
+export const objOutptSnippet = `console.log(personObj.name);  // Output: Rui
+console.log(personObj['age']); // Output: 33`;
+
+export const objModfySnippet = `personObj.phone = '098765987';
+personObj.surname = "Goncalves";
+
+console.log(personObj.phone); // Output: "098765987"
+console.log(personObj.surname);    // Output: "Goncalves"`;
+
+export const deleteObjSnippet = `delete personObj.country;
+console.log(personObj.country); // Output: undefined`;
+
+
+export const personObjKeysSnippets = `const personObj = {
+  name: 'Rui',
+  age: 30,
+  occupation: 'Developer'
+};
+
+const keys = Object.keys(personObj);
+console.log(keys); // Output: ['name', 'age', 'occupation']`
+
+
+export const personObjValsSnippets = `const personObj = {
+  name: 'Rui',
+  age: 30,
+  occupation: 'Developer'
+};
+
+const values = Object.values(person);
+console.log(values); // Output: ['Rui', 30, 'Developer']`
+
+export const personObjEntriesSnippets = `const person = {
+  name: 'John',
+  age: 30,
+  occupation: 'Developer'
+};
+
+const entries = Object.entries(person);
+console.log(entries);
+// Output: [['name', 'John'], ['age', 30], ['occupation', 'Developer']]`
+
+export const personObjAssignSnippets = `const target = {};
+const source = { name: 'John', age: 30 };
+
+Object.assign(target, source);
+
+console.log(target); // Output: { name: 'John', age: 30 }`
