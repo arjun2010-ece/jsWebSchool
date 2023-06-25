@@ -1806,6 +1806,17 @@ console.log(fruits[index]); // Output: "orange"
 index++;
 console.log(fruits[index]); // Output: undefined`
 
+export const isArraySyntaxSnippet = `Array.isArray(value)`
+
+export const isArrayExmpleSnippet = `Array.isArray([]);          // true
+Array.isArray([1, 2, 3]);   // true
+Array.isArray(new Array()); // true
+
+Array.isArray('hello');     // false
+Array.isArray(42);          // false
+Array.isArray({});          // false
+Array.isArray(null);        // false`
+
 
 export const lengthArrSnippets = `const fruits = ['apple', 'banana'];
 const leng = fruits.length;

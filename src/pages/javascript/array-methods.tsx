@@ -7,6 +7,8 @@ import {
   deleteSnippet,
   flatExampleSnippet,
   flatSyntaxSnippet,
+  isArrayExmpleSnippet,
+  isArraySyntaxSnippet,
   lengthArrSnippets,
   popArrSnippets,
   pushArrSnippets,
@@ -42,7 +44,7 @@ const JSArraysPage: NextPage = () => {
         content={`
         A number of built-in properties, operators and methods for manipulating arrays are available in JavaScript.
         Some of them are : <br/> 
-        <b>Array.length, join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete </b> and <b>flat()</b>. 
+        <b>Array.isArray(), Array.length, join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete </b> and <b>flat()</b>. 
         Here is an explanation of a few such methods:
         `}
         parentEl="p"
@@ -53,6 +55,42 @@ const JSArraysPage: NextPage = () => {
           )} ${tw`mb-0`}
         `}
       />
+
+      <Text
+        content={`
+        <br/>
+        <b>Array.isArray(value):</b>
+        This method checks whether a given value is an array or not. It returns <b>true</b> if value
+        is array else return <b>false</b> if not array. The <b>value</b> in below syntax is what we check.
+        <br/>
+        Example :
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <CodeSnippet content={isArraySyntaxSnippet} />
+
+      <Text
+        content={`
+        <br/>
+        Illustrations showing the usage are:
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <CodeSnippet content={isArrayExmpleSnippet} />
 
       <Text
         content={`
@@ -415,7 +453,6 @@ const JSArraysPage: NextPage = () => {
           )} ${tw`mb-0`}
         `}
       />
-
     </Layout>
   );
 };
