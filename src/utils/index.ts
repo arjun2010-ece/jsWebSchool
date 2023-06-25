@@ -2194,3 +2194,33 @@ const source = { name: 'John', age: 30 };
 Object.assign(target, source);
 
 console.log(target); // Output: { name: 'John', age: 30 }`
+
+
+export const objDestrctSnippets = `// case 1
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+const { name, age, city } = person;  // destructuring
+
+console.log(name); // Output: John
+console.log(age); // Output: 30
+console.log(city); // Output: New York
+
+// case 2: destructuring in function arguments
+function printPersonDetails({ name, age, city }) { // destructuring in function arguments
+  console.log(name);  //John
+  console.log(age);   //30
+  console.log(age);   // New York
+}
+
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+printPersonDetails(person);
+`

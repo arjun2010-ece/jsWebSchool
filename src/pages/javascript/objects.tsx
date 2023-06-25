@@ -3,6 +3,7 @@ import { type NextPage } from 'next';
 import {
   PAGES,
   deleteObjSnippet,
+  objDestrctSnippets,
   objLiteralSnippet,
   objModfySnippet,
   objOutptSnippet,
@@ -208,6 +209,27 @@ const JSObjectsPage: NextPage = () => {
           )} ${tw`mb-0`}
         `}
       />
+
+      <Heading
+        content="Objects destructuring"
+        headingType="h6"
+        customStyle={tw`mb-4 mt-8 underline`}
+      />
+
+      <Text
+        content={`
+        Object destructuring means breaking the object into its individual properties and objects specific value can be accessed by its corresponding key variable. It looks something like this.
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <CodeSnippet content={objDestrctSnippets} />
     </Layout>
   );
 };
