@@ -14,6 +14,7 @@ import {
   pushArrSnippets,
   removedSpliceSnippet,
   replaceSpliceSnippet,
+  reverseArrSnippet,
   shiftArrSnippets,
   sliceArrSnippets,
   splitSnippet,
@@ -44,7 +45,7 @@ const JSArraysPage: NextPage = () => {
         content={`
         A number of built-in properties, operators and methods for manipulating arrays are available in JavaScript.
         Some of them are : <br/> 
-        <b>Array.isArray(), Array.length, join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete </b> and <b>flat()</b>. 
+        <b>Array.isArray(), Array.length, reverse(), join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete </b> and <b>flat()</b>. 
         Here is an explanation of a few such methods:
         `}
         parentEl="p"
@@ -110,6 +111,26 @@ const JSArraysPage: NextPage = () => {
       />
 
       <CodeSnippet content={lengthArrSnippets} />
+
+      <Text
+        content={`
+        <br/>
+        <b>reverse():</b>
+        Reversing the order of the elements in an array is possible using JavaScript's built-in reverse() method.
+        <br/>
+        The syntax and example:
+        Example :
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <CodeSnippet content={reverseArrSnippet} />
 
       <Heading
         content="Conversion from array to string and string to array:"
@@ -444,6 +465,23 @@ const JSArraysPage: NextPage = () => {
         <br/>
         <br/>
         It's important to note that the flat() method does not modify the original array; instead, it returns a new array with the flattened structure.
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <Text
+        content={`
+        <br/>
+        <br/>
+        Some of the other methods to consider are 
+        <b>with(), of(), group(), every(), at()</b>. I will not explain these here but to study it, you can
+        go to the <a target="__blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with">Official website</a> and search other functions also there.
         `}
         parentEl="p"
         customStyle={css`

@@ -1822,6 +1822,16 @@ export const lengthArrSnippets = `const fruits = ['apple', 'banana'];
 const leng = fruits.length;
 console.log(leng); // Output: 2`
 
+export const reverseArrSnippet = `// syntax
+array.reverse()
+
+// Example
+const fruitList = ['cherry', 'apple', 'banana', 'date'];
+fruitList.reverse();
+
+console.log(fruits); // Output: ['date', 'banana', 'apple', 'cherry']`
+
+
 export const toStringSnippet = `// toString method usecase
 const array = [1, 2, 3, 4, 5];
 const arrayString = array.toString();
