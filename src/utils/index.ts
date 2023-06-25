@@ -2068,3 +2068,105 @@ console.log(lastIndex); // Output: 3`
 export const includesArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const includesNumber = numbers.includes(3);
 console.log(includesNumber); // Output: true`
+
+
+export const sortSimpleArrSnippet = `// sort fn working
+const numbersList = [3, 2, 1, 5, 4];
+ numbersList.sort();
+console.log(numbersList); // Output: [ 1, 2, 3, 4, 5 ]
+
+// sort fn not working as expected
+let numList = [2, 11, 5, 22, 6, 10, 3, 7, 6, 4, 6].sort();
+console.log(numList); // Output: [10, 11, 2, 22, 3,4,  5, 6,  6, 6,7]`
+
+export const sortComparatorArrSnippet = `// sorting in ascending order
+sort(function(a, b) {
+  return a - b;
+});
+
+// sorting in descending order
+sort(function(a, b) {
+  return b - a;
+});
+`
+
+export const sortSimpleComparatorArrSnippet = `// sort an array of numbers
+const numbersList = [3, 2, 1, 5, 4];
+ numbersList.sort(function(a, b) {
+  return a - b;
+});
+console.log(numbersList); // Output: [ 1, 2, 3, 4, 5 ]
+
+// sort an array of characters
+const charactersList = ["e", "c", "d", "b", "a"];
+charactersList.sort(function(a, b) {
+  return a.localeCompare(b);
+});
+console.log(charactersList); // Output: ['a', 'b', 'c', 'd', 'e']
+
+// sort an array of words
+const wordsList = ["elephant", "cow", "dog", "boy", "apple"];
+wordsList.sort(function(a, b) {
+  return a.localeCompare(b);
+});
+console.log(wordsList); // Output: ['apple', 'boy', 'cow', 'dog', 'elephant']
+`
+
+export const sortSimpleComparatorDescArrSnippet = `// sort an array of numbers
+const numbersList = [3, 2, 1, 5, 4];
+ numbersList.sort(function(a, b) {
+  return b - a;
+});
+console.log(numbersList); // Output: [ 5, 4, 3, 2, 1 ]
+
+// sort an array of characters
+const charactersList = ["e", "c", "d", "b", "a"];
+charactersList.sort(function(a, b) {
+  return b.localeCompare(a);
+});
+console.log(charactersList); // Output: [ 'e', 'd', 'c', 'b', 'a' ]
+
+// sort an array of words
+const wordsList = ["elephant", "cow", "dog", "boy", "apple"];
+wordsList.sort(function(a, b) {
+  return b.localeCompare(a);
+});
+console.log(wordsList); // Output: [ 'elephant', 'dog', 'cow', 'boy', 'apple']
+`
+
+export const sortArrObjAscSnippet = `// sort an array of object by age property, age is number
+const peoples = [
+  { name: 'John', age: 21 },
+  { name: 'Alice', age: 19 },
+  { name: 'Bob', age:  23}
+];
+
+peoples.sort(function(a, b) {
+  return a.age - b.age;
+});
+
+output:
+[
+  { name: 'Alice', age: 19 },
+  { name: 'John', age: 21 },
+  { name: 'Bob', age: 23 }
+]
+
+// sort an array of object by name property, neame is string
+const peoples = [
+  { name: 'John', age: 21 },
+  { name: 'Alice', age: 19 },
+  { name: 'Bob', age: 23 }
+];
+
+peoples.sort(function(a, b) {
+  return a.name.localeCompare(b.name);
+});
+
+output:
+[
+  { name: 'Alice', age: 19 },
+  { name: 'Bob', age: 23 },
+  { name: 'John', age: 21 }
+]
+`

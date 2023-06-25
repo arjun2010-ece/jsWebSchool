@@ -69,6 +69,7 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'Array iteration using loops(for loops etc) & methods(map, filter)', path: '/javascript/array-iteration-loops-methods' },
   { topic: 'Js reduce()', path: '/javascript/reduce' },
   { topic: 'searching and filtering methods', path: '/javascript/searching-and-filtering' },
+  { topic: 'Sorting methods', path: '/javascript/sorting-methods' },
   { topic: 'Objects', path: '/javascript/objects' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {
