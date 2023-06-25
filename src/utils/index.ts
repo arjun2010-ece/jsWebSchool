@@ -2025,6 +2025,18 @@ export const filtrArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
 console.log(evenNumbers); // Output: [2, 4]`
 
+export const findLastArrSnippet = `// syntax
+findLast(callbackFn)
+findLast(callbackFn, thisArg)
+
+// example:
+const numList = [5, 12, 50, 130, 44];
+
+const found = numList.findLast((element) => element > 48);
+
+console.log(found);
+// Expected output: 130`
+
 
 export const findArrSnippet = `const numbers = [1, 2, 3, 4, 5];
 const foundNumber = numbers.find((number) => number > 3);

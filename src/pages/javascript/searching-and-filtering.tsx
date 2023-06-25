@@ -5,6 +5,7 @@ import {
   filtrArrSnippet,
   findArrSnippet,
   findIndexArrSnippet,
+  findLastArrSnippet,
   includesArrSnippet,
   indexOfArrSnippet,
   lastIndexOfArrSnippet,
@@ -36,7 +37,7 @@ const JSSearchingAndFilteringPage: NextPage = () => {
         <br/>
         Imagine a scenario where we need to build a feature doing both searching and filtering, then below methods comes handy.
         <i>All the methods can be used for both <b>array</b> or <b>strings</b> in the same way.</i>
-        The methods we will study are <b>filter(), find(), findIndex(), indexOf(), lastIndexOf()</b> and 
+        The methods we will study are <b>filter(), find(), findLast(), findIndex(), indexOf(), lastIndexOf()</b> and 
         <b>includes()</b>.
         <br/>
         <br/>
@@ -72,6 +73,24 @@ const JSSearchingAndFilteringPage: NextPage = () => {
       />
 
       <CodeSnippet content={findArrSnippet} />
+
+      <Text
+        content={`
+        <br/>
+        <b>findLast()</b>: The first element whose value meets the supplied testing function is returned by the findLast() method, which iterates the array in reverse order. Undefined is returned if no elements pass the testing method.
+        <br/>
+        Example:
+        `}
+        parentEl="p"
+        customStyle={css`
+          ${fluid(
+            remToPx(globalTheme`fontSize.base`),
+            remToPx(globalTheme`fontSize.lg`),
+          )} ${tw`mb-0`}
+        `}
+      />
+
+      <CodeSnippet content={findLastArrSnippet} />
 
       <Text
         content={`
