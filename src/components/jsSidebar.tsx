@@ -72,12 +72,12 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
   { topic: 'Sorting methods', path: '/javascript/sorting-methods' },
   { topic: 'Objects', path: '/javascript/objects' },
   { topic: 'Spread and rest', path: '/javascript/spread-rest' },
-  { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' },
   {
     topic: 'Asynchronous JavaScript',
     path: '/javascript/asynchronous-javaScript',
   },
   { topic: 'Error Handling', path: '/javascript/error-handling' },
+  { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' }
 ];
 
 const JsSidebar: FC = () => {

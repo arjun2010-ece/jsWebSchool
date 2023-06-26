@@ -2248,3 +2248,27 @@ export const restParamsSnippet = `function sum(...numbers) {
 }
 
 console.log(sum(1, 2, 3, 4));  // Output: 10`
+
+
+export const setTimeoutSnippet = ` // Syntax
+setTimeout(callbackFunction, delay);`
+
+export const setTimeoutExSnippet = ` // Example : Execute this callback after a delay of 1 second.
+setTimeout(function(){
+  console.log("Print this after 1 second");
+}, 1000);`
+
+
+export const setIntervalSnippet = ` // Syntax
+setInterval(callbackFunction, delay);`
+
+
+export const setIntervalExSnippet = ` // Example : Execute this callback after every 1 second.
+setInterval(function(){
+  console.log("Print this after every 1 second");
+}, 1000);`
+
+export const fetchAPIGetSnippet = `fetch('url', options)
+.then(response => response.json())
+.then(data => console.log(data));`
+
