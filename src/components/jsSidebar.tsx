@@ -76,6 +76,10 @@ const JAVASCRIPT_TOPICS: JAVASCRIPT_TOPICS_PROPS[] = [
     topic: 'Asynchronous JavaScript',
     path: '/javascript/asynchronous-javaScript',
   },
+  {
+    topic: 'Callback, promise and Async/Await',
+    path: '/javascript/callback-promise-async-await',
+  },
   { topic: 'Error Handling', path: '/javascript/error-handling' },
   { topic: 'DOM Manipulation', path: '/javascript/dom-manipulation' }
 ];

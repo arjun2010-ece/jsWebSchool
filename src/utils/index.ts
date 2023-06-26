@@ -2272,3 +2272,56 @@ export const fetchAPIGetSnippet = `fetch('url', options)
 .then(response => response.json())
 .then(data => console.log(data));`
 
+export const basicCallbackEx= `function dataFetch(callback) {
+  setTimeout(function () {
+    const data = 'Howdy, Romeo!';
+    callback(data);
+  }, 2000);
+}
+
+function manipulateData(data) {
+  console.log(data);
+}
+
+dataFetch(manipulateData); // Output: Howdy, Romeo!`
+
+
+export const basicPromiseSnippet = `const newPromise = new Promise((resolve, reject) => {
+  // Asynchronous operation which will be resolved or rejected by promise
+  setTimeout(() => {
+    const result = 'Promise resolved';
+    resolve(result); // Fulfilled state
+    // or
+    // reject('Promise rejected'); // Rejected state
+  }, 2000); // Delaying the execution for 2 seconds
+});
+
+// Handle Promises by a .then() function
+newPromise
+  .then((result) => {
+    console.log('Fulfilled:', result);
+  })
+  .catch((error) => {
+    console.log('Rejected:', error);
+  });`
+
+
+export const basicAsyncAwaitSnippet = `function dataFetch() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      const data = 'Oyo, Mundo!';
+      resolve(data);
+    }, 2000);
+  });
+}
+
+async function manipulateDate() {
+  try {
+    const data = await dataFetch();
+    console.log(data); // Output: Oyo, Mundo!
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+manipulateDate();`
