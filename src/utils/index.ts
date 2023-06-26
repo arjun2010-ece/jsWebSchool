@@ -2325,3 +2325,38 @@ async function manipulateDate() {
 }
 
 manipulateDate();`
+
+export const tryCatchSnippet = `try {
+  // Code that might throw an error
+} catch (error) {
+  // Error handling logic
+}`
+
+export const tryCatchExSnippet = `try {
+  const result = 10 / 0; // Division by zero
+  console.log(result);
+} catch (error) {
+  console.error("An error occurred:", error);
+}`
+
+export const throwExceptionsSnippet = `throw new Error("Some specific Custom error message");`
+
+
+export const promiseHandleErrorsSnippet = `asyncFunction()
+.then(result => {
+  // Code for successful completion
+})
+.catch(error => {
+  // Error handling logic
+});`
+
+export const tryCatchHandleErrorsSnippet = `async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    // Code for successful completion
+  } catch (error) {
+    // Error handling logic
+  }
+}`
+
