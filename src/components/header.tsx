@@ -92,7 +92,7 @@ const SubMenuItem: FC<MenuItemProps> = ({
     <li key={menuItem?.title}>
       <div
         className={`group relative ${
-          subMenuVisible ? 'text-blue-700 border-b-4' : 'text-gray-900'
+          subMenuVisible ? 'text-blue-700' : 'text-gray-900'
         } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
       >
         <button
