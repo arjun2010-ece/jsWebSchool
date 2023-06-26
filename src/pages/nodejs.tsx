@@ -1,7 +1,12 @@
-import Layout from "../components/layout";
+import Layout from '@/components/layout';
+import CourseContent from '@/components/courseContent';
 
 const NodejsPage = () => {
-  return <Layout>NodejsPage</Layout>;
+  return (
+    <Layout>
+      <CourseContent />
+    </Layout>
+  );
 };
 
 export default NodejsPage;
