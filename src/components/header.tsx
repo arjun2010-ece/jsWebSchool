@@ -1,4 +1,10 @@
-import { type FC } from 'react';
+import {
+  type FC,
+  useEffect,
+  useRef,
+  type MutableRefObject,
+  useCallback,
+} from 'react';
 import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';
 import { MENU_ITEMS } from '../utils';
@@ -62,6 +68,7 @@ type MenuItemProps = {
   menuItem: MenuProps;
   subMenuVisible?: boolean;
   toggleSubMenu?: () => void;
+  subMenuItemRef?: MutableRefObject<HTMLDivElement | null>;
 };
 
 const MenuItem: FC<MenuItemProps> = ({ menuItem }) => {
@@ -87,6 +94,7 @@ const SubMenuItem: FC<MenuItemProps> = ({
   menuItem,
   subMenuVisible,
   toggleSubMenu,
+  subMenuItemRef,
 }) => {
   return (
     <li key={menuItem?.title}>
@@ -94,6 +102,7 @@ const SubMenuItem: FC<MenuItemProps> = ({
         className={`group relative ${
           subMenuVisible ? 'text-blue-700' : 'text-gray-900'
         } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
+        ref={subMenuItemRef}
       >
         <button
           type="button"
@@ -129,7 +138,7 @@ const HorizontalSubMenu: FC<HorizontalSubMenuProps> = ({ subMenuVisible }) => {
     <ul
       className={`${
         subMenuVisible ? 'block' : 'hidden'
-      } dark:bg-gray-900 rounded-lg bg-black p-2 absolute z-10 w-full text-white shadow-md lg:bg-white lg:text-black`}
+      } dark:bg-gray-900 absolute z-10 w-full rounded-lg bg-black p-2 text-white shadow-md lg:bg-white lg:text-black`}
     >
       {MENU_ITEMS &&
         MENU_ITEMS[MENU_ITEMS.length - 1]?.subItems?.map((subItem) => (
@@ -151,13 +160,32 @@ const HorizontalSubMenu: FC<HorizontalSubMenuProps> = ({ subMenuVisible }) => {
 const Header: FC = () => {
   const [subMenuVisible, setSubMenuVisible] = useState(false);
   const [mobileNav, subMobileNav] = useState<boolean>(false);
+  const subMenuItemRef: MutableRefObject<HTMLDivElement | null> = useRef(null);
+
+  const toggleSubMenu = useCallback(() => {
+    setSubMenuVisible(!subMenuVisible);
+  }, [subMenuVisible]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (
+        subMenuItemRef?.current &&
+        !subMenuItemRef?.current?.contains(event?.target as Node)
+      ) {
+        // just close the large screen dropdown only
+        setSubMenuVisible(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [toggleSubMenu]);
 
   const toggleHamburgerMenu = () => {
     subMobileNav(!mobileNav);
-  };
-
-  const toggleSubMenu = () => {
-    setSubMenuVisible(!subMenuVisible);
   };
 
   const menus = MENU_ITEMS.map((menuItem) => {
@@ -169,6 +197,7 @@ const Header: FC = () => {
         menuItem={menuItem}
         subMenuVisible={subMenuVisible}
         toggleSubMenu={toggleSubMenu}
+        subMenuItemRef={subMenuItemRef}
       />
     );
   });
@@ -177,7 +206,6 @@ const Header: FC = () => {
     <nav className="border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-grey-dark">
       {/* Navbar bg color set */}
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
@@ -193,20 +221,37 @@ const Header: FC = () => {
             type="button"
             className="text-gray-900 block focus:outline-none dark:text-white"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
+            {!mobileNav ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+                // className="feather feather-x"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            )}
           </button>
         </div>
 
