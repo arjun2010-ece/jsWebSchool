@@ -2360,3 +2360,70 @@ export const tryCatchHandleErrorsSnippet = `async function fetchData() {
   }
 }`
 
+export const accessElementsSnippet = `// Access an element by its ID
+const element = document.getElementById('myElement');
+
+// Access multiple elements by class name
+const elements = document.getElementsByClassName('myClass');
+
+// Access elements by tag name
+const elements = document.getElementsByTagName('div');
+
+// Access an element using CSS selector
+const element = document.querySelector('.myClass');
+
+// Access multiple elements using CSS selector
+const elements = document.querySelectorAll('div');`
+
+
+export const modifyContentSnippet = `// Modify innerHTML to change the content
+element.innerHTML = 'New content';
+
+// Modify textContent to change the text
+element.textContent = 'New text';
+
+// Set attribute value
+element.setAttribute('src', 'image.jpg');
+
+// Get attribute value
+const src = element.getAttribute('src');
+
+// Manipulate CSS classes
+element.classList.add('newClass');
+element.classList.remove('oldClass');
+element.classList.toggle('active');
+
+// Modify style properties
+element.style.color = 'red';
+element.style.fontSize = '16px';`
+
+
+export const createAppendSnippets = `// Create a new element
+const newElement = document.createElement('div');
+
+// Set properties and attributes
+newElement.innerHTML = 'New element';
+newElement.setAttribute('class', 'newClass');
+
+// Append to the document or another element
+document.body.appendChild(newElement); // Appending to the body
+
+const parentElement = document.getElementById('parent');
+parentElement.appendChild(newElement); // Appending to a specific parent element`
+
+
+export const eventHandlingSnippets = `// Attach click event listener
+element.addEventListener('click', function(event) {
+  // Code to execute on click
+});
+
+// Attach keypress event listener
+element.addEventListener('keypress', function(event) {
+  // Code to execute on keypress
+});
+
+// Attach form submission event listener
+formElement.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  // Code to execute on form submission
+});`
