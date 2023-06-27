@@ -24,7 +24,13 @@ const JSHomePage: NextPage = () => {
       <Text
         content="Javascript is the scripting language and is the only browser language which works in browser.
         Be it Jquery or reactjs or angularjs, everything is based on javascript and ultimately converted to
-        javascript then only it works in browser."
+        javascript then only it works in browser.
+        <br/><br/>
+       <strong> Now do not forget this  in javascript ever::</strong>
+        <br/>
+        JavaScript itself is a synchronous language, meaning it executes code in a single thread, one statement at a time.<br/>
+        However, JavaScript can interact with asynchronous APIs provided by the browser, including those in the BOM(Browser Object Model) and DOM (Document Object Model), to handle asynchronous operations.
+        "
         parentEl="p"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),

@@ -118,6 +118,28 @@ const JSSettingUpPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* Online tools for javascript */}
+      <Heading
+        content="Online code editors for writing javascript"
+        headingType="h6"
+        customStyle={tw`mb-2 mt-12`}
+      />
+
+      <Text
+        content={`
+        Now, we have 2 types of online code editors, first is where we can write algorithm logic or functional code without any DOM related methods(only with map, reduce, filter, for loop kind of logic), then we use <a href="https://replit.com/" target="__blank"><strong>REPL</strong></a>.
+        <br/><br/>
+        Second is where we write some html (may or may not some css too) and then DOM manipulation with DOM methods such as document.getElementById, document.querySelector, document.createElement etc then we use a very popular online editor  <a href="https://codepen.io/" target="__blank"><strong>CodePen</strong></a>.
+        <br/><br/>
+        Although we have many more choices but these 2 are the best recommended one.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
     </Layout>
   );
 };
