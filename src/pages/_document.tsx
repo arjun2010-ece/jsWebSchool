@@ -1,6 +1,5 @@
 import type { DocumentContext } from 'next/document';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class _Document extends Document {
@@ -40,7 +39,6 @@ export default class _Document extends Document {
         <body>
           <Main />
           <NextScript />
-          {/* <Script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js" /> */}
         </body>
       </Html>
     );

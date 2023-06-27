@@ -1,7 +1,7 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import { PAGES } from '@/utils';
-import tw, { theme as globalTheme, css } from 'twin.macro';
+import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';

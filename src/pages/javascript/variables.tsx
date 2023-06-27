@@ -2,8 +2,6 @@ import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import {
   PAGES,
-  basicJsSnippet,
-  basicJsUsageSnippet,
   constSnippet,
   letSnippet,
   letconstSnippet,
