@@ -11,8 +11,8 @@ export const MENU_ITEMS: menuItemsType[] = [
   { title: 'HTML', path: '/html' },
   { title: 'CSS3', path: '/css' },
   { title: 'Javascript', path: '/javascript' },
-  { title: 'ReactJs', path: '/reactjs' },
   { title: 'GIT', path: '/git' },
+  { title: 'ReactJs', path: '/reactjs' },
   { title: 'Node.js', path: '/nodejs' },
   {
     title: 'More',
