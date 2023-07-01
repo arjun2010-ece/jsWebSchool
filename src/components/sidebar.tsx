@@ -9,6 +9,7 @@ import ReactjsSidebar from '@/components/reactSideBar';
 
 type StyledSidebarContainer = {
   hideSidebar?: boolean;
+  mobileNav?: boolean;
 };
 
 //  height: calc(100vh - 64px) is making indepenedent scollable in flex child.
@@ -17,11 +18,11 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
   padding-top: 24px;
 
   border-right: 1px solid #ccc;
-  width: 250px;
+  width: auto;
 
   @media only screen and (max-width: 767px) {
-    display: block;
-    display: ${(props) => (props?.hideSidebar ? 'none' : 'block')};
+    display: ${({ hideSidebar, mobileNav }) =>
+      hideSidebar ? (mobileNav ? 'block' : 'none') : 'block'};
   }
 `;
 
@@ -29,9 +30,9 @@ type SidebarProps = StyledSidebarContainer & {
   currentPage: string;
 };
 
-const Sidebar: FC<SidebarProps> = ({ hideSidebar, currentPage }) => {
+const Sidebar: FC<SidebarProps> = ({ hideSidebar, currentPage, mobileNav }) => {
   return (
-    <StyledSidebarContainer hideSidebar={hideSidebar}>
+    <StyledSidebarContainer hideSidebar={hideSidebar} mobileNav={mobileNav}>
       {/* Sidebar component */}
       {currentPage == PAGES.HTML && <HtmlSidebar />}
       {currentPage == PAGES.CSS3 && <CssSidebar />}

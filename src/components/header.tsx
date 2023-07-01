@@ -9,6 +9,9 @@ import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';
 import { MENU_ITEMS } from '../utils';
 import { useState } from 'react';
+import Heading from './heading';
+import tw from 'twin.macro';
+
 
 type MobileMenuContentProps = {
   mobileMenu: boolean;
@@ -155,11 +158,77 @@ const HorizontalSubMenu: FC<HorizontalSubMenuProps> = ({ subMenuVisible }) => {
   );
 };
 
+type HamburgerComponentProps = {
+  mobileNav: boolean;
+  toggleHamburgerMenu: () => void;
+  dimension?: string;
+  title?: boolean;
+};
+
+export const HamburgerComponent: FC<HamburgerComponentProps> = ({
+  mobileNav,
+  toggleHamburgerMenu,
+  dimension = 'h-6 w-6',
+  title,
+}) => {
+  return (
+    <div
+      className={`w-auto  md:w-auto lg:hidden`}
+      onClick={toggleHamburgerMenu}
+    >
+      <button
+        type="button"
+        className="text-gray-900 block focus:outline-none dark:text-white"
+      >
+        {!mobileNav ? (
+          <div className="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className={dimension}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            {title && (
+              <Heading
+                content="Table Of Content"
+                headingType="h6"
+                customStyle={tw`ml-4`}
+              />
+            )}
+          </div>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className={dimension}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        )}
+      </button>
+    </div>
+  );
+};
+
 // menuItem?.path == router?.route
 // router?.route.includes(menuItem?.path)
 const Header: FC = () => {
   const [subMenuVisible, setSubMenuVisible] = useState(false);
-  const [mobileNav, subMobileNav] = useState<boolean>(false);
+  const [mobileNav, setMobileNav] = useState<boolean>(false);
   const subMenuItemRef: MutableRefObject<HTMLDivElement | null> = useRef(null);
 
   const toggleSubMenu = useCallback(() => {
@@ -185,7 +254,7 @@ const Header: FC = () => {
   }, [toggleSubMenu]);
 
   const toggleHamburgerMenu = () => {
-    subMobileNav(!mobileNav);
+    setMobileNav(!mobileNav);
   };
 
   const menus = MENU_ITEMS.map((menuItem) => {
@@ -212,48 +281,12 @@ const Header: FC = () => {
             JsWebSchool
           </span>
         </Link>
+
         {/* Hamburger menu */}
-        <div
-          className={`w-auto  md:w-auto lg:hidden`}
-          onClick={toggleHamburgerMenu}
-        >
-          <button
-            type="button"
-            className="text-gray-900 block focus:outline-none dark:text-white"
-          >
-            {!mobileNav ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                // className="feather feather-x"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            )}
-          </button>
-        </div>
+        <HamburgerComponent
+          mobileNav={mobileNav}
+          toggleHamburgerMenu={toggleHamburgerMenu}
+        />
 
         {/* Large screen menu */}
         <div className={`hidden w-full  lg:block lg:w-auto`}>
