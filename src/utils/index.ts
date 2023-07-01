@@ -2485,3 +2485,20 @@ export const gitFetchSyntax = `git fetch // bring all the branches from remote
 git checkout feature/creating_navbar // switch to that remote branch`
 
 export const gitStatusSyntax = `git status`
+
+
+// Reactjs
+
+export const createReactAppSnippet = `npx create-react-app my-app`
+export const cdProjectSnippet = `cd my-app`
+export const projectStartSnippet = `npm start`
+export const reactJsxSnippet = `import React from 'react';
+
+function MyComponent() {
+  return (
+    <div>
+      <h1>Welcome to My Component</h1>
+      <p>This is a paragraph.</p>
+    </div>
+  );
+}`

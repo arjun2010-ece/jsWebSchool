@@ -5,6 +5,7 @@ import HtmlSidebar from '@/components/htmlSidebar';
 import CssSidebar from '@/components/cssSidebar';
 import JsSidebar from '@/components/jsSidebar';
 import GitSidebar from '@/components/gitSidebar';
+import ReactjsSidebar from '@/components/reactSideBar';
 
 type StyledSidebarContainer = {
   hideSidebar?: boolean;
@@ -35,7 +36,7 @@ const Sidebar: FC<SidebarProps> = ({ hideSidebar, currentPage }) => {
       {currentPage == PAGES.HTML && <HtmlSidebar />}
       {currentPage == PAGES.CSS3 && <CssSidebar />}
       {currentPage == PAGES.JAVASCRIPT && <JsSidebar />}
-      {currentPage == PAGES.REACTJS && <p>REACTJS page</p>}
+      {currentPage == PAGES.REACTJS && <ReactjsSidebar />}
       {currentPage == PAGES.GIT && <GitSidebar />}
       {currentPage == PAGES.NODEJS && <p>NODEJS page</p>}
     </StyledSidebarContainer>
