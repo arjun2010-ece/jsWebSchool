@@ -23,9 +23,26 @@ const JSVariablesPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
     >
       <Heading
-        content="Variable declaration using var, let and const :"
+        content="Variables :"
         headingType="h5"
         customStyle={tw`mb-4`}
+      />
+
+      <Text
+        content={`
+        A variable in JavaScript is a named container that contains a value. Data that may be retrieved and changed throughout the application is stored there. JavaScript variables are dynamic, which means they may store a variety of values, including integers, texts, booleans, objects, and even functions.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <Heading
+        content="Variables declaration using var, let and const :"
+        headingType="h6"
+        customStyle={tw`mb-4 mt-8`}
       />
 
       <Text

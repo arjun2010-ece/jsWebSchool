@@ -16,7 +16,7 @@ const JSGlobalLocalVariablesPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
     >
       <Heading
-        content="Variable declaration using var, let and const :"
+        content="Global vs Local variables :"
         headingType="h5"
         customStyle={tw`mb-4`}
       />
