@@ -2465,3 +2465,23 @@ git add .
 git commit -m "created the navbar"
 git push -u origin feature/creating_navbar   // Push local branch on remote github.com server 
 `
+
+export const gitCloneSyntax = `git clone <repository_url> [<destination_directory>]
+
+git clone https://github.com/arjun2010-ece/sample_repo.git `
+
+export const gitBranchSyntax = `git branch`
+
+export const gitCheckoutSyntax = `// First way: create and move to a new branch
+git checkout -b feature/creating_navbar
+
+//Second way: Move to a new branch
+git checkout main`
+
+
+export const gitMergeSyntax = `git merge branchB // it will merge commits of branchB into branchA`
+
+export const gitFetchSyntax = `git fetch // bring all the branches from remote
+git checkout feature/creating_navbar // switch to that remote branch`
+
+export const gitStatusSyntax = `git status`
