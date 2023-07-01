@@ -2427,3 +2427,41 @@ formElement.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
   // Code to execute on form submission
 });`
+
+
+// GIT
+
+export const gitVerifySnippet = `git --version`
+
+export const gitInstallLinuxSnippet = `sudo apt install git`
+
+export const gitInstallRedHatSnippet = `sudo dnf install git
+
+or 
+
+sudo yum install git`
+
+export const gitInstallMacSnippet = `brew install git`
+
+export const gitInitAndDeInitSnippet = `// initialise a git repository
+git init
+
+// deinitialise a git repository
+rm -rf .git  // .git files stores metadata so remove it
+`
+
+export const gitAddAllSnippet = `git add .`
+
+export const gitCommitSnippet = `git commit -m "Created a Navbar" // Inside double quote is the commit message that user can write`
+
+export const gitRemoteSnippet = `git branch -M main // change the name of current local branch to main
+git remote add origin https://github.com/arjun2010-ece/sample_repo.git // add remote address locally
+git push -u origin main   // Push local branch on remote github.com server 
+`
+
+export const gitSecondSnippet = `git clone https://github.com/arjun2010-ece/sample_repo.git // add remote address locally
+git checkout -b feature/creating_navbar
+git add .
+git commit -m "created the navbar"
+git push -u origin feature/creating_navbar   // Push local branch on remote github.com server 
+`
