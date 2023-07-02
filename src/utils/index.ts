@@ -87,6 +87,15 @@ export const htmlDivTagSnippet = `<div> A new day.</div>
 </div>
 `;
 
+export const htmlDivPureSnippet = `<div class="container">
+    <!-- Content goes here -->
+</div>`
+
+export const htmlDivCssSnippet = `.container {
+    /* CSS styles */
+}`
+
+
 export const htmlSpanTagSnippet = `<span> A new day.</span>
 
 <header>
@@ -103,6 +112,14 @@ export const htmlSpanTagSnippet = `<span> A new day.</span>
   <span>Independent Swimming pool</span>
 
 `;
+
+export const htmlStSpanTagSnippet = `<span class="highlight"> A new day.</span>`;
+export const htmlCssSpanTagSnippet = `.highlight {
+   /* CSS styles */
+}`;
+
+export const htmlSpanAccessibilitySnippet = `<span role="button" tabindex="0">Clickable Span</span>`
+
 
 export const htmlOrderedListSnippet = `One way:
 1. This is amazing.
@@ -367,9 +384,10 @@ export const htmlTableColRowSpanSnippet = `
 </table>
 `;
 
+export const iframeSimpleTagSnippet = `<iframe src="https://www.youtube.com"></iframe>`
+
 export const iframeTagSnippet = `
-<iframe id="openstreet-map"
-    title="openstreet map"
+<iframe 
     width="350"
     height="230"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">

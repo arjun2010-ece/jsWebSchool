@@ -18,7 +18,6 @@ const seo = {
   metaOgImage: '',
 };
 
-
 const HTMLHeading: NextPage = () => {
   return (
     <Layout
@@ -37,8 +36,7 @@ const HTMLHeading: NextPage = () => {
         content={`
         Paragraph or p Tags are <b>semantic tags</b> and used to <b>wrap contents of a webpage</b> or simply a 
         paragraph of content. Here paragraph means the same as paragraph in english language.<br/>
-        You can use as many p tag as you want in any html file or webpage.<br/><br/>
-        By default font sizes will be smaller, obviously we can increase it by css.
+        You can use as many "p" tag as you want in any html file or webpage.<br/><br/>
         `}
         parentEl="p"
         customStyle={fluid(
@@ -47,10 +45,99 @@ const HTMLHeading: NextPage = () => {
         )}
       />
 
-      <CodeSnippet content={htmlParaTagSnippet} />
+      <Heading
+        content="Syntax and Usage :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
 
       <Text
         content={`
+        To create a paragraph in HTML, simply wrap your text content with the <strong>&lt;p&gt;</strong> opening and <strong>&lt;/p&gt;</strong> closing tags. 
+        <br/>
+        You can include multiple paragraphs on a page by using additional <strong>&lt;p&gt;</strong> tags.<br/>
+        Here's an example:
+        `}
+        parentEl="section"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={htmlParaTagSnippet} />
+
+      <Heading
+        content="Formatting text in paragraphs :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        Within a paragraph, you can apply various text formatting options, such as:
+        <br/>
+        <br/>
+
+        <strong>1. Bold :</strong> To make text bold, enclose it within the <strong>&lt;strong&gt;</strong> or <strong>&lt;b&gt;</strong> tags. 
+        <br/> For example :
+        <strong>&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;</strong>.
+        <br/>
+        <br/>
+
+        <strong>2. Italic:</strong> To italicize text, enclose it within the <strong>&lt;em&gt;</strong> or <strong>&lt;i&gt;</strong> tags. 
+        <br/> For example :
+        <strong> &lt;p&gt;This is &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt; </strong>.
+        <br/>
+        <br/>
+
+        <strong>3. Underline :</strong> To underline text, enclose it within the &lt;u&gt; tag. 
+        <br/> For example :
+         <strong> &lt;p&gt;This is &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt; </strong>.
+        <br/>
+        <br/>
+
+       <strong>4. Strike-through:</strong> To add a strike-through effect to text, enclose it within the 
+       <strong>&lt;s&gt;</strong> or <strong>&lt;del&gt;</strong> tags. 
+       <br/>
+       For example :
+       <strong>&lt;p&gt;This is &lt;s&gt;struck-through&lt;/s&gt; text.&lt;/p&gt;</strong>.
+        `}
+        parentEl="div"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <Heading
+        content="Best Practices"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        When working with paragraph tags, it's important to follow these best practices:
+        <br/><br/>
+        <strong>Use Semantic Markup:</strong> Ensure that the content within the &lt;p&gt; tags represents a logical and meaningful paragraph.
+        <br/><br/>
+
+        <strong>Separate Paragraphs:</strong> Use separate &lt;p&gt; tags for each paragraph to maintain proper structure and readability.
+        <br/><br/>
+        <strong>Avoid Excessive Formatting:</strong> Limit the use of excessive text formatting within paragraphs to maintain readability and a consistent style across your website.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <Text
+        content={`
+        HTML paragraph tags are a fundamental element for organizing and displaying textual content on web pages. By using them correctly and adhering to best practices, you can enhance the structure, readability, and accessibility of your web content.
+        <br/>
         <b> <br/> <br/>
         Note::</b> <br/>
         Please do not forget that paragraph or para or p tags are block level element. And if you

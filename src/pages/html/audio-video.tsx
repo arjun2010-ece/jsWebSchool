@@ -98,9 +98,9 @@ const HTMLAudioVideo: NextPage = () => {
          </li>
         </ul>
         <br/>
-        There are many more controls on this audio tag. To read more about those, please visit the official documentation
+        There are many more controls on this audio tag. To read more about those, please visit the official documentation :
         `}
-        parentEl="div"
+        parentEl="section"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),

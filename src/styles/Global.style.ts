@@ -60,7 +60,7 @@ const GlobalStyles: GlobalStyleComponent<
     font-size: 16px;
   }
   body {
-    ${tw`text-primary-500 tracking-lg leading-mobile-lg lg:leading-lg`}
+    ${tw`tracking-lg leading-mobile-lg lg:leading-lg`}
   }
   b,
   strong {
