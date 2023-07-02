@@ -59,7 +59,6 @@ const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'Forms Elements', path: '/html/form-elements' },
   { topic: 'Audio & Video tags', path: '/html/audio-video' },
   { topic: 'SEO', path: '/html/seo' },
-  { topic: 'Style attributes', path: '/html/style-attribute' },
   { topic: 'Html Comments', path: '/html/html-comments' },
   { topic: 'Very important', path: '' },
   { topic: 'Structure html of an UI', path: '/html/structure-html-ui' },

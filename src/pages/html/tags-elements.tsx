@@ -12,6 +12,7 @@ import {
   classSnippet,
   hrefSnippet,
   titleSnippet,
+  styleAttributeSnippet,
 } from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
@@ -66,7 +67,8 @@ const BlockInlinePage: NextPage = () => {
 
       <CodeSnippet content={htmlTagcodeSnippet} />
       <Text
-        content={`<b>Note:</b><br/>
+        content={`<br/>
+        <b>Note:</b><br/>
         These 5 dots you see inside tags mean nothing or empty spaces. <br/><br/>
         Now tags has an opening and closing, called as opening tag and closing tag. Opening tag
         (&lt;h1&gt;) and closing tag(&lt;/h1&gt;). And between opening and closing tag, we put contents,
@@ -120,6 +122,7 @@ const BlockInlinePage: NextPage = () => {
           <li>class</li>
           <li>href</li>
           <li>title</li>
+          <li>style</li>
         </ul>
         <br/>
 
@@ -235,9 +238,43 @@ const BlockInlinePage: NextPage = () => {
       />
       <CodeSnippet content={titleSnippet} />
 
+      {/* Style attribute */}
+      <Heading
+        content="Style Attributes ?"
+        headingType="h6"
+        customStyle={tw`underline mt-4`}
+      />
+
+      <Text
+        content={`
+        This style attribute is used for styling html elements in html file itself, without the need for doing it
+        in .css file (which is the preferred way). And we hardly do styling with style attribute. But look at the below example
+        how it is used.<br/>
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      <CodeSnippet content={styleAttributeSnippet} />
+
+      <Text
+        content={`<br/>
+       Please observe that inside html file, we write styles with single/double quote and each style separated by a semicolon such as 
+       color and text-align are separated in h1 above.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
       <Text
         content="<br/><b>Note::</b><br/>
-        Now html attributes are not at all limited to only these 4 defined above. Its huge and you can study
+        Now html attributes are not at all limited to only these 5 defined above. Its huge and you can study
         more about this in this below link::"
         parentEl="p"
         customStyle={fluid(
