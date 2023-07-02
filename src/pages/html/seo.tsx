@@ -35,7 +35,10 @@ const HTMLSeoPage: NextPage = () => {
       />
       <Text
         content={`
-       SEO stands for search engine optimization. The purpose of learning this topic is : Once your websites are ready and you host
+       SEO stands for search engine optimization. <br/>
+       Search engine optimization (SEO) tags are very important for increasing the visibility and discoverability of web pages in search engine results. Useful information about the structure and content of your website may be sent to search engines by using appropriate HTML tags. We'll examine the crucial SEO tags in this lesson and how they might improve the search engine optimization of your web pages.
+       <br/><br/>
+       <strong>The purpose of learning this topic is :</strong> Once your websites are ready and you host
        it on a domain. Now how will people search your websites on internet out of millions of websites ?? <br/>
        Its mostly by search engine bots, which will search for specific keywords and terms, which normally users search on browsers and then will rank your website
        higher or lower on search results. The higher your website comes, more people will access your website. That is why we need SEO.
@@ -57,7 +60,7 @@ const HTMLSeoPage: NextPage = () => {
         are the tags very useful for search engine bots to read and then rank accordingly. The content attribute is what you need to 
         change and modify for getting better ranking of your website on google or yahoo or literally anything.
         <br/><br/>
-        Now the last 4 meta tags are for sharing on platforms such as twitter, facebook or literally anything.
+        Now the last 4 meta tags (og:*) are for sharing on platforms such as twitter, facebook or literally anything.
         When you share the url, then how should it look on that platform, for ex: facebook. The way the shared items title(og: title), 
         description(og: description),
         url(og: url) and image(og: image) looks, we can customise that here.<br/><br/>

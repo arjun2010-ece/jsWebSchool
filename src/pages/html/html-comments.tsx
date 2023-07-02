@@ -18,7 +18,6 @@ const seo = {
   metaOgImage: '',
 };
 
-
 const HTMLComments: NextPage = () => {
   return (
     <Layout
@@ -33,6 +32,7 @@ const HTMLComments: NextPage = () => {
         headingType="h5"
         customStyle={tw`underline mb-4`}
       />
+
       <Text
         content={`
         In a html file, you might need to put a text there for your reference to understand later what a piece
@@ -48,7 +48,108 @@ const HTMLComments: NextPage = () => {
         )}
       />
 
+      {/* Syntax and Usage */}
+      <Heading
+        content="Syntax and Usage :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        HTML comments are denoted by <strong> "&lt;!-- "</strong> at the beginning and <strong> "--&gt;"</strong> at the end. Any text or code placed between these delimiters is considered a comment and is ignored by browsers when rendering the web page.
+        <br/><br/>
+        HTML comments can span multiple lines, making them suitable for providing detailed explanations or documenting complex code sections.
+        <br/>
+        Here's an example: 
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
       <CodeSnippet content={commentsSnippet} />
+
+      {/* Benefits and Use Cases */}
+      <Heading
+        content="Benefits and Use Cases :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        HTML comments offer several benefits and use cases, including:
+        <br/><br/>
+
+        <strong>1. Code Documentation:</strong> Comments provide a means to document your code, making it easier for other developers (including yourself) to understand its purpose, functionality, or any specific considerations. Use comments to explain complex logic, clarify intent, or provide helpful tips and reminders.
+        <br/><br/>
+        <strong>2. Temporary Code Removal:</strong> Comments allow you to temporarily remove or disable portions of HTML code without deleting them entirely. This can be helpful when troubleshooting issues, testing alternative implementations, or experimenting with different design elements.
+
+        <br/><br/>
+        <strong>3. Collaboration and Communication:</strong> Comments facilitate collaboration among developers by enabling clear communication within the codebase. Team members can leave notes, suggestions, or warnings for others, fostering a better understanding and smoother workflow.
+        
+        <br/><br/>
+        <strong>4. Debugging and Troubleshooting:</strong> Adding comments around specific code segments or problematic areas can aid in debugging and troubleshooting. Comments can help isolate issues, explain the purpose of certain code blocks, or provide insights into potential solutions.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      {/* Best Practices */}
+      <Heading
+        content="Benefits and Use Cases :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        To make the most of HTML comments, consider the following best practices:
+        <br/><br/>
+        <strong>Be Clear and Concise:</strong> Write comments that are easy to understand and concise. Use plain language and avoid overly technical jargon.
+
+        <br/><br/>
+        <strong>Comment All Code:</strong> Comment important sections of your HTML code, especially those that may be complex, prone to confusion, or require explanation.
+
+        <br/><br/>
+        <strong>Update Comments:</strong> Keep comments up to date with the code they describe. If you make changes to the code, ensure that the corresponding comments reflect those changes.
+
+        <br/><br/>
+        <strong>Avoid Redundancy:</strong> Only comment when necessary. If the code is self-explanatory or the comment adds no additional value, it's best to omit it.
+
+        <br/><br/>
+        <strong>Remove unused Comments:</strong> Regularly review your codebase and remove any comments that are no longer relevant or necessary. This helps maintain a clean and organized code structure.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
+      {/* Conclusion */}
+      <Heading
+        content="Conclusion :"
+        headingType="h6"
+        customStyle={tw`underline mb-4 mt-8`}
+      />
+
+      <Text
+        content={`
+        HTML comments are a powerful tool for documentation, communication, and code organization. By using them effectively, you can enhance collaboration, improve code readability, and facilitate debugging and troubleshooting. Remember to follow best practices and maintain consistent commenting practices throughout your HTML codebase to ensure clarity and ease of maintenance.
+        `}
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
     </Layout>
   );
 };
