@@ -12,7 +12,7 @@ const seo = {
   metaDescription:
     'Discover the fundamentals of HTML with our comprehensive tutorial. Learn what HTML is, its role in web development, and how to create structured and semantic web pages. Explore HTML tags, elements, attributes, and their purpose. Level up your web development skills and start building your own web pages with HTML.',
   metaKeywords:
-    'HTML, web development, web design, HTML basics, HTML tags, HTML elements, HTML attributes, structured web pages, semantic HTML, frontend development, HTML tutorial',
+    'HTML, what is HTML ?, web development, web design, HTML basics, HTML tags, HTML elements, HTML attributes, structured web pages, semantic HTML, frontend development, HTML tutorial',
   metaOgTitle: 'What is HTML? A Comprehensive Introduction to HTML Basics',
   metaOgUrl: 'https://jswebschool.com/html',
   metaOgImage: '',
