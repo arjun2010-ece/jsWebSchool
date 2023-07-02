@@ -16,6 +16,18 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
 
+const seo = {
+  title: 'HTML Tables',
+  metaDescription:
+    'Master the creation and styling of HTML tables with our comprehensive tutorial. Learn how to structure tabular data using the "table", "tr", and "td" tags. Explore various attributes and techniques for adding headers, captions, borders, and responsive behavior to your tables. Level up your web development skills and create well-organized and visually appealing tables with HTML.',
+  metaKeywords:
+    'HTML, tables, tabular data, table structure, table tags, table attributes, table styling, table headers, table captions, responsive tables, web development, web design, HTML tutorial, frontend development',
+  metaOgTitle:
+    'HTML Tables: Structuring and Styling Tabular Data',
+  metaOgUrl: 'https://jswebschool.com/html/tables',
+  metaOgImage: '',
+};
+
 const HTMLTables: NextPage = () => {
   return (
     <Layout
@@ -23,6 +35,7 @@ const HTMLTables: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Tables"

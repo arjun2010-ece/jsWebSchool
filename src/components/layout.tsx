@@ -43,12 +43,22 @@ const Content = styled.div<ContentProps>`
   }
 `;
 
+type SeoProps = {
+  title: string;
+  metaDescription: string;
+  metaKeywords: string;
+  metaOgTitle: string;
+  metaOgUrl: string;
+  metaOgImage: string;
+};
+
 type LayoutProps = {
   children: ReactNode;
   sidebar?: boolean;
   hideAd?: boolean;
   hideSidebar?: boolean;
   currentPage?: string;
+  seo?: SeoProps;
 };
 
 const Layout: FC<LayoutProps> = ({
@@ -57,6 +67,7 @@ const Layout: FC<LayoutProps> = ({
   hideAd = false,
   hideSidebar = false,
   currentPage = '',
+  seo,
 }) => {
   const router: NextRouter = useRouter();
   const [mobileNav, setMobileNav] = useState<boolean>(false);
@@ -68,18 +79,17 @@ const Layout: FC<LayoutProps> = ({
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
-        title=""
-        metaDescription=""
-        metaKeywords=""
-        metaOgTitle=""
-        metaOgUrl=""
-        metaOgImage=""
+        title={seo?.title || ""}
+        metaDescription={seo?.metaDescription || ""}
+        metaKeywords={seo?.metaKeywords || ""}
+        metaOgTitle={seo?.metaOgTitle || ""}
+        metaOgUrl={seo?.metaOgUrl || ""}
+        metaOgImage={seo?.metaOgImage || ""}
       />
 
       <Header />
 
       <MainContent>
-
         <HamburgerWrapper>
           <HamburgerComponent
             mobileNav={mobileNav}

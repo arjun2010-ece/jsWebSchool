@@ -25,6 +25,17 @@ const StyledLink = styled(Link)`
   text-decoration: underline;
 `;
 
+const seo = {
+  title: 'HTML Tags vs Elements vs attributes',
+  metaDescription:
+    'Understand the differences between HTML tags, elements, and attributes with our comprehensive tutorial. Learn the role of tags in defining the structure and content of web pages, the purpose of elements as instances of tags, and the use of attributes to provide additional information or modify the behavior of elements. Level up your web development skills and gain a clear understanding of HTML tags, elements, and attributes.',
+  metaKeywords:
+    'HTML, tags, elements, attributes, web development, web design, HTML structure, HTML syntax, frontend development, HTML tutorial',
+  metaOgTitle: 'HTML Tags vs Elements vs Attributes: Understanding the Fundamentals',
+  metaOgUrl: 'https://jswebschool.com/html/tags-elements',
+  metaOgImage: '',
+};
+
 const BlockInlinePage: NextPage = () => {
   return (
     <Layout
@@ -32,6 +43,7 @@ const BlockInlinePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="HTML Tags vs Elements ?"

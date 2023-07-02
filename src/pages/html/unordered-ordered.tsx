@@ -12,6 +12,18 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'HTML Unordered / Ordered list',
+  metaDescription:
+    'Master the creation of unordered and ordered lists in HTML with our comprehensive tutorial. Learn how to use the "ul" and "ol" tags to structure and organize content into bullet-pointed or numbered lists. Explore list item ("li") tags, nested lists, and various attributes for customizing list styles. Level up your web development skills and create well-structured and visually appealing lists with HTML unordered and ordered lists.',
+  metaKeywords:
+    'HTML, unordered list, ordered list, ul tag, ol tag, li tag, nested lists, list styles, web development, web design, frontend development, HTML tutorial',
+  metaOgTitle:
+    'HTML Unordered / Ordered List: Structuring and Organizing Content',
+  metaOgUrl: 'https://jswebschool.com/html/unordered-ordered',
+  metaOgImage: '',
+};
+
 const HTMLUnorderedOrderedLists: NextPage = () => {
   return (
     <Layout
@@ -19,6 +31,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Unordered vs ordered lists ?"

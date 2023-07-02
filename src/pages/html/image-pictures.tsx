@@ -12,6 +12,18 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'Html Image vs Pictures',
+  metaDescription:
+    'Understand the differences between HTML image and picture elements with our comprehensive tutorial. Learn when to use each element, their attributes, and best practices for implementing responsive images. Discover how to optimize images for web performance and accessibility. Enhance your web development skills and create visually appealing and efficient web pages with HTML image and picture elements.',
+  metaKeywords:
+    'HTML, image element, picture element, responsive images, images, pictures, img tag, picture tag, image tag, image formats, image optimization, web development, web design, web performance, accessibility, HTML attributes, frontend development, HTML tutorial',
+  metaOgTitle:
+    'HTML Image vs Picture: Choosing the Right Element for Web Design',
+  metaOgUrl: 'https://jswebschool.com/html/image-pictures',
+  metaOgImage: '',
+};
+
 const HTMLImagePicture: NextPage = () => {
   return (
     <Layout
@@ -19,6 +31,7 @@ const HTMLImagePicture: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Image Tag vs Picture tag ?"

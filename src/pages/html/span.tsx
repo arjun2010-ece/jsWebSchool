@@ -7,6 +7,18 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'span tag',
+  metaDescription:
+    'Discover the versatility of the HTML "span" tag with our comprehensive tutorial. Learn how to use the "span" tag to apply inline styling, target specific elements, and group inline content. Explore practical examples and best practices for leveraging the power of spans in your HTML code. Level up your web development skills and create customized and fine-grained styling with the HTML "span" tag.',
+  metaKeywords:
+    'HTML, span tag, inline styling, inline content, inline element, targeting elements, HTML elements, web development, web design, frontend development, HTML tutorial',
+  metaOgTitle:
+    'HTML Span Tag: Customized Inline Styling and Targeting Elements',
+  metaOgUrl: 'https://jswebschool.com/html/span',
+  metaOgImage: '',
+};
+
 const HTMLSpan: NextPage = () => {
   return (
     <Layout
@@ -14,6 +26,7 @@ const HTMLSpan: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Span Tags ?"

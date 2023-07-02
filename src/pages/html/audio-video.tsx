@@ -14,6 +14,17 @@ const officialAudioUrls =
 const officialVideoUrls =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video';
 
+const seo = {
+  title: 'Audio & Video tags',
+  metaDescription:
+    'Learn how to effectively use HTML audio and video tags to enhance your website. Our comprehensive tutorial covers the basics of embedding audio and video, controlling playback, adding captions, and optimizing for different devices. Discover the power of multimedia content and create engaging experiences for your website visitors.',
+  metaKeywords:
+    'HTML audio, HTML video, audio tags, video tags, multimedia tags, embedding audio, embedding video, multimedia, embedding audio, playback control, multimedia optimization, HTML5 audio, HTML5 video, captions, accessibility, device optimization, web development, audio and video tutorial, HTML tutorial, web design, website enhancement, website development',
+  metaOgTitle: 'Master HTML Audio and Video Tags: A Comprehensive Tutorial',
+  metaOgUrl: 'https://jswebschool.com/html/audio-video',
+  metaOgImage: '',
+};
+
 const HTMLAudioVideo: NextPage = () => {
   return (
     <Layout
@@ -21,6 +32,7 @@ const HTMLAudioVideo: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Audio and Video Tags ?"
@@ -202,25 +214,6 @@ const HTMLAudioVideo: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-
-      {/* 
-      <CodeSnippet content={htmlDivTagSnippet} /> */}
-
-      {/* <Text
-        content={`
-        <b> <br/> <br/>
-        Note::</b> <br/>
-        Please do not forget that div tags are block level element. And if you
-        remember, it has top/bottom/right/left extra margins and paddings by default.<br/>
-        <b>FYI ::</b> These extra margins and paddings we need to remove from all block elements and
-        then only UI will be consistent and follow css box model, obviously when we go to css.
-        `}
-        parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      /> */}
     </Layout>
   );
 };

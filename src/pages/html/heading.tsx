@@ -7,6 +7,17 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'HTML Heading Tags',
+  metaDescription:
+    'Learn how to effectively use HTML heading tags with our comprehensive tutorial. Understand the purpose and hierarchy of heading tags (H1-H6), and how to structure your content using appropriate headings. Discover the impact of heading tags on SEO and accessibility. Level up your HTML skills and create well-organized and semantic web pages with heading tags.',
+  metaKeywords:
+    'HTML, heading tags, h1, h2, h3, h4, h5, h6, web development, web design, SEO, accessibility, semantic HTML, HTML structure, HTML tutorial, frontend development',
+  metaOgTitle: 'HTML Heading Tags: Structure Your Headings and Contents Effectively',
+  metaOgUrl: 'https://jswebschool.com/html/heading',
+  metaOgImage: '',
+};
+
 const HTMLHeading: NextPage = () => {
   return (
     <Layout
@@ -14,6 +25,7 @@ const HTMLHeading: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Heading Tags ?"

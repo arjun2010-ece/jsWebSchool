@@ -7,6 +7,18 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'HTML paragraph tag',
+  metaDescription:
+    'Master the HTML paragraph tag with our comprehensive tutorial. Learn how to use the "p" tag to structure and format text content in HTML. Discover techniques for styling paragraphs, creating line breaks, and adjusting spacing. Level up your web development skills and create well-formatted and readable paragraphs with the HTML paragraph tag.',
+  metaKeywords:
+    'HTML, paragraph tag, text formatting, line breaks, spacing, web development, web design, HTML structure, HTML formatting, frontend development, HTML tutorial',
+  metaOgTitle: 'HTML Paragraph Tag: Structure and Format Text Content',
+  metaOgUrl: 'https://jswebschool.com/html/paragraph',
+  metaOgImage: '',
+};
+
+
 const HTMLHeading: NextPage = () => {
   return (
     <Layout
@@ -14,6 +26,7 @@ const HTMLHeading: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Paragraph Tags ?"

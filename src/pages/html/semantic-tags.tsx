@@ -14,6 +14,17 @@ const StyledLink = styled(Link)`
   text-decoration: underline;
 `;
 
+const seo = {
+  title: 'HTML Semantic tags',
+  metaDescription:
+    'Discover the power of HTML semantic tags with our comprehensive tutorial. Learn how to use semantic elements such as "header", "nav", "section", "article", and more to enhance the structure and meaning of your web pages. Explore the benefits of semantic HTML for accessibility, search engine optimization, and code organization. Level up your web development skills and create well-structured and semantically meaningful web pages with HTML semantic tags.',
+  metaKeywords:
+    'HTML, semantic tags, HTML semantic tags, semantic HTML, web development, web design, accessibility, SEO, code organization, HTML structure, frontend development, HTML tutorial',
+  metaOgTitle: 'HTML Semantic Tags: Enhancing Web Page Structure and Meaning',
+  metaOgUrl: 'https://jswebschool.com/html/semantic-tags',
+  metaOgImage: '',
+};
+
 const SemanticTagsPage: NextPage = () => {
   return (
     <Layout
@@ -21,6 +32,7 @@ const SemanticTagsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Semantic Tags ?"

@@ -8,13 +8,25 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
 
-const HTMLDiv: NextPage = () => {
+const seo = {
+  title: 'What is SEO ?',
+  metaDescription:
+    'Master the fundamentals of SEO (Search Engine Optimization) with our comprehensive tutorial. Learn how to optimize your HTML web pages to improve visibility in search engine results. Discover techniques for keyword research, meta tags, heading tags, image optimization, and more. Level up your web development skills and drive organic traffic to your website with effective SEO strategies.',
+  metaKeywords:
+    'SEO, Search Engine Optimization, HTML optimization, keyword research, meta tags, heading tags, image optimization, web development, web design, organic traffic, frontend development, HTML tutorial',
+  metaOgTitle: 'SEO: Mastering Search Engine Optimization for Your Website',
+  metaOgUrl: 'https://jswebschool.com/html/seo',
+  metaOgImage: '',
+};
+
+const HTMLSeoPage: NextPage = () => {
   return (
     <Layout
       sidebar={true}
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="SEO ?"
@@ -69,4 +81,4 @@ const HTMLDiv: NextPage = () => {
   );
 };
 
-export default HTMLDiv;
+export default HTMLSeoPage;

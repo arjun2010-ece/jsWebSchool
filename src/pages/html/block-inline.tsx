@@ -7,6 +7,18 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import ResponsiveImage from '@/components/responsive-image';
 
+const seo = {
+  title: 'Block vs Inline block vs Inline',
+  metaDescription:
+    'Learn the differences and best use cases for HTML display properties: block, inline block, and inline. Understand how these properties affect the layout and behavior of elements on your webpage. Discover when to choose each display property to create visually appealing and responsive designs.',
+  metaKeywords:
+    'HTML tutorial, block display, inline block, inline display, CSS, web development, web design, layout properties, responsive design, HTML, CSS, Block, Inline-block, Inline, display properties, layout, CSS tutorial, web development, frontend development, CSS comparison',
+  metaOgTitle:
+    'Mastering HTML Display Properties: Block vs Inline Block vs Inline',
+  metaOgUrl: 'https://jswebschool.com/html/block-inline',
+  metaOgImage: '',
+};
+
 const BlockInlinePage: NextPage = () => {
   return (
     <Layout
@@ -14,6 +26,7 @@ const BlockInlinePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Block vs Inline block vs inline Elements ?"

@@ -7,6 +7,17 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'HTML DIV Tag',
+  metaDescription:
+    'Learn how to use the HTML `<div>` tag effectively in web design. Our comprehensive tutorial covers the purpose, structure, and styling of `<div>` elements, and how they can be used for layout organization and styling containers. Enhance your HTML and CSS skills and create well-structured and visually appealing web pages with the versatile `<div>` tag.',
+  metaKeywords:
+    'HTML, `<div>` tag, div tag, html div tag, web design, HTML element, responsive design, structured layouts, layout organization, styling containers, HTML tutorial, CSS styling, web development, frontend development',
+  metaOgTitle: 'HTML DIV Tag: Exploring the Fundamentals of Web Page Layout',
+  metaOgUrl: 'https://jswebschool.com/html/div',
+  metaOgImage: '',
+};
+
 const HTMLDiv: NextPage = () => {
   return (
     <Layout
@@ -14,6 +25,7 @@ const HTMLDiv: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Div Tags ?"

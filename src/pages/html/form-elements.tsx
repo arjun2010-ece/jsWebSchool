@@ -17,6 +17,17 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'HTML Forms Elements',
+  metaDescription:
+    'Learn how to utilize HTML form elements effectively with our comprehensive tutorial. Discover the various form input types, including text fields, checkboxes, radio buttons, select menus, and more. Explore form validation techniques and understand how to handle form submissions. Level up your web development skills and create interactive and user-friendly forms with HTML.',
+  metaKeywords:
+    'HTML, forms, form elements, input types, text fields, checkboxes, radio buttons, select menus, form validation, form submissions, web development, web forms, frontend development, HTML tutorial, interactive forms',
+  metaOgTitle: 'HTML Forms Elements: Building Interactive Web Forms',
+  metaOgUrl: 'https://jswebschool.com/html/form-elements',
+  metaOgImage: '',
+};
+
 const HTMLFormElements: NextPage = () => {
   return (
     <Layout
@@ -24,6 +35,7 @@ const HTMLFormElements: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="Form Elements/Controls ?"

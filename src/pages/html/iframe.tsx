@@ -7,6 +7,17 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 
+const seo = {
+  title: 'Html iframe tags',
+  metaDescription:
+    'Learn how to effectively use HTML iframe tags to embed external content in your web pages. Our comprehensive tutorial covers the syntax, attributes, and best practices for using iframes. Discover how to embed videos, maps, documents, and more. Enhance your web development skills and create interactive and engaging web pages with HTML iframes.',
+  metaKeywords:
+    'HTML, iframe tags, embedding content, web development, web design, videos, maps, documents, interactive web pages, HTML tutorial, frontend development',
+  metaOgTitle: 'HTML iframe Tags: Embed External Content in Your Web Pages',
+  metaOgUrl: 'https://jswebschool.com/html/iframe',
+  metaOgImage: '',
+};
+
 const HTMLIframe: NextPage = () => {
   return (
     <Layout
@@ -14,6 +25,7 @@ const HTMLIframe: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.HTML}
+      seo={seo}
     >
       <Heading
         content="iframe Tags ?"
