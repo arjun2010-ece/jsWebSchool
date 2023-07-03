@@ -1,11 +1,17 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import tw, { theme as globalTheme } from 'twin.macro';
-import { PAGES, htmlDivCssSnippet, htmlDivPureSnippet, htmlDivTagSnippet } from '@/utils';
+import {
+  PAGES,
+  htmlDivCssSnippet,
+  htmlDivPureSnippet,
+  htmlDivTagSnippet,
+} from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'HTML DIV Tag',
@@ -164,6 +170,9 @@ const HTMLDiv: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/html/paragraph" nextLink="/html/span" />
     </Layout>
   );
 };

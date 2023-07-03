@@ -6,6 +6,7 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'Block vs Inline block vs Inline',
@@ -199,6 +200,12 @@ const BlockInlinePage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        nextLink="/html/semantic-tags"
+        prevLink="/html/tags-elements"
       />
     </Layout>
   );

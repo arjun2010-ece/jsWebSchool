@@ -6,6 +6,7 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'Html Comments',
@@ -150,6 +151,9 @@ const HTMLComments: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+       {/* NavigationIcon : Front and Back Link */}
+       <NavigationIcon prevLink="/html/seo" nextLink="/html/structure-html-ui" />
     </Layout>
   );
 };

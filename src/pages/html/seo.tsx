@@ -7,6 +7,7 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'What is SEO ?',
@@ -80,6 +81,9 @@ const HTMLSeoPage: NextPage = () => {
         altText="SEO image"
         boxHeight="400px"
       />
+
+       {/* NavigationIcon : Front and Back Link */}
+       <NavigationIcon prevLink="/html/audio-video" nextLink="/html/html-comments" />
     </Layout>
   );
 };

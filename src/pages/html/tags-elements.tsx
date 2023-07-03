@@ -19,6 +19,7 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import styled from 'styled-components';
+import NavigationIcon from '@/components/navigationIcon';
 
 const StyledLink = styled(Link)`
   color: black;
@@ -31,7 +32,8 @@ const seo = {
     'Understand the differences between HTML tags, elements, and attributes with our comprehensive tutorial. Learn the role of tags in defining the structure and content of web pages, the purpose of elements as instances of tags, and the use of attributes to provide additional information or modify the behavior of elements. Level up your web development skills and gain a clear understanding of HTML tags, elements, and attributes.',
   metaKeywords:
     'HTML, tags, elements, attributes, web development, web design, HTML structure, HTML syntax, frontend development, HTML tutorial',
-  metaOgTitle: 'HTML Tags vs Elements vs Attributes: Understanding the Fundamentals',
+  metaOgTitle:
+    'HTML Tags vs Elements vs Attributes: Understanding the Fundamentals',
   metaOgUrl: 'https://jswebschool.com/html/tags-elements',
   metaOgImage: '',
 };
@@ -297,6 +299,9 @@ const BlockInlinePage: NextPage = () => {
       <StyledLink href={moreAttributesLink} target="_blank">
         More attributes
       </StyledLink>
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon nextLink="/html/block-inline" prevLink="/html" />
     </Layout>
   );
 };

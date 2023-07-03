@@ -8,6 +8,7 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Link from 'next/link';
 import ResponsiveImage from '@/components/responsive-image';
 import styled from 'styled-components';
+import NavigationIcon from '@/components/navigationIcon';
 
 const StyledLink = styled(Link)`
   color: black;
@@ -116,6 +117,9 @@ const SemanticTagsPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon nextLink="/html/heading" prevLink="/html/block-inline" />
     </Layout>
   );
 };

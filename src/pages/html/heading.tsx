@@ -6,6 +6,7 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'HTML Heading Tags',
@@ -135,6 +136,12 @@ const HTMLHeading: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        nextLink="/html/paragraph"
+        prevLink="/html/semantic-tags"
       />
     </Layout>
   );

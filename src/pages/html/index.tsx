@@ -6,6 +6,7 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'What is Html ?',
@@ -137,6 +138,10 @@ const HTMLPage: NextPage = () => {
           )}
         `}
       />
+
+       {/* NavigationIcon : Front and Back Link */}
+       <NavigationIcon nextLink="/html/tags-elements" prevLink="" />
+
     </Layout>
   );
 };

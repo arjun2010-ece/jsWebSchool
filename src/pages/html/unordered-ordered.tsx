@@ -11,6 +11,7 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
   title: 'HTML Unordered / Ordered list',
@@ -157,6 +158,12 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/html/span"
+        nextLink="/html/image-pictures"
       />
     </Layout>
   );
