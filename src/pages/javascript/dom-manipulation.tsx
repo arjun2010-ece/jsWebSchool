@@ -12,6 +12,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript DOM Manipulations',
+  metaDescription:
+    'Master the art of JavaScript DOM (Document Object Model) manipulation and dynamically interact with HTML elements. This tutorial covers essential techniques for accessing, modifying, and creating HTML elements using JavaScript, enabling you to create dynamic and interactive web pages.',
+  metaKeywords:
+    'JavaScript tutorial, DOM manipulation, JavaScript DOM, HTML elements, front-end development, web development, dynamic web pages, interactive elements. getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll,innerHTML, textContent, setAttribute, getAttribute, classList, style, createElement, addEventListener',
+  metaOgTitle:
+    'JavaScript DOM Manipulations Tutorial: Creating Dynamic and Interactive Web Pages',
+  metaOgUrl: 'https://jswebschool.com/javascript/dom-manipulation',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSDomManipulationPage: NextPage = () => {
   return (
@@ -20,6 +33,7 @@ const JSDomManipulationPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="DOM Manipulation"
@@ -103,11 +117,8 @@ const JSDomManipulationPage: NextPage = () => {
         `}
       />
 
-      {/* <Heading
-        content="try...catch:"
-        headingType="h6"
-        customStyle={tw`mb-2 mt-8 underline`}
-      /> */}
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/javascript/error-handling" nextLink="" />
     </Layout>
   );
 };

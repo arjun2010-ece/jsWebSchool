@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Variables',
+  metaDescription:
+    'Understand the fundamentals of JavaScript variables and learn how to declare, assign, and manipulate values in your code. This tutorial covers the concept of variables in JavaScript, including variable declaration, variable types, scope, and best practices for variable naming and usage.',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript variables, variable declaration, variable assignment, variable manipulation, variable scope, front-end development, web development',
+  metaOgTitle:
+    'JavaScript Variables Tutorial: Understanding Variable Declaration and Manipulation',
+  metaOgUrl: 'https://jswebschool.com/javascript/variables',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSVariablesPage: NextPage = () => {
   return (
@@ -21,12 +34,9 @@ const JSVariablesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
-      <Heading
-        content="Variables :"
-        headingType="h5"
-        customStyle={tw`mb-4`}
-      />
+      <Heading content="Variables :" headingType="h5" customStyle={tw`mb-4`} />
 
       <Text
         content={`
@@ -296,6 +306,12 @@ const JSVariablesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/setting-up"
+        nextLink="/javascript/global-local-variables"
       />
     </Layout>
   );

@@ -15,6 +15,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Js reduce()',
+  metaDescription:
+    'Explore the JavaScript reduce() method and learn how to perform array reduction operations with ease. This tutorial covers the usage of the reduce() method in JavaScript, enabling you to perform calculations, aggregate values, and transform arrays into single values efficiently.',
+  metaKeywords:
+    'JavaScript tutorial, reduce() method, array reduction, array operations, JavaScript arrays, front-end development, web development, data aggregation',
+  metaOgTitle:
+    'JavaScript reduce() Method Tutorial: Performing Array Reduction Operations',
+  metaOgUrl: 'https://jswebschool.com/javascript/reduce',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSReducePage: NextPage = () => {
   return (
@@ -23,6 +36,7 @@ const JSReducePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Javascript reduce() method:"
@@ -216,6 +230,12 @@ const JSReducePage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/array-iteration-loops-methods"
+        nextLink="/javascript/searching-and-filtering"
       />
     </Layout>
   );

@@ -12,6 +12,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Spread and rest',
+  metaDescription:
+    'Discover the power of JavaScript spread and rest operators for handling arrays and function arguments effectively. This tutorial covers the usage of spread and rest operators in JavaScript, enabling you to spread array elements, merge arrays, and handle varying numbers of function arguments with ease.',
+  metaKeywords:
+    'JavaScript tutorial, spread operator, rest operator, JavaScript arrays, function arguments, array manipulation, front-end development, web development',
+  metaOgTitle:
+    'JavaScript Spread and Rest Operators Tutorial: Mastering Array Manipulation and Function Arguments',
+  metaOgUrl: 'https://jswebschool.com/javascript/spread-rest',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSSpreadAndRestPage: NextPage = () => {
   return (
@@ -20,6 +33,7 @@ const JSSpreadAndRestPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Spread and rest"
@@ -159,6 +173,12 @@ const JSSpreadAndRestPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/objects"
+        nextLink="/javascript/asynchronous-javaScript"
       />
     </Layout>
   );

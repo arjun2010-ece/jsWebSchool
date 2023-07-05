@@ -15,6 +15,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'What is Javascript ?',
+  metaDescription:
+    'Master the art of array iteration in JavaScript using loops and methods. This tutorial covers the usage of for loops, while loops, and introduces powerful array methods like map and filter. Learn how to effectively traverse and manipulate arrays to solve common programming challenges.',
+  metaKeywords:
+    'JavaScript tutorial, array iteration, for loop, while loop, map method, filter method, front-end development, web development, programming challenges',
+  metaOgTitle:
+    'Array Iteration in JavaScript: Exploring Loops (for, while) and Methods (map, filter)',
+  metaOgUrl: 'https://jswebschool.com/javascript/array-iteration-loops-methods',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSArraysIterationLoopsAndMethodsPage: NextPage = () => {
   return (
@@ -23,6 +36,7 @@ const JSArraysIterationLoopsAndMethodsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Array iteration using loops and array methods:"
@@ -234,6 +248,12 @@ const JSArraysIterationLoopsAndMethodsPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/array-methods"
+        nextLink="/javascript/reduce"
       />
     </Layout>
   );

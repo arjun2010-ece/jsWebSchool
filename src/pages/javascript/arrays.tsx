@@ -16,6 +16,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Array',
+  metaDescription:
+    'Gain a comprehensive understanding of JavaScript arrays and harness their power for data storage and manipulation. This tutorial covers array creation, accessing elements, adding and removing elements, and performing common operations to effectively work with arrays in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript arrays, array manipulation, array operations, array methods, front-end development, web development, data storage',
+  metaOgTitle:
+    'JavaScript Array Tutorial: Exploring Data Storage and Manipulation with JavaScript Arrays',
+  metaOgUrl: 'https://jswebschool.com/javascript/arrays',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSArraysPage: NextPage = () => {
   return (
@@ -24,6 +37,7 @@ const JSArraysPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading content="Arrays :" headingType="h5" customStyle={tw`mb-4`} />
 
@@ -219,6 +233,12 @@ const JSArraysPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/function-scope-closure"
+        nextLink="/javascript/array-methods"
       />
     </Layout>
   );

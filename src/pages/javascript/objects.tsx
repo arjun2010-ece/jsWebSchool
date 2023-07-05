@@ -17,6 +17,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Objects',
+  metaDescription:
+    'Explore JavaScript objects and unlock their potential for data organization and manipulation. This tutorial covers the concept of objects in JavaScript, including object creation, properties, methods, and how to work with objects to store and retrieve structured data in your JavaScript applications.',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript objects, object creation, object properties, object methods, data organization, data manipulation, front-end development, web development',
+  metaOgTitle:
+    'JavaScript Objects Tutorial: Exploring Data Organization and Manipulation',
+  metaOgUrl: 'https://jswebschool.com/javascript/objects',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSObjectsPage: NextPage = () => {
   return (
@@ -25,6 +38,7 @@ const JSObjectsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Objects : creation and manipulation in javascript"
@@ -230,6 +244,12 @@ const JSObjectsPage: NextPage = () => {
       />
 
       <CodeSnippet content={objDestrctSnippets} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/sorting-methods"
+        nextLink="/javascript/spread-rest"
+      />
     </Layout>
   );
 };

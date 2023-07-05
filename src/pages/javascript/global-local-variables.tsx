@@ -6,6 +6,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Global vs local variables',
+  metaDescription:
+    'Understand the difference between global and local variables in JavaScript and learn how to effectively manage variable scope. This tutorial covers the concept of global and local variables, their scopes, and the best practices for variable declaration and usage in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, global variables, local variables, variable scope, JavaScript scope, front-end development, web development, variable declaration',
+  metaOgTitle:
+    'JavaScript Global vs Local Variables Tutorial: Understanding Variable Scope in JavaScript',
+  metaOgUrl: 'https://jswebschool.com/javascript/global-local-variables',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSGlobalLocalVariablesPage: NextPage = () => {
   return (
@@ -14,6 +27,7 @@ const JSGlobalLocalVariablesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Global vs Local variables :"
@@ -118,6 +132,12 @@ const JSGlobalLocalVariablesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/variables"
+        nextLink="/javascript/data-types"
       />
     </Layout>
   );

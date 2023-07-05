@@ -6,6 +6,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Introduction to JavaScript ?',
+  metaDescription:
+    'Get started with JavaScript and learn the basics of this powerful programming language. This tutorial provides a comprehensive introduction to JavaScript, covering its syntax, variables, data types, control flow, functions, and more, empowering you to begin your journey into web development with JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, introduction to JavaScript, web development, front-end development, web design, JavaScript basics, dynamic web pages, interactivity, programming fundamentals',
+  metaOgTitle:
+    'Introduction to JavaScript Tutorial: Getting Started with Web Development',
+  metaOgUrl: 'https://jswebschool.com/javascript',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSHomePage: NextPage = () => {
   return (
@@ -14,6 +27,7 @@ const JSHomePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="What is Javascript ?"
@@ -140,6 +154,12 @@ const JSHomePage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink=""
+        nextLink="/javascript/setting-up"
       />
     </Layout>
   );

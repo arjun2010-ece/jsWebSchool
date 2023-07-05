@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Functions expressions and arrow functions',
+  metaDescription:
+    'Discover the power of JavaScript function expressions and arrow functions for creating efficient and concise code. This tutorial covers function expressions, arrow function syntax, and how to leverage them for various use cases, empowering you to write modular and expressive JavaScript code.',
+  metaKeywords:
+    'JavaScript tutorial, function expressions, arrow functions, JavaScript functions, JavaScript anonymous functions, JavaScript named functions, front-end development, web development, modular code, code efficiency',
+  metaOgTitle:
+    'JavaScript Function Expressions and Arrow Functions Tutorial: Writing Efficient and Expressive Code',
+  metaOgUrl: 'https://jswebschool.com/javascript/expressions-arrow',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSFunctionExpressionsAndArrowFunctionsPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSFunctionExpressionsAndArrowFunctionsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Function expressions and Arrow functions :"
@@ -145,6 +159,12 @@ const JSFunctionExpressionsAndArrowFunctionsPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/functions"
+        nextLink="/javascript/function-scope-closure"
       />
     </Layout>
   );

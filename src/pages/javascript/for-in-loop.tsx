@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript for...in loop',
+  metaDescription:
+    'Explore the JavaScript for...in loop and learn how to iterate over the properties of an object. This tutorial covers the usage of the for...in loop, enabling you to traverse and manipulate object properties effectively in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, for...in loop, object properties, JavaScript iteration, front-end development, web development, object manipulation',
+  metaOgTitle:
+    'JavaScript for...in Loop Tutorial: Exploring Object Iteration in JavaScript',
+  metaOgUrl: 'https://jswebschool.com/javascript/for-in-loop',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSForInLoopPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSForInLoopPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="for...in loop :"
@@ -179,6 +193,12 @@ const JSForInLoopPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/for-loop"
+        nextLink="/javascript/functions"
       />
     </Layout>
   );

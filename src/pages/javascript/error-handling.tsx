@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Error Handling',
+  metaDescription:
+    'Learn the best practices of error handling in JavaScript and ensure robustness in your code. This tutorial covers various error handling techniques, including try-catch blocks and error objects, empowering you to handle and manage errors effectively in your JavaScript applications.',
+  metaKeywords:
+    'JavaScript tutorial, error handling, JavaScript errors, try-catch blocks, error objects, front-end development, web development, code robustness',
+  metaOgTitle:
+    'JavaScript Error Handling Tutorial: Best Practices for Robust Code',
+  metaOgUrl: 'https://jswebschool.com/javascript/error-handling',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSErrorHandlingPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSErrorHandlingPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Error Handling"
@@ -166,6 +180,12 @@ const JSErrorHandlingPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/callback-promise-async-await"
+        nextLink="/javascript/dom-manipulation"
       />
     </Layout>
   );

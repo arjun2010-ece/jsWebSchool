@@ -11,6 +11,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Callback, promise and Async/Await',
+  metaDescription:
+    'Unlock the power of callback functions, promises, and async/await syntax in JavaScript. This comprehensive tutorial covers the concepts and usage of callbacks, promises, and async/await, empowering you to write asynchronous code and handle complex operations with ease.',
+  metaKeywords:
+    'JavaScript tutorial, callback functions, promises, async/await, asynchronous programming, front-end development, web development, asynchronous code',
+  metaOgTitle:
+    'Callback, Promise, and Async/Await Tutorial: Mastering Asynchronous JavaScript Programming',
+  metaOgUrl: 'https://jswebschool.com/javascript/callback-promise-async-await',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSCallbackPromisesAsyncAwaitPage: NextPage = () => {
   return (
@@ -19,6 +32,7 @@ const JSCallbackPromisesAsyncAwaitPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Callback, Promises and Async/Await"
@@ -202,6 +216,12 @@ const JSCallbackPromisesAsyncAwaitPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/asynchronous-javaScript"
+        nextLink="/javascript/error-handling"
       />
     </Layout>
   );

@@ -12,6 +12,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript for loop',
+  metaDescription:
+    'Master the JavaScript for loop and learn how to iterate over arrays and perform repetitive tasks efficiently. This tutorial covers the usage of the for loop, enabling you to control iterations, access array elements, and execute code block for a specified number of times in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, for loop, JavaScript iteration, array iteration, front-end development, web development, repetitive tasks',
+  metaOgTitle:
+    'JavaScript for Loop Tutorial: Efficient Array Iteration and Repetitive Tasks',
+  metaOgUrl: 'https://jswebschool.com/javascript/for-loop',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSForLoopPage: NextPage = () => {
   return (
@@ -20,6 +33,7 @@ const JSForLoopPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading content="for loop :" headingType="h5" customStyle={tw`mb-4`} />
 
@@ -158,6 +172,12 @@ const JSForLoopPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/switch-case"
+        nextLink="/javascript/for-in-loop"
       />
     </Layout>
   );

@@ -12,6 +12,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Data types',
+  metaDescription:
+    'Explore the fundamental data types in JavaScript and learn how to effectively work with variables and values. This tutorial covers JavaScript data types, including numbers, strings, booleans, objects, and arrays, providing you with a solid foundation for data manipulation in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript data types, numbers, strings, booleans, objects, arrays, front-end development, web development, data manipulation',
+  metaOgTitle:
+    'JavaScript Data Types Tutorial: Understanding Variables and Values in JavaScript',
+  metaOgUrl: 'https://jswebschool.com/javascript/data-types',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSDataTypesPage: NextPage = () => {
   return (
@@ -20,6 +33,7 @@ const JSDataTypesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Javascript data types :"
@@ -245,6 +259,12 @@ const JSDataTypesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/global-local-variables"
+        nextLink="/javascript/operators"
       />
     </Layout>
   );

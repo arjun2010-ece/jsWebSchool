@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Sorting methods',
+  metaDescription:
+    'Master JavaScript sorting methods and learn how to organize arrays in ascending or descending order. This tutorial covers the essential sorting methods in JavaScript, including sort(), reverse(), and custom sorting functions, empowering you to efficiently sort and arrange your data using JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, sorting methods, JavaScript arrays, sort(), reverse(), custom sorting, data organization, front-end development, web development',
+  metaOgTitle:
+    'JavaScript Sorting Methods Tutorial: Organizing Arrays with Ease',
+  metaOgUrl: 'https://jswebschool.com/javascript/sorting-methods',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSSortingPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSSortingPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Sorting methods in JS"
@@ -212,6 +226,9 @@ const JSSortingPage: NextPage = () => {
           )} ${tw`mb-0`}
         `}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/javascript/searching-and-filtering" nextLink="/javascript/objects" />
     </Layout>
   );
 };

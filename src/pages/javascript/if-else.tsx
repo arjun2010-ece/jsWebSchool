@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript IF...ELSE',
+  metaDescription:
+    'Master the JavaScript if...else statement and learn how to add conditional logic to your code. This tutorial covers the usage of if...else statements in JavaScript, enabling you to make decisions and execute different code blocks based on specific conditions.',
+  metaKeywords:
+    'JavaScript tutorial, if...else statement, conditional logic, JavaScript conditions, front-end development, web development, decision-making',
+  metaOgTitle:
+    'JavaScript if...else Tutorial: Adding Conditional Logic to Your Code',
+  metaOgUrl: 'https://jswebschool.com/javascript/if-else',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSIfElsePage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSIfElsePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Javascript If/Else :"
@@ -181,6 +195,12 @@ const JSIfElsePage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/operators"
+        nextLink="/javascript/switch-case"
       />
     </Layout>
   );

@@ -15,6 +15,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Functions',
+  metaDescription:
+    'Explore the power of JavaScript functions and learn how to create reusable blocks of code. This tutorial covers the fundamentals of JavaScript functions, including function declarations, function expressions, parameters, return values, and function invocation, empowering you to write modular and efficient code.',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript functions, function declarations, function expressions, parameters, return values, function invocation, front-end development, web development, code reusability',
+  metaOgTitle:
+    'JavaScript Functions Tutorial: Building Modular and Reusable Code',
+  metaOgUrl: 'https://jswebschool.com/javascript/functions',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSFunctionsPage: NextPage = () => {
   return (
@@ -23,6 +36,7 @@ const JSFunctionsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading content="Functions :" headingType="h5" customStyle={tw`mb-4`} />
 
@@ -209,6 +223,12 @@ const JSFunctionsPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/for-in-loop"
+        nextLink="/javascript/expressions-arrow"
       />
     </Layout>
   );

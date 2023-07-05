@@ -5,6 +5,19 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Operators',
+  metaDescription:
+    'Master JavaScript operators and learn how to perform various operations on values and variables. This tutorial covers JavaScript operators, including arithmetic, assignment, comparison, logical, and more, empowering you to manipulate and combine values effectively in your JavaScript code',
+  metaKeywords:
+    'JavaScript tutorial, JavaScript operators, arithmetic operators, assignment operators, comparison operators, logical operators, front-end development, web development, value manipulation',
+  metaOgTitle:
+    'JavaScript Operators Tutorial: Performing Operations on Values and Variables',
+  metaOgUrl: 'https://jswebschool.com/javascript/operators',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSDataTypesPage: NextPage = () => {
   return (
@@ -13,6 +26,7 @@ const JSDataTypesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Javascript Operators :"
@@ -122,7 +136,12 @@ const JSDataTypesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-      {/* <CodeSnippet content={dataTypesSnippet} codeContainerStyle={tw`mx-8`} /> */}
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/data-types"
+        nextLink="/javascript/if-else"
+      />
     </Layout>
   );
 };

@@ -12,6 +12,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Function scope and closures',
+  metaDescription:
+    'Understand JavaScript function scope and closures to create robust and efficient code. This tutorial covers the concepts of function scope and closures in JavaScript, enabling you to better manage variable scope and create self-contained functions for improved code organization and reusability.',
+  metaKeywords:
+    'JavaScript tutorial, function scope, closures, variable scope, code organization, code reusability, front-end development, web development',
+  metaOgTitle:
+    'JavaScript Function Scope and Closures Tutorial: Mastering Variable Scope and Code Organization',
+  metaOgUrl: 'https://jswebschool.com/javascript/function-scope-closure',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSFunctionScopeAndClosurePage: NextPage = () => {
   return (
@@ -20,6 +33,7 @@ const JSFunctionScopeAndClosurePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Function scope and closures :"
@@ -129,6 +143,12 @@ const JSFunctionScopeAndClosurePage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/expressions-arrow"
+        nextLink="/javascript/arrays"
       />
     </Layout>
   );

@@ -15,6 +15,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript searching and filtering methods',
+  metaDescription:
+    'Discover powerful JavaScript searching and filtering methods to efficiently find and extract elements from arrays. This tutorial covers essential searching and filtering techniques in JavaScript, including methods like filter(), find(), indexOf(), and more, empowering you to handle data manipulation and retrieval effectively.',
+  metaKeywords:
+    'JavaScript tutorial, searching methods, filtering methods, JavaScript arrays, filter(), find(), indexOf(), front-end development, web development, data manipulation',
+  metaOgTitle:
+    'JavaScript Searching and Filtering Methods Tutorial: Efficient Data Retrieval and Manipulation',
+  metaOgUrl: 'https://jswebschool.com/javascript/searching-and-filtering',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSSearchingAndFilteringPage: NextPage = () => {
   return (
@@ -23,6 +36,7 @@ const JSSearchingAndFilteringPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Searching and Filtering in JS"
@@ -165,6 +179,12 @@ const JSSearchingAndFilteringPage: NextPage = () => {
       />
 
       <CodeSnippet content={includesArrSnippet} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/reduce"
+        nextLink="/javascript/sorting-methods"
+      />
     </Layout>
   );
 };

@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Asynchronous JavaScript',
+  metaDescription:
+    'Master the art of asynchronous JavaScript programming and leverage its power to handle time-consuming tasks and create responsive web applications. This tutorial covers asynchronous concepts, including callbacks, promises, and async/await, enabling you to write efficient and non-blocking code in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, asynchronous JavaScript, callbacks, promises, async/await, front-end development, web development, responsive applications, non-blocking code',
+  metaOgTitle:
+    'Asynchronous JavaScript Tutorial: Mastering Non-Blocking Code for Responsive Web Applications',
+  metaOgUrl: 'https://jswebschool.com/javascript/asynchronous-javaScript',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSAsynchronousJavascriptPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const JSAsynchronousJavascriptPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Asynchronous Javascript"
@@ -139,6 +153,12 @@ const JSAsynchronousJavascriptPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/spread-rest"
+        nextLink="/javascript/callback-promise-async-await"
       />
     </Layout>
   );

@@ -6,6 +6,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Setting Up',
+  metaDescription:
+    'Learn how to set up your JavaScript development environment and get ready to write JavaScript code. This tutorial covers the essential steps for setting up JavaScript, including installing a code editor, configuring a web server, and ensuring you have the necessary tools to start coding in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, setting up JavaScript, JavaScript development environment, code editor, web server, front-end development, web development, development tools',
+  metaOgTitle:
+    'JavaScript Setting Up Tutorial: Getting Your Environment Ready for JavaScript Development',
+  metaOgUrl: 'https://jswebschool.com/javascript/setting-up',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSSettingUpPage: NextPage = () => {
   return (
@@ -14,6 +27,7 @@ const JSSettingUpPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="How to use javascript in browser ?"
@@ -139,6 +153,12 @@ const JSSettingUpPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript"
+        nextLink="/javascript/variables"
       />
     </Layout>
   );

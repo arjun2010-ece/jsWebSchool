@@ -1,11 +1,29 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
-import { PAGES, anotherSwitchCaseSnippet, basicSwitchSnippet, switchCaseExampleSnippet } from '@/utils';
+import {
+  PAGES,
+  anotherSwitchCaseSnippet,
+  basicSwitchSnippet,
+  switchCaseExampleSnippet,
+} from '@/utils';
 import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Switch Case',
+  metaDescription:
+    'Master the JavaScript switch case statement and learn how to create multi-branching logic in your code. This tutorial covers the usage of the switch case statement in JavaScript, enabling you to handle multiple conditions and execute different code blocks based on specific cases.',
+  metaKeywords:
+    'JavaScript tutorial, switch case statement, JavaScript conditions, multi-branching logic, front-end development, web development, decision-making',
+  metaOgTitle:
+    'JavaScript Switch Case Tutorial: Implementing Multi-Branching Logic in Your Code',
+  metaOgUrl: 'https://jswebschool.com/javascript/switch-case',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSSwitchCasePage: NextPage = () => {
   return (
@@ -14,6 +32,7 @@ const JSSwitchCasePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Switch case :"
@@ -129,6 +148,12 @@ const JSSwitchCasePage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/if-else"
+        nextLink="/javascript/for-loop"
       />
     </Layout>
   );

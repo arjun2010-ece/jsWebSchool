@@ -26,6 +26,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Javascript Array Methods',
+  metaDescription:
+    'Explore the powerful array methods in JavaScript and unleash the potential of array manipulation. This tutorial covers essential array methods such as map, filter, reduce, and more, empowering you to efficiently perform common operations and transform your data in JavaScript.',
+  metaKeywords:
+    'JavaScript tutorial, array methods, JavaScript arrays, array manipulation, map method, filter method, reduce method, Array.isArray(), Array.length, reverse(), join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete and flat(), front-end development, web development',
+  metaOgTitle:
+    'JavaScript Array Methods Tutorial: Mastering Array Manipulation and Transformation',
+  metaOgUrl: 'https://jswebschool.com/javascript/array-methods',
+  metaOgImage: '/images/javascript-logo.jpeg',
+};
 
 const JSArraysPage: NextPage = () => {
   return (
@@ -34,6 +47,7 @@ const JSArraysPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.JAVASCRIPT}
+      seo={seo}
     >
       <Heading
         content="Javascript inbuilt Array Methods:"
@@ -490,6 +504,12 @@ const JSArraysPage: NextPage = () => {
             remToPx(globalTheme`fontSize.lg`),
           )} ${tw`mb-0`}
         `}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/javascript/arrays"
+        nextLink="/javascript/array-iteration-loops-methods"
       />
     </Layout>
   );
