@@ -14,15 +14,15 @@ export const MENU_ITEMS: menuItemsType[] = [
   { title: 'GIT', path: '/git' },
   { title: 'ReactJs', path: '/reactjs' },
   { title: 'Node.js', path: '/nodejs' },
-  {
-    title: 'More',
-    path: '',
-    subItems: [
-      { title: 'Angular', path: '/subitem1' },
-      { title: 'Vue.js', path: '/subitem2' },
-      { title: 'Data Modelling', path: '/subitem3' },
-    ],
-  },
+  // {
+  //   title: 'More',
+  //   path: '',
+  //   subItems: [
+  //     { title: 'Angular', path: '/subitem1' },
+  //     { title: 'Vue.js', path: '/subitem2' },
+  //     { title: 'Data Modelling', path: '/subitem3' },
+  //   ],
+  // },
 ];
 
 export const PAGES = {
