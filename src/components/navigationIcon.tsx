@@ -20,14 +20,11 @@ const nextIcon = (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
-    // xmlns:xlink="http://www.w3.org/1999/xlink"
-    // xmlns:svgjs="http://svgjs.com/svgjs"
     width="512"
     height="512"
     x="0"
     y="0"
     viewBox="0 0 492.004 492.004"
-    // xml:space="preserve"
     className=""
   >
     <circle
@@ -35,7 +32,6 @@ const nextIcon = (
       cx="246.002"
       cy="246.002"
       fill="#bac8d3"
-      // shape="circle"
       transform="matrix(1,0,0,1,0,0)"
     ></circle>
     <g transform="matrix(0.7,0,0,0.7,73.8006088256837,73.80059509277345)">
@@ -52,14 +48,11 @@ const prevIcon = (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
-    // xmlns:xlink="http://www.w3.org/1999/xlink"
-    // xmlns:svgjs="http://svgjs.com/svgjs"
     width="512"
     height="512"
     x="0"
     y="0"
     viewBox="0 0 492 492"
-    // xml:space="preserve"
     className=""
   >
     <circle
@@ -67,7 +60,6 @@ const prevIcon = (
       cx="246"
       cy="246"
       fill="#bac8d3"
-      // shape="circle"
     ></circle>
     <g transform="matrix(0.7,0,0,0.7,73.79998397827148,73.80000000000001)">
       <path
@@ -95,12 +87,19 @@ const NavigationIcon: FC<NavigationIconProps> = ({ prevLink, nextLink }) => {
       <div />
     );
 
-  return (
-    <StyledNavigationWrapper className="my-8 flex justify-between py-2">
-      {prevItem}
+  const nextItem =
+    nextLink !== '' ? (
       <Link href={nextLink} className="flex items-center gap-2">
         Next {nextIcon}
       </Link>
+    ) : (
+      <div />
+    );
+
+  return (
+    <StyledNavigationWrapper className="my-8 flex justify-between py-2">
+      {prevItem}
+      {nextItem}
     </StyledNavigationWrapper>
   );
 };

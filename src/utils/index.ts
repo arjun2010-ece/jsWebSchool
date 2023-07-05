@@ -89,12 +89,11 @@ export const htmlDivTagSnippet = `<div> A new day.</div>
 
 export const htmlDivPureSnippet = `<div class="container">
     <!-- Content goes here -->
-</div>`
+</div>`;
 
 export const htmlDivCssSnippet = `.container {
     /* CSS styles */
-}`
-
+}`;
 
 export const htmlSpanTagSnippet = `<span> A new day.</span>
 
@@ -118,8 +117,7 @@ export const htmlCssSpanTagSnippet = `.highlight {
    /* CSS styles */
 }`;
 
-export const htmlSpanAccessibilitySnippet = `<span role="button" tabindex="0">Clickable Span</span>`
-
+export const htmlSpanAccessibilitySnippet = `<span role="button" tabindex="0">Clickable Span</span>`;
 
 export const htmlOrderedListSnippet = `One way:
 1. This is amazing.
@@ -384,7 +382,7 @@ export const htmlTableColRowSpanSnippet = `
 </table>
 `;
 
-export const iframeSimpleTagSnippet = `<iframe src="https://www.youtube.com"></iframe>`
+export const iframeSimpleTagSnippet = `<iframe src="https://www.youtube.com"></iframe>`;
 
 export const iframeTagSnippet = `
 <iframe 
@@ -520,6 +518,69 @@ export const commentsSnippet = `
 <!-- <p>This is good day </p> -->
 `;
 
+export const proj1Sec1Snippet = `<header>
+  <div class="left-side-nav">
+      <img  src="/images/one"  alt="logo" />
+      <p>Categories</p>
+  </div>
+
+  <nav>
+      <ul>
+          <li>Person Icon</li>
+          <li>Message Icon</li>
+          <li>Orders Icon</li>
+          <li>Basket Icon</li>
+          <li>Help</li>
+          <li>English - USD</li>
+          <li>Ship to</li>
+          <li>More</li>
+      </ul>
+  </nav>
+</header>`;
+
+export const proj1Sec2Snippet = `<div class="products">
+  <div class='product-search'>
+    <ul>
+        <li>Products</li>
+        <li>Manufacturers</li>
+    </ul>
+
+    <div class='search'>
+        <input type="text" name="search" placeholder='queen size bed frame'>
+        <button>Search</button>
+    </div>
+
+    <ul class='search-suggestions'>
+        <li>glass can</li>
+        <li>queen size bed frame</li>
+        <li>men shorts set</li>
+        <li>hoodie set</li>
+        <li>yarn crochet</li>
+        <li>pakistani salwar kameez</li>
+        <li>plush toys</li>
+    </ul>
+  </div>
+</div>`;
+
+
+export const proj1Sec3Snippet = `<div class="main-content">
+  // 2 subsections inside
+</div>`
+
+
+export const proj1Sec31Snippet = `<div className='topbar'>
+  <div>Request for quotation</div>
+  <div>Ready to ship</div>
+  <div>Logistics services</div>
+</div>`
+
+export const proj1Sec32Snippet = `<div className='topbar'>
+  <div>My markets</div>
+  <img  src="/pic.jpg >
+  <div>Buyers Club benefits</div>
+</div>`
+
+// CSS
 export const boxModelSnippet = `
 +-------------------------------------------+
 |                  Margin                   |
@@ -1063,6 +1124,7 @@ export const gridColumnsSnippet = `// HTML
     <div class="item" ></div>
     <div class="item" ></div>
 </div>
+
 
 //css
 
@@ -2176,7 +2238,6 @@ console.log(personObj.surname);    // Output: "Goncalves"`;
 export const deleteObjSnippet = `delete personObj.country;
 console.log(personObj.country); // Output: undefined`;
 
-
 export const personObjKeysSnippets = `const personObj = {
   name: 'Rui',
   age: 30,
@@ -2184,8 +2245,7 @@ export const personObjKeysSnippets = `const personObj = {
 };
 
 const keys = Object.keys(personObj);
-console.log(keys); // Output: ['name', 'age', 'occupation']`
-
+console.log(keys); // Output: ['name', 'age', 'occupation']`;
 
 export const personObjValsSnippets = `const personObj = {
   name: 'Rui',
@@ -2194,7 +2254,7 @@ export const personObjValsSnippets = `const personObj = {
 };
 
 const values = Object.values(person);
-console.log(values); // Output: ['Rui', 30, 'Developer']`
+console.log(values); // Output: ['Rui', 30, 'Developer']`;
 
 export const personObjEntriesSnippets = `const person = {
   name: 'John',
@@ -2204,15 +2264,14 @@ export const personObjEntriesSnippets = `const person = {
 
 const entries = Object.entries(person);
 console.log(entries);
-// Output: [['name', 'John'], ['age', 30], ['occupation', 'Developer']]`
+// Output: [['name', 'John'], ['age', 30], ['occupation', 'Developer']]`;
 
 export const personObjAssignSnippets = `const target = {};
 const source = { name: 'John', age: 30 };
 
 Object.assign(target, source);
 
-console.log(target); // Output: { name: 'John', age: 30 }`
-
+console.log(target); // Output: { name: 'John', age: 30 }`;
 
 export const objDestrctSnippets = `// case 1
 const person = {
@@ -2241,56 +2300,51 @@ const person = {
 };
 
 printPersonDetails(person);
-`
+`;
 
 export const spreadCpySnippet = `const originalArray = [1, 2, 3];
 const newArray = [...originalArray];
 
-console.log(newArray);  // Output: [1, 2, 3]`
-
+console.log(newArray);  // Output: [1, 2, 3]`;
 
 export const spreadCmbSnippet = `const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const combinedArray = [...array1, ...array2];
 
-console.log(combinedArray);  // Output: [1, 2, 3, 4, 5, 6]`
-
+console.log(combinedArray);  // Output: [1, 2, 3, 4, 5, 6]`;
 
 export const spreadCpyExtndSnippet = `const originalObject = { name: 'John', age: 30 };
 const newObject = { ...originalObject };
 
-console.log(newObject);  // Output: { name: 'John', age: 30 }`
+console.log(newObject);  // Output: { name: 'John', age: 30 }`;
 
 export const restParamsSnippet = `function sum(...numbers) {
   return numbers.reduce((total, num) => total + num, 0);
 }
 
-console.log(sum(1, 2, 3, 4));  // Output: 10`
-
+console.log(sum(1, 2, 3, 4));  // Output: 10`;
 
 export const setTimeoutSnippet = ` // Syntax
-setTimeout(callbackFunction, delay);`
+setTimeout(callbackFunction, delay);`;
 
 export const setTimeoutExSnippet = ` // Example : Execute this callback after a delay of 1 second.
 setTimeout(function(){
   console.log("Print this after 1 second");
-}, 1000);`
-
+}, 1000);`;
 
 export const setIntervalSnippet = ` // Syntax
-setInterval(callbackFunction, delay);`
-
+setInterval(callbackFunction, delay);`;
 
 export const setIntervalExSnippet = ` // Example : Execute this callback after every 1 second.
 setInterval(function(){
   console.log("Print this after every 1 second");
-}, 1000);`
+}, 1000);`;
 
 export const fetchAPIGetSnippet = `fetch('url', options)
 .then(response => response.json())
-.then(data => console.log(data));`
+.then(data => console.log(data));`;
 
-export const basicCallbackEx= `function dataFetch(callback) {
+export const basicCallbackEx = `function dataFetch(callback) {
   setTimeout(function () {
     const data = 'Howdy, Romeo!';
     callback(data);
@@ -2301,8 +2355,7 @@ function manipulateData(data) {
   console.log(data);
 }
 
-dataFetch(manipulateData); // Output: Howdy, Romeo!`
-
+dataFetch(manipulateData); // Output: Howdy, Romeo!`;
 
 export const basicPromiseSnippet = `const newPromise = new Promise((resolve, reject) => {
   // Asynchronous operation which will be resolved or rejected by promise
@@ -2321,8 +2374,7 @@ newPromise
   })
   .catch((error) => {
     console.log('Rejected:', error);
-  });`
-
+  });`;
 
 export const basicAsyncAwaitSnippet = `function dataFetch() {
   return new Promise(function (resolve, reject) {
@@ -2342,23 +2394,22 @@ async function manipulateDate() {
   }
 }
 
-manipulateDate();`
+manipulateDate();`;
 
 export const tryCatchSnippet = `try {
   // Code that might throw an error
 } catch (error) {
   // Error handling logic
-}`
+}`;
 
 export const tryCatchExSnippet = `try {
   const result = 10 / 0; // Division by zero
   console.log(result);
 } catch (error) {
   console.error("An error occurred:", error);
-}`
+}`;
 
-export const throwExceptionsSnippet = `throw new Error("Some specific Custom error message");`
-
+export const throwExceptionsSnippet = `throw new Error("Some specific Custom error message");`;
 
 export const promiseHandleErrorsSnippet = `asyncFunction()
 .then(result => {
@@ -2366,7 +2417,7 @@ export const promiseHandleErrorsSnippet = `asyncFunction()
 })
 .catch(error => {
   // Error handling logic
-});`
+});`;
 
 export const tryCatchHandleErrorsSnippet = `async function fetchData() {
   try {
@@ -2376,13 +2427,13 @@ export const tryCatchHandleErrorsSnippet = `async function fetchData() {
   } catch (error) {
     // Error handling logic
   }
-}`
+}`;
 
 export const accessElementsSnippet = `// Access an element by its ID
 const element = document.getElementById('myElement');
 
 // Access multiple elements by class name
-const elements = document.getElementsByClassName('myClass');
+const elements = document.getElementsByclass('myClass');
 
 // Access elements by tag name
 const elements = document.getElementsByTagName('div');
@@ -2391,8 +2442,7 @@ const elements = document.getElementsByTagName('div');
 const element = document.querySelector('.myClass');
 
 // Access multiple elements using CSS selector
-const elements = document.querySelectorAll('div');`
-
+const elements = document.querySelectorAll('div');`;
 
 export const modifyContentSnippet = `// Modify innerHTML to change the content
 element.innerHTML = 'New content';
@@ -2413,8 +2463,7 @@ element.classList.toggle('active');
 
 // Modify style properties
 element.style.color = 'red';
-element.style.fontSize = '16px';`
-
+element.style.fontSize = '16px';`;
 
 export const createAppendSnippets = `// Create a new element
 const newElement = document.createElement('div');
@@ -2427,8 +2476,7 @@ newElement.setAttribute('class', 'newClass');
 document.body.appendChild(newElement); // Appending to the body
 
 const parentElement = document.getElementById('parent');
-parentElement.appendChild(newElement); // Appending to a specific parent element`
-
+parentElement.appendChild(newElement); // Appending to a specific parent element`;
 
 export const eventHandlingSnippets = `// Attach click event listener
 element.addEventListener('click', function(event) {
@@ -2444,72 +2492,69 @@ element.addEventListener('keypress', function(event) {
 formElement.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
   // Code to execute on form submission
-});`
-
+});`;
 
 // GIT
 
-export const gitVerifySnippet = `git --version`
+export const gitVerifySnippet = `git --version`;
 
-export const gitInstallLinuxSnippet = `sudo apt install git`
+export const gitInstallLinuxSnippet = `sudo apt install git`;
 
 export const gitInstallRedHatSnippet = `sudo dnf install git
 
 or 
 
-sudo yum install git`
+sudo yum install git`;
 
-export const gitInstallMacSnippet = `brew install git`
+export const gitInstallMacSnippet = `brew install git`;
 
 export const gitInitAndDeInitSnippet = `// initialise a git repository
 git init
 
 // deinitialise a git repository
 rm -rf .git  // .git files stores metadata so remove it
-`
+`;
 
-export const gitAddAllSnippet = `git add .`
+export const gitAddAllSnippet = `git add .`;
 
-export const gitCommitSnippet = `git commit -m "Created a Navbar" // Inside double quote is the commit message that user can write`
+export const gitCommitSnippet = `git commit -m "Created a Navbar" // Inside double quote is the commit message that user can write`;
 
 export const gitRemoteSnippet = `git branch -M main // change the name of current local branch to main
 git remote add origin https://github.com/arjun2010-ece/sample_repo.git // add remote address locally
 git push -u origin main   // Push local branch on remote github.com server 
-`
+`;
 
 export const gitSecondSnippet = `git clone https://github.com/arjun2010-ece/sample_repo.git // add remote address locally
 git checkout -b feature/creating_navbar
 git add .
 git commit -m "created the navbar"
 git push -u origin feature/creating_navbar   // Push local branch on remote github.com server 
-`
+`;
 
 export const gitCloneSyntax = `git clone <repository_url> [<destination_directory>]
 
-git clone https://github.com/arjun2010-ece/sample_repo.git `
+git clone https://github.com/arjun2010-ece/sample_repo.git `;
 
-export const gitBranchSyntax = `git branch`
+export const gitBranchSyntax = `git branch`;
 
 export const gitCheckoutSyntax = `// First way: create and move to a new branch
 git checkout -b feature/creating_navbar
 
 //Second way: Move to a new branch
-git checkout main`
+git checkout main`;
 
-
-export const gitMergeSyntax = `git merge branchB // it will merge commits of branchB into branchA`
+export const gitMergeSyntax = `git merge branchB // it will merge commits of branchB into branchA`;
 
 export const gitFetchSyntax = `git fetch // bring all the branches from remote
-git checkout feature/creating_navbar // switch to that remote branch`
+git checkout feature/creating_navbar // switch to that remote branch`;
 
-export const gitStatusSyntax = `git status`
-
+export const gitStatusSyntax = `git status`;
 
 // Reactjs
 
-export const createReactAppSnippet = `npx create-react-app my-app`
-export const cdProjectSnippet = `cd my-app`
-export const projectStartSnippet = `npm start`
+export const createReactAppSnippet = `npx create-react-app my-app`;
+export const cdProjectSnippet = `cd my-app`;
+export const projectStartSnippet = `npm start`;
 export const reactJsxSnippet = `import React from 'react';
 
 function MyComponent() {
@@ -2519,4 +2564,4 @@ function MyComponent() {
       <p>This is a paragraph.</p>
     </div>
   );
-}`
+}`;
