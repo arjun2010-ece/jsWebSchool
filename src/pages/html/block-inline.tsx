@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'Mastering HTML Display Properties: Block vs Inline Block vs Inline',
   metaOgUrl: 'https://jswebschool.com/html/block-inline',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const BlockInlinePage: NextPage = () => {

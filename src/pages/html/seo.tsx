@@ -17,7 +17,7 @@ const seo = {
     'SEO, Search Engine Optimization, HTML optimization, keyword research, meta tags, heading tags, image optimization, web development, web design, organic traffic, frontend development, HTML tutorial',
   metaOgTitle: 'SEO: Mastering Search Engine Optimization for Your Website',
   metaOgUrl: 'https://jswebschool.com/html/seo',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLSeoPage: NextPage = () => {

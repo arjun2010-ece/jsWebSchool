@@ -16,7 +16,7 @@ const seo = {
     'HTML, comments, code documentation, code readability, web development, web design, HTML syntax, best practices, commenting, HTML tutorial, frontend development',
   metaOgTitle: 'HTML Comments: Enhance Code Documentation and Readability',
   metaOgUrl: 'https://jswebschool.com/html/html-comments',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLComments: NextPage = () => {

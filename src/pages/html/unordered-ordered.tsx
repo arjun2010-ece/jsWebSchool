@@ -22,7 +22,7 @@ const seo = {
   metaOgTitle:
     'HTML Unordered / Ordered List: Structuring and Organizing Content',
   metaOgUrl: 'https://jswebschool.com/html/unordered-ordered',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLUnorderedOrderedLists: NextPage = () => {

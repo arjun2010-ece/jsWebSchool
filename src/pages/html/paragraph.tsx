@@ -16,7 +16,7 @@ const seo = {
     'HTML, paragraph tag, text formatting, line breaks, spacing, web development, web design, HTML structure, HTML formatting, frontend development, HTML tutorial',
   metaOgTitle: 'HTML Paragraph Tag: Structure and Format Text Content',
   metaOgUrl: 'https://jswebschool.com/html/paragraph',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLHeading: NextPage = () => {

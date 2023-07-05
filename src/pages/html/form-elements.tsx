@@ -26,7 +26,7 @@ const seo = {
     'HTML, forms, form elements, input types, text fields, checkboxes, radio buttons, select menus, form validation, form submissions, web development, web forms, frontend development, HTML tutorial, interactive forms',
   metaOgTitle: 'HTML Forms Elements: Building Interactive Web Forms',
   metaOgUrl: 'https://jswebschool.com/html/form-elements',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLFormElements: NextPage = () => {

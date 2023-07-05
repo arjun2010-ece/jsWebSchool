@@ -21,7 +21,7 @@ const seo = {
     'HTML, `<div>` tag, div tag, html div tag, web design, HTML element, responsive design, structured layouts, layout organization, styling containers, HTML tutorial, CSS styling, web development, frontend development',
   metaOgTitle: 'HTML DIV Tag: Exploring the Fundamentals of Web Page Layout',
   metaOgUrl: 'https://jswebschool.com/html/div',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLDiv: NextPage = () => {

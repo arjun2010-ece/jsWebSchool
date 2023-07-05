@@ -17,8 +17,8 @@ const seo = {
   metaOgTitle:
     'HTML Heading Tags: Structure Your Headings and Contents Effectively',
   metaOgUrl: 'https://jswebschool.com/html/heading',
-  metaOgImage: '',
-};
+  metaOgImage: '/images/html-logo.png',
+}
 
 const HTMLHeading: NextPage = () => {
   return (

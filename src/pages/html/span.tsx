@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'HTML Span Tag: Customized Inline Styling and Targeting Elements',
   metaOgUrl: 'https://jswebschool.com/html/span',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLSpan: NextPage = () => {

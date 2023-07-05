@@ -1,7 +1,14 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import tw, { theme as globalTheme } from 'twin.macro';
-import { PAGES, proj1Sec1Snippet, proj1Sec2Snippet, proj1Sec31Snippet, proj1Sec32Snippet, proj1Sec3Snippet } from '@/utils';
+import {
+  PAGES,
+  proj1Sec1Snippet,
+  proj1Sec2Snippet,
+  proj1Sec31Snippet,
+  proj1Sec32Snippet,
+  proj1Sec3Snippet,
+} from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
@@ -16,7 +23,7 @@ const seo = {
     'HTML tutorial, UI design, HTML structure, HTML webpage design, HTML webpage build strategy, How to build the webpage, web development, user interface, front-end development',
   metaOgTitle: 'Mastering HTML Structure for User Interface Design Tutorial',
   metaOgUrl: 'https://jswebschool.com/html/structure-html-ui',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const StructureHtmlUiPage: NextPage = () => {
@@ -214,7 +221,6 @@ const StructureHtmlUiPage: NextPage = () => {
 
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon prevLink="/html/html-comments" nextLink="" />
-
     </Layout>
   );
 };

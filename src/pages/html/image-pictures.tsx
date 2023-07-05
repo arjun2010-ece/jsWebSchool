@@ -22,7 +22,7 @@ const seo = {
   metaOgTitle:
     'HTML Image vs Picture: Choosing the Right Element for Web Design',
   metaOgUrl: 'https://jswebschool.com/html/image-pictures',
-  metaOgImage: '',
+  metaOgImage: '/images/html-logo.png',
 };
 
 const HTMLImagePicture: NextPage = () => {
