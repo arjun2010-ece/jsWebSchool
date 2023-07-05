@@ -8,6 +8,18 @@ import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
 import styled from 'styled-components';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Outline properties',
+  metaDescription:
+    'Master the CSS outline properties and add visual emphasis to your HTML elements. This tutorial covers the various outline properties, including outline-style, outline-color, and outline-width, enabling you to create custom outlines and enhance the visual appeal of your web designs.',
+  metaKeywords:
+    'CSS tutorial, outline properties, HTML styling, web design, front-end development, visual emphasis, outline-style, outline-color, outline-width',
+  metaOgTitle: 'CSS Outline Properties Tutorial: Adding Visual Emphasis to HTML Elements',
+  metaOgUrl: 'https://jswebschool.com/css/outline-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const ButtonWithOutline = styled.button`
   padding: 7px 14px;
@@ -29,6 +41,7 @@ const CSSOutlinePropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Outline properties"
@@ -130,6 +143,9 @@ const CSSOutlinePropertiesPage: NextPage = () => {
 
       <ButtonWithOutline>Click me</ButtonWithOutline>
       <br />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/css/overflow-properties" nextLink="/css/cursor-properties" />
     </Layout>
   );
 };

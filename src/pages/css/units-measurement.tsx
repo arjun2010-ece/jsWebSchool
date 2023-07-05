@@ -6,6 +6,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Units of measurement',
+  metaDescription:
+    'Discover the different CSS units of measurement and learn how to size and position elements effectively in HTML. This tutorial covers the various CSS units, including pixels, percentages, em, rem, and more, enabling you to create responsive and flexible designs for your web pages.',
+  metaKeywords:
+    'CSS tutorial, units of measurement, CSS sizing, CSS positioning, front-end development, web design, pixels, percentages, em, rem, px, %, vw, vh',
+  metaOgTitle:
+    'CSS Units of Measurement Tutorial: Mastering Sizing and Positioning in HTML',
+  metaOgUrl: 'https://jswebschool.com/css/units-measurement',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSUnitsOfMeasurementsPage: NextPage = () => {
   return (
@@ -14,6 +27,7 @@ const CSSUnitsOfMeasurementsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Units of measurements"
@@ -115,6 +129,12 @@ const CSSUnitsOfMeasurementsPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/box-model"
+        nextLink="/css/typography-properties"
       />
     </Layout>
   );

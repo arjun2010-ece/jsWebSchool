@@ -5,6 +5,19 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Way to think in CSS',
+  metaDescription:
+    'Learn the essential mindset and approach for thinking in CSS when designing web pages. This tutorial provides valuable insights and strategies to help you understand CSS concepts, selectors, and properties, enabling you to create efficient and maintainable stylesheets for your HTML layouts.',
+  metaKeywords:
+    'CSS tutorial, thinking in CSS, CSS mindset, web design, front-end development, CSS concepts, CSS selectors, CSS properties',
+  metaOgTitle:
+    'Way to Think in CSS: Mastering the Mindset for Effective Web Design',
+  metaOgUrl: 'https://jswebschool.com/css/way-to-think',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSWayToThinkPage: NextPage = () => {
   return (
@@ -13,6 +26,7 @@ const CSSWayToThinkPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Way to think in CSS or while writing css ?"
@@ -55,6 +69,12 @@ const CSSWayToThinkPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css"
+        nextLink="/css/box-model"
       />
     </Layout>
   );

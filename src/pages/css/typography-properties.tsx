@@ -19,6 +19,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Typography properties',
+  metaDescription:
+    'Unlock the power of CSS typography properties and elevate the visual appeal of your web typography. This comprehensive tutorial covers CSS typography properties such as font-family, font-size, font-weight, and text-align, enabling you to create beautifully designed and readable text on your web pages.',
+  metaKeywords:
+    'CSS tutorial, typography properties, web typography, front-end development, web design, font-family, font-size, font-weight, font-style, color, text-align, text-decoration, text-transform, line-height, letter-spacing, word-spacing, opacity',
+  metaOgTitle:
+    'CSS Typography Properties Tutorial: Enhance Web Typography for Stunning Designs',
+  metaOgUrl: 'https://jswebschool.com/css/typography-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSTypographyPropertiesPage: NextPage = () => {
   return (
@@ -27,6 +40,7 @@ const CSSTypographyPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Typography Properties"
@@ -362,6 +376,12 @@ const CSSTypographyPropertiesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/units-measurement"
+        nextLink="/css/dimension-properties"
       />
     </Layout>
   );

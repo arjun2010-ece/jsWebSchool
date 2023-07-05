@@ -14,6 +14,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Positioning properties',
+  metaDescription:
+    'Master the CSS positioning properties and gain full control over element placement in HTML. This tutorial covers the different positioning techniques, including static, relative, absolute, and fixed positioning, empowering you to create complex and responsive layouts for your web pages.',
+  metaKeywords:
+    'CSS tutorial, positioning properties, HTML styling, web design, front-end development, element placement, static positioning, relative positioning, absolute positioning, fixed positioning, sticky positioning',
+  metaOgTitle:
+    'CSS Positioning Properties Tutorial: Mastering Element Placement in HTML',
+  metaOgUrl: 'https://jswebschool.com/css/positioning-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSPositioningPropertiesPage: NextPage = () => {
   return (
@@ -22,6 +35,7 @@ const CSSPositioningPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Positioning Properties"
@@ -322,6 +336,12 @@ const CSSPositioningPropertiesPage: NextPage = () => {
       />
 
       <CodeSnippet content={stickySnippet} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/box-model-properties"
+        nextLink="/css/display-visibility-properties"
+      />
     </Layout>
   );
 };

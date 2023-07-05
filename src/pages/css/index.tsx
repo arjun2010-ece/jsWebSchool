@@ -5,6 +5,18 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'What is CSS ?',
+  metaDescription:
+    'Discover the power of CSS (Cascading Style Sheets) and learn how it enhances the appearance and styling of HTML elements. This tutorial provides a comprehensive introduction to CSS, covering selectors, properties, and selectors, enabling you to create visually appealing and well-designed web pages.',
+  metaKeywords:
+    'CSS tutorial, introduction to CSS, CSS basics, web design, front-end development, HTML styling, CSS properties, CSS selectors',
+  metaOgTitle: 'What is CSS? A Beginners Guide to Cascading Style Sheets',
+  metaOgUrl: 'https://jswebschool.com/css',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSPage: NextPage = () => {
   return (
@@ -13,6 +25,7 @@ const CSSPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="What is CSS3 ?"
@@ -77,6 +90,9 @@ const CSSPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="" nextLink="/css/way-to-think" />
     </Layout>
   );
 };

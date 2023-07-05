@@ -10,6 +10,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Overflow properties',
+  metaDescription:
+    'Explore the CSS overflow properties and gain control over content overflow in HTML elements. This tutorial covers the different overflow properties, such as overflow-x and overflow-y, allowing you to handle overflowing content and create scrollable areas within your web designs.',
+  metaKeywords:
+    'CSS tutorial, overflow properties, HTML styling, web design, front-end development, content overflow, overflow-x, overflow-y, scrollable areas',
+  metaOgTitle:
+    'CSS Overflow Properties Tutorial: Controlling Content Overflow in HTML Elements',
+  metaOgUrl: 'https://jswebschool.com/css/overflow-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSOverflowPropertiesPage: NextPage = () => {
   return (
@@ -18,6 +31,7 @@ const CSSOverflowPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Overflow properties"
@@ -169,6 +183,12 @@ const CSSOverflowPropertiesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/grid-child-properties"
+        nextLink="/css/outline-properties"
       />
     </Layout>
   );
