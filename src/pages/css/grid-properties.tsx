@@ -13,6 +13,19 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Grid properties',
+  metaDescription:
+    'Master the CSS Grid properties and unlock the power of creating complex and responsive layouts in HTML. This comprehensive tutorial covers grid containers, grid lines, grid tracks, and more, empowering you to design dynamic and visually stunning web pages.',
+  metaKeywords:
+    'CSS tutorial, CSS Grid properties, grid layout, responsive design, web design, front-end development, grid containers, grid lines, grid tracks, grid-template-columns, grid-template-rows justify-content, align-items, gap, justify-content, align-items',
+  metaOgTitle:
+    'CSS Grid Properties Tutorial: Creating Dynamic and Responsive Layouts in HTML',
+  metaOgUrl: 'https://jswebschool.com/css/grid-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSGridPropertiesPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const CSSGridPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Grid Properties"
@@ -293,6 +307,12 @@ const CSSGridPropertiesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/flexbox-properties"
+        nextLink="/css/grid-child-properties"
       />
     </Layout>
   );

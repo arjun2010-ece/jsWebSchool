@@ -7,6 +7,19 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Display & Visibility properties',
+  metaDescription:
+    'Unlock the potential of CSS display and visibility properties to control the layout and visibility of HTML elements. This tutorial explores the differences between display and visibility, along with practical examples to help you create flexible and interactive web designs.',
+  metaKeywords:
+    'CSS tutorial, display property, visibility property, HTML layout, front-end development, web design, CSS styling, interactive elements',
+  metaOgTitle:
+    'CSS Display & Visibility Properties Tutorial: Mastering Layout and Element Visibility in HTML',
+  metaOgUrl: 'https://jswebschool.com/css/display-visibility-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSDisplayAndVisibilityPropertiesPage: NextPage = () => {
   return (
@@ -15,6 +28,7 @@ const CSSDisplayAndVisibilityPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Display Properties"
@@ -188,22 +202,11 @@ const CSSDisplayAndVisibilityPropertiesPage: NextPage = () => {
         )}
       />
 
-      {/* <Heading
-        content="Relative position:"
-        headingType="h6"
-        customStyle={tw`underline mt-8`}
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/positioning-properties"
+        nextLink="/css/background-border-properties"
       />
-
-      <Text
-        content={`
-         Relative position, when applied on an element moves the element from its current position.
-        `}
-        parentEl="div"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`),
-        )}
-      /> */}
     </Layout>
   );
 };

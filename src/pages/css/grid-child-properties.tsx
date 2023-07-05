@@ -7,6 +7,19 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Grid child properties',
+  metaDescription:
+    'Unlock the potential of CSS Grid child properties to control the positioning and alignment of grid items. This tutorial explores various CSS Grid child properties, including grid-column, grid-row, and grid-area, enabling you to create dynamic and responsive grid layouts for your web designs.',
+  metaKeywords:
+    'CSS tutorial, CSS Grid, grid child properties, web design, front-end development, responsive design, grid layout, grid-column, grid-row, grid-column-start, grid-column-end, grid-row-start, grid-row-end, align-self, grid lines',
+  metaOgTitle:
+    'CSS Grid Child Properties Tutorial: Mastering Positioning and Alignment in Grid Layouts',
+  metaOgUrl: 'https://jswebschool.com/css/grid-child-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSGridChildPropertiesPage: NextPage = () => {
   return (
@@ -15,6 +28,7 @@ const CSSGridChildPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Grid child Properties"
@@ -166,6 +180,12 @@ const CSSGridChildPropertiesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/grid-properties"
+        nextLink="/css/overflow-properties"
       />
     </Layout>
   );

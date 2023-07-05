@@ -14,6 +14,19 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Flexbox properties',
+  metaDescription:
+    'Learn how to create flexible and responsive layouts with CSS Flexbox properties. This comprehensive tutorial covers the key concepts of Flexbox, including container and item properties, enabling you to build dynamic and adaptive web designs.',
+  metaKeywords:
+    'CSS tutorial, Flexbox properties, responsive layouts, web design, front-end development, CSS styling, flexible containers,  flex containers, flex items, flex-direction, justify-content, align-items, gap, row-gap, column-gap, flex-wrap, align-self,order, flex-grow, flex-shrink, flex, adaptive designs',
+  metaOgTitle:
+    'CSS Flexbox Properties Tutorial: Building Dynamic and Responsive Web Layouts',
+  metaOgUrl: 'https://jswebschool.com/css/flexbox-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSFlexboxPropertiesPage: NextPage = () => {
   return (
@@ -22,6 +35,7 @@ const CSSFlexboxPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Flexbox Properties"
@@ -540,6 +554,12 @@ const CSSFlexboxPropertiesPage: NextPage = () => {
       />
 
       <CodeSnippet content={flexSnippet} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/background-border-properties"
+        nextLink="/css/grid-properties"
+      />
     </Layout>
   );
 };

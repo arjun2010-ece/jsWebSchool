@@ -13,6 +13,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Box model properties',
+  metaDescription:
+    'Explore the CSS box model properties and elevate your web design capabilities. This comprehensive tutorial covers the box model, including padding, borders, and margins, to help you create visually appealing and well-structured HTML layouts.',
+  metaKeywords:
+    'CSS tutorial, box model properties, CSS layout, HTML design, front-end development, web design, padding, borders, margins',
+  metaOgTitle: 'Mastering CSS Box Model Properties: Create Stunning HTML Layouts',
+  metaOgUrl: 'https://jswebschool.com/css/box-model-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
+
 
 const CSSBoxModelPropertiesPage: NextPage = () => {
   return (
@@ -21,6 +34,7 @@ const CSSBoxModelPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Box Model Properties"
@@ -241,6 +255,9 @@ const CSSBoxModelPropertiesPage: NextPage = () => {
         )}
       />
       <CodeSnippet content={cssBoxSnippet} />
+
+       {/* NavigationIcon : Front and Back Link */}
+       <NavigationIcon prevLink="/css/dimension-properties" nextLink="/css/positioning-properties"  />
     </Layout>
   );
 };

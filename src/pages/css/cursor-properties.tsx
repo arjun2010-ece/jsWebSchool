@@ -6,6 +6,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS cursor Properties',
+  metaDescription:
+    'Discover the power of CSS cursor properties and enhance user experience on your website. This tutorial covers various cursor styles and how to apply them to elements, enabling you to create engaging and intuitive interfaces.',
+  metaKeywords:
+    'CSS tutorial, cursor properties, user experience, web design, front-end development, mouse cursor, pointer styles',
+  metaOgTitle:
+    'CSS Cursor Properties Tutorial: Enhance User Experience with Custom Mouse Cursors',
+  metaOgUrl: 'https://jswebschool.com/css/cursor-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSCursorPropertiesPage: NextPage = () => {
   return (
@@ -14,6 +27,7 @@ const CSSCursorPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Cursor properties"
@@ -81,6 +95,9 @@ const CSSCursorPropertiesPage: NextPage = () => {
       />
 
       <CodeSnippet content={cursorUseCaseSnippet} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/css/outline-properties" nextLink="" />
     </Layout>
   );
 };

@@ -6,6 +6,18 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Box model',
+  metaDescription:
+    'Learn the fundamentals of the CSS box model and how it affects the layout of your HTML elements. This tutorial covers the box model properties, including margin, padding, border, and content, to help you design and structure your web pages effectively',
+  metaKeywords:
+    'CSS tutorial, box model, CSS layout, HTML design, front-end development, web design, margin, padding, border, content',
+  metaOgTitle: 'CSS Box Model Tutorial: Mastering Layout Design in HTML',
+  metaOgUrl: 'https://jswebschool.com/css/box-model',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSBoxModelPage: NextPage = () => {
   return (
@@ -14,6 +26,7 @@ const CSSBoxModelPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="CSS Box Model?"
@@ -90,6 +103,9 @@ const CSSBoxModelPage: NextPage = () => {
       />
 
       <CodeSnippet content={cssBoxSnippet} />
+
+       {/* NavigationIcon : Front and Back Link */}
+       <NavigationIcon prevLink="/css/way-to-think" nextLink="/css/units-measurement"  />
     </Layout>
   );
 };

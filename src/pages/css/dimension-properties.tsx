@@ -14,6 +14,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Dimension properties',
+  metaDescription:
+    'Master the CSS dimension properties and gain control over the sizing and spacing of your HTML elements. This comprehensive tutorial covers width, height, min/max dimensions, and more, empowering you to create responsive and visually appealing web designs.',
+  metaKeywords:
+    'CSS tutorial, dimension properties, CSS sizing, HTML elements, front-end development, web design, responsive design, width, height, min/max dimensions',
+  metaOgTitle:
+    'CSS Dimension Properties Tutorial: Achieve Responsive and Dynamic Web Designs',
+  metaOgUrl: 'https://jswebschool.com/css/dimension-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSDimensionPropertiesPage: NextPage = () => {
   return (
@@ -22,6 +35,7 @@ const CSSDimensionPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Dimension Properties"
@@ -189,7 +203,6 @@ const CSSDimensionPropertiesPage: NextPage = () => {
       />
       <CodeSnippet content={heightSnippets} />
 
-
       {/* Min Height */}
       <Heading
         content="Min Height:"
@@ -217,8 +230,8 @@ const CSSDimensionPropertiesPage: NextPage = () => {
       />
       <CodeSnippet content={minHeightSnippets} />
 
-         {/* Max Height */}
-         <Heading
+      {/* Max Height */}
+      <Heading
         content="Max Height:"
         headingType="h6"
         customStyle={tw`underline mt-8`}
@@ -242,6 +255,9 @@ const CSSDimensionPropertiesPage: NextPage = () => {
         )}
       />
       <CodeSnippet content={maxHeightSnippets} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/css/typography-properties" nextLink="/css/box-model-properties" />
     </Layout>
   );
 };

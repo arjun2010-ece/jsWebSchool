@@ -13,6 +13,18 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'CSS Background & border properties',
+  metaDescription:
+    'Discover the power of CSS background and border properties in this comprehensive tutorial. Learn how to apply stunning backgrounds and borders to your web elements, and explore various styling techniques to enhance your web design.',
+  metaKeywords:
+    'CSS tutorial, background properties, border properties, web design, styling techniques, front-end development, CSS backgrounds, CSS borders',
+  metaOgTitle: 'Mastering CSS Background & Border Properties Tutorial',
+  metaOgUrl: 'https://jswebschool.com/css/background-border-properties',
+  metaOgImage: '/images/css-logo.jpeg',
+};
 
 const CSSBackgroundBorderPropertiesPage: NextPage = () => {
   return (
@@ -21,6 +33,7 @@ const CSSBackgroundBorderPropertiesPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.CSS3}
+      seo={seo}
     >
       <Heading
         content="Background & Border Properties"
@@ -240,6 +253,9 @@ const CSSBackgroundBorderPropertiesPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/css/display-visibility-properties" nextLink="/css/flexbox-properties"  />
     </Layout>
   );
 };
