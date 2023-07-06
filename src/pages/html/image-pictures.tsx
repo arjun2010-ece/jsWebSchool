@@ -21,7 +21,7 @@ const seo = {
     'HTML, image element, picture element, responsive images, images, pictures, img tag, picture tag, image tag, image formats, image optimization, web development, web design, web performance, accessibility, HTML attributes, frontend development, HTML tutorial',
   metaOgTitle:
     'HTML Image vs Picture: Choosing the Right Element for Web Design',
-  metaOgUrl: 'https://jswebschool.com/html/image-pictures',
+  metaOgUrl: 'https://www.webschooljs.com/html/image-pictures',
   metaOgImage: '/images/html-logo.png',
 };
 

@@ -21,7 +21,7 @@ const seo = {
     'HTML, unordered list, ordered list, ul tag, ol tag, li tag, nested lists, list styles, web development, web design, frontend development, HTML tutorial',
   metaOgTitle:
     'HTML Unordered / Ordered List: Structuring and Organizing Content',
-  metaOgUrl: 'https://jswebschool.com/html/unordered-ordered',
+  metaOgUrl: 'https://www.webschooljs.com/html/unordered-ordered',
   metaOgImage: '/images/html-logo.png',
 };
 
@@ -161,10 +161,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon
-        prevLink="/html/span"
-        nextLink="/html/image-pictures"
-      />
+      <NavigationIcon prevLink="/html/span" nextLink="/html/image-pictures" />
     </Layout>
   );
 };

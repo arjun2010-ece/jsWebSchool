@@ -25,7 +25,7 @@ const seo = {
     'JavaScript tutorial, reduce() method, array reduction, array operations, JavaScript arrays, front-end development, web development, data aggregation',
   metaOgTitle:
     'JavaScript reduce() Method Tutorial: Performing Array Reduction Operations',
-  metaOgUrl: 'https://jswebschool.com/javascript/reduce',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/reduce',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

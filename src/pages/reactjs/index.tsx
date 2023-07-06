@@ -14,7 +14,7 @@ const seo = {
   metaKeywords:
     'ReactJS, JavaScript framework, JavaScript library , user interfaces, web development, tutorial, virtual DOM, component-based development.',
   metaOgTitle: 'Understanding ReactJS: A Comprehensive HTML Tutorial',
-  metaOgUrl: 'https://jswebschool.com/reactjs',
+  metaOgUrl: 'https://www.webschooljs.com/reactjs',
   metaOgImage: '/images/reactjs-logo.png',
 };
 
@@ -90,7 +90,10 @@ const ReactJsHomePage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="" nextLink="/reactjs/setting-up-react-project" />
+      <NavigationIcon
+        prevLink=""
+        nextLink="/reactjs/setting-up-react-project"
+      />
     </Layout>
   );
 };

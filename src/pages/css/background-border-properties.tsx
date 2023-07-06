@@ -22,7 +22,7 @@ const seo = {
   metaKeywords:
     'CSS tutorial, background properties, border properties, web design, styling techniques, front-end development, CSS backgrounds, CSS borders',
   metaOgTitle: 'Mastering CSS Background & Border Properties Tutorial',
-  metaOgUrl: 'https://jswebschool.com/css/background-border-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/background-border-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 
@@ -255,7 +255,10 @@ const CSSBackgroundBorderPropertiesPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/css/display-visibility-properties" nextLink="/css/flexbox-properties"  />
+      <NavigationIcon
+        prevLink="/css/display-visibility-properties"
+        nextLink="/css/flexbox-properties"
+      />
     </Layout>
   );
 };

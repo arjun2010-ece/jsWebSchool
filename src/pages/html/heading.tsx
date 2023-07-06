@@ -16,9 +16,9 @@ const seo = {
     'HTML, heading tags, h1, h2, h3, h4, h5, h6, web development, web design, SEO, accessibility, semantic HTML, HTML structure, HTML tutorial, frontend development',
   metaOgTitle:
     'HTML Heading Tags: Structure Your Headings and Contents Effectively',
-  metaOgUrl: 'https://jswebschool.com/html/heading',
+  metaOgUrl: 'https://www.webschooljs.com/html/heading',
   metaOgImage: '/images/html-logo.png',
-}
+};
 
 const HTMLHeading: NextPage = () => {
   return (

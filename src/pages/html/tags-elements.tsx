@@ -34,7 +34,7 @@ const seo = {
     'HTML, tags, elements, attributes, web development, web design, HTML structure, HTML syntax, frontend development, HTML tutorial',
   metaOgTitle:
     'HTML Tags vs Elements vs Attributes: Understanding the Fundamentals',
-  metaOgUrl: 'https://jswebschool.com/html/tags-elements',
+  metaOgUrl: 'https://www.webschooljs.com/html/tags-elements',
   metaOgImage: '/images/html-logo.png',
 };
 

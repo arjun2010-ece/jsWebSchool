@@ -29,7 +29,7 @@ const seo = {
     'CSS tutorial, typography properties, web typography, front-end development, web design, font-family, font-size, font-weight, font-style, color, text-align, text-decoration, text-transform, line-height, letter-spacing, word-spacing, opacity',
   metaOgTitle:
     'CSS Typography Properties Tutorial: Enhance Web Typography for Stunning Designs',
-  metaOgUrl: 'https://jswebschool.com/css/typography-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/typography-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

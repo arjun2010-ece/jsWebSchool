@@ -15,7 +15,7 @@ const seo = {
   metaKeywords:
     'JSX, HTML tutorial, JavaScript extension, React development, frontend development, JSX syntax, JSX usage',
   metaOgTitle: ' Understanding JSX: Language of React.js',
-  metaOgUrl: 'https://jswebschool.com/reactjs/understanding-jsx',
+  metaOgUrl: 'https://www.webschooljs.com/reactjs/understanding-jsx',
   metaOgImage: '/images/reactjs-logo.png',
 };
 

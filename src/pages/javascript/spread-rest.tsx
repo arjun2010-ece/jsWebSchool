@@ -22,7 +22,7 @@ const seo = {
     'JavaScript tutorial, spread operator, rest operator, JavaScript arrays, function arguments, array manipulation, front-end development, web development',
   metaOgTitle:
     'JavaScript Spread and Rest Operators Tutorial: Mastering Array Manipulation and Function Arguments',
-  metaOgUrl: 'https://jswebschool.com/javascript/spread-rest',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/spread-rest',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

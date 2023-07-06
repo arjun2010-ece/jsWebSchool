@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, if...else statement, conditional logic, JavaScript conditions, front-end development, web development, decision-making',
   metaOgTitle:
     'JavaScript if...else Tutorial: Adding Conditional Logic to Your Code',
-  metaOgUrl: 'https://jswebschool.com/javascript/if-else',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/if-else',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

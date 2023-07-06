@@ -16,7 +16,7 @@ const seo = {
     'HTML tutorial, block display, inline block, inline display, CSS, web development, web design, layout properties, responsive design, HTML, CSS, Block, Inline-block, Inline, display properties, layout, CSS tutorial, web development, frontend development, CSS comparison',
   metaOgTitle:
     'Mastering HTML Display Properties: Block vs Inline Block vs Inline',
-  metaOgUrl: 'https://jswebschool.com/html/block-inline',
+  metaOgUrl: 'https://www.webschooljs.com/html/block-inline',
   metaOgImage: '/images/html-logo.png',
 };
 

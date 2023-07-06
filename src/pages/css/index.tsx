@@ -14,7 +14,7 @@ const seo = {
   metaKeywords:
     'CSS tutorial, introduction to CSS, CSS basics, web design, front-end development, HTML styling, CSS properties, CSS selectors',
   metaOgTitle: 'What is CSS? A Beginners Guide to Cascading Style Sheets',
-  metaOgUrl: 'https://jswebschool.com/css',
+  metaOgUrl: 'https://www.webschooljs.com/css',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

@@ -26,7 +26,7 @@ const seo = {
     'JavaScript tutorial, JavaScript arrays, array manipulation, array operations, array methods, front-end development, web development, data storage',
   metaOgTitle:
     'JavaScript Array Tutorial: Exploring Data Storage and Manipulation with JavaScript Arrays',
-  metaOgUrl: 'https://jswebschool.com/javascript/arrays',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/arrays',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

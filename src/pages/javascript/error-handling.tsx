@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, error handling, JavaScript errors, try-catch blocks, error objects, front-end development, web development, code robustness',
   metaOgTitle:
     'JavaScript Error Handling Tutorial: Best Practices for Robust Code',
-  metaOgUrl: 'https://jswebschool.com/javascript/error-handling',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/error-handling',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

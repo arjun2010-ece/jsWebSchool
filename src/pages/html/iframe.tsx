@@ -15,7 +15,7 @@ const seo = {
   metaKeywords:
     'HTML, iframe tags, embedding content, web development, web design, videos, maps, documents, interactive web pages, HTML tutorial, frontend development',
   metaOgTitle: 'HTML iframe Tags: Embed External Content in Your Web Pages',
-  metaOgUrl: 'https://jswebschool.com/html/iframe',
+  metaOgUrl: 'https://www.webschooljs.com/html/iframe',
   metaOgImage: '/images/html-logo.png',
 };
 

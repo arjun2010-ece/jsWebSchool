@@ -21,7 +21,8 @@ const seo = {
     'JavaScript tutorial, callback functions, promises, async/await, asynchronous programming, front-end development, web development, asynchronous code',
   metaOgTitle:
     'Callback, Promise, and Async/Await Tutorial: Mastering Asynchronous JavaScript Programming',
-  metaOgUrl: 'https://jswebschool.com/javascript/callback-promise-async-await',
+  metaOgUrl:
+    'https://www.webschooljs.com/javascript/callback-promise-async-await',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

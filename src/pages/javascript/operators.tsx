@@ -15,7 +15,7 @@ const seo = {
     'JavaScript tutorial, JavaScript operators, arithmetic operators, assignment operators, comparison operators, logical operators, front-end development, web development, value manipulation',
   metaOgTitle:
     'JavaScript Operators Tutorial: Performing Operations on Values and Variables',
-  metaOgUrl: 'https://jswebschool.com/javascript/operators',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/operators',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

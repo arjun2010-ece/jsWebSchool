@@ -278,7 +278,7 @@ const Header: FC = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-            JsWebSchool
+            WebSchoolJs
           </span>
         </Link>
 

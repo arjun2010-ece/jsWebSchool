@@ -25,7 +25,7 @@ const seo = {
     'JavaScript tutorial, JavaScript functions, function declarations, function expressions, parameters, return values, function invocation, front-end development, web development, code reusability',
   metaOgTitle:
     'JavaScript Functions Tutorial: Building Modular and Reusable Code',
-  metaOgUrl: 'https://jswebschool.com/javascript/functions',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/functions',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

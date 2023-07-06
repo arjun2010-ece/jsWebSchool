@@ -16,7 +16,7 @@ const seo = {
     'JavaScript tutorial, global variables, local variables, variable scope, JavaScript scope, front-end development, web development, variable declaration',
   metaOgTitle:
     'JavaScript Global vs Local Variables Tutorial: Understanding Variable Scope in JavaScript',
-  metaOgUrl: 'https://jswebschool.com/javascript/global-local-variables',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/global-local-variables',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

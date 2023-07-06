@@ -15,7 +15,7 @@ const seo = {
   metaKeywords:
     'HTML, paragraph tag, text formatting, line breaks, spacing, web development, web design, HTML structure, HTML formatting, frontend development, HTML tutorial',
   metaOgTitle: 'HTML Paragraph Tag: Structure and Format Text Content',
-  metaOgUrl: 'https://jswebschool.com/html/paragraph',
+  metaOgUrl: 'https://www.webschooljs.com/html/paragraph',
   metaOgImage: '/images/html-logo.png',
 };
 

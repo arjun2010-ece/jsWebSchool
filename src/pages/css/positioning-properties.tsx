@@ -24,7 +24,7 @@ const seo = {
     'CSS tutorial, positioning properties, HTML styling, web design, front-end development, element placement, static positioning, relative positioning, absolute positioning, fixed positioning, sticky positioning',
   metaOgTitle:
     'CSS Positioning Properties Tutorial: Mastering Element Placement in HTML',
-  metaOgUrl: 'https://jswebschool.com/css/positioning-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/positioning-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

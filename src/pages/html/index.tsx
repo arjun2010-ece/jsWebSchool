@@ -15,7 +15,7 @@ const seo = {
   metaKeywords:
     'HTML, what is HTML ?, web development, web design, HTML basics, HTML tags, HTML elements, HTML attributes, structured web pages, semantic HTML, frontend development, HTML tutorial',
   metaOgTitle: 'What is HTML? A Comprehensive Introduction to HTML Basics',
-  metaOgUrl: 'https://jswebschool.com/html',
+  metaOgUrl: 'https://www.webschooljs.com/html',
   metaOgImage: '/images/html-logo.png',
 };
 
@@ -139,9 +139,8 @@ const HTMLPage: NextPage = () => {
         `}
       />
 
-       {/* NavigationIcon : Front and Back Link */}
-       <NavigationIcon nextLink="/html/tags-elements" prevLink="" />
-
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon nextLink="/html/tags-elements" prevLink="" />
     </Layout>
   );
 };

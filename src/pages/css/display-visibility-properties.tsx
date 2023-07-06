@@ -17,7 +17,7 @@ const seo = {
     'CSS tutorial, display property, visibility property, HTML layout, front-end development, web design, CSS styling, interactive elements',
   metaOgTitle:
     'CSS Display & Visibility Properties Tutorial: Mastering Layout and Element Visibility in HTML',
-  metaOgUrl: 'https://jswebschool.com/css/display-visibility-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/display-visibility-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

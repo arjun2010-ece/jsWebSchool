@@ -10,7 +10,7 @@ const HomePage: NextPage = () => {
   return (
     <Layout>
       <Heading
-        content="Mission of jsWebSchool  ?"
+        content="Mission of webschooljs  ?"
         headingType="h1"
         customStyle={tw`text-center mb-4`}
       />

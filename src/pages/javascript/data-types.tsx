@@ -22,7 +22,7 @@ const seo = {
     'JavaScript tutorial, JavaScript data types, numbers, strings, booleans, objects, arrays, front-end development, web development, data manipulation',
   metaOgTitle:
     'JavaScript Data Types Tutorial: Understanding Variables and Values in JavaScript',
-  metaOgUrl: 'https://jswebschool.com/javascript/data-types',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/data-types',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

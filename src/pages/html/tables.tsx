@@ -24,7 +24,7 @@ const seo = {
   metaKeywords:
     'HTML, tables, HTML tables, tabular data, table structure, table tags, table attributes, table styling, table headers, table captions, responsive tables, web development, web design, HTML tutorial, frontend development',
   metaOgTitle: 'HTML Tables: Structuring and Styling Tabular Data',
-  metaOgUrl: 'https://jswebschool.com/html/tables',
+  metaOgUrl: 'https://www.webschooljs.com/html/tables',
   metaOgImage: '/images/html-logo.png',
 };
 
@@ -228,10 +228,7 @@ const HTMLTables: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon
-        prevLink="/html/image-pictures"
-        nextLink="/html/iframe"
-      />
+      <NavigationIcon prevLink="/html/image-pictures" nextLink="/html/iframe" />
     </Layout>
   );
 };

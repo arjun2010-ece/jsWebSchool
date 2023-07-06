@@ -17,7 +17,7 @@ const seo = {
     'CSS tutorial, CSS Grid, grid child properties, web design, front-end development, responsive design, grid layout, grid-column, grid-row, grid-column-start, grid-column-end, grid-row-start, grid-row-end, align-self, grid lines',
   metaOgTitle:
     'CSS Grid Child Properties Tutorial: Mastering Positioning and Alignment in Grid Layouts',
-  metaOgUrl: 'https://jswebschool.com/css/grid-child-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/grid-child-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

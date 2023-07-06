@@ -22,7 +22,7 @@ const seo = {
     'JavaScript tutorial, DOM manipulation, JavaScript DOM, HTML elements, front-end development, web development, dynamic web pages, interactive elements. getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll,innerHTML, textContent, setAttribute, getAttribute, classList, style, createElement, addEventListener',
   metaOgTitle:
     'JavaScript DOM Manipulations Tutorial: Creating Dynamic and Interactive Web Pages',
-  metaOgUrl: 'https://jswebschool.com/javascript/dom-manipulation',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/dom-manipulation',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

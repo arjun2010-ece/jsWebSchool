@@ -16,7 +16,7 @@ const seo = {
     'CSS tutorial, cursor properties, user experience, web design, front-end development, mouse cursor, pointer styles',
   metaOgTitle:
     'CSS Cursor Properties Tutorial: Enhance User Experience with Custom Mouse Cursors',
-  metaOgUrl: 'https://jswebschool.com/css/cursor-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/cursor-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

@@ -15,7 +15,7 @@ const seo = {
     'CSS tutorial, thinking in CSS, CSS mindset, web design, front-end development, CSS concepts, CSS selectors, CSS properties',
   metaOgTitle:
     'Way to Think in CSS: Mastering the Mindset for Effective Web Design',
-  metaOgUrl: 'https://jswebschool.com/css/way-to-think',
+  metaOgUrl: 'https://www.webschooljs.com/css/way-to-think',
   metaOgImage: '/images/css-logo.jpeg',
 };
 
@@ -72,10 +72,7 @@ const CSSWayToThinkPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon
-        prevLink="/css"
-        nextLink="/css/box-model"
-      />
+      <NavigationIcon prevLink="/css" nextLink="/css/box-model" />
     </Layout>
   );
 };

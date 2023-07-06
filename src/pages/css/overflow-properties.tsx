@@ -20,7 +20,7 @@ const seo = {
     'CSS tutorial, overflow properties, HTML styling, web design, front-end development, content overflow, overflow-x, overflow-y, scrollable areas',
   metaOgTitle:
     'CSS Overflow Properties Tutorial: Controlling Content Overflow in HTML Elements',
-  metaOgUrl: 'https://jswebschool.com/css/overflow-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/overflow-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

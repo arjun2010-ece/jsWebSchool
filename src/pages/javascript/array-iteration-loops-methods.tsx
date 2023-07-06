@@ -25,7 +25,8 @@ const seo = {
     'JavaScript tutorial, array iteration, for loop, while loop, map method, filter method, front-end development, web development, programming challenges',
   metaOgTitle:
     'Array Iteration in JavaScript: Exploring Loops (for, while) and Methods (map, filter)',
-  metaOgUrl: 'https://jswebschool.com/javascript/array-iteration-loops-methods',
+  metaOgUrl:
+    'https://www.webschooljs.com/javascript/array-iteration-loops-methods',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, JavaScript variables, variable declaration, variable assignment, variable manipulation, variable scope, front-end development, web development',
   metaOgTitle:
     'JavaScript Variables Tutorial: Understanding Variable Declaration and Manipulation',
-  metaOgUrl: 'https://jswebschool.com/javascript/variables',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/variables',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

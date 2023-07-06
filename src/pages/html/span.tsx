@@ -22,7 +22,7 @@ const seo = {
     'HTML, span tag, inline styling, inline content, inline element, targeting elements, HTML elements, web development, web design, frontend development, HTML tutorial',
   metaOgTitle:
     'HTML Span Tag: Customized Inline Styling and Targeting Elements',
-  metaOgUrl: 'https://jswebschool.com/html/span',
+  metaOgUrl: 'https://www.webschooljs.com/html/span',
   metaOgImage: '/images/html-logo.png',
 };
 

@@ -25,7 +25,7 @@ const seo = {
     'JavaScript tutorial, searching methods, filtering methods, JavaScript arrays, filter(), find(), indexOf(), front-end development, web development, data manipulation',
   metaOgTitle:
     'JavaScript Searching and Filtering Methods Tutorial: Efficient Data Retrieval and Manipulation',
-  metaOgUrl: 'https://jswebschool.com/javascript/searching-and-filtering',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/searching-and-filtering',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

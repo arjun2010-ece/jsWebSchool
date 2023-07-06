@@ -21,11 +21,11 @@ const seo = {
     'Explore the CSS box model properties and elevate your web design capabilities. This comprehensive tutorial covers the box model, including padding, borders, and margins, to help you create visually appealing and well-structured HTML layouts.',
   metaKeywords:
     'CSS tutorial, box model properties, CSS layout, HTML design, front-end development, web design, padding, borders, margins',
-  metaOgTitle: 'Mastering CSS Box Model Properties: Create Stunning HTML Layouts',
-  metaOgUrl: 'https://jswebschool.com/css/box-model-properties',
+  metaOgTitle:
+    'Mastering CSS Box Model Properties: Create Stunning HTML Layouts',
+  metaOgUrl: 'https://www.webschooljs.com/css/box-model-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
-
 
 const CSSBoxModelPropertiesPage: NextPage = () => {
   return (
@@ -256,8 +256,11 @@ const CSSBoxModelPropertiesPage: NextPage = () => {
       />
       <CodeSnippet content={cssBoxSnippet} />
 
-       {/* NavigationIcon : Front and Back Link */}
-       <NavigationIcon prevLink="/css/dimension-properties" nextLink="/css/positioning-properties"  />
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/dimension-properties"
+        nextLink="/css/positioning-properties"
+      />
     </Layout>
   );
 };

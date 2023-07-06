@@ -16,7 +16,7 @@ const seo = {
     'JavaScript tutorial, setting up JavaScript, JavaScript development environment, code editor, web server, front-end development, web development, development tools',
   metaOgTitle:
     'JavaScript Setting Up Tutorial: Getting Your Environment Ready for JavaScript Development',
-  metaOgUrl: 'https://jswebschool.com/javascript/setting-up',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/setting-up',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 
@@ -156,10 +156,7 @@ const JSSettingUpPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon
-        prevLink="/javascript"
-        nextLink="/javascript/variables"
-      />
+      <NavigationIcon prevLink="/javascript" nextLink="/javascript/variables" />
     </Layout>
   );
 };

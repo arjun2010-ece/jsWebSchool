@@ -22,7 +22,7 @@ const seo = {
     'JavaScript tutorial, for loop, JavaScript iteration, array iteration, front-end development, web development, repetitive tasks',
   metaOgTitle:
     'JavaScript for Loop Tutorial: Efficient Array Iteration and Repetitive Tasks',
-  metaOgUrl: 'https://jswebschool.com/javascript/for-loop',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/for-loop',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

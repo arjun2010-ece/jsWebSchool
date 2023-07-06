@@ -24,7 +24,7 @@ const seo = {
     'CSS tutorial, Flexbox properties, responsive layouts, web design, front-end development, CSS styling, flexible containers,  flex containers, flex items, flex-direction, justify-content, align-items, gap, row-gap, column-gap, flex-wrap, align-self,order, flex-grow, flex-shrink, flex, adaptive designs',
   metaOgTitle:
     'CSS Flexbox Properties Tutorial: Building Dynamic and Responsive Web Layouts',
-  metaOgUrl: 'https://jswebschool.com/css/flexbox-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/flexbox-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

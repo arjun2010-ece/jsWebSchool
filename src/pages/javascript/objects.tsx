@@ -27,7 +27,7 @@ const seo = {
     'JavaScript tutorial, JavaScript objects, object creation, object properties, object methods, data organization, data manipulation, front-end development, web development',
   metaOgTitle:
     'JavaScript Objects Tutorial: Exploring Data Organization and Manipulation',
-  metaOgUrl: 'https://jswebschool.com/javascript/objects',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/objects',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

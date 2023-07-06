@@ -21,7 +21,7 @@ const seo = {
     'JavaScript tutorial, switch case statement, JavaScript conditions, multi-branching logic, front-end development, web development, decision-making',
   metaOgTitle:
     'JavaScript Switch Case Tutorial: Implementing Multi-Branching Logic in Your Code',
-  metaOgUrl: 'https://jswebschool.com/javascript/switch-case',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/switch-case',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

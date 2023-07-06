@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, for...in loop, object properties, JavaScript iteration, front-end development, web development, object manipulation',
   metaOgTitle:
     'JavaScript for...in Loop Tutorial: Exploring Object Iteration in JavaScript',
-  metaOgUrl: 'https://jswebschool.com/javascript/for-in-loop',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/for-in-loop',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

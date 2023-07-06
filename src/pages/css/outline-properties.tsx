@@ -16,8 +16,9 @@ const seo = {
     'Master the CSS outline properties and add visual emphasis to your HTML elements. This tutorial covers the various outline properties, including outline-style, outline-color, and outline-width, enabling you to create custom outlines and enhance the visual appeal of your web designs.',
   metaKeywords:
     'CSS tutorial, outline properties, HTML styling, web design, front-end development, visual emphasis, outline-style, outline-color, outline-width',
-  metaOgTitle: 'CSS Outline Properties Tutorial: Adding Visual Emphasis to HTML Elements',
-  metaOgUrl: 'https://jswebschool.com/css/outline-properties',
+  metaOgTitle:
+    'CSS Outline Properties Tutorial: Adding Visual Emphasis to HTML Elements',
+  metaOgUrl: 'https://www.webschooljs.com/css/outline-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 
@@ -145,7 +146,10 @@ const CSSOutlinePropertiesPage: NextPage = () => {
       <br />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/css/overflow-properties" nextLink="/css/cursor-properties" />
+      <NavigationIcon
+        prevLink="/css/overflow-properties"
+        nextLink="/css/cursor-properties"
+      />
     </Layout>
   );
 };

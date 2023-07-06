@@ -16,7 +16,7 @@ const seo = {
     'JavaScript tutorial, introduction to JavaScript, web development, front-end development, web design, JavaScript basics, dynamic web pages, interactivity, programming fundamentals',
   metaOgTitle:
     'Introduction to JavaScript Tutorial: Getting Started with Web Development',
-  metaOgUrl: 'https://jswebschool.com/javascript',
+  metaOgUrl: 'https://www.webschooljs.com/javascript',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 
@@ -157,10 +157,7 @@ const JSHomePage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon
-        prevLink=""
-        nextLink="/javascript/setting-up"
-      />
+      <NavigationIcon prevLink="" nextLink="/javascript/setting-up" />
     </Layout>
   );
 };

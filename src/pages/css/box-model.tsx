@@ -15,7 +15,7 @@ const seo = {
   metaKeywords:
     'CSS tutorial, box model, CSS layout, HTML design, front-end development, web design, margin, padding, border, content',
   metaOgTitle: 'CSS Box Model Tutorial: Mastering Layout Design in HTML',
-  metaOgUrl: 'https://jswebschool.com/css/box-model',
+  metaOgUrl: 'https://www.webschooljs.com/css/box-model',
   metaOgImage: '/images/css-logo.jpeg',
 };
 
@@ -104,8 +104,11 @@ const CSSBoxModelPage: NextPage = () => {
 
       <CodeSnippet content={cssBoxSnippet} />
 
-       {/* NavigationIcon : Front and Back Link */}
-       <NavigationIcon prevLink="/css/way-to-think" nextLink="/css/units-measurement"  />
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/css/way-to-think"
+        nextLink="/css/units-measurement"
+      />
     </Layout>
   );
 };

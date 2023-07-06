@@ -23,7 +23,7 @@ const seo = {
     'CSS tutorial, CSS Grid properties, grid layout, responsive design, web design, front-end development, grid containers, grid lines, grid tracks, grid-template-columns, grid-template-rows justify-content, align-items, gap, justify-content, align-items',
   metaOgTitle:
     'CSS Grid Properties Tutorial: Creating Dynamic and Responsive Layouts in HTML',
-  metaOgUrl: 'https://jswebschool.com/css/grid-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/grid-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

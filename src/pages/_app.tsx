@@ -16,10 +16,10 @@ const _App: AppType = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Nextjs Tailwind CSS Styled Components with TypeScript</title>
+        <title>webschooljs: Best place to learn frontend development</title>
         <meta
           name="description"
-          content="Nextjs Tailwind CSS Styled Components with TypeScript"
+          content="Best place to learn frontend development"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

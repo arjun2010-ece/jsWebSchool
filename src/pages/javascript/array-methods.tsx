@@ -36,7 +36,7 @@ const seo = {
     'JavaScript tutorial, array methods, JavaScript arrays, array manipulation, map method, filter method, reduce method, Array.isArray(), Array.length, reverse(), join(), toString(), split(), push(), pop(), shift(), unshift(), concat(), slice(), splice(), delete and flat(), front-end development, web development',
   metaOgTitle:
     'JavaScript Array Methods Tutorial: Mastering Array Manipulation and Transformation',
-  metaOgUrl: 'https://jswebschool.com/javascript/array-methods',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/array-methods',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

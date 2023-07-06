@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, sorting methods, JavaScript arrays, sort(), reverse(), custom sorting, data organization, front-end development, web development',
   metaOgTitle:
     'JavaScript Sorting Methods Tutorial: Organizing Arrays with Ease',
-  metaOgUrl: 'https://jswebschool.com/javascript/sorting-methods',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/sorting-methods',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 
@@ -228,7 +228,10 @@ const JSSortingPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/javascript/searching-and-filtering" nextLink="/javascript/objects" />
+      <NavigationIcon
+        prevLink="/javascript/searching-and-filtering"
+        nextLink="/javascript/objects"
+      />
     </Layout>
   );
 };

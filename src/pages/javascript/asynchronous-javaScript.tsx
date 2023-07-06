@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, asynchronous JavaScript, callbacks, promises, async/await, front-end development, web development, responsive applications, non-blocking code',
   metaOgTitle:
     'Asynchronous JavaScript Tutorial: Mastering Non-Blocking Code for Responsive Web Applications',
-  metaOgUrl: 'https://jswebschool.com/javascript/asynchronous-javaScript',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/asynchronous-javaScript',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

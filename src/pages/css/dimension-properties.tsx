@@ -24,7 +24,7 @@ const seo = {
     'CSS tutorial, dimension properties, CSS sizing, HTML elements, front-end development, web design, responsive design, width, height, min/max dimensions',
   metaOgTitle:
     'CSS Dimension Properties Tutorial: Achieve Responsive and Dynamic Web Designs',
-  metaOgUrl: 'https://jswebschool.com/css/dimension-properties',
+  metaOgUrl: 'https://www.webschooljs.com/css/dimension-properties',
   metaOgImage: '/images/css-logo.jpeg',
 };
 
@@ -257,7 +257,10 @@ const CSSDimensionPropertiesPage: NextPage = () => {
       <CodeSnippet content={maxHeightSnippets} />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/css/typography-properties" nextLink="/css/box-model-properties" />
+      <NavigationIcon
+        prevLink="/css/typography-properties"
+        nextLink="/css/box-model-properties"
+      />
     </Layout>
   );
 };

@@ -20,7 +20,7 @@ const seo = {
   metaKeywords:
     'React project setup, React development, HTML tutorial, project configuration, frontend development, create React app, webpack, Babel',
   metaOgTitle: 'Setting up a React Project: Comprehensive HTML Tutorial',
-  metaOgUrl: 'https://jswebschool.com/reactjs/setting-up-react-project',
+  metaOgUrl: 'https://www.webschooljs.com/reactjs/setting-up-react-project',
   metaOgImage: '/images/reactjs-logo.png',
 };
 

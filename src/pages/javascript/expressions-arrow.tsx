@@ -23,7 +23,7 @@ const seo = {
     'JavaScript tutorial, function expressions, arrow functions, JavaScript functions, JavaScript anonymous functions, JavaScript named functions, front-end development, web development, modular code, code efficiency',
   metaOgTitle:
     'JavaScript Function Expressions and Arrow Functions Tutorial: Writing Efficient and Expressive Code',
-  metaOgUrl: 'https://jswebschool.com/javascript/expressions-arrow',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/expressions-arrow',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 

@@ -16,7 +16,7 @@ const seo = {
     'CSS tutorial, units of measurement, CSS sizing, CSS positioning, front-end development, web design, pixels, percentages, em, rem, px, %, vw, vh',
   metaOgTitle:
     'CSS Units of Measurement Tutorial: Mastering Sizing and Positioning in HTML',
-  metaOgUrl: 'https://jswebschool.com/css/units-measurement',
+  metaOgUrl: 'https://www.webschooljs.com/css/units-measurement',
   metaOgImage: '/images/css-logo.jpeg',
 };
 

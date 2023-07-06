@@ -22,7 +22,7 @@ const seo = {
   metaKeywords:
     'HTML, semantic tags, HTML semantic tags, semantic HTML, web development, web design, accessibility, SEO, code organization, HTML structure, frontend development, HTML tutorial',
   metaOgTitle: 'HTML Semantic Tags: Enhancing Web Page Structure and Meaning',
-  metaOgUrl: 'https://jswebschool.com/html/semantic-tags',
+  metaOgUrl: 'https://www.webschooljs.com/html/semantic-tags',
   metaOgImage: '/images/html-logo.png',
 };
 

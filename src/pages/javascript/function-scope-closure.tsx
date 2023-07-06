@@ -22,7 +22,7 @@ const seo = {
     'JavaScript tutorial, function scope, closures, variable scope, code organization, code reusability, front-end development, web development',
   metaOgTitle:
     'JavaScript Function Scope and Closures Tutorial: Mastering Variable Scope and Code Organization',
-  metaOgUrl: 'https://jswebschool.com/javascript/function-scope-closure',
+  metaOgUrl: 'https://www.webschooljs.com/javascript/function-scope-closure',
   metaOgImage: '/images/javascript-logo.jpeg',
 };
 
