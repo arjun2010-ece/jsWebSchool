@@ -1,11 +1,28 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
-import { PAGES, cdProjectSnippet, createReactAppSnippet, projectStartSnippet } from '@/utils';
+import {
+  PAGES,
+  cdProjectSnippet,
+  createReactAppSnippet,
+  projectStartSnippet,
+} from '@/utils';
 import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Setting up react project',
+  metaDescription:
+    'Learn how to set up a React project from scratch with this comprehensive HTML tutorial. Discover the essential steps and tools needed to create a solid foundation for your React development journey.',
+  metaKeywords:
+    'React project setup, React development, HTML tutorial, project configuration, frontend development, create React app, webpack, Babel',
+  metaOgTitle: 'Setting up a React Project: Comprehensive HTML Tutorial',
+  metaOgUrl: 'https://jswebschool.com/reactjs/setting-up-react-project',
+  metaOgImage: '/images/reactjs-logo.png',
+};
 
 const SettingUpReactProjectPage: NextPage = () => {
   return (
@@ -14,6 +31,7 @@ const SettingUpReactProjectPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.REACTJS}
+      seo={seo}
     >
       <Heading
         content="How to set up reactjs project"
@@ -117,6 +135,11 @@ const SettingUpReactProjectPage: NextPage = () => {
         )}
       />
 
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/reactjs"
+        nextLink="/reactjs/understanding-jsx"
+      />
     </Layout>
   );
 };

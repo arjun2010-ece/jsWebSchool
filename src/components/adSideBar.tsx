@@ -9,7 +9,7 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainerProps>`
   flex: 0 0 350px;
   min-width: 350px;
   padding-top: 24px;
-  border: 3px solid red;
+  // border: 3px solid red;
   background: white;
   @media only screen and (max-width: 1023px) {
     display: block;
@@ -21,7 +21,7 @@ type AdSidebarProps = StyledSidebarContainerProps;
 const AdSidebar: FC<AdSidebarProps> = ({ hideAd }) => {
   return (
     <StyledSidebarContainer hideAd={hideAd}>
-      AD Sidebar component
+      {/* AD Sidebar component */}
     </StyledSidebarContainer>
   );
 };

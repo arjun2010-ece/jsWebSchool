@@ -6,6 +6,18 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Understanding JSX',
+  metaDescription:
+    'Gain a solid understanding of JSX with this comprehensive HTML tutorial. Explore the syntax, benefits, and usage of JSX, a powerful extension to JavaScript commonly used in React applications.',
+  metaKeywords:
+    'JSX, HTML tutorial, JavaScript extension, React development, frontend development, JSX syntax, JSX usage',
+  metaOgTitle: ' Understanding JSX: Language of React.js',
+  metaOgUrl: 'https://jswebschool.com/reactjs/understanding-jsx',
+  metaOgImage: '/images/reactjs-logo.png',
+};
 
 const UnderstandingJSXPage: NextPage = () => {
   return (
@@ -14,6 +26,7 @@ const UnderstandingJSXPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.REACTJS}
+      seo={seo}
     >
       <Heading
         content="Understanding JSX"
@@ -109,6 +122,12 @@ const UnderstandingJSXPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/reactjs/setting-up-react-project"
+        nextLink=""
       />
     </Layout>
   );

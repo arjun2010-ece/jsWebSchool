@@ -5,6 +5,18 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'What is ReactJs ?',
+  metaDescription:
+    'Learn about ReactJS, a popular JavaScript library used for building user interfaces. This tutorial covers the basics of ReactJS, its key features, and how it can be used in web development projects.',
+  metaKeywords:
+    'ReactJS, JavaScript framework, JavaScript library , user interfaces, web development, tutorial, virtual DOM, component-based development.',
+  metaOgTitle: 'Understanding ReactJS: A Comprehensive HTML Tutorial',
+  metaOgUrl: 'https://jswebschool.com/reactjs',
+  metaOgImage: '/images/reactjs-logo.png',
+};
 
 const ReactJsHomePage: NextPage = () => {
   return (
@@ -13,6 +25,7 @@ const ReactJsHomePage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.REACTJS}
+      seo={seo}
     >
       <Heading
         content="What is ReactJs ?"
@@ -75,6 +88,9 @@ const ReactJsHomePage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="" nextLink="/reactjs/setting-up-react-project" />
     </Layout>
   );
 };
