@@ -1,6 +1,8 @@
 import type { AppProps, AppType } from 'next/app';
 import Head from 'next/head';
 import { Nunito } from 'next/font/google';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 // style
 import '@/styles/globals.css';
 import GlobalStyles from '@/styles/Global.style';
@@ -8,10 +10,31 @@ import GlobalStyles from '@/styles/Global.style';
 const nunitoFont = Nunito({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: "--font-nunito"
+  variable: '--font-nunito',
 });
 
+// declare global {
+//   interface Window {
+//     gtag: (event: string, config: string, options: { page_path: string }) => void;
+//   }
+// }
+
+
 const _App: AppType = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      window && window.gtag && window.gtag('config', process.env.NEXT_PUBLIC_GA_ID as string, {
+        page_path: url,
+      });
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>
