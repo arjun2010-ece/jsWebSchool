@@ -41,6 +41,7 @@ const Content = styled.div<ContentProps>`
   padding-right: 15px;
   overflow-x: auto;
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
   @media only screen and (max-width: 767px) {
     margin-left: 0;
   }
