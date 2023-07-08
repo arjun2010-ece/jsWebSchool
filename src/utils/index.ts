@@ -34,6 +34,15 @@ export const PAGES = {
   GIT: 'GIT',
 };
 
+export const TABLE_OF_CONTENT_EXCLUSION = [
+  '/privacy-policy',
+  '/',
+  '/disclaimer',
+  '/contact-us',
+  '/about-us',
+  '/terms-service',
+];
+
 export const moreAttributesLink =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes';
 
@@ -562,23 +571,21 @@ export const proj1Sec2Snippet = `<div class="products">
   </div>
 </div>`;
 
-
 export const proj1Sec3Snippet = `<div class="main-content">
   // 2 subsections inside
-</div>`
-
+</div>`;
 
 export const proj1Sec31Snippet = `<div className='topbar'>
   <div>Request for quotation</div>
   <div>Ready to ship</div>
   <div>Logistics services</div>
-</div>`
+</div>`;
 
 export const proj1Sec32Snippet = `<div className='topbar'>
   <div>My markets</div>
   <img  src="/pic.jpg >
   <div>Buyers Club benefits</div>
-</div>`
+</div>`;
 
 // CSS
 export const boxModelSnippet = `

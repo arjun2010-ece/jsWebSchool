@@ -7,6 +7,7 @@ import AdSidebar from '@/components/adSideBar';
 import SEO from '@/components/seo';
 import styled from 'styled-components';
 import { HamburgerComponent } from '@/components/header';
+import { TABLE_OF_CONTENT_EXCLUSION } from '../utils';
 
 const MainContent = styled.div`
   display: flex;
@@ -71,6 +72,8 @@ const Layout: FC<LayoutProps> = ({
 }) => {
   const router: NextRouter = useRouter();
   const [mobileNav, setMobileNav] = useState<boolean>(false);
+  const isGenericPage = TABLE_OF_CONTENT_EXCLUSION.includes(router?.route);
+  console.log("router?.route", router?.route)
 
   const toggleHamburgerMenu = () => {
     setMobileNav(!mobileNav);
@@ -79,26 +82,27 @@ const Layout: FC<LayoutProps> = ({
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
-        title={seo?.title || ""}
-        metaDescription={seo?.metaDescription || ""}
-        metaKeywords={seo?.metaKeywords || ""}
-        metaOgTitle={seo?.metaOgTitle || ""}
-        metaOgUrl={seo?.metaOgUrl || ""}
-        metaOgImage={seo?.metaOgImage || ""}
+        title={seo?.title || ''}
+        metaDescription={seo?.metaDescription || ''}
+        metaKeywords={seo?.metaKeywords || ''}
+        metaOgTitle={seo?.metaOgTitle || ''}
+        metaOgUrl={seo?.metaOgUrl || ''}
+        metaOgImage={seo?.metaOgImage || ''}
       />
 
       <Header />
 
       <MainContent>
-        <HamburgerWrapper>
-          <HamburgerComponent
-            mobileNav={mobileNav}
-            toggleHamburgerMenu={toggleHamburgerMenu}
-            dimension="h-12 w-12"
-            title={true}
-          />
-        </HamburgerWrapper>
-
+        {!isGenericPage && (
+          <HamburgerWrapper>
+            <HamburgerComponent
+              mobileNav={mobileNav}
+              toggleHamburgerMenu={toggleHamburgerMenu}
+              dimension="h-12 w-12"
+              title={true}
+            />
+          </HamburgerWrapper>
+        )}
         {sidebar && (
           <Sidebar
             hideSidebar={hideSidebar}
