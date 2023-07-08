@@ -39,7 +39,11 @@ export default class _Document extends Document {
         <Head>
           <link rel="manifest" href="/manifest.webmanifest" />
           <meta name="theme-color" content="#000000" />
-          
+          <meta
+            name="google-site-verification"
+            content="d2i5mvpFfo-NxOb4Ow09xlouyoamoO0-tg9HCOGcrsQ"
+          />
+
           <Script strategy="afterInteractive" async src={gtag} />
 
           <Script id="google-analytics" strategy="afterInteractive">
