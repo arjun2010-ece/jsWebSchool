@@ -2,13 +2,13 @@ import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 
 const seo = {
-  title: 'Disclaimer',
+  title: 'Contact us',
   metaDescription:
-    'Read our disclaimer to understand the terms and conditions of using WebSchoolJS. Get important information about the accuracy and limitations of the content provided on our website.',
+    'Contact WebSchoolJS for inquiries, feedback, or questions regarding our web development tutorials and resources. Get in touch with our team of experienced developers and let us assist you in your web development journey.',
   metaKeywords:
-    'disclaimer, terms and conditions, website disclaimer, information accuracy, limitations, website policies',
-  metaOgTitle: 'Disclaimer | WebSchoolJS - Understand our Terms and Conditions',
-  metaOgUrl: 'https://www.webschooljs.com/disclaimer',
+    'dweb development contact, contact WebSchoolJS, web development inquiries, feedback, questions, web development tutorials, experienced developers, coding assistance',
+  metaOgTitle: 'Contact Us - WebSchoolJS: Reach Out for Web Development Inquiries and Assistance',
+  metaOgUrl: 'https://www.webschooljs.com/contact-us',
   metaOgImage: '',
 };
 
