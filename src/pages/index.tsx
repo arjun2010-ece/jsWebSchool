@@ -6,14 +6,41 @@ import Image from 'next/image';
 import { ImageContainer } from '@/styles/Extra.style';
 import { type NextPage } from 'next';
 
+const seo = {
+  title: 'Home Page',
+  metaDescription:
+    'WebSchoolJS is your ultimate resource for web development tutorials, covering HTML, CSS, JavaScript, Git, React.js, and Node.js. Learn the essential skills and frameworks to become a proficient web developer.',
+  metaKeywords:
+    'web development tutorials, HTML, CSS, JavaScript, Git, React.js, Node.js, web development resources, learn web development, coding tutorials, beginner-friendly tutorials',
+  metaOgTitle: 'WebSchoolJS - Learn Web Development with Tutorials & Resources',
+  metaOgUrl: 'https://www.webschooljs.com/',
+  metaOgImage: '',
+};
+
 const HomePage: NextPage = () => {
   return (
-    <Layout>
+    <Layout seo={seo}>
       <Heading
-        content="Mission of webschooljs  ?"
+        content="Courses we Offer"
         headingType="h1"
         customStyle={tw`text-center mb-4`}
       />
+
+      <div className="mb-20 text-center">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>Javascript</p>
+        <p>GIT</p>
+        <p>React.js</p>
+        <p>Node.js</p>
+      </div>
+
+      <Heading
+        content="Mission of webschooljs  ?"
+        headingType="h2"
+        customStyle={tw`text-center mb-4`}
+      />
+
       <Text
         content="When i was learning this Frontend skills set then it was very difficult. 
         Because all the resources that you find on web is only theoretical and for practice sake we have only todo list of almost everything.
