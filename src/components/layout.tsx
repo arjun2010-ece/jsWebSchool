@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { FC, ReactNode } from 'react';
 import { useRouter, type NextRouter } from 'next/router';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import Sidebar from '@/components/sidebar';
 import AdSidebar from '@/components/adSideBar';
 import SEO from '@/components/seo';
@@ -39,6 +40,7 @@ const Content = styled.div<ContentProps>`
   padding-left: 15px;
   padding-right: 15px;
   overflow-x: auto;
+  margin-bottom: 3rem;
   @media only screen and (max-width: 767px) {
     margin-left: 0;
   }
@@ -114,7 +116,7 @@ const Layout: FC<LayoutProps> = ({
         {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
