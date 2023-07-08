@@ -13,12 +13,6 @@ const nunitoFont = Nunito({
   variable: '--font-nunito',
 });
 
-// declare global {
-//   interface Window {
-//     gtag: (event: string, config: string, options: { page_path: string }) => void;
-//   }
-// }
-
 
 const _App: AppType = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
