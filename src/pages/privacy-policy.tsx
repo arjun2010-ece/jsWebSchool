@@ -5,7 +5,7 @@ import Heading from '@/components/heading';
 
 const seo = {
   title:
-    'Privacy Policy: How we collect, use, and protect your personal information.',
+    'Privacy Policy : Protecting User Data and Building Trust',
   metaDescription:
     'Learn about our privacy policy at WebSchoolJS. Discover how we collect, use, and protect your personal information. Stay informed about our data practices and your rights.',
   metaKeywords:

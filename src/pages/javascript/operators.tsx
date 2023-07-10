@@ -8,7 +8,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Exploring Essential Javascript Operators: An In-Depth Look at Expressions',
+  title: 'Exploring Essential JavaScript Operators: In-Depth Look',
   metaDescription:
     'Master JavaScript operators and learn how to perform various operations on values and variables. This tutorial covers JavaScript operators, including arithmetic, assignment, comparison, logical, and more, empowering you to manipulate and combine values effectively in your JavaScript code',
   metaKeywords:

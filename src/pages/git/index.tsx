@@ -8,7 +8,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is GIT ?',
+  title: 'Understanding GIT: A Comprehensive Guide to Efficient Code Management',
   metaDescription:
     'Learn the basics of GIT with our comprehensive GIT tutorial. Understand version control, branching, merging, and collaboration using GIT. Start your coding journey today!',
   metaKeywords:

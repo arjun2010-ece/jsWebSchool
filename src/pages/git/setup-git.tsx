@@ -15,7 +15,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Setting up GIT',
+  title: 'Working with GIT: Setup and Configuration for Efficient Collaboration',
   metaDescription:
     'Get started with setting up GIT, the essential version control system, in our detailed HTML tutorial. Learn how to install GIT, configure user settings, create repositories, and start tracking changes in your projects effortlessly.',
   metaKeywords:

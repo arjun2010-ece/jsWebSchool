@@ -7,6 +7,7 @@ import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
+import ResponsiveImage from '@/components/responsive-image';
 
 const seo = {
   title: 'HTML Heading Tags',
@@ -55,12 +56,14 @@ const HTMLHeading: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-      <Heading content="Heading 1" headingType="h1" />
-      <Heading content="Heading 2" headingType="h2" />
-      <Heading content="Heading 3" headingType="h3" />
-      <Heading content="Heading 4" headingType="h4" />
-      <Heading content="Heading 5" headingType="h5" />
-      <Heading content="Heading 6" headingType="h6" />
+
+      {/* Responsive image */}
+      <ResponsiveImage
+        srcUrl="/images/heading-image.jpg"
+        altText="Heading tags"
+        hideBorders
+        removeTopSpace
+      />
 
       <CodeSnippet content={htmlHeadingsTagSnippet} />
 
