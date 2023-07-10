@@ -37,7 +37,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       <Heading
         content="Unordered vs ordered lists ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`

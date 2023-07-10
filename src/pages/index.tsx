@@ -21,7 +21,7 @@ const HomePage: NextPage = () => {
   return (
     <Layout seo={seo}>
       <Heading
-        content="Courses we Offer"
+        content="Tutorials we Offer"
         headingType="h1"
         customStyle={tw`text-center mb-4`}
       />

@@ -30,9 +30,9 @@ const BlockInlinePage: NextPage = () => {
       seo={seo}
     >
       <Heading
-        content="Block vs Inline block vs inline Elements ?"
+        content="Block vs Inline block vs inline Elements"
         headingType="h1"
-        customStyle={tw`underline`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content="

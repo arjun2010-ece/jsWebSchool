@@ -38,7 +38,7 @@ const SemanticTagsPage: NextPage = () => {
       <Heading
         content="Semantic Tags ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`

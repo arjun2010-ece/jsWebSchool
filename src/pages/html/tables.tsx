@@ -40,7 +40,7 @@ const HTMLTables: NextPage = () => {
       <Heading
         content="Tables"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`

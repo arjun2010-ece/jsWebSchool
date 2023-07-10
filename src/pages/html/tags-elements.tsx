@@ -50,7 +50,7 @@ const BlockInlinePage: NextPage = () => {
       <Heading
         content="HTML Tags vs Elements ?"
         headingType="h1"
-        customStyle={tw`underline`}
+        customStyle={tw`mb-4`}
       />
 
       <Text

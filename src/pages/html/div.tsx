@@ -33,11 +33,7 @@ const HTMLDiv: NextPage = () => {
       currentPage={PAGES.HTML}
       seo={seo}
     >
-      <Heading
-        content="Div Tags ?"
-        headingType="h1"
-        customStyle={tw`underline mb-4`}
-      />
+      <Heading content="Div Tags ?" headingType="h1" customStyle={tw`mb-4`} />
       <Text
         content={`
         Div Tags are <b>non-semantic tags</b> and used to <b>wrap any content or any section of a webpage</b> 

@@ -38,7 +38,7 @@ const HTMLSpan: NextPage = () => {
       <Heading
         content="Span Tags ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`

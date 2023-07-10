@@ -31,7 +31,7 @@ const HTMLHeading: NextPage = () => {
       <Heading
         content="Paragraph Tags ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`

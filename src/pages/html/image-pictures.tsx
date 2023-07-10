@@ -37,7 +37,7 @@ const HTMLImagePicture: NextPage = () => {
       <Heading
         content="Image Tag vs Picture tag ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-4`}
       />
       <Text
         content={`
