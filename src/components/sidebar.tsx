@@ -39,7 +39,7 @@ const Sidebar: FC<SidebarProps> = ({ hideSidebar, currentPage, mobileNav }) => {
       {currentPage == PAGES.JAVASCRIPT && <JsSidebar />}
       {currentPage == PAGES.REACTJS && <ReactjsSidebar />}
       {currentPage == PAGES.GIT && <GitSidebar />}
-      {currentPage == PAGES.NODEJS && <p>NODEJS page</p>}
+      {/* {currentPage == PAGES.NODEJS && <p>NODEJS page</p>} */}
     </StyledSidebarContainer>
   );
 };
