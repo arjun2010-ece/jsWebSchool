@@ -16,7 +16,7 @@ const seo = {
     'JSX, HTML tutorial, JavaScript extension, React development, frontend development, JSX syntax, JSX usage',
   metaOgTitle: ' Understanding JSX: Language of React.js',
   metaOgUrl: 'https://www.webschooljs.com/reactjs/understanding-jsx',
-  metaOgImage: '/images/reactjs-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/reactjs-logo.png',
 };
 
 const UnderstandingJSXPage: NextPage = () => {
@@ -30,7 +30,7 @@ const UnderstandingJSXPage: NextPage = () => {
     >
       <Heading
         content="Understanding JSX"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -15,7 +15,7 @@ const seo = {
     'ReactJS, JavaScript framework, JavaScript library , user interfaces, web development, tutorial, virtual DOM, component-based development.',
   metaOgTitle: 'Understanding ReactJS: A Comprehensive HTML Tutorial',
   metaOgUrl: 'https://www.webschooljs.com/reactjs',
-  metaOgImage: '/images/reactjs-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/reactjs-logo.png',
 };
 
 const ReactJsHomePage: NextPage = () => {
@@ -29,7 +29,7 @@ const ReactJsHomePage: NextPage = () => {
     >
       <Heading
         content="What is ReactJs ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

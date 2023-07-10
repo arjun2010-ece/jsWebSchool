@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Function Scope and Closures Tutorial: Mastering Variable Scope and Code Organization',
   metaOgUrl: 'https://www.webschooljs.com/javascript/function-scope-closure',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSFunctionScopeAndClosurePage: NextPage = () => {
@@ -37,7 +37,7 @@ const JSFunctionScopeAndClosurePage: NextPage = () => {
     >
       <Heading
         content="Function scope and closures :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

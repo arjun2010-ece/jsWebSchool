@@ -7,14 +7,14 @@ import { ImageContainer } from '@/styles/Extra.style';
 import { type NextPage } from 'next';
 
 const seo = {
-  title: 'Home Page',
+  title: 'webschooljs: Home Page, courses it teaches and its mission.',
   metaDescription:
     'WebSchoolJS is your ultimate resource for web development tutorials, covering HTML, CSS, JavaScript, Git, React.js, and Node.js. Learn the essential skills and frameworks to become a proficient web developer.',
   metaKeywords:
     'web development tutorials, HTML, CSS, JavaScript, Git, React.js, Node.js, web development resources, learn web development, coding tutorials, beginner-friendly tutorials',
   metaOgTitle: 'WebSchoolJS - Learn Web Development with Tutorials & Resources',
   metaOgUrl: 'https://www.webschooljs.com/',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const HomePage: NextPage = () => {

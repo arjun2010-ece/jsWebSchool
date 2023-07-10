@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript if...else Tutorial: Adding Conditional Logic to Your Code',
   metaOgUrl: 'https://www.webschooljs.com/javascript/if-else',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSIfElsePage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSIfElsePage: NextPage = () => {
     >
       <Heading
         content="Javascript If/Else :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

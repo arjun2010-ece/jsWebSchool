@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'JavaScript for Loop Tutorial: Efficient Array Iteration and Repetitive Tasks',
   metaOgUrl: 'https://www.webschooljs.com/javascript/for-loop',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSForLoopPage: NextPage = () => {
@@ -35,7 +35,7 @@ const JSForLoopPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
       seo={seo}
     >
-      <Heading content="for loop :" headingType="h5" customStyle={tw`mb-4`} />
+      <Heading content="for loop :" headingType="h1" customStyle={tw`mb-4`} />
 
       <Text
         content={`

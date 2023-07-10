@@ -23,7 +23,7 @@ const seo = {
     'HTML, semantic tags, HTML semantic tags, semantic HTML, web development, web design, accessibility, SEO, code organization, HTML structure, frontend development, HTML tutorial',
   metaOgTitle: 'HTML Semantic Tags: Enhancing Web Page Structure and Meaning',
   metaOgUrl: 'https://www.webschooljs.com/html/semantic-tags',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const SemanticTagsPage: NextPage = () => {
@@ -37,7 +37,7 @@ const SemanticTagsPage: NextPage = () => {
     >
       <Heading
         content="Semantic Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

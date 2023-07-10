@@ -1,21 +1,29 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
+import tw from 'twin.macro';
+import Heading from '@/components/heading';
 
 const seo = {
-  title: 'Privacy Policy',
+  title:
+    'Privacy Policy: How we collect, use, and protect your personal information.',
   metaDescription:
     'Learn about our privacy policy at WebSchoolJS. Discover how we collect, use, and protect your personal information. Stay informed about our data practices and your rights.',
   metaKeywords:
     'privacy policy, data protection, personal information, website privacy, data security',
   metaOgTitle: 'Privacy Policy | WebSchoolJS - Learn Web Development Tutorials',
   metaOgUrl: 'https://www.webschooljs.com/privacy-policy',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const PrivacyPolicyPage: NextPage = () => {
   return (
     <Layout seo={seo}>
-      Privacy Policy <br />
+      <Heading
+        content="Privacy Policy"
+        headingType="h1"
+        customStyle={tw`mb-4`}
+      />
+      <br />
       <br />
       Last updated: 08/07/23 <br />
       <br />

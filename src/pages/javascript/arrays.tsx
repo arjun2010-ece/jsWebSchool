@@ -19,7 +19,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Javascript Array',
+  title: 'Javascript Array and its uages',
   metaDescription:
     'Gain a comprehensive understanding of JavaScript arrays and harness their power for data storage and manipulation. This tutorial covers array creation, accessing elements, adding and removing elements, and performing common operations to effectively work with arrays in JavaScript.',
   metaKeywords:
@@ -27,7 +27,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Array Tutorial: Exploring Data Storage and Manipulation with JavaScript Arrays',
   metaOgUrl: 'https://www.webschooljs.com/javascript/arrays',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSArraysPage: NextPage = () => {
@@ -39,7 +39,7 @@ const JSArraysPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
       seo={seo}
     >
-      <Heading content="Arrays :" headingType="h5" customStyle={tw`mb-4`} />
+      <Heading content="Arrays :" headingType="h1" customStyle={tw`mb-4`} />
 
       <Text
         content={`

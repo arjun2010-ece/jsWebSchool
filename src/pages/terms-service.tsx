@@ -1,5 +1,7 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
+import tw from 'twin.macro';
+import Heading from '@/components/heading';
 
 const seo = {
   title: 'Terms of Service',
@@ -9,13 +11,18 @@ const seo = {
     'terms of service, website terms, legal agreements, intellectual property, content usage, limitations, website policies',
   metaOgTitle: 'WebSchoolJS Terms of Service: Understand Our Website Policies',
   metaOgUrl: 'https://www.webschooljs.com/terms-service',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const TermsOfServicePage: NextPage = () => {
   return (
     <Layout seo={seo}>
-      Terms of Service <br />
+      <Heading
+        content="Terms of Service"
+        headingType="h1"
+        customStyle={tw`mb-4`}
+      />
+      <br />
       <br />
       Last updated: 08/07/23 <br />
       <br />
@@ -60,10 +67,11 @@ const TermsOfServicePage: NextPage = () => {
       <b>Google Analytics and Google AdSense(or any ad network)</b>
       <br />
       <br />
-      WebSchoolJS uses Google Analytics and Google AdSense(or any ad network) on the Website to
-      track and analyze website usage and to display relevant advertisements. By
-      using the Website, you agree to be bound by Google&apos;s Terms of Service and
-      Privacy Policy as they pertain to Google Analytics and Google AdSense.
+      WebSchoolJS uses Google Analytics and Google AdSense(or any ad network) on
+      the Website to track and analyze website usage and to display relevant
+      advertisements. By using the Website, you agree to be bound by
+      Google&apos;s Terms of Service and Privacy Policy as they pertain to
+      Google Analytics and Google AdSense.
       <br />
       <br />
       <b>Limitation of Liability</b>
@@ -87,17 +95,17 @@ const TermsOfServicePage: NextPage = () => {
       You agree to indemnify and hold harmless WebSchoolJS, its directors,
       employees, partners, agents, suppliers, or affiliates from and against any
       claims, liabilities, damages, judgments, awards, losses, costs, expenses,
-      or fees (including reasonable attorneys&apos; fees) arising out of or relating
-      to your violation of these Terms or your use of the Website.
+      or fees (including reasonable attorneys&apos; fees) arising out of or
+      relating to your violation of these Terms or your use of the Website.
       <br />
       <br />
       <b>Governing Law</b>
       <br />
       <br />
       These Terms shall be governed by and construed in accordance with the laws
-      of India, without regard to its conflict of law provisions. Any
-      dispute arising from or relating to the subject matter of these Terms
-      shall be exclusively subject to the jurisdiction of the courts in India.
+      of India, without regard to its conflict of law provisions. Any dispute
+      arising from or relating to the subject matter of these Terms shall be
+      exclusively subject to the jurisdiction of the courts in India.
       <br />
       <br />
       <b>Changes to These Terms</b>
@@ -108,7 +116,8 @@ const TermsOfServicePage: NextPage = () => {
       updated Terms on the Website. By continuing to access or use the Website
       after any revisions become effective, you agree to be bound by the revised
       Terms.
-      <br/><br/>
+      <br />
+      <br />
       <b>Contact Us</b>
       <br />
       If you have any questions or concerns regarding this Privacy Policy or the

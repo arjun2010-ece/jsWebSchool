@@ -20,7 +20,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Objects',
+  title: 'Javascript Objects Explained: Deep Dive into Key Concepts and Usage.',
   metaDescription:
     'Explore JavaScript objects and unlock their potential for data organization and manipulation. This tutorial covers the concept of objects in JavaScript, including object creation, properties, methods, and how to work with objects to store and retrieve structured data in your JavaScript applications.',
   metaKeywords:
@@ -28,7 +28,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Objects Tutorial: Exploring Data Organization and Manipulation',
   metaOgUrl: 'https://www.webschooljs.com/javascript/objects',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSObjectsPage: NextPage = () => {
@@ -42,7 +42,7 @@ const JSObjectsPage: NextPage = () => {
     >
       <Heading
         content="Objects : creation and manipulation in javascript"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'JavaScript DOM Manipulations Tutorial: Creating Dynamic and Interactive Web Pages',
   metaOgUrl: 'https://www.webschooljs.com/javascript/dom-manipulation',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSDomManipulationPage: NextPage = () => {
@@ -37,7 +37,7 @@ const JSDomManipulationPage: NextPage = () => {
     >
       <Heading
         content="DOM Manipulation"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

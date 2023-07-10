@@ -14,14 +14,14 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'HTML DIV Tag',
+  title: 'Working with HTML <div> Tag: Practical Usage and Best Practices for Web Development',
   metaDescription:
     'Learn how to use the HTML `<div>` tag effectively in web design. Our comprehensive tutorial covers the purpose, structure, and styling of `<div>` elements, and how they can be used for layout organization and styling containers. Enhance your HTML and CSS skills and create well-structured and visually appealing web pages with the versatile `<div>` tag.',
   metaKeywords:
     'HTML, `<div>` tag, div tag, html div tag, web design, HTML element, responsive design, structured layouts, layout organization, styling containers, HTML tutorial, CSS styling, web development, frontend development',
   metaOgTitle: 'HTML DIV Tag: Exploring the Fundamentals of Web Page Layout',
   metaOgUrl: 'https://www.webschooljs.com/html/div',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLDiv: NextPage = () => {
@@ -35,7 +35,7 @@ const HTMLDiv: NextPage = () => {
     >
       <Heading
         content="Div Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

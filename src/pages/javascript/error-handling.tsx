@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Error Handling Tutorial: Best Practices for Robust Code',
   metaOgUrl: 'https://www.webschooljs.com/javascript/error-handling',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSErrorHandlingPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSErrorHandlingPage: NextPage = () => {
     >
       <Heading
         content="Error Handling"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

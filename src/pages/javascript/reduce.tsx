@@ -18,7 +18,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Js reduce()',
+  title: 'Javascript reduce() method and some examples to master it.',
   metaDescription:
     'Explore the JavaScript reduce() method and learn how to perform array reduction operations with ease. This tutorial covers the usage of the reduce() method in JavaScript, enabling you to perform calculations, aggregate values, and transform arrays into single values efficiently.',
   metaKeywords:
@@ -26,7 +26,7 @@ const seo = {
   metaOgTitle:
     'JavaScript reduce() Method Tutorial: Performing Array Reduction Operations',
   metaOgUrl: 'https://www.webschooljs.com/javascript/reduce',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSReducePage: NextPage = () => {
@@ -40,7 +40,7 @@ const JSReducePage: NextPage = () => {
     >
       <Heading
         content="Javascript reduce() method:"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -37,7 +37,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Array Methods Tutorial: Mastering Array Manipulation and Transformation',
   metaOgUrl: 'https://www.webschooljs.com/javascript/array-methods',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSArraysPage: NextPage = () => {
@@ -51,7 +51,7 @@ const JSArraysPage: NextPage = () => {
     >
       <Heading
         content="Javascript inbuilt Array Methods:"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

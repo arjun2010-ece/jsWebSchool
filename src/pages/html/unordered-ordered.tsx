@@ -22,7 +22,7 @@ const seo = {
   metaOgTitle:
     'HTML Unordered / Ordered List: Structuring and Organizing Content',
   metaOgUrl: 'https://www.webschooljs.com/html/unordered-ordered',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLUnorderedOrderedLists: NextPage = () => {
@@ -36,7 +36,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
     >
       <Heading
         content="Unordered vs ordered lists ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

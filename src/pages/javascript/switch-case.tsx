@@ -22,7 +22,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Switch Case Tutorial: Implementing Multi-Branching Logic in Your Code',
   metaOgUrl: 'https://www.webschooljs.com/javascript/switch-case',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSSwitchCasePage: NextPage = () => {
@@ -36,7 +36,7 @@ const JSSwitchCasePage: NextPage = () => {
     >
       <Heading
         content="Switch case :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

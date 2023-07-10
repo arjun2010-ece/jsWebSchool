@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Global vs Local Variables Tutorial: Understanding Variable Scope in JavaScript',
   metaOgUrl: 'https://www.webschooljs.com/javascript/global-local-variables',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSGlobalLocalVariablesPage: NextPage = () => {
@@ -31,7 +31,7 @@ const JSGlobalLocalVariablesPage: NextPage = () => {
     >
       <Heading
         content="Global vs Local variables :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

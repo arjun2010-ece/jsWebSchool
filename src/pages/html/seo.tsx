@@ -10,14 +10,14 @@ import ResponsiveImage from '@/components/responsive-image';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is SEO ?',
+  title: 'Mastering the Basics of SEO: A Comprehensive Guide for Beginners',
   metaDescription:
     'Master the fundamentals of SEO (Search Engine Optimization) with our comprehensive tutorial. Learn how to optimize your HTML web pages to improve visibility in search engine results. Discover techniques for keyword research, meta tags, heading tags, image optimization, and more. Level up your web development skills and drive organic traffic to your website with effective SEO strategies.',
   metaKeywords:
     'SEO, Search Engine Optimization, HTML optimization, keyword research, meta tags, heading tags, image optimization, web development, web design, organic traffic, frontend development, HTML tutorial',
   metaOgTitle: 'SEO: Mastering Search Engine Optimization for Your Website',
   metaOgUrl: 'https://www.webschooljs.com/html/seo',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLSeoPage: NextPage = () => {
@@ -31,7 +31,7 @@ const HTMLSeoPage: NextPage = () => {
     >
       <Heading
         content="SEO ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

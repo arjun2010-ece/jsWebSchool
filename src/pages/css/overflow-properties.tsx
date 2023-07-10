@@ -21,7 +21,7 @@ const seo = {
   metaOgTitle:
     'CSS Overflow Properties Tutorial: Controlling Content Overflow in HTML Elements',
   metaOgUrl: 'https://www.webschooljs.com/css/overflow-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSOverflowPropertiesPage: NextPage = () => {
@@ -35,7 +35,7 @@ const CSSOverflowPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Overflow properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

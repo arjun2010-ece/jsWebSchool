@@ -26,7 +26,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Searching and Filtering Methods Tutorial: Efficient Data Retrieval and Manipulation',
   metaOgUrl: 'https://www.webschooljs.com/javascript/searching-and-filtering',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSSearchingAndFilteringPage: NextPage = () => {
@@ -40,7 +40,7 @@ const JSSearchingAndFilteringPage: NextPage = () => {
     >
       <Heading
         content="Searching and Filtering in JS"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -14,6 +14,19 @@ import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Popular git commands',
+  metaDescription:
+    'Explore a compilation of popular GIT commands in our concise GIT tutorial. Learn how to initialize a repository, add files, commit changes, create branches, merge branches, push to remote repositories, and more. Enhance your productivity and efficiency with these essential GIT commands.',
+  metaKeywords:
+    'GIT, version control, HTML tutorial, GIT tutorial, popular commands, initialize repository, add files, commit changes, create branches, merge branches, push to remote repositories',
+  metaOgTitle:
+    'Mastering Popular GIT Commands: A GIT Tutorial for Effective Version Control',
+  metaOgUrl: 'https://www.webschooljs.com/git/popular-git-commands',
+  metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
+};
 
 const PopularGitCommandsPage: NextPage = () => {
   return (
@@ -22,10 +35,11 @@ const PopularGitCommandsPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.GIT}
+      seo={seo}
     >
       <Heading
         content="Popular GIT commands"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 
@@ -169,6 +183,9 @@ const PopularGitCommandsPage: NextPage = () => {
       />
 
       <CodeSnippet content={gitStatusSyntax} />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/git/how-git-works-in-project" nextLink="" />
     </Layout>
   );
 };

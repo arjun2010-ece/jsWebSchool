@@ -5,6 +5,19 @@ import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'What is GIT ?',
+  metaDescription:
+    'Learn the basics of GIT with our comprehensive GIT tutorial. Understand version control, branching, merging, and collaboration using GIT. Start your coding journey today!',
+  metaKeywords:
+    'HTML tutorial, GIT tutorial, version control, branching, merging, collaboration, coding tutorial',
+  metaOgTitle:
+    'Master GIT: A Comprehensive usage of version control for Beginners',
+  metaOgUrl: 'https://www.webschooljs.com/git',
+  metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
+};
 
 const GitPage: NextPage = () => {
   return (
@@ -13,10 +26,11 @@ const GitPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.GIT}
+      seo={seo}
     >
       <Heading
         content="What is GIT ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 
@@ -115,6 +129,9 @@ const GitPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="" nextLink="/git/setup-git" />
     </Layout>
   );
 };

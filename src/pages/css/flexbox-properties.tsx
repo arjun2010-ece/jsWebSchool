@@ -25,7 +25,7 @@ const seo = {
   metaOgTitle:
     'CSS Flexbox Properties Tutorial: Building Dynamic and Responsive Web Layouts',
   metaOgUrl: 'https://www.webschooljs.com/css/flexbox-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSFlexboxPropertiesPage: NextPage = () => {
@@ -39,7 +39,7 @@ const CSSFlexboxPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Flexbox Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

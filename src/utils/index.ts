@@ -13,7 +13,7 @@ export const MENU_ITEMS: menuItemsType[] = [
   { title: 'Javascript', path: '/javascript' },
   { title: 'GIT', path: '/git' },
   { title: 'ReactJs', path: '/reactjs' },
-  { title: 'Node.js', path: '/nodejs' },
+  // { title: 'Node.js', path: '/nodejs' },
   // {
   //   title: 'More',
   //   path: '',
@@ -30,7 +30,7 @@ export const PAGES = {
   CSS3: 'CSS3',
   JAVASCRIPT: 'Javascript',
   REACTJS: 'ReactJs',
-  NODEJS: 'Node.js',
+  // NODEJS: 'Node.js',
   GIT: 'GIT',
 };
 

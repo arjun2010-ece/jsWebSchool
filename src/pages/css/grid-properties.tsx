@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'CSS Grid Properties Tutorial: Creating Dynamic and Responsive Layouts in HTML',
   metaOgUrl: 'https://www.webschooljs.com/css/grid-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSGridPropertiesPage: NextPage = () => {
@@ -38,7 +38,7 @@ const CSSGridPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Grid Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

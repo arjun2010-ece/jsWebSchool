@@ -19,7 +19,7 @@ const seo = {
   metaOgTitle:
     'CSS Outline Properties Tutorial: Adding Visual Emphasis to HTML Elements',
   metaOgUrl: 'https://www.webschooljs.com/css/outline-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const ButtonWithOutline = styled.button`
@@ -46,7 +46,7 @@ const CSSOutlinePropertiesPage: NextPage = () => {
     >
       <Heading
         content="Outline properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

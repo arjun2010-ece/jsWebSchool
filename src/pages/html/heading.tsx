@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'HTML Heading Tags: Structure Your Headings and Contents Effectively',
   metaOgUrl: 'https://www.webschooljs.com/html/heading',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLHeading: NextPage = () => {
@@ -31,7 +31,7 @@ const HTMLHeading: NextPage = () => {
     >
       <Heading
         content="Heading Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

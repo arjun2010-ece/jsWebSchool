@@ -25,7 +25,7 @@ const seo = {
   metaOgTitle:
     'CSS Positioning Properties Tutorial: Mastering Element Placement in HTML',
   metaOgUrl: 'https://www.webschooljs.com/css/positioning-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSPositioningPropertiesPage: NextPage = () => {
@@ -39,7 +39,7 @@ const CSSPositioningPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Positioning Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

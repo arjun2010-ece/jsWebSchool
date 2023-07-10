@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Data Types Tutorial: Understanding Variables and Values in JavaScript',
   metaOgUrl: 'https://www.webschooljs.com/javascript/data-types',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSDataTypesPage: NextPage = () => {
@@ -37,7 +37,7 @@ const JSDataTypesPage: NextPage = () => {
     >
       <Heading
         content="Javascript data types :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

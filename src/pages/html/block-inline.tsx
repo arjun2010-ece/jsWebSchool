@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'Mastering HTML Display Properties: Block vs Inline Block vs Inline',
   metaOgUrl: 'https://www.webschooljs.com/html/block-inline',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const BlockInlinePage: NextPage = () => {
@@ -31,7 +31,7 @@ const BlockInlinePage: NextPage = () => {
     >
       <Heading
         content="Block vs Inline block vs inline Elements ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline`}
       />
       <Text

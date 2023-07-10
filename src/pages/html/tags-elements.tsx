@@ -35,7 +35,7 @@ const seo = {
   metaOgTitle:
     'HTML Tags vs Elements vs Attributes: Understanding the Fundamentals',
   metaOgUrl: 'https://www.webschooljs.com/html/tags-elements',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const BlockInlinePage: NextPage = () => {
@@ -49,7 +49,7 @@ const BlockInlinePage: NextPage = () => {
     >
       <Heading
         content="HTML Tags vs Elements ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline`}
       />
 

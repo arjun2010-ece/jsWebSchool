@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Variables Tutorial: Understanding Variable Declaration and Manipulation',
   metaOgUrl: 'https://www.webschooljs.com/javascript/variables',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSVariablesPage: NextPage = () => {
@@ -36,7 +36,7 @@ const JSVariablesPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
       seo={seo}
     >
-      <Heading content="Variables :" headingType="h5" customStyle={tw`mb-4`} />
+      <Heading content="Variables :" headingType="h1" customStyle={tw`mb-4`} />
 
       <Text
         content={`

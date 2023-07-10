@@ -9,14 +9,14 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is Html ?',
+  title: 'What is Html ?. Tips and tricks to learn html.',
   metaDescription:
     'Discover the fundamentals of HTML with our comprehensive tutorial. Learn what HTML is, its role in web development, and how to create structured and semantic web pages. Explore HTML tags, elements, attributes, and their purpose. Level up your web development skills and start building your own web pages with HTML.',
   metaKeywords:
     'HTML, what is HTML ?, web development, web design, HTML basics, HTML tags, HTML elements, HTML attributes, structured web pages, semantic HTML, frontend development, HTML tutorial',
   metaOgTitle: 'What is HTML? A Comprehensive Introduction to HTML Basics',
   metaOgUrl: 'https://www.webschooljs.com/html',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLPage: NextPage = () => {
@@ -42,7 +42,7 @@ const HTMLPage: NextPage = () => {
     >
       <Heading
         content="What is HTML ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

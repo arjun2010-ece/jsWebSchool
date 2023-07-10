@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Spread and Rest Operators Tutorial: Mastering Array Manipulation and Function Arguments',
   metaOgUrl: 'https://www.webschooljs.com/javascript/spread-rest',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSSpreadAndRestPage: NextPage = () => {
@@ -37,7 +37,7 @@ const JSSpreadAndRestPage: NextPage = () => {
     >
       <Heading
         content="Spread and rest"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

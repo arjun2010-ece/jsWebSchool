@@ -9,14 +9,14 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'CSS Box model',
+  title: 'Working with the CSS Box Model: Practical Usage and Best Practices',
   metaDescription:
     'Learn the fundamentals of the CSS box model and how it affects the layout of your HTML elements. This tutorial covers the box model properties, including margin, padding, border, and content, to help you design and structure your web pages effectively',
   metaKeywords:
     'CSS tutorial, box model, CSS layout, HTML design, front-end development, web design, margin, padding, border, content',
   metaOgTitle: 'CSS Box Model Tutorial: Mastering Layout Design in HTML',
   metaOgUrl: 'https://www.webschooljs.com/css/box-model',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSBoxModelPage: NextPage = () => {
@@ -30,7 +30,7 @@ const CSSBoxModelPage: NextPage = () => {
     >
       <Heading
         content="CSS Box Model?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

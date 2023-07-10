@@ -21,7 +21,7 @@ const seo = {
     'React project setup, React development, HTML tutorial, project configuration, frontend development, create React app, webpack, Babel',
   metaOgTitle: 'Setting up a React Project: Comprehensive HTML Tutorial',
   metaOgUrl: 'https://www.webschooljs.com/reactjs/setting-up-react-project',
-  metaOgImage: '/images/reactjs-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/reactjs-logo.png',
 };
 
 const SettingUpReactProjectPage: NextPage = () => {
@@ -35,7 +35,7 @@ const SettingUpReactProjectPage: NextPage = () => {
     >
       <Heading
         content="How to set up reactjs project"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -1,21 +1,24 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
+import tw from 'twin.macro';
+import Heading from '@/components/heading';
 
 const seo = {
-  title: 'Disclaimer',
+  title: 'Disclaimer: It explains terms and conditions of using WebSchoolJS',
   metaDescription:
     'Read our disclaimer to understand the terms and conditions of using WebSchoolJS. Get important information about the accuracy and limitations of the content provided on our website.',
   metaKeywords:
     'disclaimer, terms and conditions, website disclaimer, information accuracy, limitations, website policies',
   metaOgTitle: 'Disclaimer | WebSchoolJS - Understand our Terms and Conditions',
   metaOgUrl: 'https://www.webschooljs.com/disclaimer',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const DisclaimerPage: NextPage = () => {
   return (
     <Layout seo={seo}>
-      Disclaimer <br />
+      <Heading content="Disclaimer" headingType="h1" customStyle={tw`mb-4`} />
+      <br />
       <br />
       Last updated: 08/07/23 <br />
       <br />
@@ -74,10 +77,10 @@ const DisclaimerPage: NextPage = () => {
       <br />
       <br />
       We reserve the right to update or change this disclaimer at any time. Any
-      changes will be reflected on this page, and the <q>Last updated</q> date at the
-      top of the disclaimer will be modified accordingly. We recommend that you
-      periodically review this disclaimer to stay informed about our website&apos;s
-      terms and conditions.
+      changes will be reflected on this page, and the <q>Last updated</q> date
+      at the top of the disclaimer will be modified accordingly. We recommend
+      that you periodically review this disclaimer to stay informed about our
+      website&apos;s terms and conditions.
       <br />
       <br />
       <b>Contact Us</b>

@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'CSS Cursor Properties Tutorial: Enhance User Experience with Custom Mouse Cursors',
   metaOgUrl: 'https://www.webschooljs.com/css/cursor-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSCursorPropertiesPage: NextPage = () => {
@@ -31,7 +31,7 @@ const CSSCursorPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Cursor properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

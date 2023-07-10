@@ -30,7 +30,7 @@ const seo = {
   metaOgTitle:
     'CSS Typography Properties Tutorial: Enhance Web Typography for Stunning Designs',
   metaOgUrl: 'https://www.webschooljs.com/css/typography-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSTypographyPropertiesPage: NextPage = () => {
@@ -44,7 +44,7 @@ const CSSTypographyPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Typography Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

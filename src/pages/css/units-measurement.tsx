@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'CSS Units of Measurement Tutorial: Mastering Sizing and Positioning in HTML',
   metaOgUrl: 'https://www.webschooljs.com/css/units-measurement',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSUnitsOfMeasurementsPage: NextPage = () => {
@@ -31,7 +31,7 @@ const CSSUnitsOfMeasurementsPage: NextPage = () => {
     >
       <Heading
         content="Units of measurements"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

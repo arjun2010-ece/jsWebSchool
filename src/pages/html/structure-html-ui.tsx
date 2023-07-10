@@ -23,7 +23,7 @@ const seo = {
     'HTML tutorial, UI design, HTML structure, HTML webpage design, HTML webpage build strategy, How to build the webpage, web development, user interface, front-end development',
   metaOgTitle: 'Mastering HTML Structure for User Interface Design Tutorial',
   metaOgUrl: 'https://www.webschooljs.com/html/structure-html-ui',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const StructureHtmlUiPage: NextPage = () => {
@@ -37,7 +37,7 @@ const StructureHtmlUiPage: NextPage = () => {
     >
       <Heading
         content="How to structure any UI(user interface) with HTML"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
 

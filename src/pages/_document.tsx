@@ -43,6 +43,7 @@ export default class _Document extends Document {
             name="google-site-verification"
             content="d2i5mvpFfo-NxOb4Ow09xlouyoamoO0-tg9HCOGcrsQ"
           />
+          <meta name="robots" content="index,follow" />
 
           <Script strategy="afterInteractive" async src={gtag} />
 

@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript for...in Loop Tutorial: Exploring Object Iteration in JavaScript',
   metaOgUrl: 'https://www.webschooljs.com/javascript/for-in-loop',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSForInLoopPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSForInLoopPage: NextPage = () => {
     >
       <Heading
         content="for...in loop :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -25,7 +25,7 @@ const seo = {
   metaOgTitle:
     'CSS Dimension Properties Tutorial: Achieve Responsive and Dynamic Web Designs',
   metaOgUrl: 'https://www.webschooljs.com/css/dimension-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSDimensionPropertiesPage: NextPage = () => {
@@ -39,7 +39,7 @@ const CSSDimensionPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Dimension Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'Introduction to JavaScript Tutorial: Getting Started with Web Development',
   metaOgUrl: 'https://www.webschooljs.com/javascript',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSHomePage: NextPage = () => {
@@ -31,7 +31,7 @@ const JSHomePage: NextPage = () => {
     >
       <Heading
         content="What is Javascript ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

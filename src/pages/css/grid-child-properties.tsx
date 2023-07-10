@@ -18,7 +18,7 @@ const seo = {
   metaOgTitle:
     'CSS Grid Child Properties Tutorial: Mastering Positioning and Alignment in Grid Layouts',
   metaOgUrl: 'https://www.webschooljs.com/css/grid-child-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSGridChildPropertiesPage: NextPage = () => {
@@ -32,7 +32,7 @@ const CSSGridChildPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Grid child Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

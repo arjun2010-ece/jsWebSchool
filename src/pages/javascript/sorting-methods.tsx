@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Sorting Methods Tutorial: Organizing Arrays with Ease',
   metaOgUrl: 'https://www.webschooljs.com/javascript/sorting-methods',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSSortingPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSSortingPage: NextPage = () => {
     >
       <Heading
         content="Sorting methods in JS"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

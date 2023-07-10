@@ -16,7 +16,7 @@ const seo = {
   metaOgTitle:
     'Way to Think in CSS: Mastering the Mindset for Effective Web Design',
   metaOgUrl: 'https://www.webschooljs.com/css/way-to-think',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSWayToThinkPage: NextPage = () => {
@@ -30,7 +30,7 @@ const CSSWayToThinkPage: NextPage = () => {
     >
       <Heading
         content="Way to think in CSS or while writing css ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

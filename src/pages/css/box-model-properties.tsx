@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'Mastering CSS Box Model Properties: Create Stunning HTML Layouts',
   metaOgUrl: 'https://www.webschooljs.com/css/box-model-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSBoxModelPropertiesPage: NextPage = () => {
@@ -38,7 +38,7 @@ const CSSBoxModelPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Box Model Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -8,7 +8,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Operators',
+  title: 'Exploring Essential Javascript Operators: An In-Depth Look at Expressions',
   metaDescription:
     'Master JavaScript operators and learn how to perform various operations on values and variables. This tutorial covers JavaScript operators, including arithmetic, assignment, comparison, logical, and more, empowering you to manipulate and combine values effectively in your JavaScript code',
   metaKeywords:
@@ -16,7 +16,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Operators Tutorial: Performing Operations on Values and Variables',
   metaOgUrl: 'https://www.webschooljs.com/javascript/operators',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSDataTypesPage: NextPage = () => {
@@ -30,7 +30,7 @@ const JSDataTypesPage: NextPage = () => {
     >
       <Heading
         content="Javascript Operators :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

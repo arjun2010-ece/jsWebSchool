@@ -15,7 +15,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'span tag',
+  title: 'Working with HTML <span> Tag: Practical Usage and Best Practices for Web Development',
   metaDescription:
     'Discover the versatility of the HTML "span" tag with our comprehensive tutorial. Learn how to use the "span" tag to apply inline styling, target specific elements, and group inline content. Explore practical examples and best practices for leveraging the power of spans in your HTML code. Level up your web development skills and create customized and fine-grained styling with the HTML "span" tag.',
   metaKeywords:
@@ -23,7 +23,7 @@ const seo = {
   metaOgTitle:
     'HTML Span Tag: Customized Inline Styling and Targeting Elements',
   metaOgUrl: 'https://www.webschooljs.com/html/span',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLSpan: NextPage = () => {
@@ -37,7 +37,7 @@ const HTMLSpan: NextPage = () => {
     >
       <Heading
         content="Span Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

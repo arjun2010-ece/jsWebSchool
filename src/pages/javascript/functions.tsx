@@ -26,7 +26,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Functions Tutorial: Building Modular and Reusable Code',
   metaOgUrl: 'https://www.webschooljs.com/javascript/functions',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSFunctionsPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSFunctionsPage: NextPage = () => {
       currentPage={PAGES.JAVASCRIPT}
       seo={seo}
     >
-      <Heading content="Functions :" headingType="h5" customStyle={tw`mb-4`} />
+      <Heading content="Functions :" headingType="h1" customStyle={tw`mb-4`} />
 
       <Text
         content={`

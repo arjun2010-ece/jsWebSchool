@@ -14,6 +14,19 @@ import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'How GIT works in project',
+  metaDescription:
+    'Gain a deep understanding of how GIT works in a project with our comprehensive GIT tutorial. Learn about branching, merging, commits, remote repositories, and collaboration workflows to effectively manage and track changes in your projects using GIT.',
+  metaKeywords:
+    'GIT, version control, HTML tutorial, GIT tutorial, project management, branching, merging, commits, remote repositories, collaboration workflows',
+  metaOgTitle:
+    'Demystifying GIT in Projects: A GIT Tutorial on Understanding Version Control',
+  metaOgUrl: 'https://www.webschooljs.com/git/how-git-works-in-project',
+  metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
+};
 
 const HowGitWorksInProjectPage: NextPage = () => {
   return (
@@ -22,10 +35,11 @@ const HowGitWorksInProjectPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.GIT}
+      seo={seo}
     >
       <Heading
         content="How GIT works in project ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 
@@ -187,6 +201,12 @@ const HowGitWorksInProjectPage: NextPage = () => {
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
+      />
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon
+        prevLink="/git/setup-git"
+        nextLink="/git/popular-git-commands"
       />
     </Layout>
   );

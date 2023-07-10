@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Function Expressions and Arrow Functions Tutorial: Writing Efficient and Expressive Code',
   metaOgUrl: 'https://www.webschooljs.com/javascript/expressions-arrow',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSFunctionExpressionsAndArrowFunctionsPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSFunctionExpressionsAndArrowFunctionsPage: NextPage = () => {
     >
       <Heading
         content="Function expressions and Arrow functions :"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

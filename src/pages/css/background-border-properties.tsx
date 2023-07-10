@@ -23,7 +23,7 @@ const seo = {
     'CSS tutorial, background properties, border properties, web design, styling techniques, front-end development, CSS backgrounds, CSS borders',
   metaOgTitle: 'Mastering CSS Background & Border Properties Tutorial',
   metaOgUrl: 'https://www.webschooljs.com/css/background-border-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSBackgroundBorderPropertiesPage: NextPage = () => {
@@ -37,7 +37,7 @@ const CSSBackgroundBorderPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Background & Border Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

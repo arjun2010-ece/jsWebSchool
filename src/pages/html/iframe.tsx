@@ -16,7 +16,7 @@ const seo = {
     'HTML, iframe tags, embedding content, web development, web design, videos, maps, documents, interactive web pages, HTML tutorial, frontend development',
   metaOgTitle: 'HTML iframe Tags: Embed External Content in Your Web Pages',
   metaOgUrl: 'https://www.webschooljs.com/html/iframe',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLIframe: NextPage = () => {
@@ -30,7 +30,7 @@ const HTMLIframe: NextPage = () => {
     >
       <Heading
         content="iframe Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

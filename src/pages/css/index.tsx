@@ -8,14 +8,14 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is CSS ?',
+  title: 'What is CSS ?. Tips and tricks to learn css.',
   metaDescription:
     'Discover the power of CSS (Cascading Style Sheets) and learn how it enhances the appearance and styling of HTML elements. This tutorial provides a comprehensive introduction to CSS, covering selectors, properties, and selectors, enabling you to create visually appealing and well-designed web pages.',
   metaKeywords:
     'CSS tutorial, introduction to CSS, CSS basics, web design, front-end development, HTML styling, CSS properties, CSS selectors',
   metaOgTitle: 'What is CSS? A Beginners Guide to Cascading Style Sheets',
   metaOgUrl: 'https://www.webschooljs.com/css',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSPage: NextPage = () => {
@@ -29,7 +29,7 @@ const CSSPage: NextPage = () => {
     >
       <Heading
         content="What is CSS3 ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

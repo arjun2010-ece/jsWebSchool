@@ -22,7 +22,7 @@ const seo = {
   metaOgTitle:
     'HTML Image vs Picture: Choosing the Right Element for Web Design',
   metaOgUrl: 'https://www.webschooljs.com/html/image-pictures',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLImagePicture: NextPage = () => {
@@ -36,7 +36,7 @@ const HTMLImagePicture: NextPage = () => {
     >
       <Heading
         content="Image Tag vs Picture tag ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
       <Text

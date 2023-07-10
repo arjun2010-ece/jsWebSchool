@@ -1,21 +1,29 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
+import tw from 'twin.macro';
+import Heading from '@/components/heading';
 
 const seo = {
-  title: 'About us',
+  title: 'About us: Learn about webschooljs and why it was born.',
   metaDescription:
     'Discover WebSchoolJS, a comprehensive web development tutorial website offering high-quality resources and tutorials for aspiring developers. Learn HTML, CSS, JavaScript, and more. Start your journey to becoming a skilled web developer today',
   metaKeywords:
     'web development tutorials, HTML, CSS, JavaScript, web development resources, learn web development, beginner-friendly tutorials, web development skills, coding tutorials',
-  metaOgTitle: 'About Us - WebSchoolJS: Comprehensive Web Development Tutorials & Resources',
+  metaOgTitle:
+    'About Us - WebSchoolJS: Comprehensive Web Development Tutorials & Resources',
   metaOgUrl: 'https://www.webschooljs.com/about-us',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const AboutUsPage: NextPage = () => {
   return (
     <Layout seo={seo}>
-      About Us
+      <Heading
+        content="About Us"
+        headingType="h1"
+        customStyle={tw`mb-4`}
+      />
+      
       <br />
       <br />
       Welcome to WebSchoolJs!
@@ -47,12 +55,13 @@ const AboutUsPage: NextPage = () => {
       <b>Google Analytics and Google AdSense(or any ad network)</b>
       <br />
       To improve our website and provide relevant content and advertisements, we
-      utilize Google Analytics and very soon will use Google AdSense (or any ad network). These services help us gather
-      statistical information about our visitors, such as demographics,
-      interests, and browsing behavior. This data is used to analyze website
-      traffic, understand user preferences, and optimize our content and ad
-      placements. Please note that these services may collect and use personal
-      information as per their respective privacy policies.
+      utilize Google Analytics and very soon will use Google AdSense (or any ad
+      network). These services help us gather statistical information about our
+      visitors, such as demographics, interests, and browsing behavior. This
+      data is used to analyze website traffic, understand user preferences, and
+      optimize our content and ad placements. Please note that these services
+      may collect and use personal information as per their respective privacy
+      policies.
       <br />
       <br />
       <b>Our Commitment to Quality</b>
@@ -75,9 +84,9 @@ const AboutUsPage: NextPage = () => {
       <b> Third-Party Websites and Services</b>
       <br />
       We love hearing from our users! If you have any inquiries, suggestions, or
-      feedback, please don&apos;t hesitate to reach out to us. You can contact us via
-      email at [your-email-address]. We will make every effort to respond to
-      your inquiries promptly.
+      feedback, please don&apos;t hesitate to reach out to us. You can contact
+      us via email at [your-email-address]. We will make every effort to respond
+      to your inquiries promptly.
       <br />
       <br />
       Thank you for choosing WebSchoolJS as your learning resource for web

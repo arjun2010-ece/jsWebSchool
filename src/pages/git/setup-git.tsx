@@ -1,11 +1,30 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
-import { PAGES, gitInstallLinuxSnippet, gitInstallMacSnippet, gitInstallRedHatSnippet, gitVerifySnippet } from '@/utils';
+import {
+  PAGES,
+  gitInstallLinuxSnippet,
+  gitInstallMacSnippet,
+  gitInstallRedHatSnippet,
+  gitVerifySnippet,
+} from '@/utils';
 import tw, { theme as globalTheme } from 'twin.macro';
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
 import CodeSnippet from '@/components/codeSnippet';
+import NavigationIcon from '@/components/navigationIcon';
+
+const seo = {
+  title: 'Setting up GIT',
+  metaDescription:
+    'Get started with setting up GIT, the essential version control system, in our detailed HTML tutorial. Learn how to install GIT, configure user settings, create repositories, and start tracking changes in your projects effortlessly.',
+  metaKeywords:
+    'GIT, version control, HTML tutorial, GIT tutorial, setting up GIT, install GIT, configure user settings, create repositories, track changes',
+  metaOgTitle:
+    'Setting up GIT: A Comprehensive HTML Tutorial for Version Control Setup',
+  metaOgUrl: 'https://www.webschooljs.com/setup-git',
+  metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
+};
 
 const SetUpGitPage: NextPage = () => {
   return (
@@ -14,10 +33,11 @@ const SetUpGitPage: NextPage = () => {
       hideAd={true}
       hideSidebar={true}
       currentPage={PAGES.GIT}
+      seo={seo}
     >
       <Heading
         content="Setting up GIT ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 
@@ -93,7 +113,9 @@ const SetUpGitPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-     
+
+      {/* NavigationIcon : Front and Back Link */}
+      <NavigationIcon prevLink="/git" nextLink="/git/how-git-works-in-project" />
     </Layout>
   );
 };

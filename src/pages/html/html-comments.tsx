@@ -9,14 +9,14 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Html Comments',
+  title: 'Mastering HTML Comments: Enhancing Code Readability and Collaboration',
   metaDescription:
     'Learn how to use HTML comments effectively with our comprehensive tutorial. Discover the purpose and syntax of HTML comments and how to apply them in your code. Explore best practices for commenting and understand their impact on code readability and maintenance. Level up your HTML skills and create well-documented and organized web pages with HTML comments.',
   metaKeywords:
     'HTML, comments, code documentation, code readability, web development, web design, HTML syntax, best practices, commenting, HTML tutorial, frontend development',
   metaOgTitle: 'HTML Comments: Enhance Code Documentation and Readability',
   metaOgUrl: 'https://www.webschooljs.com/html/html-comments',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLComments: NextPage = () => {
@@ -30,7 +30,7 @@ const HTMLComments: NextPage = () => {
     >
       <Heading
         content="HTML Comments ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
 

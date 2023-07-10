@@ -24,7 +24,7 @@ const seo = {
   metaOgTitle:
     'Asynchronous JavaScript Tutorial: Mastering Non-Blocking Code for Responsive Web Applications',
   metaOgUrl: 'https://www.webschooljs.com/javascript/asynchronous-javaScript',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSAsynchronousJavascriptPage: NextPage = () => {
@@ -38,7 +38,7 @@ const JSAsynchronousJavascriptPage: NextPage = () => {
     >
       <Heading
         content="Asynchronous Javascript"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

@@ -18,7 +18,7 @@ const seo = {
   metaOgTitle:
     'CSS Display & Visibility Properties Tutorial: Mastering Layout and Element Visibility in HTML',
   metaOgUrl: 'https://www.webschooljs.com/css/display-visibility-properties',
-  metaOgImage: '/images/css-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
 const CSSDisplayAndVisibilityPropertiesPage: NextPage = () => {
@@ -32,7 +32,7 @@ const CSSDisplayAndVisibilityPropertiesPage: NextPage = () => {
     >
       <Heading
         content="Display Properties"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

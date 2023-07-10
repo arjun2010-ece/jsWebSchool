@@ -1,21 +1,29 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
+import tw from 'twin.macro';
+import Heading from '@/components/heading';
+
 
 const seo = {
-  title: 'Contact us',
+  title: 'webschooljs: Contact us for any enquiry you want to make.',
   metaDescription:
     'Contact WebSchoolJS for inquiries, feedback, or questions regarding our web development tutorials and resources. Get in touch with our team of experienced developers and let us assist you in your web development journey.',
   metaKeywords:
     'dweb development contact, contact WebSchoolJS, web development inquiries, feedback, questions, web development tutorials, experienced developers, coding assistance',
   metaOgTitle: 'Contact Us - WebSchoolJS: Reach Out for Web Development Inquiries and Assistance',
   metaOgUrl: 'https://www.webschooljs.com/contact-us',
-  metaOgImage: '',
+  metaOgImage: 'https://www.webschooljs.com/images/webschooljs-logo.png',
 };
 
 const ContactUsPage: NextPage = () => {
   return (
     <Layout seo={seo}>
-      Contact Us
+      <Heading
+        content="Contact Us"
+        headingType="h1"
+        customStyle={tw`mb-4`}
+      />
+      
       <br />
       <br />
       Thank you for visiting WebSchoolJS! If you have any questions, feedback,

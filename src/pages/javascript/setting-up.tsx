@@ -17,7 +17,7 @@ const seo = {
   metaOgTitle:
     'JavaScript Setting Up Tutorial: Getting Your Environment Ready for JavaScript Development',
   metaOgUrl: 'https://www.webschooljs.com/javascript/setting-up',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSSettingUpPage: NextPage = () => {
@@ -31,7 +31,7 @@ const JSSettingUpPage: NextPage = () => {
     >
       <Heading
         content="How to use javascript in browser ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 

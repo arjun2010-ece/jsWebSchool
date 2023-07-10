@@ -23,7 +23,7 @@ const seo = {
     'HTML audio, HTML video, audio tags, video tags, multimedia tags, embedding audio, embedding video, multimedia, embedding audio, playback control, multimedia optimization, HTML5 audio, HTML5 video, captions, accessibility, device optimization, web development, audio and video tutorial, HTML tutorial, web design, website enhancement, website development',
   metaOgTitle: 'Master HTML Audio and Video Tags: A Comprehensive Tutorial',
   metaOgUrl: 'https://www.webschooljs.com/html/audio-video',
-  metaOgImage: '/images/html-logo.png',
+  metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
 const HTMLAudioVideo: NextPage = () => {
@@ -37,7 +37,7 @@ const HTMLAudioVideo: NextPage = () => {
     >
       <Heading
         content="Audio and Video Tags ?"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`underline mb-4`}
       />
 

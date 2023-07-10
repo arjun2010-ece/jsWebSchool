@@ -23,7 +23,7 @@ const seo = {
     'Callback, Promise, and Async/Await Tutorial: Mastering Asynchronous JavaScript Programming',
   metaOgUrl:
     'https://www.webschooljs.com/javascript/callback-promise-async-await',
-  metaOgImage: '/images/javascript-logo.jpeg',
+  metaOgImage: 'https://www.webschooljs.com/images/javascript-logo.jpeg',
 };
 
 const JSCallbackPromisesAsyncAwaitPage: NextPage = () => {
@@ -37,7 +37,7 @@ const JSCallbackPromisesAsyncAwaitPage: NextPage = () => {
     >
       <Heading
         content="Callback, Promises and Async/Await"
-        headingType="h5"
+        headingType="h1"
         customStyle={tw`mb-4`}
       />
 
