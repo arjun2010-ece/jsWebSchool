@@ -9,7 +9,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Html iframe tags',
+  title: 'Html iframe tags: Techniques for Embedding Web Content',
   metaDescription:
     'Learn how to effectively use HTML iframe tags to embed external content in your web pages. Our comprehensive tutorial covers the syntax, attributes, and best practices for using iframes. Discover how to embed videos, maps, documents, and more. Enhance your web development skills and create interactive and engaging web pages with HTML iframes.',
   metaKeywords:

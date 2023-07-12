@@ -19,7 +19,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'HTML Forms Elements',
+  title: 'HTML Forms Elements: Building blocks of web forms',
   metaDescription:
     'Learn how to utilize HTML form elements effectively with our comprehensive tutorial. Discover the various form input types, including text fields, checkboxes, radio buttons, select menus, and more. Explore form validation techniques and understand how to handle form submissions. Level up your web development skills and create interactive and user-friendly forms with HTML.',
   metaKeywords:

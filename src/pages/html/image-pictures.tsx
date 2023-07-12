@@ -14,7 +14,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Html Image vs Pictures',
+  title: 'Html Image vs Pictures: Comparision and its usage',
   metaDescription:
     'Understand the differences between HTML image and picture elements with our comprehensive tutorial. Learn when to use each element, their attributes, and best practices for implementing responsive images. Discover how to optimize images for web performance and accessibility. Enhance your web development skills and create visually appealing and efficient web pages with HTML image and picture elements.',
   metaKeywords:

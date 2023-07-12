@@ -14,7 +14,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'HTML Unordered / Ordered list',
+  title: 'Structured Content: HTML Unordered / Ordered list',
   metaDescription:
     'Master the creation of unordered and ordered lists in HTML with our comprehensive tutorial. Learn how to use the "ul" and "ol" tags to structure and organize content into bullet-pointed or numbered lists. Explore list item ("li") tags, nested lists, and various attributes for customizing list styles. Level up your web development skills and create well-structured and visually appealing lists with HTML unordered and ordered lists.',
   metaKeywords:

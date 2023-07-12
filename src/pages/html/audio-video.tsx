@@ -16,7 +16,7 @@ const officialVideoUrls =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video';
 
 const seo = {
-  title: 'Audio & Video tags',
+  title: 'Audio & Video tags for enhancing media interactions',
   metaDescription:
     'Learn how to effectively use HTML audio and video tags to enhance your website. Our comprehensive tutorial covers the basics of embedding audio and video, controlling playback, adding captions, and optimizing for different devices. Discover the power of multimedia content and create engaging experiences for your website visitors.',
   metaKeywords:
