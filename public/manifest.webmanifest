@@ -1,7 +1,7 @@
 {
-  "short_name": "Nextjs Tailwind CSS Styled Components with TypeScript",
-  "name": "Nextjs Tailwind CSS Styled Components with TypeScript",
-  "description": "Nextjs Tailwind CSS Styled Components with TypeScript",
+  "short_name": "webschooljs",
+  "name": "webschooljs",
+  "description": "webschooljs is a place where you learn everything from an expert.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
