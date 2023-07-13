@@ -140,7 +140,7 @@ const HTMLPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon nextLink="/html/tags-elements" prevLink="" />
+      <NavigationIcon  prevLink="" nextLink="/html/setting-up" />
     </Layout>
   );
 };

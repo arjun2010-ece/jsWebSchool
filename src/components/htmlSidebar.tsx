@@ -43,6 +43,7 @@ type HTML_TOPICS_PROPS = {
 
 const HTML_TOPICS: HTML_TOPICS_PROPS[] = [
   { topic: 'HTML ?', path: '/html' },
+  { topic: 'Setting up', path: '/html/setting-up' },
   { topic: 'Tags vs Elements vs attributes', path: '/html/tags-elements' },
   { topic: 'Block vs Inline block vs Inline', path: '/html/block-inline' },
   { topic: 'Semantic tags', path: '/html/semantic-tags' },

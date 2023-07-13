@@ -49,6 +49,49 @@ export const moreAttributesLink =
 export const semanticTagsLink =
   'https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements';
 
+export const htmlDocTypeSnippet = `<!DOCTYPE html>`;
+
+export const htmlHeadTagsSnippet = `<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags, title, CSS and JavaScript references go here -->
+  </head>
+</html>`;
+
+export const htmlTitleTagsSnippet = `<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting up page</title>
+  </head>
+</html>`;
+
+export const htmlBodyTagsSnippet = `<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <!-- Content of the web page goes here -->
+  </body>
+</html>`;
+
+export const htmlBodyContentSnippet = `<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a sample paragraph.</p>
+    <img src="image.jpg" alt="Image">
+    <a href="https://www.example.com">Visit Example.com</a>
+  </body>
+</html>`
+
+export const htmlOpenCloseTagsSnippet = `<!DOCTYPE html>
+<html>
+</html>`;
+
 export const htmlTagcodeSnippet = `<h1>.....</h1>
 <p>.....</p>
 <div>.....</div>`;

@@ -301,7 +301,7 @@ const BlockInlinePage: NextPage = () => {
       </StyledLink>
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon nextLink="/html/block-inline" prevLink="/html" />
+      <NavigationIcon  prevLink="/html/setting-up" nextLink="/html/block-inline" />
     </Layout>
   );
 };
