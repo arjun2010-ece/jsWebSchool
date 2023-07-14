@@ -5,6 +5,7 @@ import { useRouter, type NextRouter } from 'next/router';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
 import { theme as globalTheme } from 'twin.macro';
+import { type COURSE_TYPE } from '@/utils/courseContent';
 
 type StyledListItemProps = {
   path: string;
@@ -25,9 +26,14 @@ const StyledListItem = styled.li<StyledListItemProps>`
   border-bottom-style: dotted;
   border-bottom-width: 1px;
   background: ${(props) =>
-    props.active ? 'lightblue' : props.path ? '' : 'rgba(128, 128, 128, 0.5)'};
+    props.active
+      ? 'rgb(0, 186, 199)'
+      : props.path
+      ? ''
+      : 'rgba(128, 128, 128, 0.5)'};
   &:hover {
-    background-color: ${(props) => (props.active ? 'lightblue' : '')};
+    background-color: ${(props) =>
+      props.active ? 'rgba(0, 186, 199, 0.8)' : ''};
     cursor: ${(props) => (props.active ? 'pointer' : '')};
   }
 `;
@@ -36,22 +42,15 @@ const StyledListContainer = styled.ul`
   padding: 5px 0;
 `;
 
-type GIT_TOPICS_PROPS = {
-  topic: string;
-  path: string;
+
+type CourseSidebarProps = {
+  courseTopic: COURSE_TYPE[];
 };
 
-const GIT_TOPICS: GIT_TOPICS_PROPS[] = [
-  { topic: 'What is GIT ?', path: '/git' },
-  { topic: 'Setting up GIT', path: '/git/setup-git' },
-  { topic: 'How GIT works in project', path: '/git/how-git-works-in-project' },
-  { topic: 'Popular git commands', path: '/git/popular-git-commands' },
-];
-
-const GitSidebar: FC = () => {
+const CourseSidebar: FC<CourseSidebarProps> = ({ courseTopic }) => {
   const router: NextRouter = useRouter();
 
-  const gitContent = GIT_TOPICS.map((course, i) => {
+  const courseContent = courseTopic.map((course, i) => {
     const link = course?.path ? (
       <Link href={course?.path}>{course?.topic}</Link>
     ) : (
@@ -77,9 +76,9 @@ const GitSidebar: FC = () => {
 
   return (
     <aside>
-      <StyledListContainer>{gitContent}</StyledListContainer>
+      <StyledListContainer>{courseContent}</StyledListContainer>
     </aside>
   );
 };
 
-export default GitSidebar;
+export default CourseSidebar;
