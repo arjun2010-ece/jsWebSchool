@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter, type NextRouter } from 'next/router';
 import Text from '@/components/Text';
 import { fluid, remToPx } from '@/styles/Global.style';
-import { theme as globalTheme } from 'twin.macro';
+import tw, { theme as globalTheme } from 'twin.macro';
 import { type COURSE_TYPE } from '@/utils/courseContent';
 
 type StyledListItemProps = {
@@ -14,6 +14,7 @@ type StyledListItemProps = {
 
 const StyledListItem = styled.li<StyledListItemProps>`
   font-size: 15px;
+  // color:${tw`text-black dark:text-white`};
   color: #000;
   font-weight: 500;
   text-align: left;
@@ -42,7 +43,6 @@ const StyledListContainer = styled.ul`
   padding: 5px 0;
 `;
 
-
 type CourseSidebarProps = {
   courseTopic: COURSE_TYPE[];
 };
@@ -52,7 +52,9 @@ const CourseSidebar: FC<CourseSidebarProps> = ({ courseTopic }) => {
 
   const courseContent = courseTopic.map((course, i) => {
     const link = course?.path ? (
-      <Link href={course?.path}>{course?.topic}</Link>
+      <Link href={course?.path}>
+        {course?.topic}
+      </Link>
     ) : (
       <Text
         content={course?.topic}

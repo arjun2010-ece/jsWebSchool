@@ -22,6 +22,7 @@ const StyledSidebarContainer = styled.div<StyledSidebarContainer>`
 
   border-right: 1px solid #ccc;
   width: auto;
+  margin-bottom: 3rem;
 
   @media only screen and (max-width: 767px) {
     display: ${({ hideSidebar, mobileNav }) =>

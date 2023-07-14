@@ -102,6 +102,12 @@ const GlobalStyles: GlobalStyleComponent<
   aside ul li {
     ${fluid(remToPx(theme`fontSize.base`), remToPx(theme`fontSize.lg`))}
   }
+  html a:visited, html a:visited > * {
+    color: inherit !important;
+  }
+  html[native-dark-active] .bg-secondary-500 {
+    background-color: grey;
+  }
 `;
 
 export const Container = tw.div`
