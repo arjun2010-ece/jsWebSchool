@@ -41,9 +41,9 @@ const _App: AppType = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyles />
-      <main className={`${nunitoFont.variable} font-sans`}>
+      <div className={`${nunitoFont.variable} font-sans`}>
         <Component {...pageProps} />
-      </main>
+      </div>
     </>
   );
 };

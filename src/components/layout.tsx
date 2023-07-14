@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import { HamburgerComponent } from '@/components/header';
 import { TABLE_OF_CONTENT_EXCLUSION } from '../utils';
 
-const MainContent = styled.div`
+const MainContent = styled.main`
   display: flex;
   flex-direction: row;
   align-items: stretch;
