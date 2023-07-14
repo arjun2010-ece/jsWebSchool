@@ -10,14 +10,21 @@ import styled from 'styled-components';
 import { HamburgerComponent } from '@/components/header';
 import { TABLE_OF_CONTENT_EXCLUSION } from '../utils';
 
-const MainContent = styled.main`
+type MainContentProps = {
+  isSidebar: boolean;
+};
+
+const MainContent = styled.main<MainContentProps>`
   display: flex;
   flex-direction: row;
   align-items: stretch;
   gap: 10px;
+  max-width: ${({ isSidebar }) => (!isSidebar ? '70%' : '100%')};
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     flex-direction: column;
+    max-width: 100%;
   }
 `;
 
@@ -76,7 +83,6 @@ const Layout: FC<LayoutProps> = ({
   const router: NextRouter = useRouter();
   const [mobileNav, setMobileNav] = useState<boolean>(false);
   const isGenericPage = TABLE_OF_CONTENT_EXCLUSION.includes(router?.route);
-  console.log("router?.route", router?.route)
 
   const toggleHamburgerMenu = () => {
     setMobileNav(!mobileNav);
@@ -95,7 +101,7 @@ const Layout: FC<LayoutProps> = ({
 
       <Header />
 
-      <MainContent>
+      <MainContent isSidebar={sidebar}>
         {!isGenericPage && (
           <HamburgerWrapper>
             <HamburgerComponent

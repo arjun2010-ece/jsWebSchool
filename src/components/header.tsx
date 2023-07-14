@@ -23,7 +23,7 @@ const MobileMenuContent: FC<MobileMenuContentProps> = ({ mobileMenu }) => {
     <div
       className={`${
         mobileMenu ? 'block' : 'hidden'
-      } bg-black text-white lg:hidden`}
+      } bg-black text-white absolute w-full lg:hidden`}
     >
       <ul className="grid grid-cols-2 p-4 sm:grid-cols-4  md:space-x-8 md:border-0">
         <div>
@@ -304,7 +304,7 @@ const Header: FC = () => {
       {/* Large screen horizontal submenu on click on More btn */}
       {subMenuVisible && <HorizontalSubMenu subMenuVisible={subMenuVisible} />}
 
-      {/* Mobile screen menu, 2-3 column layout */}
+      {/* Mobile screen menu, 2-3 column layout of HTML, CSS, JS, GIT */}
       <MobileMenuContent mobileMenu={mobileNav} />
     </nav>
   );
