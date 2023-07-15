@@ -21,6 +21,7 @@ const StyledListItem = styled.li<StyledListItemProps>`
   line-height: 20px;
   margin: 0px;
   margin-top: ${(props) => (props.path === '' ? '1rem' : 0)};
+  margin-bottom: ${(props) => (props.path === '' ? '0.6rem' : 0)};
   padding: 10px 0px;
   padding-left: 5px;
   border-bottom-color: rgb(187, 187, 187);
