@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
 `;
 
 const seo = {
-  title: 'HTML Semantic tags: Organizing Content for Search Engines',
+  title: 'HTML Semantic tags: Search Engines loves semantics in html tags',
   metaDescription:
     'Discover the power of HTML semantic tags with our comprehensive tutorial. Learn how to use semantic elements such as "header", "nav", "section", "article", and more to enhance the structure and meaning of your web pages. Explore the benefits of semantic HTML for accessibility, search engine optimization, and code organization. Level up your web development skills and create well-structured and semantically meaningful web pages with HTML semantic tags.',
   metaKeywords:

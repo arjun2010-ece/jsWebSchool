@@ -15,7 +15,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'HTML <span> Unleashed: Unveiling Hidden Styling Potential for Text',
+  title: 'HTML <span> Tag: Hidden Styling Potential for Text',
   metaDescription:
     'Discover the versatility of the HTML "span" tag with our comprehensive tutorial. Learn how to use the "span" tag to apply inline styling, target specific elements, and group inline content. Explore practical examples and best practices for leveraging the power of spans in your HTML code. Level up your web development skills and create customized and fine-grained styling with the HTML "span" tag.',
   metaKeywords:
