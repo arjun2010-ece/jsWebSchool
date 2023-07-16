@@ -2783,3 +2783,59 @@ export const animExampleSixSnippets = `@keyframes typing {
   white-space: nowrap;
   animation: typing 4s steps(30) infinite alternate;
 }`
+
+
+export const cssLinkingSnippets = `<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Page Title</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+</body>
+</html>`
+
+export const basicCssSnippet =`/* styles.css */
+body {
+  color: #333; /* Set text color to dark gray */
+  background-color: #f7f7f7; /* Set background color to light gray */
+}`
+
+export const basicCssH1Snippet = `/* styles.css */
+h1 {
+  font-size: 24px; /* Set font size to 24 pixels */
+  color: #007bff; /* Set text color to blue */
+}`
+
+
+export const internalCssSnippets = `<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Page Title</title>
+  <style>
+    body {
+      color: #333;
+      background-color: #f7f7f7;
+    }
+    
+    h1 {
+      font-size: 24px;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+</body>
+</html>`
+
+export const inlineCssSnippet = `<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Page Title</title>
+</head>
+<body>
+  <h1 style="font-size: 24px; color: #007bff;">Hello, World!</h1>
+</body>
+</html>`

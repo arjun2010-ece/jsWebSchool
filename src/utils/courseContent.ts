@@ -30,6 +30,7 @@ export const HTML_TOPICS: COURSE_TYPE[] = [
 export const CSS_TOPICS: COURSE_TYPE[] = [
   { topic: 'CSS ?', path: '/css' },
   { topic: 'Way to think in css ?', path: '/css/way-to-think' },
+  { topic: 'Setting up', path: '/css/setting-up' },
   { topic: 'Box model', path: '/css/box-model' },
   { topic: 'Units of measurement', path: '/css/units-measurement' },
   { topic: 'Common css properties', path: '' },

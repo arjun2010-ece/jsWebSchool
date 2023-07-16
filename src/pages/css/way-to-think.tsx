@@ -72,7 +72,7 @@ const CSSWayToThinkPage: NextPage = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/css" nextLink="/css/box-model" />
+      <NavigationIcon prevLink="/css" nextLink="/css/setting-up" />
     </Layout>
   );
 };

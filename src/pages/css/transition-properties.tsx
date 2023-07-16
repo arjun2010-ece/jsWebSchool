@@ -29,7 +29,7 @@ const seo = {
   metaOgImage: 'https://www.webschooljs.com/images/css-logo.jpeg',
 };
 
-const CSSPage: NextPage = () => {
+const CSSTransitionPage: NextPage = () => {
   return (
     <Layout
       sidebar={true}
@@ -222,4 +222,4 @@ const CSSPage: NextPage = () => {
   );
 };
 
-export default CSSPage;
+export default CSSTransitionPage;

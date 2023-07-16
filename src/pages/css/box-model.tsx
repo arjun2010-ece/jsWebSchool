@@ -106,7 +106,7 @@ const CSSBoxModelPage: NextPage = () => {
 
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon
-        prevLink="/css/way-to-think"
+        prevLink="/css/setting-up"
         nextLink="/css/units-measurement"
       />
     </Layout>
