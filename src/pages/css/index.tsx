@@ -8,7 +8,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is CSS ?. Tips and tricks to learn css.',
+  title: 'CSS Tutorial : Tips and tricks to learn CSS',
   metaDescription:
     'Discover the power of CSS (Cascading Style Sheets) and learn how it enhances the appearance and styling of HTML elements. This tutorial provides a comprehensive introduction to CSS, covering selectors, properties, and selectors, enabling you to create visually appealing and well-designed web pages.',
   metaKeywords:

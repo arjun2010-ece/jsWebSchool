@@ -8,7 +8,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is ReactJs ?',
+  title: 'React.js Turorial : Tips and tricks to learn react.js',
   metaDescription:
     'Learn about ReactJS, a popular JavaScript library used for building user interfaces. This tutorial covers the basics of ReactJS, its key features, and how it can be used in web development projects.',
   metaKeywords:

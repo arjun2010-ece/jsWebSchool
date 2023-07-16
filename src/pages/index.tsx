@@ -7,7 +7,7 @@ import { ImageContainer } from '@/styles/Extra.style';
 import { type NextPage } from 'next';
 
 const seo = {
-  title: 'webschooljs: Home Page, courses it teaches and its mission.',
+  title: 'Webschooljs: Your Gateway to Web Development Skills',
   metaDescription:
     'WebSchoolJS is your ultimate resource for web development tutorials, covering HTML, CSS, JavaScript, Git, React.js, and Node.js. Learn the essential skills and frameworks to become a proficient web developer.',
   metaKeywords:

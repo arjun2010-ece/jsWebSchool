@@ -9,7 +9,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Introduction to JavaScript ?',
+  title: 'Javascript Turorial : Tips and tricks to learn Javascript',
   metaDescription:
     'Get started with JavaScript and learn the basics of this powerful programming language. This tutorial provides a comprehensive introduction to JavaScript, covering its syntax, variables, data types, control flow, functions, and more, empowering you to begin your journey into web development with JavaScript.',
   metaKeywords:

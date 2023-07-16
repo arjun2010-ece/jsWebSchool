@@ -9,7 +9,7 @@ import Text from '@/components/Text';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'What is Html ?. Tips and tricks to learn html.',
+  title: 'Html Tutorial : Tips and tricks to learn html',
   metaDescription:
     'Discover the fundamentals of HTML with our comprehensive tutorial. Learn what HTML is, its role in web development, and how to create structured and semantic web pages. Explore HTML tags, elements, attributes, and their purpose. Level up your web development skills and start building your own web pages with HTML.',
   metaKeywords:
