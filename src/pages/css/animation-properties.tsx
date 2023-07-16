@@ -193,8 +193,32 @@ const CSSPage: NextPage = () => {
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
+
+      <Heading
+        content="Key Differences between CSS Transitions and CSS Animations:"
+        headingType="h6"
+        customStyle={tw`mt-8 underline`}
+      />
+
+      <Text
+        content="
+        <b>CSS Transitions</b> are triggered when a property changes its value, and they provide a smooth transition between the old and new values. They are best suited for simple changes like hover effects, color transitions, and basic animations.
+        <br/><br/>
+       <b>CSS Animations</b>, on the other hand, allow you to create complex animations by defining keyframes with intermediate states. They give more control over the animation process and are suitable for advanced animations with multiple steps or complex motion.
+       <br/><br/>
+        "
+        parentEl="p"
+        customStyle={fluid(
+          remToPx(globalTheme`fontSize.base`),
+          remToPx(globalTheme`fontSize.lg`),
+        )}
+      />
+
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/css/transition-properties" nextLink="/css/overflow-properties" />
+      <NavigationIcon
+        prevLink="/css/transition-properties"
+        nextLink="/css/overflow-properties"
+      />
     </Layout>
   );
 };
