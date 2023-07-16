@@ -187,7 +187,7 @@ const CSSOverflowPropertiesPage: NextPage = () => {
 
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon
-        prevLink="/css/grid-child-properties"
+        prevLink="/css/animation-properties"
         nextLink="/css/outline-properties"
       />
     </Layout>

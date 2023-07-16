@@ -185,7 +185,7 @@ const CSSGridChildPropertiesPage: NextPage = () => {
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon
         prevLink="/css/grid-properties"
-        nextLink="/css/overflow-properties"
+        nextLink="/css/transition-properties"
       />
     </Layout>
   );

@@ -49,6 +49,11 @@ export const CSS_TOPICS: COURSE_TYPE[] = [
   { topic: 'Flexbox properties', path: '/css/flexbox-properties' },
   { topic: 'Grid properties', path: '/css/grid-properties' },
   { topic: 'Grid child properties', path: '/css/grid-child-properties' },
+
+  { topic: 'Animation & Transition Properties', path: '' },
+  { topic: 'Transition Properties', path: '/css/transition-properties' },
+  { topic: 'Animation Properties', path: '/css/animation-properties' },
+  
   { topic: 'Miscellaneous properties', path: '' },
   { topic: 'overflow properties', path: '/css/overflow-properties' },
   { topic: 'outline properties', path: '/css/outline-properties' },

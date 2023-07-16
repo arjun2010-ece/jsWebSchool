@@ -2615,3 +2615,171 @@ function MyComponent() {
     </div>
   );
 }`;
+
+
+export const basicTransitionSnippets = `/* Single property transition */
+element {
+  transition: property duration timing-function delay;
+}
+
+/* Multiple properties transition */
+element {
+  transition: property1 duration1 timing-function1 delay1,
+              property2 duration2 timing-function2 delay2,
+              /* Add more properties here if needed */
+}`
+
+
+export const transitionExampleOneSnippets = `/* Simple transition example */
+button {
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+}`
+
+export const transitionExampleTwoSnippets = `.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-out:hover {
+  opacity: 1;
+}`
+
+export const transitionExampleThreeSnippets = `// HTML
+<div class="slide-in-left">Banner</div>
+
+//css
+.slide-in-left {
+  transform: translateX(-90%);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid black;
+  text-align: right;
+}
+
+.slide-in-left:hover {
+  transform: translateX(0);
+}`
+
+export const transitionExampleFourSnippets = `.color-change {
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.color-change:hover {
+  background-color: #e74c3c;
+}`
+
+
+export const transitionExampleFiveSnippets = `.scale-effect {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-effect:hover {
+  transform: scale(1.1);
+}`
+
+export const transitionExampleSixSnippets = `.rotate-effect {
+  transform: rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate-effect:hover {
+  transform: rotate(45deg);
+}`
+
+export const transitionExampleSevenSnippets = `.width-change {
+  width: 100px;
+  transition: width 0.3s ease-in-out;
+}
+
+.width-change:hover {
+  width: 200px;
+}`
+
+export const basicAnimationSnippets = `element {
+  animation: animation-name duration timing-function delay iteration-count direction fill-mode;
+}`
+
+export const animExampleOneSnippets = `/* Simple animation example */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+element {
+  animation: slide-in 1s ease-in-out;
+}`
+
+
+export const animExampleTwoSnippets = `@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bouncing-ball {
+  animation: bounce 2s infinite;
+}`
+
+
+export const animExampleThreeSnippets = `@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  animation: spin 2s linear infinite;
+}`
+
+export const animExampleFourSnippets = `@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.slideshow {
+  animation: fadeInOut 4s ease-in-out infinite;
+}`
+
+
+export const animExampleFiveSnippets = `@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+.cloud {
+  animation: float 5s ease-in-out infinite alternate;
+}`
+
+export const animExampleSixSnippets = `@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30) infinite alternate;
+}`
