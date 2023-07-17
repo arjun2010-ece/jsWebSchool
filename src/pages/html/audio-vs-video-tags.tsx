@@ -1,7 +1,6 @@
 import Layout from '@/components/layout';
 import { type NextPage } from 'next';
 import tw, { theme as globalTheme } from 'twin.macro';
-import Link from 'next/link';
 import { PAGES, audioWithSrcTagSnippet, videoWithSrcTagSnippet } from '@/utils';
 import Heading from '@/components/heading';
 import Text from '@/components/Text';
@@ -16,13 +15,13 @@ const officialVideoUrls =
   'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video';
 
 const seo = {
-  title: 'Audio & Video tags for enhancing media interactions',
+  title: 'HTML Audio & Video tags: Enhancing media interactions',
   metaDescription:
     'Learn how to effectively use HTML audio and video tags to enhance your website. Our comprehensive tutorial covers the basics of embedding audio and video, controlling playback, adding captions, and optimizing for different devices. Discover the power of multimedia content and create engaging experiences for your website visitors.',
   metaKeywords:
     'HTML audio, HTML video, audio tags, video tags, multimedia tags, embedding audio, embedding video, multimedia, embedding audio, playback control, multimedia optimization, HTML5 audio, HTML5 video, captions, accessibility, device optimization, web development, audio and video tutorial, HTML tutorial, web design, website enhancement, website development',
   metaOgTitle: 'Master HTML Audio and Video Tags: A Comprehensive Tutorial',
-  metaOgUrl: 'https://www.webschooljs.com/html/audio-video',
+  metaOgUrl: 'https://www.webschooljs.com/html/audio-vs-video-tags',
   metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
@@ -38,7 +37,7 @@ const HTMLAudioVideo: NextPage = () => {
       <Heading
         content="Audio and Video Tags ?"
         headingType="h1"
-        customStyle={tw`underline mb-4`}
+        customStyle={tw`mb-2`}
       />
 
       <Text
@@ -54,9 +53,9 @@ const HTMLAudioVideo: NextPage = () => {
       />
 
       <Heading
-        content="Audio Tags"
-        headingType="h5"
-        customStyle={tw`underline mb-4`}
+        content="Audio Tags :"
+        headingType="h2"
+        customStyle={tw`mb-2`}
       />
 
       <Text
@@ -100,6 +99,7 @@ const HTMLAudioVideo: NextPage = () => {
         </ul>
         <br/>
         There are many more controls on this audio tag. To read more about those, please visit the official documentation :
+        <a target="__blank" href=${officialAudioUrls}>Audio controls</a>
         `}
         parentEl="section"
         customStyle={fluid(
@@ -108,19 +108,10 @@ const HTMLAudioVideo: NextPage = () => {
         )}
       />
 
-      <Link
-        href={officialAudioUrls}
-        className="border-indigo-500 border-b-2 text-lg"
-        aria-current="page"
-        target="__blank"
-      >
-        Audio controls
-      </Link>
-
       <Heading
-        content="Video Tags"
-        headingType="h5"
-        customStyle={tw`underline mb-4 mt-12`}
+        content="Video Tags :"
+        headingType="h2"
+        customStyle={tw`mb-2 mt-12`}
       />
 
       <Text
@@ -179,23 +170,15 @@ const HTMLAudioVideo: NextPage = () => {
          </li>
         </ul>
         <br/>
-        There are many more controls on this audio tag. To read more about those, please visit the official documentation
+        There are many more controls on this video tag. To read more about those, please visit the official documentation :
+        <a target="__blank" href=${officialVideoUrls}>Video controls</a>
         `}
-        parentEl="div"
+        parentEl="section"
         customStyle={fluid(
           remToPx(globalTheme`fontSize.base`),
           remToPx(globalTheme`fontSize.lg`),
         )}
       />
-
-      <Link
-        href={officialVideoUrls}
-        className="border-indigo-500 mb-4 border-b-2 text-lg"
-        aria-current="page"
-        target="__blank"
-      >
-        Video controls
-      </Link>
 
       <Text
         content={`

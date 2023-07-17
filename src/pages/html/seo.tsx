@@ -84,7 +84,7 @@ const HTMLSeoPage: NextPage = () => {
 
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon
-        prevLink="/html/audio-video"
+        prevLink="/html/audio-vs-video-tags"
         nextLink="/html/html-comments"
       />
     </Layout>

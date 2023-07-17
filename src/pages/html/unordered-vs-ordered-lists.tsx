@@ -14,14 +14,14 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Structured Content: HTML Unordered / Ordered list',
+  title: 'HTML Unordered vs Ordered list: Structure Content in lists',
   metaDescription:
     'Master the creation of unordered and ordered lists in HTML with our comprehensive tutorial. Learn how to use the "ul" and "ol" tags to structure and organize content into bullet-pointed or numbered lists. Explore list item ("li") tags, nested lists, and various attributes for customizing list styles. Level up your web development skills and create well-structured and visually appealing lists with HTML unordered and ordered lists.',
   metaKeywords:
     'HTML, unordered list, ordered list, ul tag, ol tag, li tag, nested lists, list styles, web development, web design, frontend development, HTML tutorial',
   metaOgTitle:
     'HTML Unordered / Ordered List: Structuring and Organizing Content',
-  metaOgUrl: 'https://www.webschooljs.com/html/unordered-ordered',
+  metaOgUrl: 'https://www.webschooljs.com/html/unordered-vs-ordered-lists',
   metaOgImage: 'https://www.webschooljs.com/images/html-logo.png',
 };
 
@@ -41,7 +41,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       />
       <Text
         content={`
-        There are two types of lists in HTML : Ordered List and Unordered list.
+        Ordered Lists and Unordered Lists are the two forms of lists available in HTML.
         `}
         parentEl="p"
         customStyle={fluid(
@@ -51,17 +51,15 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       />
 
       <Heading
-        content="ordered lists Tag"
-        headingType="h6"
-        customStyle={tw`underline`}
+        content="Ordered lists Tag:"
+        headingType="h2"
+        customStyle={tw`mb-2`}
       />
 
       <Text
         content={`
-        <b>Ordered list is a collection of items in a particular order.</b> <br/>
-
-        Normally in day to day life we see that orders are given to a collection of items in the below 
-        way:
+        <b> A list that has elements in a specific sequence is called an ordered list.</b> <br/>
+        In daily life, commands are typically given to a group of goods in the manner described below:
         `}
         parentEl="p"
         customStyle={fluid(
@@ -73,7 +71,7 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       <CodeSnippet content={htmlOrderedListSnippet} />
 
       <Text
-        content={`
+        content={`<br/>
         Now we have five ways of giving orders to a list::
          <ul>
             <li>With numbers (type="1")</li>
@@ -113,9 +111,9 @@ const HTMLUnorderedOrderedLists: NextPage = () => {
       {/* Unordered Lists */}
 
       <Heading
-        content="Unordered lists Tag"
-        headingType="h6"
-        customStyle={tw`underline`}
+        content="Unordered lists Tag:"
+        headingType="h2"
+        customStyle={tw`mb-2`}
       />
 
       <Text
