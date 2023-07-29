@@ -10,6 +10,7 @@ import type {
 
 const Parent = styled.div`
   ${tw`mb-2 lg:mb-8 last-of-type:mb-0`}
+  color: black;
   b {
     ${tw`font-bold`}
   }
