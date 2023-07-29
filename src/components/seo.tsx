@@ -21,6 +21,7 @@ const SEO: FC<SeoType> = ({
   return (
     <Head>
       <title>{title}</title>
+      <link rel="canonical" href={metaOgUrl} />
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
       <meta property="og:title" content={metaOgTitle} />
