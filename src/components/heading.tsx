@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import type { CSSObject } from 'styled-components';
 import type { FC } from 'react';
 
-const HeadingComponent = styled.h1``;
+const HeadingComponent = styled.h1`
+  color: black;
+`;
 
 type HeadingType = {
   headingType: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
