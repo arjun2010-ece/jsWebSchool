@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const StyledBox = styled.div`
   display: flex;
-  height: ${(props) => props?.boxheight || 'auto'};
+  height: ${(props) => props?.$boxheight || 'auto'};
   border: ${(props) => (props?.$hideborders === "true" ? "0" : '0.4px solid black')};
   margin-top: ${(props) => (props?.$removetopspace === "true" ? "0" : '30px')};
 `;
@@ -18,7 +18,7 @@ const ResponsiveImage = ({
   removeTopSpace = false,
 }) => {
   return (
-    <StyledBox boxheight={boxHeight} $hideborders={hideBorders.toString()} $removetopspace={removeTopSpace.toString()}>
+    <StyledBox $boxheight={boxHeight} $hideborders={hideBorders.toString()} $removetopspace={removeTopSpace.toString()}>
       <Image
         src={srcUrl}
         alt={altText}

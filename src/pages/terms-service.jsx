@@ -22,7 +22,6 @@ const TermsOfServicePage = () => {
       <Heading
         content="Terms of Service"
         headingType="h1"
-        // customStyle={tw`mb-4`}
         customStyle={extraStyles}
       />
       <br />

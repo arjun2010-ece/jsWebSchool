@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Text from "./text";
 import { fluid, remToPx } from "../styles/Global.style";
-// import tw, { theme as globalTheme } from 'twin.macro';
+// import globalTheme from "@/styles/theme";
 import globalTheme from "@/styles/theme";
 // import globalThemeOne from "../styles/theme";
 
@@ -48,16 +48,16 @@ const CourseSidebar = ({ courseTopic }) => {
       <Text
         content={course?.topic}
         parentEl="p"
-        customStyle={fluid(
-          remToPx(globalTheme`fontSize.base`),
-          remToPx(globalTheme`fontSize.lg`)
-        )}
+        customStyle={`${fluid(
+          remToPx(globalTheme["fontSize"]["base"]),
+          remToPx(globalTheme["fontSize"]["lg"])
+        )}`}
       />
     );
     return (
       <StyledListItem
         key={i}
-        $active={(course?.path == router?.route)}
+        $active={course?.path == router?.route}
         $path={course?.path}
       >
         {link}

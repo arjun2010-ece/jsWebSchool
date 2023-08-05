@@ -22,7 +22,6 @@ const DisclaimerPage = () => {
       <Heading
         content="Disclaimer"
         headingType="h1"
-        // customStyle={tw`mb-4`}
         customStyle={extraStyles}
       />
       <br />
