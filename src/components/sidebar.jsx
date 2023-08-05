@@ -21,7 +21,7 @@ const StyledSidebarContainer = styled.div`
 
   @media only screen and (max-width: 767px) {
     display: ${({ $hidesidebar, $mobilenav }) =>
-      $hidesidebar ? ($mobilenav ? 'block' : 'none') : 'block'};
+      $hidesidebar === "true" ? ($mobilenav === "true" ? 'block' : 'none') : 'block'};
   }
 `;
 

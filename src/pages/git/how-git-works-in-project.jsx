@@ -10,7 +10,7 @@ import {
 import globalTheme from "@/styles/theme";
 import { fluid, remToPx } from '@/styles/Global.style';
 import Heading from '@/components/heading';
-import Text from '@/components/Text';
+import Text from '@/components/text';
 import CodeSnippet from '@/components/codeSnippet';
 import ResponsiveImage from '@/components/responsive-image';
 import NavigationIcon from '@/components/navigationIcon';
@@ -27,7 +27,7 @@ const seo = {
   metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
 };
 
-const HowGitWorksInProjectPage: NextPage = () => {
+const HowGitWorksInProjectPage = () => {
   return (
     <Layout
       sidebar={true}

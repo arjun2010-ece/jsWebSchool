@@ -9,7 +9,7 @@ const StyledSidebarContainer = styled.div`
   background: white;
   @media only screen and (max-width: 1023px) {
     display: block;
-    display: ${(props) => (props?.$hidead ? "none" : "block")};
+    display: ${(props) => (props?.$hidead === "true" ? "none" : "block")};
   }
 `;
 

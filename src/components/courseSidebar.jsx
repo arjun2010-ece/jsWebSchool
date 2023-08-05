@@ -57,7 +57,7 @@ const CourseSidebar = ({ courseTopic }) => {
     return (
       <StyledListItem
         key={i}
-        $active={(course?.path == router?.route).toString()}
+        $active={(course?.path == router?.route)}
         $path={course?.path}
       >
         {link}

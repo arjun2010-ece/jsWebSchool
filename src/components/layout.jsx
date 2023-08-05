@@ -13,8 +13,8 @@ const MainContent = styled.main`
   flex-direction: row;
   align-items: stretch;
   gap: 10px;
-  max-width: ${({ $issidebar }) => (!$issidebar ? "70%" : "100%")};
-  width: ${({ $issidebar }) => (!$issidebar ? "70%" : "100%")};
+  max-width: ${({ $issidebar }) => (!$issidebar === "true" ? "70%" : "100%")};
+  // width: ${({ $issidebar }) => (!$issidebar === "true" ? "70%" : "100%")};
   margin: 0 auto;
 
   @media (max-width: 767px) {
