@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="text-gray-300 bg-secondary-500 py-20">
+    <footer className="bg-secondary-500 py-20">
       <div className="container mx-auto flex flex-col justify-center px-4 md:flex-row md:justify-between">
         <div className="mb-4 md:mb-0">
           <h4 className="text-xl font-bold">WebSchoolJS</h4>

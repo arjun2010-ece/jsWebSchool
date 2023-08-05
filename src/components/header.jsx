@@ -1,20 +1,15 @@
-import {useState,
-  useEffect,
-  useRef,
-  useCallback,
-} from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { MENU_ITEMS } from '../utils';
-import Heading from './heading';
-
+import { useState, useEffect, useRef, useCallback } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { MENU_ITEMS } from "../utils";
+import Heading from "./heading";
 
 const MobileMenuContent = ({ mobileMenu }) => {
   const router = useRouter();
   return (
     <div
       className={`${
-        mobileMenu ? 'block' : 'hidden'
+        mobileMenu ? "block" : "hidden"
       } bg-black text-white absolute w-full lg:hidden`}
     >
       <ul className="grid grid-cols-2 p-4 sm:grid-cols-4  md:space-x-8 md:border-0">
@@ -25,8 +20,8 @@ const MobileMenuContent = ({ mobileMenu }) => {
                 href={menuItem.path}
                 className={`block py-2 pl-3 pr-4 ${
                   router?.route?.includes(menuItem?.path)
-                    ? 'text-blue-700 border-b-4'
-                    : 'text-gray-900'
+                    ? "text-blue-700 border-b-4"
+                    : "text-gray-900"
                 } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
                 aria-current="page"
               >
@@ -43,8 +38,8 @@ const MobileMenuContent = ({ mobileMenu }) => {
                   href={subItem.path}
                   className={`block py-2 pl-3 pr-4 ${
                     router?.route?.includes(subItem?.path)
-                      ? 'text-blue-700 border-b-4'
-                      : 'text-gray-900'
+                      ? "text-blue-700 border-b-4"
+                      : "text-gray-900"
                   } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
                   aria-current="page"
                 >
@@ -58,7 +53,6 @@ const MobileMenuContent = ({ mobileMenu }) => {
   );
 };
 
-
 const MenuItem = ({ menuItem }) => {
   const router = useRouter();
   return (
@@ -67,8 +61,8 @@ const MenuItem = ({ menuItem }) => {
         href={menuItem.path}
         className={`block py-2 pl-3 pr-4 ${
           router?.route?.includes(menuItem?.path)
-            ? 'text-blue-700 border-b-4'
-            : 'text-gray-900'
+            ? "text-blue-700 border-b-4"
+            : "text-gray-900"
         } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
         aria-current="page"
       >
@@ -88,7 +82,7 @@ const SubMenuItem = ({
     <li key={menuItem?.title}>
       <div
         className={`group relative ${
-          subMenuVisible ? 'text-blue-700' : 'text-gray-900'
+          subMenuVisible ? "text-blue-700" : "text-gray-900"
         } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
         ref={subMenuItemRef}
       >
@@ -101,7 +95,7 @@ const SubMenuItem = ({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={`ml-1 h-5 w-5 transition-transform ${
-              subMenuVisible ? 'rotate-180' : 'rotate-0'
+              subMenuVisible ? "rotate-180" : "rotate-0"
             }`}
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -117,13 +111,11 @@ const SubMenuItem = ({
   );
 };
 
-
-
 const HorizontalSubMenu = ({ subMenuVisible }) => {
   return (
     <ul
       className={`${
-        subMenuVisible ? 'block' : 'hidden'
+        subMenuVisible ? "block" : "hidden"
       } dark:bg-gray-900 absolute z-10 w-full rounded-lg bg-black p-2 text-white shadow-md lg:bg-white lg:text-black`}
     >
       {MENU_ITEMS &&
@@ -148,7 +140,7 @@ const extraStyles = `
 export const HamburgerComponent = ({
   mobileNav,
   toggleHamburgerMenu,
-  dimension = 'h-6 w-6',
+  dimension = "h-6 w-6",
   title,
 }) => {
   return (
@@ -227,10 +219,10 @@ const Header = () => {
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [toggleSubMenu]);
 
@@ -253,7 +245,7 @@ const Header = () => {
   });
 
   return (
-    <nav className="border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-grey-dark">
+    <nav className="bg-gray-200 border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-grey-dark">
       {/* Navbar bg color set */}
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         {/* Logo */}
@@ -272,8 +264,8 @@ const Header = () => {
         {/* Large screen menu */}
         <div className={`hidden w-full  lg:block lg:w-auto`}>
           <ul
-            className="border-gray-100 bg-gray-50 dark:border-gray-700 dark:bg-gray-800  
-            md:dark:bg-gray-900 md:bg-slate-400 mt-4 flex flex-col rounded-lg border p-4
+            className="border-gray-100 dark:border-gray-700 dark:bg-gray-800  
+            md:dark:bg-gray-900 mt-4 flex flex-col rounded-lg border p-4
            font-medium md:mt-0 
           md:flex-row md:space-x-8 md:border-0 md:p-0"
           >

@@ -1,221 +1,165 @@
-import { NextSeo } from "next-seo";
-import { IoPauseOutline } from "react-icons/io5";
-import Heading  from "../components/heading";
+import Layout from "../components/layout";
+import Heading from "@/components/heading";
+import Text from "@/components/text";
+import Image from "next/image";
+import { ImageContainer } from "@/styles/Extra.style";
 
-export default function Home() {
-  const SEO = {
-    title: "Next JS Template",
-    description: "Next JS Template with Tailwind CSS and React Icons",
+const seo = {
+  title: "Webschooljs: Your Gateway to Web Development Skills",
+  metaDescription:
+    "WebSchoolJS is your ultimate resource for web development tutorials, covering HTML, CSS, JavaScript, Git, React.js, and Node.js. Learn the essential skills and frameworks to become a proficient web developer.",
+  metaKeywords:
+    "web development tutorials, HTML, CSS, JavaScript, Git, React.js, Node.js, web development resources, learn web development, coding tutorials, beginner-friendly tutorials",
+  metaOgTitle: "WebSchoolJS - Learn Web Development with Tutorials & Resources",
+  metaOgUrl: "https://www.webschooljs.com/",
+  metaOgImage: "https://www.webschooljs.com/images/webschooljs-logo.png",
+};
 
-    openGraph: {
-      title: "Next JS Template",
-      description: "Next JS Template with Tailwind CSS and React Icons",
-      type: "website",
-      locale: "en_IN",
-      url: "mridul.tech",
-      site_name: "Next JS Template",
-    },
-  };
+const extraStyles = `
+   margin-bottom: 1rem;
+   text-align: center;
+  `;
 
+const HomePage = () => {
   return (
-    <>
-      <header>
-        <nav
-          className="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg  focus:text-orange-700 dark:bg-neutral-500 dark:text-slate-200 md:flex-wrap md:justify-start"
-          data-te-navbar-ref
-        >
-          <div className="flex w-full flex-wrap items-center justify-between px-3">
-            <div className="flex items-center">
-              <button
-                className="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
-                type="button"
-                data-te-collapse-init
-                data-te-target="#navbarSupportedContentY"
-                aria-controls="navbarSupportedContentY"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="[&>svg]:w-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-
-            <div
-              className="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto"
-              id="navbarSupportedContentY"
-              data-te-collapse-item
-            >
-              <ul
-                className="mr-auto flex flex-col lg:flex-row"
-                data-te-navbar-nav-ref
-              >
-                <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                  <a
-                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-orange-600 dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                <a
-                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-orange-600 dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    Features
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                <a
-                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-orange-600 dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li className="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                <a
-                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-orange-600 dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!"
-                    data-te-nav-link-ref
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    About
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-        {/* <div className="flex min-h-screen flex-col py-2 items-center justify-center">
-          ARJUN
-        </div> */}
-
+    <Layout seo={seo}>
       <Heading
         content="Tutorials we Offer"
         headingType="h1"
-        // customStyle={{fontSize: "60px",}}
+        customStyle={extraStyles}
       />
 
-        <div className="bg-neutral-50 px-6 py-20 text-center text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200">
-          <h1 className="mb-6 text-5xl font-bold">Heading</h1>
-          <h3 className="mb-8 text-3xl font-bold">Subeading</h3>
-        </div>
-      </header>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
-        <NextSeo {...SEO} />
-
-        <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-          <h1 className="text-5xl font-bold">
-            <a className="text-blue-600" href="https://nextjs.org">
-              Next.js
-            </a>{" "}
-            Template Home Page!
-          </h1>
-
-          <p className="mt-5 text-2xl">
-            Get started by editing{" "}
-            <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-              pages/index.js
-            </code>
-          </p>
-
-          <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-            <a
-              href="https://nextjs.org/docs"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Find in-depth information about Next.js features and API.
-              </p>
-            </a>
-
-            <a
-              href="https://nextjs.org/learn"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Learn about Next.js in an interactive course with quizzes!
-              </p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Discover and deploy boilerplate example Next.js projects.
-              </p>
-            </a>
-
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-            >
-              <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-
-        <footer className="p-3 flex justify-center items-center gap-1 flex-col sm:flex-row bg-white">
-          <span className="flex items-center">
-            Template by{" "}
-            <a
-              className="ml-1 font-semibold"
-              href="https://www.mridul.tech/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mridul
-            </a>
-            <span className="px-3 ml-1">
-              <IoPauseOutline size={28} />
-            </span>
-          </span>
-          <span>
-            Made with ❤ {"& "}
-            <a
-              className="ml-1 font-semibold"
-              href="https://github.com/Mridul2820/next-template"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {"<Code/>"}
-            </a>
-          </span>
-        </footer>
+      <div className="mb-20 text-center">
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>Javascript</p>
+        <p>GIT</p>
+        <p>React.js</p>
+        <p>Node.js</p>
       </div>
-    </>
+
+      <Heading
+        content="Mission of webschooljs  ?"
+        headingType="h2"
+        customStyle={extraStyles}
+      />
+
+      <Text
+        content="When i was learning this Frontend skills set then it was very difficult. 
+        Because all the resources that you find on web is only theoretical and for practice sake we have only todo list of almost everything.
+        Learn css by designing todo pages and learn react by doing todo app. It was disgusting. You simply can not have practical exposure with this way of learning.
+        And it will take many years if you are still around in the industry. Thats why I am designing this courses in more practical way so that
+        if you are dedicated and regular then within few months you will become a pro and 
+        <b>you can crack any frontend react coding challenge </b> easily as 
+        i am going to <b>add those challenges as sample app</b> for your learning.
+        "
+        parentEl="p"
+        customStyle={{
+          marginTop: "1rem",
+          marginRight: "1rem",
+          marginLeft: "1rem",
+        }}
+      />
+
+      <Heading
+        content="Why learn frontend in the first place  ?"
+        headingType="h2"
+        customStyle={{
+          textAlign: "center",
+          marginTop: "2rem",
+          marginBottom: "1rem",
+          fontWeight: "bold",
+        }}
+      />
+      <Text
+        content="Why not learn any other skills such as data analyst or machine learning ?
+        The answer to this is very simple. Because of 3 things:
+        <ul>
+         <li>Huge openings in the market always.</li>
+         <li>Most in demand job</li>
+         <li>Most secure job</li>
+         <li>Can do enough freelancing jobs to earn extra income.</li>
+         <li>A lot of remote job options. If you need to go attend your family or kid, 
+         you can still finish your work doing it remotely anytime you become free. You do not need to take the whole day leave as in other jobs or other software jobs.
+         </li>
+        </ul>"
+        parentEl="div"
+        customStyle={{
+          marginTop: "1rem",
+          marginRight: "1rem",
+          marginLeft: "1rem",
+        }}
+      />
+
+      <Heading
+        content="Is it convincing enough ?"
+        headingType="h4"
+        customStyle={{ textAlign: "center", marginTop: "1rem" }}
+      />
+      <Text
+        content="Not satisfied enough. Lets check some stats of some job sites such as indeed or linkedin or naukri.
+        These stats are for different region : India, USA and worldwide openings in frontend."
+        parentEl="p"
+        customStyle={{ marginRight: "1rem", marginLeft: "1rem" }}
+      />
+
+      <ImageContainer>
+        <Image
+          src="/images/linkedin_worldwide.jpg"
+          alt="Linkedin worldwide frontend stats"
+          width={600}
+          height={600}
+        />
+      </ImageContainer>
+
+      <Text
+        content="Look more in indeed job site"
+        parentEl="p"
+        customStyle={{ textAlign: "center" }}
+      />
+
+      <ImageContainer>
+        <Image
+          src="/images/indeed_usa.jpg"
+          alt="Indeed usa frontend stats"
+          width={600}
+          height={600}
+        />
+      </ImageContainer>
+
+      <Text
+        content="And more in Naukri.com"
+        parentEl="p"
+        customStyle={{ textAlign: "center" }}
+      />
+      <ImageContainer>
+        <Image
+          src="/images/naukri_stats.jpg"
+          alt="Naukri india frontend stats"
+          width={600}
+          height={600}
+        />
+      </ImageContainer>
+
+      <Heading
+        content="The arrows in images point to number of openings open for frontend devs."
+        headingType="h5"
+        customStyle={extraStyles}
+      />
+      <Text
+        content="Even though there are huge number of jobs but the resource to learn in a single place you will never find.
+        Thats why i am creating this website to give back to society all my knowledge in a 
+        <b>more structured way and in a sequential way</b>. I promise there will be no garbage or exaggerated content.
+        In future i might bring videos but for the time being its all contents only."
+        parentEl="p"
+        customStyle={{
+          marginRight: "1rem",
+          marginLeft: "1rem",
+          marginTop: "1.5rem",
+        }}
+      />
+    </Layout>
   );
-}
+};
+
+export default HomePage;

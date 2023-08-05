@@ -14,7 +14,8 @@ const MainContent = styled.main`
   flex-direction: row;
   align-items: stretch;
   gap: 10px;
-  max-width: ${({ isSidebar }) => (!isSidebar ? '70%' : '100%')};
+  max-width: ${({ issidebar }) => (!issidebar ? '70%' : '100%')};
+  width: ${({ issidebar }) => (!issidebar ? '70%' : '100%')};
   margin: 0 auto;
 
   @media (max-width: 767px) {
@@ -76,7 +77,7 @@ const Layout = ({
 
       <Header />
 
-      <MainContent isSidebar={sidebar}>
+      <MainContent issidebar={sidebar.toString()}>
         {!isGenericPage && (
           <HamburgerWrapper>
             <HamburgerComponent
@@ -97,8 +98,8 @@ const Layout = ({
         <Content path={router?.route}>{children}</Content>
         {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
-
-      <Footer />
+   
+      <Footer /> 
     </div>
   );
 };

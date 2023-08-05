@@ -1,23 +1,24 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const HeadingComponent = styled.h1`
   color: black;
 
-  ${props => props.customStyle && css`
-  ${props.customStyle}
-`}
+  ${(props) =>
+    props.customStyle &&
+    css`
+      ${props.customStyle}
+    `}
 `;
 
 const Heading = ({ headingType, content, customStyle }) => {
-  return (
-    <HeadingComponent as={headingType} customStyle={customStyle}>
-      {content}
-    </HeadingComponent>
-  );
+  const StyledHeading = styled(HeadingComponent)`
+    ${customStyle}
+  `;
+
+  return <StyledHeading as={headingType}>{content}</StyledHeading>;
 };
 
 export default Heading;
-
 
 // const extraStyles = `
 //     background-color: red;

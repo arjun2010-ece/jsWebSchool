@@ -72,6 +72,7 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (min-width: 1024px) {
       line-height:1.37; 
     }
+    ${fluid(remToPx(theme["fontSize"]["mobile-4xl"]), remToPx(theme["fontSize"]["5xl"]))}
   }
   h3 {
 
@@ -81,6 +82,7 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (min-width: 1024px) {
       line-height:1.33; 
     }
+    ${fluid(remToPx(theme["fontSize"]["mobile-3xl"]), remToPx(theme["fontSize"]["4xl"]))}
 
   }
   h4 {
@@ -91,6 +93,7 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (min-width: 1024px) {
       line-height:1.25; 
     }
+    ${fluid(remToPx(theme["fontSize"]["mobile-2xl"]), remToPx(theme["fontSize"]["3xl"]))}
 
   }
   h5 {
@@ -100,17 +103,29 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (min-width: 1024px) {
       line-height:1.33; 
     }
+    ${fluid(remToPx(theme["fontSize"]["mobile-xl"]), remToPx(theme["fontSize"]["2xl"]))}
 
   }
   h6 {
-
     font-weight: 700;
     letter-spacing: 0.0025em;
     line-height: 1.78;
     @media screen and (min-width: 1024px) {
       line-height:1.4; 
     }
-
+    ${fluid(remToPx(theme["fontSize"]["mobile-lg"]), remToPx(theme["fontSize"]["xl"]))}
+  }
+  p{
+    ${fluid(remToPx(theme["fontSize"]["base"]), remToPx(theme["fontSize"]["2xl"]))}
+  }
+  div{
+    ${fluid(remToPx(theme["fontSize"]["base"]), remToPx(theme["fontSize"]["xl"]))}
+  }
+  nav ul li{
+    ${fluid(remToPx(theme["fontSize"]["base"]), remToPx(theme["fontSize"]["2xl"]))}
+  }
+  aside ul li{
+    ${fluid(remToPx(theme["fontSize"]["base"]), remToPx(theme["fontSize"]["lg"]))}
   }
 `;
 

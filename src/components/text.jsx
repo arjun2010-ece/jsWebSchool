@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 
-const Parent = styled.div`
+const TextComponent = styled.div`
   margin-bottom: 0.5rem;
   &:last-of-type{
     margin-bottom: 0;
@@ -54,17 +54,14 @@ const Parent = styled.div`
 `}
 `;
 
-// type TextProps = {
-//   parentEl: 'p' | 'div' | 'span' | 'section';
-//   content: string;
-//   customStyle?: Interpolation<ThemeProps<DefaultTheme>> | CSSObject;
-// };
 
 const Text = ({ content, parentEl, customStyle }) => {
+  const StyledText = styled(TextComponent)`
+  ${customStyle}
+`;
   return (
-    <Parent
+    <StyledText
       as={parentEl}
-      customStyle={customStyle}
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );
