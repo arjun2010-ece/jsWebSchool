@@ -9,13 +9,13 @@ const StyledSidebarContainer = styled.div`
   background: white;
   @media only screen and (max-width: 1023px) {
     display: block;
-    display: ${(props) => (props?.hideAd ? "none" : "block")};
+    display: ${(props) => (props?.$hidead ? "none" : "block")};
   }
 `;
 
 const AdSidebar = ({ hideAd }) => {
   return (
-    <StyledSidebarContainer hideAd={hideAd}>
+    <StyledSidebarContainer $hidead={hideAd.toString()}>
       {/* AD Sidebar component */}
     </StyledSidebarContainer>
   );

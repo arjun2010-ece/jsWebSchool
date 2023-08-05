@@ -49,19 +49,18 @@ const TextComponent = styled.div`
     line-height: 0.1em;
     vertical-align: -0.4em;
   }
-  ${props => props.customStyle && css`
-  ${props.customStyle}
+  ${props => props.$customstyle && css`
+  ${props.$customstyle}
 `}
 `;
 
 
 const Text = ({ content, parentEl, customStyle }) => {
-  const StyledText = styled(TextComponent)`
-  ${customStyle}
-`;
+
   return (
-    <StyledText
+    <TextComponent
       as={parentEl}
+      $customstyle={customStyle}
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );

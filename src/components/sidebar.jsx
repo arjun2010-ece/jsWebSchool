@@ -20,14 +20,14 @@ const StyledSidebarContainer = styled.div`
   margin-bottom: 3rem;
 
   @media only screen and (max-width: 767px) {
-    display: ${({ hideSidebar, mobileNav }) =>
-      hideSidebar ? (mobileNav ? 'block' : 'none') : 'block'};
+    display: ${({ $hidesidebar, $mobilenav }) =>
+      $hidesidebar ? ($mobilenav ? 'block' : 'none') : 'block'};
   }
 `;
 
 const Sidebar = ({ hideSidebar, currentPage, mobileNav }) => {
   return (
-    <StyledSidebarContainer hideSidebar={hideSidebar} mobileNav={mobileNav}>
+    <StyledSidebarContainer $hidesidebar={hideSidebar.toString()} $mobilenav={mobileNav.toString()}>
       {/* Sidebar component */}
       {currentPage == PAGES.HTML && <CourseSidebar courseTopic={HTML_TOPICS} />}
       {currentPage == PAGES.CSS3 && <CourseSidebar courseTopic={CSS_TOPICS} />}

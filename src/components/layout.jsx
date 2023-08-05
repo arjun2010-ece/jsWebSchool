@@ -1,21 +1,20 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import Footer from '@/components/footer';
-import Sidebar from '@/components/sidebar';
-import AdSidebar from '@/components/adSideBar';
-import SEO from '@/components/seo';
-import styled from 'styled-components';
-import Header, { HamburgerComponent } from '@/components/header';
-import { TABLE_OF_CONTENT_EXCLUSION } from '../utils';
-
+import { useState } from "react";
+import { useRouter } from "next/router";
+import Footer from "@/components/footer";
+import Sidebar from "@/components/sidebar";
+import AdSidebar from "@/components/adSideBar";
+import SEO from "@/components/seo";
+import styled from "styled-components";
+import Header, { HamburgerComponent } from "@/components/header";
+import { TABLE_OF_CONTENT_EXCLUSION } from "../utils";
 
 const MainContent = styled.main`
   display: flex;
   flex-direction: row;
   align-items: stretch;
   gap: 10px;
-  max-width: ${({ issidebar }) => (!issidebar ? '70%' : '100%')};
-  width: ${({ issidebar }) => (!issidebar ? '70%' : '100%')};
+  max-width: ${({ $issidebar }) => (!$issidebar ? "70%" : "100%")};
+  width: ${({ $issidebar }) => (!$issidebar ? "70%" : "100%")};
   margin: 0 auto;
 
   @media (max-width: 767px) {
@@ -32,7 +31,6 @@ const HamburgerWrapper = styled.div`
   }
 `;
 
-
 const Content = styled.div`
   flex: 1;
   background: white;
@@ -47,13 +45,12 @@ const Content = styled.div`
   }
 `;
 
-
 const Layout = ({
   children,
   sidebar = false,
   hideAd = false,
   hideSidebar = false,
-  currentPage = '',
+  currentPage = "",
   seo,
 }) => {
   const router = useRouter();
@@ -67,17 +64,17 @@ const Layout = ({
   return (
     <div className="relative z-0 flex min-h-screen flex-col">
       <SEO
-        title={seo?.title || ''}
-        metaDescription={seo?.metaDescription || ''}
-        metaKeywords={seo?.metaKeywords || ''}
-        metaOgTitle={seo?.metaOgTitle || ''}
-        metaOgUrl={seo?.metaOgUrl || ''}
-        metaOgImage={seo?.metaOgImage || ''}
+        title={seo?.title || ""}
+        metaDescription={seo?.metaDescription || ""}
+        metaKeywords={seo?.metaKeywords || ""}
+        metaOgTitle={seo?.metaOgTitle || ""}
+        metaOgUrl={seo?.metaOgUrl || ""}
+        metaOgImage={seo?.metaOgImage || ""}
       />
 
       <Header />
 
-      <MainContent issidebar={sidebar.toString()}>
+      <MainContent $issidebar={sidebar.toString()}>
         {!isGenericPage && (
           <HamburgerWrapper>
             <HamburgerComponent
@@ -95,11 +92,11 @@ const Layout = ({
             mobileNav={mobileNav}
           />
         )}
-        <Content path={router?.route}>{children}</Content>
+        <Content >{children}</Content>
         {sidebar && <AdSidebar hideAd={hideAd} />}
       </MainContent>
-   
-      <Footer /> 
+
+      <Footer />
     </div>
   );
 };
