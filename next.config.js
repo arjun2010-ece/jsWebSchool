@@ -1,3 +1,4 @@
+const path = require('path');
 require("dotenv").config();
 
 module.exports = {
@@ -11,5 +12,9 @@ module.exports = {
   images: {
     formats: ["image/avif", "image/webp"],
     domains: ["localhost", "res.cloudinary.com"],
+  },
+  webpack: (config) => {
+    config.resolve.alias['@'] = path.resolve(__dirname, 'src/');
+    return config;
   },
 };

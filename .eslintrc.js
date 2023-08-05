@@ -26,6 +26,12 @@ module.exports = {
     react: {
       version: "detect",
     },
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   },
   plugins: ["react"],
   rules: {

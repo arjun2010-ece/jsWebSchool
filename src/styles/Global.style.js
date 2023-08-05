@@ -2,24 +2,6 @@
 import { createGlobalStyle } from "styled-components";
 import theme from "./theme";
 
-// export const fluid = (min, max) => {
-//   const minVw = parseInt(theme`screens.xs`.slice(0, -2), 10);
-//   const maxVw = parseInt(theme`screens.xxl`.slice(0, -2), 10);
-//   const minQuery = `@media screen and (min-width: ${minVw}px)`;
-//   const maxQuery = `@media screen and (min-width: ${maxVw}px)`;
-//   return {
-//     fontSize: `${min}px`,
-//     [minQuery]: {
-//       fontSize: `calc(${min}px + ${max - min} * ((100vw - ${minVw}px) / ${
-//         maxVw - minVw - 1
-//       }))`,
-//     },
-//     [maxQuery]: {
-//       fontSize: `${max}px`,
-//     },
-//   };
-// };
-
 export const fluid = (min, max) => {
   const minVw = parseInt(theme["screens"]["xs"]?.slice(0, -2), 10);
   const maxVw = parseInt(theme["screens"]["xxl"]?.slice(0, -2), 10);
