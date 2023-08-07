@@ -20,8 +20,8 @@ const MobileMenuContent = ({ mobileMenu }) => {
                 href={menuItem.path}
                 className={`block py-2 pl-3 pr-4 ${
                   router?.route?.includes(menuItem?.path)
-                    ? "text-blue-700 border-b-4"
-                    : "text-gray-900"
+                    ? "text-amber-300 border-b-4 font-bold"
+                    : "text-white"
                 } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
                 aria-current="page"
               >
@@ -61,8 +61,8 @@ const MenuItem = ({ menuItem }) => {
         href={menuItem.path}
         className={`block py-2 pl-3 pr-4 ${
           router?.route?.includes(menuItem?.path)
-            ? "text-blue-700 border-b-4"
-            : "text-gray-900"
+            ? "text-blue-700 border-b-4 border-b-slate-900 dark:text-white dark:border-b-slate-50"
+            : "text-gray-900 dark:text-white"
         } md:(p-0 dark:(text-gray-900 bg-transparent)) rounded bg-transparent text-base`}
         aria-current="page"
       >
@@ -245,7 +245,7 @@ const Header = () => {
   });
 
   return (
-    <nav className="bg-gray-200 border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 bg-grey-dark">
+    <nav className="bg-gray-200 border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 ">
       {/* Navbar bg color set */}
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
         {/* Logo */}

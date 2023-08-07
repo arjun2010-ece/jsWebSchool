@@ -80,7 +80,7 @@ const Layout = ({
             <HamburgerComponent
               mobileNav={mobileNav}
               toggleHamburgerMenu={toggleHamburgerMenu}
-              dimension="h-12 w-12"
+              dimension="h-12 w-12 dark:text-gray-500"
               title={true}
             />
           </HamburgerWrapper>
