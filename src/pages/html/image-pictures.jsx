@@ -221,7 +221,7 @@ const HTMLImagePicture = () => {
 
       {/* NavigationIcon : Front and Back Link */}
       <NavigationIcon
-        prevLink="/html/unordered-ordered"
+        prevLink="/html/unordered-vs-ordered-lists"
         nextLink="/html/tables"
       />
     </Layout>

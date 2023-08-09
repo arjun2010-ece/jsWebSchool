@@ -376,7 +376,7 @@ const HTMLFormElements = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/html/iframe" nextLink="/html/audio-video" />
+      <NavigationIcon prevLink="/html/iframe" nextLink="/html/audio-vs-video-tags" />
     </Layout>
   );
 };

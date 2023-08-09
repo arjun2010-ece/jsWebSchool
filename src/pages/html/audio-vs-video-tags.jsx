@@ -21,7 +21,7 @@ const seo = {
   metaKeywords:
     "HTML audio, HTML video, audio tags, video tags, multimedia tags, embedding audio, embedding video, multimedia, embedding audio, playback control, multimedia optimization, HTML5 audio, HTML5 video, captions, accessibility, device optimization, web development, audio and video tutorial, HTML tutorial, web design, website enhancement, website development",
   metaOgTitle: "Master HTML Audio and Video Tags: A Comprehensive Tutorial",
-  metaOgUrl: "https://www.webschooljs.com/html/audio-video",
+  metaOgUrl: "https://www.webschooljs.com/html/audio-vs-video-tags",
   metaOgImage: "https://www.webschooljs.com/images/html-logo.png",
 };
 

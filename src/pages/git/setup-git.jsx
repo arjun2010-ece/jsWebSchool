@@ -21,7 +21,7 @@ const seo = {
     'GIT, version control, HTML tutorial, GIT tutorial, setting up GIT, install GIT, configure user settings, create repositories, track changes',
   metaOgTitle:
     'Setting up GIT: A Comprehensive HTML Tutorial for Version Control Setup',
-  metaOgUrl: 'https://www.webschooljs.com/setup-git',
+  metaOgUrl: 'https://www.webschooljs.com/git/setup-git',
   metaOgImage: 'https://www.webschooljs.com/images/git-logo.png',
 };
 

@@ -192,7 +192,7 @@ const HTMLSpan = () => {
       />
 
       {/* NavigationIcon : Front and Back Link */}
-      <NavigationIcon prevLink="/html/div" nextLink="/html/unordered-ordered" />
+      <NavigationIcon prevLink="/html/div" nextLink="/html/unordered-vs-ordered-lists" />
     </Layout>
   );
 };
