@@ -1,36 +1,15 @@
-import "../styles/globals.css";
-
-// SEO
-// import { DefaultSeo } from "next-seo";
-// import SEO from "../next-seo.config";
-
-// function MyApp({ Component, pageProps }) {
-//   return (
-//     <>
-//       <DefaultSeo {...SEO} />
-//       <Component {...pageProps} />
-//     </>
-//   );
-// }
-
-// export default MyApp;
-
-
-// import type { AppProps, AppType } from 'next/app';
 import Head from 'next/head';
-// import { Nunito } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-// style
-// import '@/styles/globals.css';
-// enable after some time
+import "../styles/globals.css";
 import GlobalStyles from '../styles/Global.style';
 
-// const nunitoFont = Nunito({
-//   subsets: ['latin'],
-//   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
-//   variable: '--font-nunito',
-// });
+const nunitoFont = Nunito({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-nunito',
+});
 
 
 const _App = ({ Component, pageProps }) => {
@@ -62,7 +41,7 @@ const _App = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyles />
-      <div className={`font-sans`}>
+      <div className={`${nunitoFont.variable} font-sans`}>
         <Component {...pageProps} />
       </div>
     </>

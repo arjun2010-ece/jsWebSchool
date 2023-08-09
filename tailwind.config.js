@@ -34,6 +34,9 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    fontFamily: {
+      sans: ['var(--font-nunito)', 'sans-serif'],
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
