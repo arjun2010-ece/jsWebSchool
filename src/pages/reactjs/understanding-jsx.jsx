@@ -28,7 +28,7 @@ const UnderstandingJSXPage = () => {
       seo={seo}
     >
       <Heading
-        content="Understanding JSX"
+        content="From HTML to JSX: Bridging the Gap"
         headingType="h1"
         customStyle={{ marginBottom: "1rem" }}
       />

@@ -16,7 +16,7 @@ import CodeSnippet from '@/components/codeSnippet';
 import NavigationIcon from '@/components/navigationIcon';
 
 const seo = {
-  title: 'Popular git commands',
+  title: 'Most used git commands in day to day work',
   metaDescription:
     'Explore a compilation of popular GIT commands in our concise GIT tutorial. Learn how to initialize a repository, add files, commit changes, create branches, merge branches, push to remote repositories, and more. Enhance your productivity and efficiency with these essential GIT commands.',
   metaKeywords:

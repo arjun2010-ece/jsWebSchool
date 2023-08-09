@@ -20,7 +20,7 @@ const TermsOfServicePage = () => {
   return (
     <Layout seo={seo}>
       <Heading
-        content="Terms of Service"
+        content="Terms of Service Explained: Safeguarding Users and Businesses"
         headingType="h1"
         customStyle={extraStyles}
       />

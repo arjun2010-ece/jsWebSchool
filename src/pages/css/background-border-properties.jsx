@@ -244,7 +244,7 @@ const CSSBackgroundBorderPropertiesPage = () => {
         To learn more about borders, you can study here, <a target="__blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">
         more on borders</a>.
         <br/>
-        Also look at the image of borders <a href="/images/border-image.jpg" target="__blank">here </a>. This black color rectangle is the border of html
+        Also look at the  <a href="/images/border-image.jpg" target="__blank">image of borders </a> here. This black color rectangle is the border of html
         elements.
         `}
         parentEl="div"

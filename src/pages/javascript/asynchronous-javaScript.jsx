@@ -37,7 +37,7 @@ const JSAsynchronousJavascriptPage = () => {
       seo={seo}
     >
       <Heading
-        content="Asynchronous Javascript"
+        content="Understanding Asynchronous JavaScript: examples and concepts"
         headingType="h1"
         customStyle={{ marginBottom: "1rem" }}
       />
