@@ -29,7 +29,7 @@ const HomePage = () => {
         customStyle={extraStyles}
       />
 
-      <div className="mb-20 text-center">
+      <div className="mb-20 text-center dark:text-slate-900">
         <p>HTML5</p>
         <p>CSS3</p>
         <p>Javascript</p>
