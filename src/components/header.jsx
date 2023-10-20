@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import Slider from "react-slick";
 import { responsiveSettings, MENU_ITEMS as TUTORIALS } from "../utils";
 import Heading from "./heading";
@@ -231,7 +231,6 @@ const Header = () => {
   const [subMenuVisible, setSubMenuVisible] = useState(false);
   // const [mobileNav, setMobileNav] = useState(false);
   const subMenuItemRef = useRef(null);
-  const router = useRouter();
 
   const toggleSubMenu = useCallback(() => {
     setSubMenuVisible(!subMenuVisible);
@@ -325,7 +324,7 @@ const Header = () => {
         {/* <MobileMenuContent mobileMenu={mobileNav} /> */}
       </nav>
 
-      {router?.pathname != "/" && (
+      {/* {router?.pathname != "/" && ( */}
         <div className="flex justify-center items-center h-16 bg-black text-white">
           <div className="w-[90%]">
             <Slider {...settings}>
@@ -341,7 +340,7 @@ const Header = () => {
             </Slider>
           </div>
         </div>
-      )}
+       {/* )} */}
     </header>
   );
 };

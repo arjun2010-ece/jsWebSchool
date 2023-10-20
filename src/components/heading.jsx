@@ -14,10 +14,14 @@ const HeadingComponent = styled.h1`
 // ${customStyle}
 // `;
 
-const Heading = ({ headingType, content, customStyle }) => {
+const Heading = ({ headingType, content, customStyle, children }) => {
   // const StyledHeading = createHeadingComponent(customStyle);
 
-  return <HeadingComponent as={headingType} $customstyle={customStyle}>{content}</HeadingComponent>;
+  return (
+    <HeadingComponent as={headingType} $customstyle={customStyle}>
+      {content || children}
+    </HeadingComponent>
+  );
 };
 
 export default Heading;

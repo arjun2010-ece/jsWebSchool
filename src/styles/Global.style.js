@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     @media screen and (min-width: 1024px) {
       line-height:1.09; 
     }
-    ${fluid(remToPx(theme["fontSize"]["mobile-5xl"]), remToPx(theme["fontSize"]["6xl"]))}
+    ${fluid(remToPx(theme["fontSize"]["mobile-4xl"]), remToPx(theme["fontSize"]["mobile-7xl"]))}
   }
   h2 {
     font-weight: 700;
