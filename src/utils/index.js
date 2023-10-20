@@ -17,6 +17,30 @@ export const MENU_ITEMS = [
   // },
 ];
 
+export const responsiveSettings = [
+  {
+    breakpoint: 1024, // Screen width up to 1024px
+    settings: {
+      slidesToShow: 5,
+      slidesToScroll: 3,
+    },
+  },
+  {
+    breakpoint: 768, // Screen width up to 768px
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 2,
+    },
+  },
+  {
+    breakpoint: 480, // Screen width up to 480px
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    },
+  },
+];
+
 export const PAGES = {
   HTML: 'HTML',
   CSS3: 'CSS3',
@@ -25,6 +49,13 @@ export const PAGES = {
   // NODEJS: 'Node.js',
   GIT: 'GIT',
 };
+const WEB_URL = process.env.NEXT_PUBLIC_WEB_URL;
+
+export const HTML_PAGE = WEB_URL + "html";
+export const CSS_PAGE = WEB_URL + "css";
+export const JS_PAGE = WEB_URL + "javascript"
+export const REACTJS_PAGE = WEB_URL + "reactjs"
+export const GIT_PAGE = WEB_URL + "git"
 
 export const TABLE_OF_CONTENT_EXCLUSION = [
   '/privacy-policy',

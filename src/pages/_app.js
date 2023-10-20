@@ -2,6 +2,11 @@ import Head from 'next/head';
 import { Nunito } from 'next/font/google';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+
+// Import slick carousel styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import "../styles/globals.css";
 import GlobalStyles from '../styles/Global.style';
 

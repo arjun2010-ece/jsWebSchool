@@ -1,8 +1,10 @@
+import Link from "next/link";
 import Layout from "../components/layout";
 import Heading from "@/components/heading";
 import Text from "@/components/text";
 import Image from "next/image";
 import { ImageContainer } from "@/styles/Extra.style";
+import { PAGES, HTML_PAGE, CSS_PAGE, JS_PAGE, REACTJS_PAGE, GIT_PAGE } from "../utils";
 
 const seo = {
   title: "Webschooljs: Your Gateway to Web Development Skills",
@@ -30,12 +32,85 @@ const HomePage = () => {
       />
 
       <div className="mb-20 text-center dark:text-slate-900">
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>Javascript</p>
-        <p>GIT</p>
-        <p>React.js</p>
-        <p>Node.js</p>
+        <div className="course mb-12">
+          <p className="text-base">
+            <strong> Learn HTML5</strong>
+          </p>
+          <div
+            className="flex w-1/5 mx-auto"
+          >
+            <Link
+              href={HTML_PAGE}
+              className="border border-gray-400 py-1 px-8 rounded w-full text-blue-700"
+            >
+              {PAGES?.HTML}
+            </Link>
+          </div>
+        </div>
+
+        <div className="course mb-12">
+          <p className="text-base">
+            <strong> Learn CSS3</strong>
+          </p>
+          <div
+            className="flex w-1/5 mx-auto"
+          >
+            <Link
+              href={CSS_PAGE}
+              className="border border-gray-400 py-1 px-8 rounded w-full text-blue-700"
+            >
+              {PAGES?.CSS3}
+            </Link>
+          </div>
+        </div>
+
+        <div className="course mb-12">
+          <p className="text-base">
+            <strong> Learn Javascript</strong>
+          </p>
+          <div
+            className="flex w-1/5 mx-auto"
+          >
+            <Link
+              href={JS_PAGE}
+              className="border border-gray-400 py-1 px-8 rounded w-full text-blue-700"
+            >
+              {PAGES?.JAVASCRIPT}
+            </Link>
+          </div>
+        </div>
+
+        <div className="course mb-12">
+          <p className="text-base">
+            <strong> Learn GIT</strong>
+          </p>
+          <div
+            className="flex w-1/5 mx-auto"
+          >
+            <Link
+              href={GIT_PAGE}
+              className="border border-gray-400 py-1 px-8 rounded w-full text-blue-700"
+            >
+              {PAGES?.GIT}
+            </Link>
+          </div>
+        </div>
+
+        <div className="course mb-12">
+          <p className="text-base">
+            <strong> Learn React.js</strong>
+          </p>
+          <div
+            className="flex w-1/5 mx-auto"
+          >
+            <Link
+              href={REACTJS_PAGE}
+              className="border border-gray-400 py-1 px-8 rounded w-full text-blue-700"
+            >
+              {PAGES?.REACTJS}
+            </Link>
+          </div>
+        </div>
       </div>
 
       <Heading
